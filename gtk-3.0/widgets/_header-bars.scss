@@ -57,10 +57,7 @@ headerbar {
         
       }
       
-    &.appmenu{
-      background: transparent;
-      &:backdrop{background: transparent;}
-    }
+
     &:hover,
     &:active,
     &:checked {
@@ -122,19 +119,25 @@ headerbar {
 
     //Reset style
     &.titlebutton {
-      color: transparent;
       box-shadow: none;
-      border: none;
-      background-color: transparent;
-      background-repeat: no-repeat;
-      &:hover,
-      &:active,
+      border: 1px solid transparent;
+      background: transparent;
+      padding: 5px;
+      min-height: 14px;
+      margin: 5px 1px;
       &:checked,
-      &:backdrop,
-      &:backdrop:hover,* {
-        color: transparent;
-        box-shadow: none;
-        background-color: transparent;
+      &:hover,
+      &:backdrop:hover {
+        @include button(normal-header);
+      }
+      &.close:hover {
+        color: $red;
+      }
+      &.maximize:hover {
+        color: $lime;
+      }
+      &.minimize:hover {
+        color: $yellow;
       }
     }
   }
