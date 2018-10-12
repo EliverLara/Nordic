@@ -1,0 +1,16 @@
+/**********************
+ * DE-Specific Styles *
+ **********************/
+
+@import 'apps/budgie';
+@import 'apps/gnome';
+@import 'apps/pantheon';
+@import 'apps/xfce';
+@import 'apps/unity';
+
+/***********************
+ * App-Specific Styles *
+ ***********************/
+
+@import 'apps/geary';
+@import 'apps/lightdm';

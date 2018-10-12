@@ -1,0 +1,98 @@
+/**********
+ * Switch *
+ **********/
+switch {
+  font-size: 1px;
+  font-weight: bold;
+  outline-offset: -4px;
+  transition: all 200ms ease-in;
+
+  border: none;
+  border-radius: 14px;
+  color: transparent;
+  padding: 2.3px 0px;
+
+  background-color: $switch_bg;
+  border: 1px solid rgba(170, 170, 170, 0.4);
+
+  &:disabled {
+    background-color: $insensitive_bg_color;
+  }
+
+  &:backdrop {
+    background-color: $backdrop_bg_color;
+    transition: $backdrop_transition;
+
+    &:disabled { background-color: $insensitive_bg_color; }
+  }
+
+
+  &:active,
+  &:checked {
+    border: 1px solid $teal;
+    slider{
+      background: $teal;
+    }
+    &:backdrop {
+      border: 1px solid $teal;
+     
+      slider {
+        &:backdrop {
+          box-shadow:none;
+          background-color:transparentize($base_color, 0.1);
+          border:none;
+        }
+      }
+    }
+  }
+
+  // Handle
+  slider {
+    padding:2px;
+    margin: 0 2.3px;
+    min-width: 12px;
+    min-height: 12px;
+
+    border-radius: 100%;
+    transition: $button_transition;
+    background-color: rgba(170, 170, 170, 0.6);
+
+    &:backdrop {
+      padding:2px;
+      box-shadow:none;
+      background-color:$base_color;
+    }
+  }
+
+  &:checked slider { }
+
+  &:backdrop {
+  }
+
+  row:selected & {
+    @if $variant == 'light' {
+      box-shadow: none;
+      border-color: $selected_borders_color;
+
+      &:backdrop { border-color: $selected_borders_color; }
+
+      &.slider:dir(rtl) { border-left-color: $borders_color; }
+      &.slider:dir(ltr) { border-right-color: $borders_color; }
+
+      &.slider { &:checked, & { border-color: $selected_borders_color; } }
+    }
+  }
+
+  // Trough
+  trough {
+
+    &:active,
+    &:checked {
+      background-color: $selected_bg_color;
+
+      &:backdrop {
+        background-color: $backdrop_selected_bg_color;
+      }
+    }
+  }
+}
