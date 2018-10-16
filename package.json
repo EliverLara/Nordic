@@ -1,5 +1,5 @@
 {
-  "name": "nordic",
+  "name": "frost",
   "version": "1.0.0",
   "description": "Dark theme created using the awesome Nord color pallete",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EliverLara/Nordic.git"
+    "url": "git+https://github.com/Nequo/Nordic.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EliverLara/Nordic/issues"
+    "url": "https://github.com/EliverLara/Nequo/issues"
   },
-  "homepage": "https://github.com/EliverLara/Nordic#readme",
+  "homepage": "https://github.com/EliverLara/Nequo#readme",
   "dependencies": {
     "gulp": "^4.0.0",
     "gulp-exec": "^2.1.3",
