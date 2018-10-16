@@ -20,7 +20,7 @@ stage {
   border-width: 0;
   padding: 4px 32px; }
   .button:focus {
-    color: #8fbcbb;
+    color: #ECCF95;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
@@ -33,7 +33,7 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .button:active {
-    color: #8fbcbb;
+    color: #ECCF95;
     background-color: rgba(46, 52, 64, 0.88);
     border: none;
     text-shadow: none;
@@ -144,7 +144,7 @@ StScrollBar {
   -barlevel-height: 0.3em;
   -barlevel-background-color: #4e586d;
   -barlevel-border-color: black;
-  -barlevel-active-background-color: #8fbcbb;
+  -barlevel-active-background-color: #ECCF95;
   -barlevel-active-border-color: #a3be8c;
   -barlevel-border-width: 0;
   -barlevel-handle-radius: 6px; }
@@ -436,7 +436,7 @@ StScrollBar {
   border: 1px solid #d8dee9;
   border-radius: 12px; }
   .audio-selection-device:active, .audio-selection-device:hover, .audio-selection-device:focus {
-    background-color: #8fbcbb; }
+    background-color: #ECCF95; }
 
 .audio-selection-device-box {
   padding: 20px;
@@ -717,7 +717,7 @@ StScrollBar {
       background: rgba(50, 57, 70, 0.65);
       color: #f9fafb; }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-      background: #8fbcbb;
+      background: #81A1C1;
       box-shadow: inset 0 -2px 0px #9fc6c5;
       color: #f9fafb;
       text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9); }
@@ -877,10 +877,10 @@ StScrollBar {
   margin: 2px;
   border-radius: 1.4em; }
   .calendar-day-base:hover, .calendar-day-base:focus {
-    background-color: rgba(57, 64, 79, 0.93); }
+    background-color: rgba(57, 64, 79, 1); }
   .calendar-day-base:active, .calendar-day-base:selected {
     color: white;
-    background-color: #8fbcbb;
+    background-color: #F28C6D;
     border-color: transparent; }
   .calendar-day-base.calendar-day-heading {
     color: #58709d;
