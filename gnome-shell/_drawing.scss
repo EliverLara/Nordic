@@ -194,7 +194,7 @@
     // This should be none, but it's creating some issues with borders, so to
     // workaround it for now, use inset wich goes through a different code path.
     // see https://bugzilla.gnome.org/show_bug.cgi?id=752934
-    border: none;
+    border: 1px solid $borders_color;
     text-shadow: none;
     icon-shadow: none;
   }
