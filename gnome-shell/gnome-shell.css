@@ -35,7 +35,7 @@ stage {
   .button:active {
     color: #8fbcbb;
     background-color: rgba(46, 52, 64, 0.88);
-    border: none;
+    border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
   .button:hover {
@@ -63,7 +63,7 @@ stage {
   .modal-dialog-linked-button:active {
     color: #8fbcbb;
     background-color: rgba(46, 52, 64, 0.88);
-    border: none;
+    border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:focus {
@@ -1271,7 +1271,7 @@ StScrollBar {
   .app-view-control:checked {
     color: #8fbcbb;
     background-color: rgba(46, 52, 64, 0.88);
-    border: none;
+    border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
   .app-view-control:first-child {
@@ -1596,7 +1596,7 @@ StScrollBar {
   .keyboard-key:active {
     color: #8fbcbb;
     background-color: rgba(46, 52, 64, 0.88);
-    border: none;
+    border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
   .keyboard-key:grayed {
@@ -1687,7 +1687,7 @@ StScrollBar {
       .login-dialog .modal-dialog-button:default:active {
         color: #8fbcbb;
         background-color: #8fbcbb;
-        border: none;
+        border: 1px solid #1f232b;
         text-shadow: none;
         icon-shadow: none; }
       .login-dialog .modal-dialog-button:default:insensitive {
