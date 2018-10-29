@@ -2566,8 +2566,8 @@ headerbar {
     min-height: 20px; }
     .default-decoration.titlebar button.titlebutton,
     headerbar.default-decoration button.titlebutton {
-      min-height: 19px;
-      min-width: 19px;
+      min-height: 20px;
+      min-width: 20px;
       margin: 0;
       padding: 0; }
 
