@@ -1,5 +1,6 @@
 $subtheme: 'main';
 
-@import "_colors"; //use gtk colors
-@import "_drawing";
-@import "_common";
+@import "colors"; //use gtk colors
+@import "drawing";
+@import "common";
+@import "extensions"

@@ -1938,3 +1938,15 @@ StScrollBar {
   border: 2px solid grey;
   border-radius: 4px;
   padding: 6px; }
+
+.openweather-current-summarybox,
+.openweather-forecast-icon,
+.openweather-current-databox-captions,
+.openweather-current-databox-values,
+.openweather-current-icon,
+.openweather-forecast-summary,
+.openweather-forecast-temperature {
+  background: transparent; }
+
+.openweather-current-databox-captions, .openweather-forecast-day {
+  color: #8fbcbb; }
