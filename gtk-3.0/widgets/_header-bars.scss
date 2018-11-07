@@ -148,49 +148,66 @@ headerbar {
     margin: 5px 0px;
     min-height: 20px;
     &:first-child {
-      border-top-left-radius: 3px;
-      border-bottom-left-radius: 3px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
     }
 
     &:last-child {
-      border-top-right-radius: 3px;
-      border-bottom-right-radius: 3px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
       border-right-style: solid;
     }
 
     &:only-child {
-      border-radius: 3px;
+      border-radius: 4px;
       border-style: solid;
     }
   }
-  .linked > button {
+  %linked-button {
     @extend %linked-header;
-  }
-  .linked > button:active{
-    @extend %linked-header;
-    background: $selected_bg_color;
-    color: #fff;
-  }
-  .linked > button:checked{
-    @extend %linked-header;
-    background: $selected_bg_color;
-    color: #fff;
-    &:backdrop{
-      color: $backdrop_selected_fg_color;
-      label{
+    &:active, &:checked {
+      background: $selected_bg_color;
+      color: #fff;
+      &:backdrop{
         color: $backdrop_selected_fg_color;
+        label{
+          color: $backdrop_selected_fg_color;
+        }
       }
     }
+  }
+  .linked > button {
+    @extend %linked-button;
   }
   .linked > button:hover,
   .linked > button:backdrop { @extend %linked-header; }
   // End reset style
 
-  &.selection-mode {
-
-
+  .path-bar-box {
+    .dim-label {
+      color: transparent;
+    }
     button {
+      @extend %linked-button;
+      margin-left: -6px;
+      &:last-child {
+        margin-left: -6px;
+        border-radius: 0px;
+        &:active, &:checked {
+          border-radius: 0px 4px 4px 0px;
+        }
+      }
+      &:first-child {
+        border-radius: 4px 0px 0px 4px;
+        &:active, &:checked {
+          border-radius: 4px;
+        }
+      }
+    }
+  }
 
+  &.selection-mode {
+    button {
       &:backdrop {
         &.flat, & {
           &:active,
