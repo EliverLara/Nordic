@@ -25,7 +25,7 @@ $slider: #7b7bbd;
 $teal: $nord14;
 
 $selected_fg_color: #fefefe;
-$selected_bg_color: $nord7;
+$selected_bg_color: if($accent == 'blue', $nord9, $nord7);
 /*$selected_bg_color: #00e8c6;06d6a0*/
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: darken($main_dark_color, 5%);
