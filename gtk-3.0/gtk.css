@@ -4019,14 +4019,14 @@ treeview ~ scrollbar.vertical {
     .sidebar row label {
       color: #98abb2; }
     .sidebar row:selected {
-      color: #fff; }
+      color: #fefefe; }
       .sidebar row:selected:backdrop {
-        color: rgba(143, 188, 187, 0.6);
-        background: transparent; }
+        color: rgba(254, 254, 254, 0.5);
+        background: rgba(143, 188, 187, 0.6); }
         .sidebar row:selected:backdrop label {
-          color: #fff; }
+          color: #fefefe; }
       .sidebar row:selected label {
-        color: #fff; }
+        color: #fefefe; }
   .sidebar.source-list {
     background: #3b4252;
     padding: 4px 0px; }
