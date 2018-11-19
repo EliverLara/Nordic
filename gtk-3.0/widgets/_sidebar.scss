@@ -38,20 +38,20 @@
       color: #98abb2;
     }
     &:selected{
-      color: #fff;
+      color: $selected_fg_color;
       // border-left: 4px solid $selected_bg_color;
       &:backdrop{
-        color: $backdrop_selected_bg_color;
-        background: transparent;
+        color: $backdrop_selected_fg_color;
+        background: $backdrop_selected_bg_color;
         label{
-          color: #fff;
+          color: $selected_fg_color;
         }  
       }
       &:hover{
         // background-color: transparentize($selected_bg_color, 0.8);
       }
       label{
-        color: #fff;
+        color: $selected_fg_color;
       }
     }
   }
