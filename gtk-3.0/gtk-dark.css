@@ -992,7 +992,7 @@ toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
   border: 1px solid #232831;
   border-radius: 0;
   border-right-style: none;
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1); }
+  box-shadow: none; }
 
 .inline-toolbar button:first-child, .linked > button:first-child, combobox.linked button:nth-child(2):dir(rtl), .linked:not(.vertical) > combobox:first-child > box > button.combo, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child {
   border-top-left-radius: 3px;
@@ -1970,7 +1970,7 @@ expander arrow {
   border-style: solid solid none;
   border-color: #232831;
   border-radius: 3px 3px 0 0;
-  box-shadow: inset 0 1px rgba(255, 255, 255, 0.1); }
+  box-shadow: none; }
   .floating-bar.bottom.left {
     border-left-style: none;
     border-top-left-radius: 0; }

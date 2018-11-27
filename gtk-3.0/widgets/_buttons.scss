@@ -442,7 +442,7 @@ toolbar.inline-toolbar toolbutton:backdrop {
   border: 1px solid $borders_color;
   border-radius: 0;
   border-right-style: none;
-  box-shadow: inset 0px 1px 0px 0px $top_highlight;
+  box-shadow: none;
 }
 
 %linked {
