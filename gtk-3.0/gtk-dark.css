@@ -4085,6 +4085,8 @@ placessidebar.sidebar {
     color: #fff;
     background-color: transparent;
     background-image: linear-gradient(to right, #81a1c1 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+    placessidebar.sidebar row.sidebar-row:selected label {
+      color: #81a1c1; }
     placessidebar.sidebar row.sidebar-row:selected:hover {
       color: #ffffff;
       background-color: rgba(0, 0, 0, 0.24); }
