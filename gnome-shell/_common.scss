@@ -888,7 +888,7 @@ StScrollBar {
     .datemenu-displays-box { spacing: 1em; }
 
     .datemenu-calendar-column {
-      border: 0 solid $borders_color;
+      border: 0 solid transparent;
       &:ltr { border-left-width: 1px; }
       &:rtl { border-right-width: 1px; }
     }
