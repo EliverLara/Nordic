@@ -168,7 +168,7 @@ StScrollBar {
   height: 22px;
   background-image: url("assets/checkbox-off.svg"); }
 
-.check-box:focus StBin {
+.check-box:focus, .check-box:hover StBin {
   background-image: url("assets/checkbox-off-focused.svg"); }
 
 .check-box:checked StBin {
