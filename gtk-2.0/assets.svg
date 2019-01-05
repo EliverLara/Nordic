@@ -427,10 +427,10 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="32.874543"
-     inkscape:cx="310.96733"
-     inkscape:cy="431.67433"
-     inkscape:current-layer="handle-vert"
+     inkscape:zoom="12.303936"
+     inkscape:cx="50.270229"
+     inkscape:cy="450.06472"
+     inkscape:current-layer="g5397"
      inkscape:document-units="px"
      showgrid="true"
      inkscape:snap-bbox="true"
@@ -1697,7 +1697,7 @@
          id="g5397"
          transform="translate(17,7)">
         <rect
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#8fbcbb;fill-opacity:0.94117647;stroke:none;stroke-width:0.83666003;marker:none;enable-background:accumulate"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#313744;fill-opacity:1;stroke:none;stroke-width:0.83666003;marker:none;enable-background:accumulate"
            id="rect5373-3"
            width="6"
            height="28"
@@ -1706,7 +1706,7 @@
            rx="1"
            ry="1" />
         <path
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:0.15;stroke:none;stroke-width:0.83666003;marker:none;enable-background:accumulate"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#313744;fill-opacity:1;stroke:none;stroke-width:0.83666003;marker:none;enable-background:accumulate"
            d="m 43,12 c -0.554,0 -1,0.446 -1,1 v 1 c 0,-0.554 0.446,-1 1,-1 h 4 c 0.554,0 1,0.446 1,1 v -1 c 0,-0.554 -0.446,-1 -1,-1 z"
            transform="translate(-10,-10)"
            id="rect5261"
@@ -1715,7 +1715,7 @@
            inkscape:connector-curvature="0"
            id="path5266"
            d="m 33,30 c -0.554,0 -1,-0.446 -1,-1 v -1 c 0,0.554 0.446,1 1,1 h 4 c 0.554,0 1,-0.446 1,-1 v 1 c 0,0.554 -0.446,1 -1,1 z"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:0.15;stroke:none;stroke-width:0.83666003;marker:none;enable-background:accumulate" />
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#313744;fill-opacity:1;stroke:none;stroke-width:0.83666003;marker:none;enable-background:accumulate" />
       </g>
     </g>
     <g
