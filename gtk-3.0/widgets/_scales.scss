@@ -147,7 +147,7 @@ scale {
     }
   }
 
-  $_scale_bg: if($variant == 'light', $base_color, darken($selected_fg_color, 5%));
+  $_scale_bg: if($variant == 'light', $base_color, darken(#fefefe, 5%));
   $_scale_disabled_bg: darken($_scale_bg, 25%);
   slider {
     border-color: $_scale_bg;
