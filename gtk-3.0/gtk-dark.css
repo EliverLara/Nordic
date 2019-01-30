@@ -4100,6 +4100,8 @@ placessidebar.sidebar {
       color: rgba(0, 0, 0, 0.54);
       background-color: transparent;
       background-image: linear-gradient(to right, #8fbcbb 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+      placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon {
+        -gtk-icon-shadow: none; }
     placessidebar.sidebar row.sidebar-row:selected .sidebar-icon {
       -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.8);
       color: inherit; }

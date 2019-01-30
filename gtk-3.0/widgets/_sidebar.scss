@@ -172,6 +172,10 @@ placessidebar{
             background-color: transparent;
             background-image:linear-gradient(to right, $selected_bg_color 40px,
                                   rgba(65,67,75,0) 36px, rgba(65,67,75,0)97%);
+
+            .sidebar-icon {
+              -gtk-icon-shadow: none;  
+            }
           }
 
 					.sidebar-icon {
