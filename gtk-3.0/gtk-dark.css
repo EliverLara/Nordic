@@ -3471,7 +3471,7 @@ scale {
       -gtk-icon-shadow: 0 1px black;
       outline-color: rgba(216, 222, 233, 0.3);
       border-color: #1d2128;
-      background-color: #282d37; }
+      background-color: #f1f1f1; }
       .osd scale slider:hover {
         color: white;
         border-color: #232831;
@@ -3480,7 +3480,7 @@ scale {
         text-shadow: 0 1px black;
         -gtk-icon-shadow: 0 1px black;
         outline-color: rgba(216, 222, 233, 0.3);
-        background-color: #282d37; }
+        background-color: #f1f1f1; }
       .osd scale slider:active {
         color: white;
         border-color: #232831;
@@ -3489,7 +3489,7 @@ scale {
         text-shadow: none;
         -gtk-icon-shadow: none;
         outline-color: rgba(216, 222, 233, 0.3);
-        background-color: #282d37; }
+        background-color: #f1f1f1; }
       .osd scale slider:disabled {
         color: #808590;
         border-color: #232831;
@@ -3498,7 +3498,7 @@ scale {
         box-shadow: none;
         text-shadow: none;
         -gtk-icon-shadow: none;
-        background-color: #282d37; }
+        background-color: #f1f1f1; }
       .osd scale slider:backdrop {
         color: #d8dee9;
         border-color: #232831;
@@ -3507,9 +3507,9 @@ scale {
         box-shadow: none;
         text-shadow: none;
         -gtk-icon-shadow: none;
-        background-color: #282d37; }
+        background-color: #f1f1f1; }
         .osd scale slider:backdrop:disabled {
-          background-color: #282d37; }
+          background-color: #f1f1f1; }
   scale value {
     color: alpha(currentColor,0.4); }
   scale marks {
