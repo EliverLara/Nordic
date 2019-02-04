@@ -182,30 +182,30 @@ scale {
     .osd & {
       @include button(osd);
       border-color: darken($osd_borders_color, 3%);
-      background-color: opacify($osd_bg_color, 1); // solid background needed here
+      background-color: opacify($_scale_bg, 1); // solid background needed here
 
       &:hover {
         @include button(osd-hover);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
+        background-color: opacify($_scale_bg, 1); // solid background needed here
       }
 
       &:active {
         @include button(osd-active);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
+        background-color: opacify($_scale_bg, 1); // solid background needed here
       }
 
       &:disabled {
         @include button(osd-insensitive);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
+        background-color: opacify($_scale_bg, 1); // solid background needed here
       }
 
       &:backdrop {
         @include button(osd-backdrop);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
+        background-color: opacify($_scale_bg, 1); // solid background needed here
 
         &:disabled {
           @include button(osd-backdrop-insensitive);
-          background-color: opacify($osd_bg_color, 1); // solid background needed here
+          background-color: opacify($_scale_bg, 1); // solid background needed here
         }
       }
     }
