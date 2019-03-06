@@ -200,8 +200,8 @@ scale {
       }
 
       &:backdrop {
-        @include button(osd-backdrop);
-        background-color: opacify($_scale_bg, 1); // solid background needed here
+        @include button(osd-backdrop, $_scale_disabled_bg);
+        background-color: opacify($_scale_disabled_bg, 1); // solid background needed here
 
         &:disabled {
           @include button(osd-backdrop-insensitive);
@@ -285,8 +285,7 @@ scale {
               border-radius: 50%;
 
               background-color: $_scale_bg;
-              box-shadow: inset 0 1px darken(white, 60%),
-                          0px 0px 1px 1px darken(white, 60%);
+              box-shadow: none;
               }
           }
 
