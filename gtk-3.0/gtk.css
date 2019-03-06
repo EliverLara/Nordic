@@ -3502,12 +3502,12 @@ scale {
       .osd scale slider:backdrop {
         color: #d8dee9;
         border-color: #232831;
-        background-image: linear-gradient(to bottom, rgba(40, 45, 55, 0.93), rgba(40, 45, 55, 0.93));
+        background-image: linear-gradient(to bottom, rgba(178, 178, 178, 0.5), rgba(178, 178, 178, 0.5));
         background-clip: padding-box;
         box-shadow: none;
         text-shadow: none;
         -gtk-icon-shadow: none;
-        background-color: #f1f1f1; }
+        background-color: #b2b2b2; }
         .osd scale slider:backdrop:disabled {
           background-color: #f1f1f1; }
   scale value {
@@ -3555,7 +3555,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-before:not(.marks-after) slider:hover {
@@ -3565,7 +3565,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-before:not(.marks-after) slider:active {
@@ -3575,7 +3575,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-before:not(.marks-after) slider:disabled {
@@ -3585,7 +3585,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-before:not(.marks-after) slider:backdrop {
@@ -3595,7 +3595,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-before:not(.marks-after) slider:backdrop:disabled {
@@ -3605,7 +3605,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-after:not(.marks-before) slider {
@@ -3615,7 +3615,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-after:not(.marks-before) slider:hover {
@@ -3625,7 +3625,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-after:not(.marks-before) slider:active {
@@ -3635,7 +3635,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-after:not(.marks-before) slider:disabled {
@@ -3645,7 +3645,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-after:not(.marks-before) slider:backdrop {
@@ -3655,7 +3655,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.horizontal.marks-after:not(.marks-before) slider:backdrop:disabled {
@@ -3665,7 +3665,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.horizontal.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-before:not(.marks-after) slider {
@@ -3675,7 +3675,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-before:not(.marks-after) slider:hover {
@@ -3685,7 +3685,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-before:not(.marks-after) slider:active {
@@ -3695,7 +3695,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-before:not(.marks-after) slider:disabled {
@@ -3705,7 +3705,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-before:not(.marks-after) slider:backdrop {
@@ -3715,7 +3715,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-before:not(.marks-after) slider:backdrop:disabled {
@@ -3725,7 +3725,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-before:not(.marks-after).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-after:not(.marks-before) slider {
@@ -3735,7 +3735,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-after:not(.marks-before) slider:hover {
@@ -3745,7 +3745,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-after:not(.marks-before) slider:active {
@@ -3755,7 +3755,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-after:not(.marks-before) slider:disabled {
@@ -3765,7 +3765,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-after:not(.marks-before) slider:backdrop {
@@ -3775,7 +3775,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.vertical.marks-after:not(.marks-before) slider:backdrop:disabled {
@@ -3785,7 +3785,7 @@ scale {
     border: none;
     border-radius: 50%;
     background-color: #f1f1f1;
-    box-shadow: inset 0 1px #666666, 0px 0px 1px 1px #666666; }
+    box-shadow: none; }
   scale.vertical.marks-after:not(.marks-before).fine-tune slider {
     margin: -7px; }
   scale.color {
