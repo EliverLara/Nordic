@@ -4788,6 +4788,8 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     .budgie-menu .category-button:checked {
       color: #2e3440;
       background: linear-gradient(to right, #88c0d0 0%, #88c0d0 100%); }
+      .budgie-menu .category-button:checked:hover {
+        color: rgba(46, 52, 64, 0.6); }
     .budgie-menu .category-button:checked:disabled {
       opacity: 0.5; }
       .budgie-menu .category-button:checked:disabled label {
@@ -5417,11 +5419,13 @@ calendar.raven-calendar {
       border-bottom-left-radius: 2px; }
     .budgie-session-dialog .linked.horizontal > button:last-child, .budgie-polkit-dialog .linked.horizontal > button:last-child, .budgie-run-dialog .linked.horizontal > button:last-child {
       border-right: none;
-      border-bottom-right-radius: 2px; }
+      border-bottom-right-radius: 2px;
+      background: transparent; }
     .budgie-session-dialog .linked.horizontal > button:hover, .budgie-polkit-dialog .linked.horizontal > button:hover, .budgie-run-dialog .linked.horizontal > button:hover {
-      background-color: rgba(143, 188, 187, 0.9); }
+      background-color: rgba(143, 188, 187, 0.9);
+      color: #2e3440; }
       .budgie-session-dialog .linked.horizontal > button:hover:backdrop label, .budgie-polkit-dialog .linked.horizontal > button:hover:backdrop label, .budgie-run-dialog .linked.horizontal > button:hover:backdrop label {
-        color: rgba(255, 255, 255, 0.5); }
+        color: rgba(46, 52, 64, 0.5); }
     .budgie-session-dialog .linked.horizontal > button.suggested-action, .budgie-polkit-dialog .linked.horizontal > button.suggested-action, .budgie-run-dialog .linked.horizontal > button.suggested-action {
       background-color: rgba(143, 188, 187, 0.9); }
       .budgie-session-dialog .linked.horizontal > button.suggested-action:hover, .budgie-polkit-dialog .linked.horizontal > button.suggested-action:hover, .budgie-run-dialog .linked.horizontal > button.suggested-action:hover {

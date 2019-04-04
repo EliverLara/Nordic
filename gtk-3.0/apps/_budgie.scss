@@ -140,6 +140,9 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
         &:checked {
           color: $selected_fg_color;
           background: $suggested_bg_color;
+          &:hover { 
+            color: transparentize($selected_fg_color, 0.4);
+          }
         }
         &:checked:disabled {
             opacity: 0.5;
@@ -836,11 +839,12 @@ calendar.raven-calendar {
 
       label { font-weight: 700; }
       &:first-child { border-left: none; border-bottom-left-radius: 2px; }
-      &:last-child { border-right: none; border-bottom-right-radius: 2px; }
+      &:last-child { border-right: none; border-bottom-right-radius: 2px; background:transparent;}
       &:hover {
         background-color: transparentize($selected_bg_color, 0.1);
+        color: $selected_fg_color;
         &:backdrop {
-          label { color: transparentize(white, 0.5); }
+          label { color: transparentize($selected_fg_color, 0.5); }
         }
       }
 
