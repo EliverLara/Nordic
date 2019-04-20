@@ -3181,6 +3181,8 @@ notebook > header {
         box-shadow: none;
         color: #bf616a; }
       notebook > header tab button.flat, notebook > header tab button.flat:backdrop {
+        background: transparent;
+        border: none;
         color: alpha(currentColor,0.3); }
       notebook > header tab button.flat:last-child {
         margin-left: 4px;
