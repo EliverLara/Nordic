@@ -208,9 +208,17 @@
 
       // colors the button like the label, overridden otherwise
       button.flat {
-        &:hover {  background: transparent; box-shadow: none; color: $red; }
+        &:hover {  
+          background: transparent;
+          box-shadow: none;
+          color: $red; 
+        }
 
-        &, &:backdrop { color: gtkalpha(currentColor, 0.3); }
+        &, &:backdrop { 
+          background: transparent;
+          border: none;
+          color: gtkalpha(currentColor, 0.3); 
+        }
 
         padding: 0;
         margin-top: 4px;
