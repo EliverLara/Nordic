@@ -30,9 +30,9 @@
 
 <!-- Focused window -->
 <frame_geometry name="normal" title_scale="medium" rounded_top_left="1" rounded_top_right="1">
-	<distance name="left_width" value="0" />
-	<distance name="right_width" value="0" />
-	<distance name="bottom_height" value="0" />
+	<distance name="left_width" value="1" />
+	<distance name="right_width" value="1" />
+	<distance name="bottom_height" value="3" />
 	<distance name="left_titlebar_edge" value="5" />
 	<distance name="right_titlebar_edge" value="5" />
 	<distance name="title_vertical_pad" value="4" />
