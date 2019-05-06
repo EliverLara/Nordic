@@ -283,7 +283,7 @@ box-shadow: none;
   //
   color: $tc;
   outline-color: transparentize($tc, 0.7);
-  background-color: if($c==$base_color, $selected_bg_color, $c);
+  background: if($c==$base_color, $selected_bg_color, $c);
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
 }
