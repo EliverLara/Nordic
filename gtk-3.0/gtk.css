@@ -2576,13 +2576,13 @@ headerbar {
   .titlebar .path-bar-box button:first-child,
   headerbar .path-bar-box button:first-child {
     border-radius: 4px 0px 0px 4px; }
-    .titlebar .path-bar-box button:first-child:active, .titlebar .path-bar-box button:first-child:checked, .titlebar .path-bar-box button:first-child:only-child,
+    .titlebar .path-bar-box button:first-child:active, .titlebar .path-bar-box button:first-child:checked,
     headerbar .path-bar-box button:first-child:active,
-    headerbar .path-bar-box button:first-child:checked,
-    headerbar .path-bar-box button:first-child:only-child {
+    headerbar .path-bar-box button:first-child:checked {
       border-radius: 4px; }
   .titlebar .path-bar-box widget > .text-button:last-child,
   headerbar .path-bar-box widget > .text-button:last-child {
+    border-radius: 0px 4px 4px 0px;
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
     background: #8fbcbb;
@@ -2591,9 +2591,9 @@ headerbar {
     headerbar .path-bar-box widget > .text-button:last-child:backdrop,
     headerbar .path-bar-box widget > .text-button:last-child:backdrop label {
       color: rgba(46, 52, 64, 0.5); }
-    .titlebar .path-bar-box widget > .text-button:last-child:not(:only-child),
-    headerbar .path-bar-box widget > .text-button:last-child:not(:only-child) {
-      border-radius: 0px 4px 4px 0px; }
+    .titlebar .path-bar-box widget > .text-button:last-child:only-child,
+    headerbar .path-bar-box widget > .text-button:last-child:only-child {
+      border-radius: 4px; }
   .selection-mode.titlebar button:backdrop.flat:active, .selection-mode.titlebar button:backdrop.flat:checked, .selection-mode.titlebar button:backdrop:active, .selection-mode.titlebar button:backdrop:checked,
   headerbar.selection-mode button:backdrop.flat:active,
   headerbar.selection-mode button:backdrop.flat:checked,

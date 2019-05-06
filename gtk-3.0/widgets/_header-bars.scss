@@ -196,18 +196,19 @@ headerbar {
       }
       &:first-child {
         border-radius: 4px 0px 0px 4px;
-        &:active, &:checked, &:only-child {
+        &:active, &:checked {
           border-radius: 4px;
         }
       }
     }
     widget > .text-button:last-child{
+      border-radius: 0px 4px 4px 0px;
       @include button(active, $selected_bg_color, #fff);
       &:backdrop, &:backdrop label {
         color: $backdrop_selected_fg_color;
       }
-      &:not(:only-child){
-        border-radius: 0px 4px 4px 0px;
+      &:only-child{
+        border-radius: 4px;
       } 
     }
   }
