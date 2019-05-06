@@ -300,7 +300,7 @@ button {
   button:checked {
     color: #2e3440;
     outline-color: rgba(46, 52, 64, 0.3);
-    background-color: #7fb2b1;
+    background: #7fb2b1;
     text-shadow: none;
     transition-duration: 50ms; }
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:backdrop,
@@ -612,7 +612,7 @@ button.suggested-action {
   button.suggested-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #88c0d0;
+    background: #88c0d0;
     text-shadow: none; }
   .selection-mode button.titlebutton:backdrop,
   button.suggested-action:backdrop,
@@ -762,7 +762,7 @@ button.destructive-action {
   button.destructive-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #a9444e;
+    background: #a9444e;
     text-shadow: none; }
   
   button.destructive-action:backdrop,
@@ -2307,7 +2307,7 @@ headerbar {
     box-shadow: none;
     border: 1px solid #232831;
     background: linear-gradient(to bottom, #2e3440, #2e3440);
-    min-height: 14px;
+    min-height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     box-shadow: none; }
@@ -2391,7 +2391,7 @@ headerbar {
       headerbar button.suggested-action:active {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #88c0d0;
+        background: #88c0d0;
         text-shadow: none; }
       .titlebar button.suggested-action:disabled,
       headerbar button.suggested-action:disabled {
@@ -2437,7 +2437,7 @@ headerbar {
       headerbar button.destructive-action:active {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #a9444e;
+        background: #a9444e;
         text-shadow: none; }
       .titlebar button.destructive-action:disabled,
       headerbar button.destructive-action:disabled {
@@ -2563,25 +2563,37 @@ headerbar {
   headerbar .path-bar-box .dim-label,
   headerbar .path-bar-box label.separator,
   headerbar .path-bar-box .subtitle {
-    color: transparent; }
-  .titlebar .path-bar-box button,
-  headerbar .path-bar-box button {
-    margin-left: -6px; }
-    .titlebar .path-bar-box button:last-child,
-    headerbar .path-bar-box button:last-child {
-      margin-left: -6px;
-      border-radius: 0px; }
-      .titlebar .path-bar-box button:last-child:active, .titlebar .path-bar-box button:last-child:checked,
-      headerbar .path-bar-box button:last-child:active,
-      headerbar .path-bar-box button:last-child:checked {
-        border-radius: 0px 4px 4px 0px; }
-    .titlebar .path-bar-box button:first-child,
-    headerbar .path-bar-box button:first-child {
-      border-radius: 4px 0px 0px 4px; }
-      .titlebar .path-bar-box button:first-child:active, .titlebar .path-bar-box button:first-child:checked,
-      headerbar .path-bar-box button:first-child:active,
-      headerbar .path-bar-box button:first-child:checked {
-        border-radius: 4px; }
+    color: transparent;
+    margin-right: -6px; }
+  .titlebar .path-bar-box button:last-child,
+  headerbar .path-bar-box button:last-child {
+    margin-left: -1px;
+    border-radius: 0px; }
+    .titlebar .path-bar-box button:last-child:active, .titlebar .path-bar-box button:last-child:checked,
+    headerbar .path-bar-box button:last-child:active,
+    headerbar .path-bar-box button:last-child:checked {
+      border-radius: 0px 4px 4px 0px; }
+  .titlebar .path-bar-box button:first-child,
+  headerbar .path-bar-box button:first-child {
+    border-radius: 4px 0px 0px 4px; }
+    .titlebar .path-bar-box button:first-child:active, .titlebar .path-bar-box button:first-child:checked, .titlebar .path-bar-box button:first-child:only-child,
+    headerbar .path-bar-box button:first-child:active,
+    headerbar .path-bar-box button:first-child:checked,
+    headerbar .path-bar-box button:first-child:only-child {
+      border-radius: 4px; }
+  .titlebar .path-bar-box widget > .text-button:last-child,
+  headerbar .path-bar-box widget > .text-button:last-child {
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background: #8fbcbb;
+    text-shadow: none; }
+    .titlebar .path-bar-box widget > .text-button:last-child:backdrop, .titlebar .path-bar-box widget > .text-button:last-child:backdrop label,
+    headerbar .path-bar-box widget > .text-button:last-child:backdrop,
+    headerbar .path-bar-box widget > .text-button:last-child:backdrop label {
+      color: rgba(46, 52, 64, 0.5); }
+    .titlebar .path-bar-box widget > .text-button:last-child:not(:only-child),
+    headerbar .path-bar-box widget > .text-button:last-child:not(:only-child) {
+      border-radius: 0px 4px 4px 0px; }
   .selection-mode.titlebar button:backdrop.flat:active, .selection-mode.titlebar button:backdrop.flat:checked, .selection-mode.titlebar button:backdrop:active, .selection-mode.titlebar button:backdrop:checked,
   headerbar.selection-mode button:backdrop.flat:active,
   headerbar.selection-mode button:backdrop.flat:checked,
@@ -6009,7 +6021,7 @@ ConversationListView {
   #content_frame button:active, #content_frame button:checked {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
-    background-color: #8fbcbb;
+    background: #8fbcbb;
     text-shadow: none; }
   #content_frame button:disabled {
     color: #b9bfcb;
