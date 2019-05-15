@@ -156,6 +156,9 @@ StScrollBar {
   width: 65px;
   height: 22px;
   background-size: contain;
+  //Gnome 3.32//
+  background-image: url("assets/toggle-off.svg");
+  &:checked { background-image: url("assets/toggle-on.svg"); }
 }
 
   @each $v in us, intl {
@@ -1522,8 +1525,7 @@ StScrollBar {
       background-image: none;
       background-color: rgba(255, 255, 255, 0.7);
     }
-    &:checked .page-indicator-icon,
-    &:checked:active { 
+    &:checked .page-indicator-icon{ 
       background-image: none;
       background-color: #FFFFFF;
       transition-duration: 0s; 
