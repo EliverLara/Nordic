@@ -4,7 +4,7 @@
   "description": "Dark theme created using the awesome Nord color pallete",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "git push && sh install.sh"
   },
   "repository": {
     "type": "git",
