@@ -1592,6 +1592,7 @@ StScrollBar {
     box-shadow: 0 1px 4px black;
     &:hover { background-color: transparentize($bg_color, 0.04); }
     &:focus { background-color: transparentize($bg_color, 0.04); }
+    *{ color: $topbar_color; }
 
     .notification-icon { padding: 5px; }
     .notification-content { padding: 5px; spacing: 5px; }
