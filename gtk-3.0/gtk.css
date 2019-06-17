@@ -5841,7 +5841,7 @@ LibraryWindow .the-button-in-the-combobox {
   #tasklist-button:checked {
     color: white;
     background-color: rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0 -2px #8fbcbb; }
+    box-shadow: inset 0 -2px #81a1c1; }
 
 .xfce4-panel.panel button.flat {
   color: white;
@@ -5852,9 +5852,9 @@ LibraryWindow .the-button-in-the-combobox {
     border: none;
     background-color: rgba(67, 76, 94, 0.7); }
   .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
-    color: #2e3440;
+    color: #fefefe;
     border: none;
-    background-color: #8fbcbb; }
+    background-color: #81a1c1; }
     .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
       color: inherit; }
 
@@ -5866,7 +5866,7 @@ LibraryWindow .the-button-in-the-combobox {
   padding: 3px;
   margin: 1px 2px; }
   #whiskermenu-window button:hover, #whiskermenu-window button:checked {
-    background-color: #8fbcbb; }
+    background-color: #81a1c1; }
 
 /********
 * Unity *
