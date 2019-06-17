@@ -2,3 +2,16 @@
     background-color: $base_color;
     color: $fg_color;
 }
+
+
+#whiskermenu-window button {
+    background-color:transparent;
+    border: none;
+    border-radius: 0;
+    font-weight: normal;
+    padding: 3px;
+    margin: 1px 2px;
+    &:hover, &:checked {
+        background-color: $selected_bg_color;
+    }
+}

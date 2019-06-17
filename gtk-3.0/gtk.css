@@ -5847,6 +5847,16 @@ LibraryWindow .the-button-in-the-combobox {
   background-color: #3b4252;
   color: #d8dee9; }
 
+#whiskermenu-window button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  font-weight: normal;
+  padding: 3px;
+  margin: 1px 2px; }
+  #whiskermenu-window button:hover, #whiskermenu-window button:checked {
+    background-color: #8fbcbb; }
+
 /********
 * Unity *
 *********/
