@@ -9,7 +9,7 @@ gtk-color-scheme = "tooltip_fg_color:#f8f8f2\ntooltip_bg_color:#46474F"
 # Window colors
 gtk-color-scheme = "wm_color:#31363d\nunfocused_wm_color:#31363d"
 # Panel colors
-gtk-color-scheme = "panel_bg_color:#46474F\npanel_fg_color:#f8f8f2"
+gtk-color-scheme = "panel_bg_color:#2e3440\npanel_fg_color:#d8dee9"
 # Dark Theme - Text/base colors
 gtk-color-scheme = "dark_text_color:#d8dee9\ndark_base_color:#434c5e"
 # Dark Theme - Foreground/background colors
