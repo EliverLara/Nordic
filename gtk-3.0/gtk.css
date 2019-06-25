@@ -5826,17 +5826,17 @@ LibraryWindow .the-button-in-the-combobox {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.45), inset 0 -1px 0 0 rgba(255, 255, 255, 0.15), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.23); }
 
 .xfce4-panel.panel {
-  background-color: rgba(46, 52, 64, 0.7);
+  background-color: #2e3440;
   text-shadow: none;
   -gtk-icon-shadow: none; }
 
 #tasklist-button {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(216, 222, 233, 0.8);
   border-radius: 0;
   border: none;
   background-color: rgba(46, 52, 64, 0); }
   #tasklist-button:hover {
-    color: white;
+    color: #f9fafb;
     background-color: rgba(0, 0, 0, 0.17); }
   #tasklist-button:checked {
     color: white;
@@ -5844,13 +5844,13 @@ LibraryWindow .the-button-in-the-combobox {
     box-shadow: inset 0 -2px #8fbcbb; }
 
 .xfce4-panel.panel button.flat {
-  color: white;
+  color: #d8dee9;
   border-radius: 0;
   border: none;
   background-color: rgba(46, 52, 64, 0); }
   .xfce4-panel.panel button.flat:hover {
     border: none;
-    background-color: rgba(67, 76, 94, 0.7); }
+    background-color: #434c5e; }
   .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
     color: #2e3440;
     border: none;
@@ -6043,19 +6043,19 @@ ConversationListView {
  * LightDm *
  ***********/
 #panel_window {
-  background-color: rgba(46, 52, 64, 0.7);
-  color: white;
+  background-color: #2e3440;
+  color: #d8dee9;
   font-weight: bold;
-  box-shadow: inset 0 -1px rgba(31, 35, 43, 0.7); }
+  box-shadow: inset 0 -1px #1f232b; }
   #panel_window .menubar,
   #panel_window .menubar > .menuitem menubar,
   #panel_window menubar > menuitem {
     background-color: transparent;
-    color: white;
+    color: #d8dee9;
     font-weight: bold; }
   #panel_window .menubar .menuitem:disabled,
   #panel_window menubar menuitem:disabled {
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(216, 222, 233, 0.5); }
     #panel_window .menubar .menuitem:disabled GtkLabel,
     #panel_window menubar menuitem:disabled GtkLabel {
       color: inherit; }
