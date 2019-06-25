@@ -1,6 +1,7 @@
 style "theme-panel" = "dark" {
 	xthickness	= 1
 	ythickness	= 1
+	bg[NORMAL] = @panel_bg_color
 }
 
 style "xfdesktop-icon-view" {
