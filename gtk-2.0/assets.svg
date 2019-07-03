@@ -14,7 +14,7 @@
    height="480px"
    id="svg3032"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (unknown)"
    sodipodi:docname="assets.svg">
   <title
      id="title5071">EvoPop GTK2 Source</title>
@@ -427,19 +427,19 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="12.303936"
-     inkscape:cx="50.270229"
-     inkscape:cy="450.06472"
-     inkscape:current-layer="g5397"
+     inkscape:zoom="6.5004193"
+     inkscape:cx="352.13537"
+     inkscape:cy="457.71125"
+     inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="true"
      inkscape:snap-bbox="true"
      inkscape:snap-global="true"
      inkscape:snap-nodes="true"
      inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-height="706"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="30"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -1000,14 +1000,14 @@
          transform="translate(-62,34)"
          id="a5307">
         <rect
-           style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:#9ca4b1;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect5272"
-           width="6"
+           width="4"
            height="7"
            x="300"
            y="0"
            rx="0"
-           ry="0" />
+           ry="2" />
       </a>
     </g>
     <g
@@ -1027,14 +1027,14 @@
          transform="translate(-46,34)"
          id="a5307-0">
         <rect
-           style="fill:#4c566a;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:#bac1cd;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect5272-4"
-           width="6"
+           width="5"
            height="7"
            x="300"
            y="0"
            rx="0"
-           ry="0" />
+           ry="2" />
       </a>
     </g>
     <g
@@ -1056,12 +1056,12 @@
         <rect
            style="fill:#8fbcbb;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="rect5272-4-2"
-           width="6"
+           width="5"
            height="7"
            x="300"
            y="0"
            rx="0"
-           ry="0" />
+           ry="2" />
       </a>
     </g>
     <g
@@ -1128,14 +1128,14 @@
          inkscape:export-xdpi="90"
          inkscape:export-ydpi="90">
         <rect
-           ry="5.6843419e-14"
+           ry="2"
            rx="0"
            y="-1"
            x="300"
            height="7"
-           width="6"
+           width="4"
            id="rect4717"
-           style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+           style="fill:#9ca4b1;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </a>
     </g>
     <g
@@ -1156,14 +1156,14 @@
          style="fill:#535859;fill-opacity:1"
          inkscape:label="#a5307-0">
         <rect
-           ry="0"
+           ry="2"
            rx="0"
            y="0"
            x="300"
            height="7"
-           width="6"
+           width="5"
            id="rect4725"
-           style="fill:#4c566a;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+           style="fill:#bac1cd;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </a>
     </g>
     <g
@@ -1184,12 +1184,12 @@
          style="fill:#8fbcbb;fill-opacity:1"
          inkscape:label="#a5307-0-9">
         <rect
-           ry="0"
+           ry="2"
            rx="0"
            y="0"
            x="300"
            height="7"
-           width="6"
+           width="5"
            id="rect4733"
            style="fill:#8fbcbb;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </a>
@@ -2962,14 +2962,14 @@
          x="234"
          y="31" />
       <rect
-         style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#9ca4b1;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect5124"
-         width="6"
+         width="4"
          height="7"
          x="238"
          y="34"
          rx="0"
-         ry="0" />
+         ry="2" />
     </g>
     <g
        inkscape:label="#g5134"
@@ -2983,14 +2983,14 @@
          id="rect5128"
          style="fill:none;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
-         style="fill:#4c566a;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#bac1cd;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect5132"
-         width="6"
+         width="5"
          height="7"
          x="254"
          y="34"
          rx="0"
-         ry="0" />
+         ry="2" />
     </g>
     <g
        inkscape:label="#g5142"
@@ -3009,12 +3009,12 @@
          style="fill:#8fbcbb;fill-opacity:1"
          inkscape:label="#a5307-0-9">
         <rect
-           ry="0"
+           ry="2"
            rx="0"
            y="0"
            x="300"
            height="7"
-           width="6"
+           width="5"
            id="rect5140"
            style="fill:#8fbcbb;fill-opacity:1;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       </a>
