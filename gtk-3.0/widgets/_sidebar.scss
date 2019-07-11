@@ -58,15 +58,15 @@
 
     //elementary os file manager
     &.source-list{
-      background: $base_color;
+      background: $_sidebar_color;
       padding: 4px 0px;
       &.view{
         transition: all .12s ease-in;
         &:selected {
           padding-left: 4px;
-          background: transparentize(#eee, 0.5);
-          color: #ACACAC;
-          border-left: 4px solid $selected_bg_color;
+          background: $selected_bg_color;
+          color: $selected_fg_color;
+          
           &:active { box-shadow: inset 0 2px 3px -1px transparentize(black, 0.5); }
     
           &.has-open-popup,
