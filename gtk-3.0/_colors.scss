@@ -70,7 +70,7 @@ $drop_target_color: #a1ce4b;
 $text_shadow_color: if($variant == 'dark', $shadow_color, transparentize(white, 0.9));
 $icon_shadow_color: $text_shadow_color;
 
-$drop_target_color: #4e9a06;
+$drop_target_color: $teal;
 
 // Infobar colors
 $info_color: $lime;
