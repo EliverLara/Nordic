@@ -4050,14 +4050,8 @@ treeview ~ scrollbar.vertical {
       transition: all .12s ease-in; }
       .sidebar.source-list.view:selected, iconview.sidebar.source-list:selected {
         padding-left: 4px;
-<<<<<<< HEAD
-        background: rgba(238, 238, 238, 0.5);
-        color: #ACACAC;
-        border-left: 4px solid #81a1c1; }
-=======
-        background: #8fbcbb;
-        color: #2e3440; }
->>>>>>> 37afa18... Pantheon desktop fixes
+        background: #81a1c1;
+        color: #fefefe; }
         .sidebar.source-list.view:selected:active, iconview.sidebar.source-list:selected:active {
           box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
         .sidebar.source-list.view:selected.has-open-popup, iconview.sidebar.source-list:selected.has-open-popup, .sidebar.source-list.view:selected:hover, iconview.sidebar.source-list:selected:hover {
@@ -4129,7 +4123,7 @@ placessidebar.sidebar {
     placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected {
       background: #a3be8c; }
       placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected image {
-        color: #2e3440; }
+        color: #fefefe; }
 
 placessidebar list {
   background-color: transparent; }
