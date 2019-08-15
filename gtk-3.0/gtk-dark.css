@@ -4127,7 +4127,7 @@ placessidebar.sidebar {
     placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected {
       background: #a3be8c; }
       placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected image {
-        color: #2e3440; }
+        color: #fefefe; }
 
 placessidebar list {
   background-color: transparent; }
