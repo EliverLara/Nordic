@@ -4360,9 +4360,9 @@ switch {
     switch:backdrop:disabled {
       background-color: #363c4b; }
   switch:active, switch:checked {
-    background-color: #4c566a; }
+    background-color: #5e81ac; }
     switch:active:backdrop, switch:checked:backdrop {
-      background-color: rgba(76, 86, 106, 0.6); }
+      background-color: rgba(94, 129, 172, 0.5); }
       switch:active:backdrop slider:backdrop, switch:checked:backdrop slider:backdrop {
         box-shadow: none;
         background-color: rgba(46, 52, 64, 0.9);

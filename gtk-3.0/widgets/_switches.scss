@@ -32,10 +32,10 @@ switch {
 
   &:active,
   &:checked {
-    background-color: $selected_bg_color;
+    background-color: $blue;
 
     &:backdrop {
-      background-color: $backdrop_selected_bg_color;
+      background-color: $backdrop_blue;
 
       slider {
         &:backdrop {
