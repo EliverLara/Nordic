@@ -123,7 +123,7 @@ stacksidebar {
 placessidebar{
 	&.sidebar{
 		background-color: transparent;
-		background-image:linear-gradient(to right, darken($main_dark_color, 5%) 40px,
+		background-image:linear-gradient(to right, darken($main_dark_color, 2%) 40px,
 												$_sidebar_color 35px,$_sidebar_color 36px,
 												$_sidebar_color 36px,$_sidebar_color 99%, 
 												$_sidebar_color 100%);
@@ -153,9 +153,9 @@ placessidebar{
 				}
 
 				&:selected{
-          color: #fff;
+          color: $selected_fg_color;
           label {
-            color: $selected_bg_color;
+            color: lighten($selected_bg_color, 5%);
           }
 					background-color: transparent;
 					background-image:linear-gradient(to right, $selected_bg_color 40px,
@@ -179,7 +179,7 @@ placessidebar{
           }
 
 					.sidebar-icon {
-						-gtk-icon-shadow: 0 1px transparentize(#fff, 0.2);
+						-gtk-icon-shadow: 0 1px transparentize($selected_fg_color, 0.2);
 						color: inherit; 
 					}
         }

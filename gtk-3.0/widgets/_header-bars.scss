@@ -203,7 +203,7 @@ headerbar {
     }
     widget > .text-button:last-child{
       border-radius: 0px 4px 4px 0px;
-      @include button(active, $selected_bg_color, #fff);
+      @include button(active, $selected_bg_color, $selected_fg_color);
       &:backdrop, &:backdrop label {
         color: $backdrop_selected_fg_color;
       }
