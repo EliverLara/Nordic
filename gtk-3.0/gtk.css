@@ -5627,7 +5627,11 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   color: #d8dee9; }
   .nautilus-desktop .nautilus-canvas-item {
     border-radius: 5px;
+<<<<<<< HEAD
     color: #fefefe;
+=======
+    color: #ffffff;
+>>>>>>> 59113c3... Fix grey text on budgie desktop icons #20
     text-shadow: 1px 1px rgba(0, 0, 0, 0.6); }
     .nautilus-desktop .nautilus-canvas-item:active {
       color: #d8dee9;
