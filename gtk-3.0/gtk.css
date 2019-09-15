@@ -595,7 +595,7 @@ button.suggested-action {
   color: white;
   border-radius: 4px;
   background: linear-gradient(to right, #88c0d0 0%, #88c0d0 100%); }
-  .selection-mode button.titlebutton,
+  
   button.suggested-action.flat {
     box-shadow: none;
     color: white;
@@ -614,18 +614,18 @@ button.suggested-action {
     outline-color: rgba(255, 255, 255, 0.3);
     background: #88c0d0;
     text-shadow: none; }
-  .selection-mode button.titlebutton:backdrop,
+  
   button.suggested-action:backdrop,
   button.suggested-action.flat:backdrop {
     color: rgba(255, 255, 255, 0.4);
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: #88c0d0;
     text-shadow: none; }
-    .selection-mode button.titlebutton:backdrop label,
+    
     button.suggested-action:backdrop label,
     button.suggested-action.flat:backdrop label {
       color: rgba(255, 255, 255, 0.5); }
-    .selection-mode button.titlebutton:backdrop:active, .selection-mode button.titlebutton:backdrop:checked,
+    
     button.suggested-action:backdrop:active,
     button.suggested-action:backdrop:checked,
     button.suggested-action.flat:backdrop:active,
@@ -634,24 +634,24 @@ button.suggested-action {
       outline-color: rgba(255, 255, 255, 0.3);
       background-color: #4c566a;
       text-shadow: none; }
-      .selection-mode button.titlebutton:backdrop:active label, .selection-mode button.titlebutton:backdrop:checked label,
+      
       button.suggested-action:backdrop:active label,
       button.suggested-action:backdrop:checked label,
       button.suggested-action.flat:backdrop:active label,
       button.suggested-action.flat:backdrop:checked label {
         color: rgba(216, 222, 233, 0.7); }
-    .selection-mode button.titlebutton:backdrop:disabled,
+    
     button.suggested-action:backdrop:disabled,
     button.suggested-action.flat:backdrop:disabled {
       color: white;
       outline-color: rgba(255, 255, 255, 0.3);
       background-color: #88c0d0;
       text-shadow: none; }
-      .selection-mode button.titlebutton:backdrop:disabled label,
+      
       button.suggested-action:backdrop:disabled label,
       button.suggested-action.flat:backdrop:disabled label {
         color: rgba(255, 255, 255, 0.5); }
-      .selection-mode button.titlebutton:backdrop:disabled:active, .selection-mode button.titlebutton:backdrop:disabled:checked,
+      
       button.suggested-action:backdrop:disabled:active,
       button.suggested-action:backdrop:disabled:checked,
       button.suggested-action.flat:backdrop:disabled:active,
@@ -660,7 +660,7 @@ button.suggested-action {
         outline-color: rgba(255, 255, 255, 0.3);
         background-color: #4c566a;
         text-shadow: none; }
-  .selection-mode button.titlebutton:backdrop, .selection-mode button.titlebutton:disabled, .selection-mode button.titlebutton:backdrop:disabled,
+  
   button.suggested-action.flat:backdrop,
   button.suggested-action.flat:disabled,
   button.suggested-action.flat:backdrop:disabled {
@@ -2337,12 +2337,6 @@ headerbar {
         headerbar button.suggested-action:backdrop:checked {
           border: none;
           background-image: linear-gradient(to right, #88c0d0 0%, #88c0d0 100%); }
-    .titlebar button.appmenu,
-    headerbar button.appmenu {
-      background: transparent; }
-      .titlebar button.appmenu:backdrop,
-      headerbar button.appmenu:backdrop {
-        background: transparent; }
     .titlebar button:hover, .titlebar button:active, .titlebar button:checked,
     headerbar button:hover,
     headerbar button:active,
@@ -2463,21 +2457,31 @@ headerbar {
         text-shadow: none; }
     .titlebar button.titlebutton,
     headerbar button.titlebutton {
-      color: transparent;
       box-shadow: none;
-      border: none;
-      background-color: transparent;
-      background-repeat: no-repeat; }
-      .titlebar button.titlebutton:hover, .titlebar button.titlebutton:active, .titlebar button.titlebutton:checked, .titlebar button.titlebutton:backdrop, .titlebar button.titlebutton:backdrop:hover, .titlebar button.titlebutton *,
-      headerbar button.titlebutton:hover,
-      headerbar button.titlebutton:active,
+      border: 1px solid transparent;
+      background: transparent;
+      padding: 5px;
+      min-height: 14px;
+      margin: 5px 1px; }
+      .titlebar button.titlebutton:checked, .titlebar button.titlebutton:hover, .titlebar button.titlebutton:backdrop:hover,
       headerbar button.titlebutton:checked,
-      headerbar button.titlebutton:backdrop,
-      headerbar button.titlebutton:backdrop:hover,
-      headerbar button.titlebutton * {
-        color: transparent;
+      headerbar button.titlebutton:hover,
+      headerbar button.titlebutton:backdrop:hover {
+        color: #d8dee9;
+        border-radius: 4px;
+        text-shadow: none;
         box-shadow: none;
-        background-color: transparent; }
+        border: 1px solid #1f232b;
+        background: linear-gradient(to bottom, #2a2f3a, #2a2f3a); }
+      .titlebar button.titlebutton.close:hover,
+      headerbar button.titlebutton.close:hover {
+        color: #bf616a; }
+      .titlebar button.titlebutton.maximize:hover,
+      headerbar button.titlebutton.maximize:hover {
+        color: #8fbcbb; }
+      .titlebar button.titlebutton.minimize:hover,
+      headerbar button.titlebutton.minimize:hover {
+        color: #ebcb8b; }
   .titlebar .linked > button, .titlebar .path-bar-box button,
   .titlebar headerbar .linked > button, headerbar .path-bar-box .titlebar button, .titlebar .linked > button:hover,
   .titlebar .linked > button:backdrop,
@@ -4026,15 +4030,9 @@ treeview ~ scrollbar.vertical {
     border-left: 1px solid #1f232b;
     border-right-style: none; }
   .sidebar:backdrop {
-<<<<<<< HEAD
     background-color: #363c4a;
     border-color: #22262f;
-    transition: 200ms ease-out; }
-=======
-    background-color: #404859;
-    border-color: #272c36;
     transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
->>>>>>> 4053eaf... Fix sidebar transition issue
   .sidebar row {
     padding: 8px 12px;
     transition: all .12s ease-in; }
@@ -4640,28 +4638,6 @@ decoration {
     border: solid 1px #22262f;
     box-shadow: none; }
 
-button.titlebutton {
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 20px;
-  padding: 0 1px;
-  box-shadow: none; }
-  button.titlebutton.close {
-    background-image: -gtk-scaled(url("../assets/close.png"), url("../assets/close@2.png")); }
-    button.titlebutton.close:hover, button.titlebutton.close:active {
-      background-image: -gtk-scaled(url("../assets/close_prelight.png"), url("../assets/close_prelight@2.png")); }
-  button.titlebutton.maximize {
-    background-image: -gtk-scaled(url("../assets/maximize.png"), url("../assets/maximize@2.png")); }
-    button.titlebutton.maximize:hover, button.titlebutton.maximize:active {
-      background-image: -gtk-scaled(url("../assets/maximize_prelight.png"), url("../assets/maximize_prelight@2.png")); }
-  button.titlebutton.minimize {
-    background-image: -gtk-scaled(url("../assets/min.png"), url("../assets/min@2.png")); }
-    button.titlebutton.minimize:hover, button.titlebutton.minimize:active {
-      background-image: -gtk-scaled(url("../assets/min_prelight.png"), url("../assets/min_prelight@2.png")); }
-  button.titlebutton:backdrop {
-    -gtk-icon-shadow: none;
-    background-image: -gtk-scaled(url("../assets/close_unfocused.png"), url("../assets/close_unfocused@2.png")); }
-
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
   text-shadow: 0 -1px rgba(0, 0, 0, 0.71451);
@@ -4679,7 +4655,7 @@ popover.background radiobutton:selected,
 entry selection:focus,
 entry selection, row:selected, treeview.view:selected:focus, treeview.view:selected {
   background-color: #4c566a; }
-  row:selected label, label:selected, .selection-mode button.titlebutton, .view:selected:focus, .view:selected, iconview:selected, .view text:selected, iconview text:selected,
+  row:selected label, label:selected, .view:selected:focus, .view:selected, iconview:selected, .view text:selected, iconview text:selected,
   textview text:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
   textview text selection:focus,
   textview text selection, flowbox flowboxchild:selected, modelbutton.flat:selected, popover.background checkbutton:selected,
@@ -4689,7 +4665,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
   entry selection, row:selected, treeview.view:selected:focus, treeview.view:selected {
     color: #d8dee9;
     font-weight: bold; }
-    row:selected label:disabled, label:disabled:selected, .selection-mode button.titlebutton:disabled, iconview:disabled:selected:focus, .view:disabled:selected, iconview:disabled:selected, iconview text:disabled:selected:focus,
+    row:selected label:disabled, label:disabled:selected, iconview:disabled:selected:focus, .view:disabled:selected, iconview:disabled:selected, iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus, .view text:disabled:selected, iconview text:disabled:selected,
     textview text:disabled:selected, iconview text selection:disabled:focus, .view text selection:disabled, iconview text selection:disabled,
     textview text selection:disabled, flowbox flowboxchild:disabled:selected, label:disabled selection, modelbutton.flat:disabled:selected, popover.background checkbutton:disabled:selected,
@@ -4697,7 +4673,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     .menuitem.button.flat:disabled:selected, calendar:disabled:selected, spinbutton:not(.vertical) selection:disabled:focus, spinbutton:not(.vertical) selection:disabled,
     entry selection:disabled, row:disabled:selected {
       color: #929aaa; }
-    row:selected label:backdrop, label:backdrop:selected, .selection-mode button.titlebutton:backdrop, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected, iconview text:backdrop:selected:focus,
+    row:selected label:backdrop, label:backdrop:selected, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected, iconview text:backdrop:selected:focus,
     textview text:backdrop:selected:focus, .view text:backdrop:selected, iconview text:backdrop:selected,
     textview text:backdrop:selected, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop,
     textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, label:backdrop selection, modelbutton.flat:backdrop:selected, popover.background checkbutton:backdrop:selected,
@@ -4705,7 +4681,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     .menuitem.button.flat:backdrop:selected, calendar:backdrop:selected, spinbutton:not(.vertical) selection:backdrop:focus, spinbutton:not(.vertical) selection:backdrop,
     entry selection:backdrop, row:backdrop:selected {
       color: rgba(216, 222, 233, 0.5); }
-      row:selected label:backdrop:disabled, label:backdrop:disabled:selected, .selection-mode button.titlebutton:backdrop:disabled, .view:backdrop:disabled:selected, iconview:backdrop:disabled:selected, .view text:backdrop:disabled:selected, iconview text:backdrop:disabled:selected,
+      row:selected label:backdrop:disabled, label:backdrop:disabled:selected, .view:backdrop:disabled:selected, iconview:backdrop:disabled:selected, .view text:backdrop:disabled:selected, iconview text:backdrop:disabled:selected,
       textview text:backdrop:disabled:selected, .view text selection:backdrop:disabled, iconview text selection:backdrop:disabled,
       textview text selection:backdrop:disabled, flowbox flowboxchild:backdrop:disabled:selected, label:disabled selection:backdrop, label:backdrop selection:disabled, modelbutton.flat:backdrop:disabled:selected, popover.background checkbutton:backdrop:disabled:selected,
       popover.background radiobutton:backdrop:disabled:selected,

@@ -25,8 +25,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="6.2751232"
-     inkscape:cx="-13.705201"
+     inkscape:zoom="8"
+     inkscape:cx="3.9274438"
      inkscape:cy="8.9334855"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -79,19 +79,14 @@
        height="1"
        x="0"
        y="1020.3622" />
-    <path
-       id="path4289"
-       style="fill:#232831;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.01446429"
-       d="m 14.000072,1046.3622 c 4.418202,0 7.999927,-3.5817 7.999927,-8 0,-4.4183 -3.581724,-8 -7.999927,-8 -4.4183349,0 -8.000072,3.5817 -8.000072,8 0,4.4183 3.5817371,8 8.000072,8"
-       inkscape:connector-curvature="0"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
-    <path
-       id="path4291"
-       style="fill:#a3be8c;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.01265625"
-       d="m 13.910647,1044.9912 c 3.589827,0 6.499964,-2.9102 6.499964,-6.5 0,-3.5899 -2.910137,-6.5 -6.499964,-6.5 -3.589895,0 -6.500035,2.9101 -6.500035,6.5 0,3.5898 2.91014,6.5 6.500035,6.5"
-       inkscape:connector-curvature="0"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#d8dee9;fill-opacity:0;stroke:#d8dee9;stroke-width:1.66712952;stroke-linejoin:round;stroke-miterlimit:3;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect818"
+       width="8.3328705"
+       height="8.3328705"
+       x="9.8335648"
+       y="1034.1958"
+       rx="0.83328706"
+       ry="0.83328706" />
   </g>
 </svg>
