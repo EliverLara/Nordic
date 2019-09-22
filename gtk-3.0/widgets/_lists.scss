@@ -33,7 +33,7 @@ row {
 
     &:backdrop:hover { background-color: transparent; }
 
-    button:not(.image-button){
+    button.flat{
       background-color: transparent;
     }
 
