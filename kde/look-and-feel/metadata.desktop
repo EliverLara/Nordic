@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Nordic
+X-KDE-PluginInfo-Author=EliverLara
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=eliverlara@gmail.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL 3+
+X-KDE-PluginInfo-Name=Nordic
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-Website=https://github.com/EliverLara/Nordic
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1326271,kns://plasma-themes.knsrc/api.kde-look.org/1326896,kns://aurorae.knsrc/api.kde-look.org/1326274
