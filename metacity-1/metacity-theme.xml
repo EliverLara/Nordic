@@ -11,9 +11,9 @@
 
 <!-- CONSTANTS -->
 <constant name="C_titlebar" value="#2b303c" />
-<constant name="C_titlebar_unfocused" value="#2b303c" />
-<constant name="C_border_focused" value="#2b303c" />
-<constant name="C_border_unfocused" value="#2b303c" />
+<constant name="C_titlebar_unfocused" value="#353c4a" />
+<constant name="C_border_focused" value="#353c4a" />
+<constant name="C_border_unfocused" value="#353c4a" />
 <constant name="C_title_focused" value="#d8dee9" />
 <constant name="C_title_unfocused" value="#93979f" />
 
@@ -36,7 +36,8 @@
 	<distance name="left_titlebar_edge" value="5" />
 	<distance name="right_titlebar_edge" value="5" />
 	<distance name="title_vertical_pad" value="4" />
-	<aspect_ratio name="button" value="1.0" />
+	<distance name="button_width" value="30"/>
+  	<distance name="button_height" value="20"/>
 	<border name="title_border" left="4" right="4" top="4" bottom="4" />
 	<border name="button_border" left="0" right="0" top="4" bottom="4" />
 </frame_geometry>
@@ -236,84 +237,84 @@
 
 <!-- Close icon -->
 <draw_ops name="close_focused">
-	<image filename="close_focused_normal.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="close_focused_normal.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="close_focused_prelight">
-	<image filename="close_focused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="close_focused_prelight.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="close_focused_pressed">
-	<image filename="close_focused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="close_focused_pressed.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="close_unfocused">
-	<image filename="close_unfocused.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="close_unfocused.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="close_unfocused_prelight">
-	<image filename="close_unfocused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="close_unfocused_prelight.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="close_unfocused_pressed">
-	<image filename="close_unfocused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="close_unfocused_pressed.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 
 <!-- Maximize icon -->
 <draw_ops name="maximize_focused">
-	<image filename="maximize_focused_normal.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="maximize_focused_normal.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="maximize_focused_prelight">
-	<image filename="maximize_focused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="maximize_focused_prelight.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="maximize_focused_pressed">
-	<image filename="maximize_focused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="maximize_focused_pressed.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="maximize_unfocused">
-	<image filename="maximize_unfocused.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="maximize_unfocused.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="maximize_unfocused_prelight">
-	<image filename="maximize_unfocused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="maximize_unfocused_prelight.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="maximize_unfocused_pressed">
-	<image filename="maximize_unfocused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="maximize_unfocused_pressed.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 <!-- Unmaximize icon -->
 <draw_ops name="unmaximize_focused">
-	<image filename="unmaximize_focused_normal.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unmaximize_focused_normal.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unmaximize_focused_prelight">
-	<image filename="unmaximize_focused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unmaximize_focused_prelight.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unmaximize_focused_pressed">
-	<image filename="unmaximize_focused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unmaximize_focused_pressed.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unmaximize_unfocused">
-	<image filename="unmaximize_unfocused.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unmaximize_unfocused.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unmaximize_unfocused_prelight">
-	<image filename="unmaximize_unfocused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unmaximize_unfocused_prelight.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="unmaximize_unfocused_pressed">
-	<image filename="unmaximize_unfocused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="unmaximize_unfocused_prelight.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 
 <!-- Minimize icon -->
 <draw_ops name="minimize_focused">
-	<image filename="minimize_focused_normal.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="minimize_focused_normal.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="minimize_focused_prelight">
-	<image filename="minimize_focused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="minimize_focused_prelight.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="minimize_focused_pressed">
-	<image filename="minimize_focused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="minimize_focused_pressed.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="minimize_unfocused">
-	<image filename="minimize_unfocused.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="minimize_unfocused.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="minimize_unfocused_prelight">
-	<image filename="minimize_unfocused_prelight.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="minimize_unfocused_prelight.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 <draw_ops name="minimize_unfocused_pressed">
-	<image filename="minimize_unfocused_pressed.png" x="0" y="2" width="object_width" height="object_height" />
+	<image filename="minimize_unfocused_pressed.png" x="10" y="1" width="object_width" height="object_height" />
 </draw_ops>
 
 
