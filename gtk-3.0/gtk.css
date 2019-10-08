@@ -4633,7 +4633,7 @@ decoration {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(31, 35, 43, 0.8); }
   .solid-csd decoration {
     border-radius: 0;
-    margin: 4px;
+    margin: 0px;
     background-color: #3b4252;
     border: solid 1px #22262f;
     box-shadow: none; }
