@@ -4026,15 +4026,9 @@ treeview ~ scrollbar.vertical {
     border-left: 1px solid #1f232b;
     border-right-style: none; }
   .sidebar:backdrop {
-<<<<<<< HEAD
     background-color: #363c4a;
     border-color: #22262f;
-    transition: 200ms ease-out; }
-=======
-    background-color: #404859;
-    border-color: #272c36;
     transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
->>>>>>> 4053eaf... Fix sidebar transition issue
   .sidebar row {
     padding: 8px 12px;
     transition: all .12s ease-in; }
@@ -4635,7 +4629,7 @@ decoration {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(31, 35, 43, 0.8); }
   .solid-csd decoration {
     border-radius: 0;
-    margin: 4px;
+    margin: 0px;
     background-color: #3b4252;
     border: solid 1px #22262f;
     box-shadow: none; }
