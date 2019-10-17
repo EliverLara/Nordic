@@ -1,11 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Nordic
+Name=Nordic-darker
 Comment=Dark theme created using the awesome Nord color pallete
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Nordic
-MetacityTheme=Nordic
+GtkTheme=Nordic-darker
+MetacityTheme=Nordic-darker
 IconTheme=Zafiro-icons
 ButtonLayout=:minimize,maximize,close
