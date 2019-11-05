@@ -517,6 +517,7 @@ StScrollBar {
 .popup-menu {
   min-width: 15em;
   background-color: transparent;
+  color: $fg_color;
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
     background-color:  transparentize(darken($main_dark,57%), 0.8);
@@ -904,6 +905,7 @@ StScrollBar {
     .events-section-title,
     .message-list-section-title {
       border-radius: 4px;
+      color: $fg_color;
       padding: .4em;
     }
 
@@ -982,6 +984,7 @@ StScrollBar {
       padding: 0.1em;
       margin: 2px;
       border-radius: 1.4em;
+      color: $fg_color;
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active,&:selected {
         color: lighten($selected_fg_color,5%);
@@ -1080,6 +1083,7 @@ StScrollBar {
             background-color: lighten($bg_color,2%);
             box-shadow: 3px 0px 0px 0px $selected_bg_color inset;
            }
+          border: none;
           border-radius: 1px;
           background: transparent;
         }
