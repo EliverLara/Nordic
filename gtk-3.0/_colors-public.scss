@@ -22,7 +22,7 @@
 @define-color theme_selected_bg_color #{"" +$selected_bg_color};
 
 /* text/foreground color of selections */
-@define-color theme_selected_fg_color #{"" +$selected_fg_color};
+@define-color theme_selected_fg_color #fff;
 
 /* base background color of disabled widgets */
 @define-color insensitive_bg_color #{"" +$insensitive_bg_color};
