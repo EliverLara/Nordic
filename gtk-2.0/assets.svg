@@ -427,10 +427,10 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="39.715632"
-     inkscape:cx="463.92068"
-     inkscape:cy="474.308"
-     inkscape:current-layer="layer2"
+     inkscape:zoom="0.90918007"
+     inkscape:cx="111.18528"
+     inkscape:cy="340.73377"
+     inkscape:current-layer="layer1"
      inkscape:document-units="px"
      showgrid="true"
      inkscape:snap-bbox="true"
@@ -1980,7 +1980,7 @@
            height="3"
            width="4"
            id="rect5400"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#0b0b0b;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#7b0b0b;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
         <rect
            rx="0"
            ry="1.5"
@@ -1989,7 +1989,7 @@
            height="3"
            width="4"
            id="rect5402"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#1f232b;fill-opacity:1;stroke:#1f232b;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate" />
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#565c6a;fill-opacity:1;stroke:#565c6a;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate" />
       </g>
     </g>
     <g
@@ -2041,7 +2041,7 @@
            height="4"
            width="5"
            id="rect5101-3"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#c6c8cb;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#565c6a;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
       </g>
       <rect
          ry="1.3486539"
@@ -2066,7 +2066,7 @@
            height="5"
            width="4"
            id="rect5151"
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#c6c8cb;fill-opacity:1;stroke:none;stroke-width:1.29099441;marker:none;enable-background:accumulate" />
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#565c6a;fill-opacity:1;stroke:none;stroke-width:1.29099441;marker:none;enable-background:accumulate" />
       </g>
       <rect
          transform="rotate(90)"
@@ -2095,7 +2095,7 @@
          id="g5043-3"
          transform="translate(255,102)">
         <rect
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#1f232b;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#565c6a;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
            id="rect5045-2"
            width="4"
            height="3"
@@ -2103,7 +2103,7 @@
            y="3.5"
            ry="1.5" />
         <rect
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:#1f232b;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:#565c6a;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker:none;enable-background:accumulate"
            id="use5047-1"
            width="4"
            height="3"
@@ -4731,14 +4731,14 @@
       </g>
     </g>
     <g
-       transform="translate(-12,-14)"
+       transform="translate(-12,-23)"
        inkscape:label="#g5483"
        id="g1549">
       <g
          id="g1545"
          transform="translate(119,29)">
         <rect
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#1f232b;fill-opacity:1;stroke:none;stroke-width:1.29099441;marker:none;enable-background:accumulate"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#565c6a;fill-opacity:1;stroke:none;stroke-width:1.29099441;marker:none;enable-background:accumulate"
            id="rect1543"
            width="4"
            height="5"
@@ -4757,14 +4757,14 @@
          transform="rotate(90)" />
     </g>
     <g
-       transform="translate(-12,-14)"
+       transform="translate(-12,-22)"
        inkscape:label="#g5474"
        id="g1557">
       <g
          transform="translate(105,29)"
          id="g1553">
         <rect
-           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#1f232b;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#565c6a;fill-opacity:1;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
            id="rect1551"
            width="5"
            height="4"
