@@ -976,9 +976,9 @@ StScrollBar {
   background: transparent; }
 
 .message {
-  border: none;
-  border-radius: 1px;
-  background: transparent; }
+  border: 1px solid #1f232b;
+  border-radius: 3px;
+  background: rgba(45, 50, 62, 0.93); }
   .message:hover, .message:focus {
     background-color: rgba(50, 57, 70, 0.93);
     box-shadow: 3px 0px 0px 0px #4c566a inset; }
