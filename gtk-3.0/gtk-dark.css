@@ -5856,7 +5856,8 @@ LibraryWindow .the-button-in-the-combobox {
 
 /**level bars**/
 .sidebar .source-list.view.level-bar, .sidebar iconview.source-list.level-bar, .sidebar .source-list.view.level-bar:selected, .sidebar iconview.source-list.level-bar:selected, .sidebar .source-list.view.level-bar:selected:focus, .sidebar iconview.source-list.level-bar:selected:focus {
-  background-color: #4e586d;
+  background: linear-gradient(to right, #4e586d);
+  background-image: #4e586d;
   border: 1px solid rgba(0, 0, 0, 0.14);
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   border-radius: 2px; }
@@ -5865,8 +5866,7 @@ LibraryWindow .the-button-in-the-combobox {
   border: none; }
 
 .sidebar .source-list.view.fill-block, .sidebar iconview.source-list.fill-block, .sidebar .source-list.view.fill-block:hover, .sidebar iconview.source-list.fill-block:hover, .sidebar .source-list.view.fill-block:selected, .sidebar iconview.source-list.fill-block:selected, .sidebar .source-list.view.fill-block:selected:focus, .sidebar iconview.source-list.fill-block:selected:focus {
-  background-image: none;
-  background-color: #ebcb8b; }
+  background: linear-gradient(to right, #ebcb8b, #ebcb8b); }
 
 .xfce4-panel.panel {
   background-color: #2e3440;
