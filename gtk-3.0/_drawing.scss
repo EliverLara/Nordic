@@ -422,11 +422,9 @@ box-shadow: none;
   //
   // reset
   //
-   // border-color: transparent;
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: mix($bg_color, $base_color, 20%);
-   // border: 1px solid transparentize($tc, 0.7);
     @include _shadows(inset 0 1px transparentize(white, 1),
                       $_blank_edge);
 
