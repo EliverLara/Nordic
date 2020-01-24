@@ -45,7 +45,7 @@ button {
       &:hover {
         transition: $button_transition;
         transition-duration: 500ms;
-
+        @include button(hover,$selected_bg_color,$selected_fg_color);
         &:active { transition: $button_transition; }
       }
     }
@@ -400,29 +400,29 @@ toolbar {
                                       // needed since those are flat...
   @include button(undecorated);
 
-  &:hover { color: $selected_bg_color; }
+  &:hover { color: $selected_fg_color; }
 
   &:active,
-  &:checked{ color: darken($selected_bg_color, 5%); }
+  &:checked{ color: darken($selected_fg_color, 5%); }
 
   &:disabled {
     color: $backdrop_text_color;
 
     &:active,
-    &:checked { color: transparentize(darken($selected_bg_color, 5%),0.7); }
+    &:checked { color: transparentize(darken($selected_fg_color, 5%),0.7); }
   }
 
   &:backdrop {
     color: $backdrop_text_color;
 
     &:active,
-    &:checked { color: darken($selected_bg_color, 5%); }
+    &:checked { color: darken($selected_fg_color, 5%); }
 
     &:disabled {
       color: $backdrop_text_color;
 
       &:active,
-      &:checked { color: transparentize(darken($selected_bg_color, 5%),0.7); }
+      &:checked { color: transparentize(darken($selected_fg_color, 5%),0.7); }
     }
   }
 }
