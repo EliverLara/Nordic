@@ -274,9 +274,9 @@ button {
   text-shadow: none; }
   notebook > header > tabs > arrow,
   button.flat {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -284,7 +284,11 @@ button {
     notebook > header > tabs > arrow:hover,
     button.flat:hover {
       transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-      transition-duration: 500ms; }
+      transition-duration: 500ms;
+      color: #2e3440;
+      outline-color: rgba(46, 52, 64, 0.3);
+      background-color: #8fbcbb;
+      text-shadow: none; }
       notebook > header > tabs > arrow:hover:active,
       button.flat:hover:active {
         transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
@@ -347,9 +351,9 @@ button {
   button.flat:backdrop,
   button.flat:disabled,
   button.flat:backdrop:disabled {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none; }
@@ -534,9 +538,9 @@ button {
   .app-notification button.flat, popover.background.touch-selection button.flat, popover.background.magnifier button.flat,
   .osd
   button.flat {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -569,9 +573,9 @@ button {
     .app-notification button.flat:backdrop, popover.background.touch-selection button.flat:backdrop, popover.background.magnifier button.flat:backdrop,
     .osd
     button.flat:backdrop {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #3d4454;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none; }
@@ -664,9 +668,9 @@ button.suggested-action {
   button.suggested-action.flat:backdrop,
   button.suggested-action.flat:disabled,
   button.suggested-action.flat:backdrop:disabled {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -814,9 +818,9 @@ button.destructive-action {
   button.destructive-action.flat:backdrop,
   button.destructive-action.flat:disabled,
   button.destructive-action.flat:backdrop:disabled {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -956,28 +960,28 @@ toolbar button:active {
   text-shadow: none; }
 
 .inline-toolbar toolbutton > button {
+  border-color: transparent;
   background-color: transparent;
   background-image: none;
-  background-color: #3d4454;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none; }
   .inline-toolbar toolbutton > button:hover {
-    color: #8fbcbb; }
+    color: #2e3440; }
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
-    color: #7fb2b1; }
+    color: #232831; }
   .inline-toolbar toolbutton > button:disabled {
     color: #b9bfcb; }
     .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked {
-      color: rgba(127, 178, 177, 0.3); }
+      color: rgba(35, 40, 49, 0.3); }
   .inline-toolbar toolbutton > button:backdrop {
     color: #b9bfcb; }
     .inline-toolbar toolbutton > button:backdrop:active, .inline-toolbar toolbutton > button:backdrop:checked {
-      color: #7fb2b1; }
+      color: #232831; }
     .inline-toolbar toolbutton > button:backdrop:disabled {
       color: #b9bfcb; }
       .inline-toolbar toolbutton > button:backdrop:disabled:active, .inline-toolbar toolbutton > button:backdrop:disabled:checked {
-        color: rgba(127, 178, 177, 0.3); }
+        color: rgba(35, 40, 49, 0.3); }
 
 toolbar.inline-toolbar toolbutton > button.flat:backdrop,
 toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
@@ -2965,9 +2969,9 @@ menu,
   menu > arrow,
   .menu > arrow,
   .context-menu > arrow {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -3144,9 +3148,9 @@ notebook > header {
       border-color: transparent;
       box-shadow: none; }
     notebook > header > tabs > arrow:disabled {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #3d4454;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none; }
@@ -3950,49 +3954,49 @@ scrollbar {
     border-style: none;
     border-radius: 0;
     transition-property: min-height, min-width, color;
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
     color: #9ca4b1; }
     scrollbar button:hover {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #3d4454;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
       color: #bac1cd; }
     scrollbar button:active, scrollbar button:checked {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #3d4454;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
       color: #afcfce; }
     scrollbar button:disabled {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #3d4454;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
       color: rgba(156, 164, 177, 0.2); }
     scrollbar button:backdrop {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #3d4454;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
       color: #61697a; }
       scrollbar button:backdrop:disabled {
+        border-color: transparent;
         background-color: transparent;
         background-image: none;
-        background-color: #3d4454;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0);
         text-shadow: none;
         -gtk-icon-shadow: none;
@@ -4181,9 +4185,9 @@ spinbutton:not(.vertical) {
       border-bottom-right-radius: 2px; }
 
 .osd spinbutton:not(.vertical) button {
+  border-color: transparent;
   background-color: transparent;
   background-image: none;
-  background-color: #3d4454;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
@@ -4196,9 +4200,9 @@ spinbutton:not(.vertical) {
   .osd spinbutton:not(.vertical) button:dir(rtl) {
     border-style: none solid none none; }
   .osd spinbutton:not(.vertical) button:hover {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -4208,9 +4212,9 @@ spinbutton:not(.vertical) {
     -gtk-icon-shadow: 0 1px black;
     box-shadow: none; }
   .osd spinbutton:not(.vertical) button:backdrop {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -4219,9 +4223,9 @@ spinbutton:not(.vertical) {
     -gtk-icon-shadow: none;
     box-shadow: none; }
   .osd spinbutton:not(.vertical) button:disabled {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #3d4454;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
