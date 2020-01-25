@@ -290,8 +290,7 @@ LibraryWindow {
   &.view {
     &.level-bar {
       &,&:selected,&:selected:focus{
-        background: linear-gradient(to right, lighten($_sidebar_color, 15%));
-        background-image: lighten($_sidebar_color, 15%);
+        background: linear-gradient(to right, lighten($_sidebar_color, 15%), lighten($_sidebar_color, 15%));
         border: 1px solid transparentize(black, 0.86);
         box-shadow: 0 1px 0 transparentize(#000, 0.75);
         border-radius: 2px;
