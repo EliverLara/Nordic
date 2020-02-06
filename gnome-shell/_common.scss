@@ -1603,7 +1603,7 @@ StScrollBar {
       spacing: 1px;
     }
     .notification-button {
-      padding: 4px 4px 5px;
+      padding: 0px;
       background-color: transparentize($bg_color, 0.1);
       &:first-child { border-radius: 0 0 0 3px; }
       &:last-child { border-radius: 0 0 3px 0; }
