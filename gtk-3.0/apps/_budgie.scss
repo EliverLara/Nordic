@@ -386,7 +386,7 @@ button.raven-trigger {
       border-radius: 0;
       &.flat {
           background: transparent;
-          border: 1px solid $panel_bg;
+          border: none;
           &:hover, &:active, &:checked {
             background: transparent;
             color: $selected_bg_color;
