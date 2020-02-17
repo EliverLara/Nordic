@@ -5008,7 +5008,11 @@ button.raven-trigger {
     border-radius: 0; }
     .budgie-panel button.flat {
       background: transparent;
+<<<<<<< HEAD
       border: 1px solid rgba(38, 42, 52, 0.95); }
+=======
+      border: none; }
+>>>>>>> 1315a16... Remove black border on budgie's panel buttons
       .budgie-panel button.flat:hover, .budgie-panel button.flat:active, .budgie-panel button.flat:checked {
         background: transparent;
         color: #4c566a; }
