@@ -249,7 +249,7 @@
   text-shadow: none;
   box-shadow: none;
   border: 1px solid $borders_color;
-  background: linear-gradient(to bottom, $main_dark_color, $main_dark_color);       
+  background-color: $main_dark_color;       
 }
 
   @else if $t==hover-header {
@@ -257,12 +257,8 @@
   // hovered button headerbar look
   //
   color: if($tc==$text_color, $selected_bg_color, $tc);
-  //background-color: transparent;
-  border-radius: 0;
   text-shadow: none;
-  background-image: linear-gradient(to bottom, $base_color, $bg_color);
-
-  //@include lines(up);
+  background-color: transparentize($c, 0.2);
 }
 
 @else if $t==backdrop-header {

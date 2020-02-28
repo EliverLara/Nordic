@@ -2310,7 +2310,7 @@ headerbar {
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #232831;
-    background: linear-gradient(to bottom, #2e3440, #2e3440);
+    background-color: #2e3440;
     min-height: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -2347,13 +2347,18 @@ headerbar {
       .titlebar button.appmenu:backdrop,
       headerbar button.appmenu:backdrop {
         background: transparent; }
-    .titlebar button:hover, .titlebar button:active, .titlebar button:checked,
-    headerbar button:hover,
+    .titlebar button:hover,
+    headerbar button:hover {
+      color: #fff;
+      text-shadow: none;
+      background-color: rgba(143, 188, 187, 0.8); }
+    .titlebar button:active, .titlebar button:checked,
     headerbar button:active,
     headerbar button:checked {
-      background-color: transparent;
-      color: #8fbcbb;
-      box-shadow: none; }
+      color: #fff;
+      outline-color: rgba(255, 255, 255, 0.3);
+      background: #8fbcbb;
+      text-shadow: none; }
     .titlebar button:backdrop, .titlebar button:disabled, .titlebar button:backdrop:disabled,
     headerbar button:backdrop,
     headerbar button:disabled,
@@ -2539,8 +2544,10 @@ headerbar {
   headerbar .linked > button:checked,
   .titlebar .path-bar-box headerbar button:checked,
   headerbar .path-bar-box button:checked {
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
     background: #8fbcbb;
-    color: #fff; }
+    text-shadow: none; }
     .titlebar .linked > button:active:backdrop,
     .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop, headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
     .titlebar headerbar .linked > button:checked:backdrop, .titlebar .path-bar-box button:checked:backdrop, headerbar .path-bar-box .titlebar button:checked:backdrop,
@@ -5243,13 +5250,12 @@ button.raven-trigger {
       text-shadow: none;
       box-shadow: none;
       border: 1px solid #232831;
-      background: linear-gradient(to bottom, #2e3440, #2e3440);
+      background-color: #2e3440;
       border-radius: 0; }
       .raven .raven-header button:hover {
         color: #8fbcbb;
-        border-radius: 0;
         text-shadow: none;
-        background-image: linear-gradient(to bottom, #3b4252, #434c5e);
+        background-color: rgba(59, 66, 82, 0.8);
         border-radius: 0; }
       .raven .raven-header button:active, .raven .raven-header button:checked {
         color: #8fbcbb;
