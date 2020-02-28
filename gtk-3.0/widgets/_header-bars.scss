@@ -57,14 +57,16 @@ headerbar {
         
       }
       
-
-    &:hover,
+    &.appmenu{
+      background: transparent;
+      &:backdrop{background: transparent;}
+    }
+    &:hover {
+      @include button(hover-header, $selected_bg_color, #fff);
+    }
     &:active,
     &:checked {
-      background-color: transparent;
-      color: $selected_bg_color;
-      box-shadow: none;
-      //@include button(hover-header);
+      @include button(active, $selected_bg_color, #fff);
     }
 
     &:backdrop,
@@ -166,8 +168,7 @@ headerbar {
   %linked-button {
     @extend %linked-header;
     &:active, &:checked {
-      background: $selected_bg_color;
-      color: #fff;
+      @include button(active, $selected_bg_color, #fff);
       &:backdrop{
         color: $backdrop_selected_fg_color;
         label{
