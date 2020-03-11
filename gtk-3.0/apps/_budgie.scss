@@ -406,7 +406,7 @@ button.raven-trigger {
     }
 
     &.transparent {
-        background-color: transparent;
+        background-color: transparentize($panel_bg, 0.75);
 
         .top & {
             border-bottom-color: transparent;
@@ -422,6 +422,10 @@ button.raven-trigger {
 
         .right & {
             border-left-color: transparent;
+        }
+
+        &:backdrop, label, button.raven-trigger:backdrop, button.budgie-menu-launcher {
+          color: lighten($headerbar_fg_color, 10%);
         }
     }
 
