@@ -304,7 +304,7 @@ button {
   button:checked {
     color: #2e3440;
     outline-color: rgba(46, 52, 64, 0.3);
-    background: #7fb2b1;
+    background-color: #7fb2b1;
     text-shadow: none;
     transition-duration: 50ms; }
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:backdrop,
@@ -616,7 +616,7 @@ button.suggested-action {
   button.suggested-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #88c0d0;
+    background-color: #88c0d0;
     text-shadow: none; }
   
   button.suggested-action:backdrop,
@@ -766,7 +766,7 @@ button.destructive-action {
   button.destructive-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #a9444e;
+    background-color: #a9444e;
     text-shadow: none; }
   
   button.destructive-action:backdrop,
@@ -2357,26 +2357,23 @@ headerbar {
     headerbar button:checked {
       color: #fff;
       outline-color: rgba(255, 255, 255, 0.3);
-      background: #8fbcbb;
+      background-color: #8fbcbb;
       text-shadow: none; }
     .titlebar button:backdrop, .titlebar button:disabled, .titlebar button:backdrop:disabled,
     headerbar button:backdrop,
     headerbar button:disabled,
     headerbar button:backdrop:disabled {
       color: rgba(216, 222, 233, 0.2);
-      background-color: transparent;
-      border-radius: 0;
+      background-color: #2e3440;
       text-shadow: none;
-      box-shadow: none;
-      background-image: linear-gradient(to bottom, #2e3440, #2e3440);
-      border: 1px solid #232831;
-      border-radius: 4px; }
+      box-shadow: none; }
     .titlebar button:backdrop:hover, .titlebar button:backdrop:active, .titlebar button:backdrop:checked,
     headerbar button:backdrop:hover,
     headerbar button:backdrop:active,
     headerbar button:backdrop:checked {
-      background-color: transparent;
       color: #8fbcbb;
+      background-color: rgba(143, 188, 187, 0.6);
+      text-shadow: none;
       box-shadow: none; }
     .titlebar button.suggested-action,
     headerbar button.suggested-action {
@@ -2400,7 +2397,7 @@ headerbar {
       headerbar button.suggested-action:active {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background: #88c0d0;
+        background-color: #88c0d0;
         text-shadow: none; }
       .titlebar button.suggested-action:disabled,
       headerbar button.suggested-action:disabled {
@@ -2446,7 +2443,7 @@ headerbar {
       headerbar button.destructive-action:active {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background: #a9444e;
+        background-color: #a9444e;
         text-shadow: none; }
       .titlebar button.destructive-action:disabled,
       headerbar button.destructive-action:disabled {
@@ -2556,7 +2553,7 @@ headerbar {
   headerbar .path-bar-box button:checked {
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #8fbcbb;
+    background-color: #8fbcbb;
     text-shadow: none; }
     .titlebar .linked > button:active:backdrop,
     .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop, headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
@@ -2606,7 +2603,7 @@ headerbar {
     border-radius: 0px 4px 4px 0px;
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background: #8fbcbb;
+    background-color: #8fbcbb;
     text-shadow: none; }
     .titlebar .path-bar-box widget > .text-button:last-child:backdrop, .titlebar .path-bar-box widget > .text-button:last-child:backdrop label,
     headerbar .path-bar-box widget > .text-button:last-child:backdrop,
@@ -6137,7 +6134,7 @@ ConversationListView {
   #content_frame button:active, #content_frame button:checked {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
-    background: #8fbcbb;
+    background-color: #8fbcbb;
     text-shadow: none; }
   #content_frame button:disabled {
     color: #b9bfcb;
