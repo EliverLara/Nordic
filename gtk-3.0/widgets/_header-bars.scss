@@ -72,20 +72,14 @@ headerbar {
     &:backdrop,
     &:disabled,
     &:backdrop:disabled {
-      @include button(backdrop-header,red,transparentize($fg_color,0.8));
-      background-image: linear-gradient(to bottom, $main_dark_color, $main_dark_color);
-      border: 1px solid $borders_color;
-      border-radius: 4px;
+      @include button(backdrop-header, $main_dark_color, transparentize($headerbar_fg_color, 0.8));
     }
 
     &:backdrop {
       &:hover,
       &:active,
       &:checked {
-      background-color: transparent;
-      color: $selected_bg_color;
-      box-shadow: none;
-       // @include button(hover-header,transparent,transparentize(white,0.7));
+        @include button(backdrop-header, $backdrop_selected_bg_color, $selected_bg_color);
       }
     }
 
