@@ -5027,7 +5027,7 @@ button.raven-trigger {
     color: #d8dee9;
     font-weight: 700; }
   .budgie-panel.transparent {
-    background-color: transparent; }
+    background-color: rgba(46, 52, 64, 0.2); }
     .top .budgie-panel.transparent {
       border-bottom-color: transparent; }
     .bottom .budgie-panel.transparent {
@@ -5036,6 +5036,8 @@ button.raven-trigger {
       border-right-color: transparent; }
     .right .budgie-panel.transparent {
       border-left-color: transparent; }
+    .budgie-panel.transparent:backdrop, .budgie-panel.transparent label, .budgie-panel.transparent button.raven-trigger:backdrop, .budgie-panel.transparent button.budgie-menu-launcher {
+      color: #f9fafb; }
   .budgie-panel .end-region {
     border-radius: 0px; }
     .budgie-panel .end-region separator {
