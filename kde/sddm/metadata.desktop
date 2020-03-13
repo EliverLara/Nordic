@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=Nordic
+Description=Nordic sddm theme
+Author=Eliver Lara
+Copyright=(c) 2019, Eliver Lara
+License=GPL 3+
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/EliverLara/Nordic/tree/master/kde/sddm
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=eliverlara@gmail.com
+Theme-Id=Nordic
+Theme-API=2.0
