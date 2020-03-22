@@ -443,6 +443,10 @@ toolbar.inline-toolbar toolbutton:backdrop {
   border-radius: 0;
   border-right-style: none;
   box-shadow: none;
+  &:disabled {
+    @include button(insensitive, $base_color, $text_color); 
+    color: $insensitive_fg_color;
+  }
 }
 
 %linked {

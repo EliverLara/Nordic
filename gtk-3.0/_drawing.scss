@@ -77,7 +77,7 @@
   }
   @if $t==insensitive {
     color: $insensitive_fg_color;
-    border-color: $borders_color;
+    border-color: $insensitive_borders_color;
     background-color: $insensitive_bg_color;
     box-shadow: $_entry_edge;
   }
@@ -89,7 +89,7 @@
   }
   @if $t==backdrop-insensitive {
     color: $backdrop_insensitive_color;
-    border-color: $backdrop_borders_color;
+    border-color: $insensitive_borders_color;
     background-color: $insensitive_bg_color;
     box-shadow: $_blank_edge;
   }
@@ -288,7 +288,7 @@ box-shadow: none;
   // insensitive button
   //
   color: if($tc==$text_color, $backdrop_text_color, $tc);
-  outline-color: transparentize($tc, 0.7);
+  border-color: $insensitive_borders_color;
   background-color: if($c==$base_color, $insensitive_bg_color, $c);
   text-shadow: none;
 }
@@ -328,7 +328,7 @@ box-shadow: none;
   // backdrop insensitive button
   //
   color: if($tc==$text_color, $backdrop_text_color, $tc);
-  outline-color: transparentize($tc, 0.7);
+  border-color: $insensitive_borders_color;
   background-color: if($c==$base_color, $insensitive_bg_color, $c);
   text-shadow: none;
 }
