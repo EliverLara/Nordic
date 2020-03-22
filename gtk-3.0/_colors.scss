@@ -85,7 +85,7 @@ $panel_borders_color: transparentize($main_dark_color, 0.8);
 $insensitive_fg_color: mix($fg_color, $bg_color, 50%);
 $insensitive_bg_color: mix($bg_color, $base_color, 60%);
 $insensitive_base_color: darken($base_color, 5%);
-$insensitive_borders_color: $borders_color;
+$insensitive_borders_color: transparentize($borders_color, 0.7);
 
 // Backdrop state colors
 $backdrop_base_color: if($variant == 'light', darken($base_color, 1%), lighten($base_color, 1%));
