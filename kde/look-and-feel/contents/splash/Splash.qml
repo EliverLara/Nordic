@@ -13,7 +13,6 @@ Image {
         }
     }
 
-
     Item {
         id: content
         anchors.fill: parent
@@ -38,11 +37,32 @@ Image {
             sourceSize.width: size
             sourceSize.height: size
 
-            ScaleAnimator on scale {
-                from: 0
-                to: 1
-                duration: 700
+            ParallelAnimation {
                 running: true
+
+                ScaleAnimator {
+                    target: logo
+                    from: 0
+                    to: 1
+                    duration: 700
+                }
+
+                SequentialAnimation {
+                    loops: Animation.Infinite
+
+                    ScaleAnimator {
+                        target: logo
+                        from: 0.97
+                        to: 1
+                        duration: 1000
+                    }
+                    ScaleAnimator {
+                        target: logo
+                        from: 1
+                        to: 0.97
+                        duration: 1000
+                    }
+                }
             }
         
         }
@@ -50,7 +70,8 @@ Image {
 
         Rectangle {
             radius: 4
-            color: "#26000000"
+            color: "#232831"
+            opacity: 0.9
             y: parent.height - (parent.height - logo.y) / 3 - height/2
             anchors.horizontalCenter: parent.horizontalCenter
             height: 6
