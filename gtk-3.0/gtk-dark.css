@@ -4041,8 +4041,7 @@ treeview ~ scrollbar.vertical {
     border-right-style: none; }
   .sidebar:backdrop {
     background-color: #404859;
-    border-color: #272c36;
-    transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    border-color: #272c36; }
   .sidebar row {
     padding: 8px 12px;
     transition: all .12s ease-in; }
@@ -4089,7 +4088,6 @@ stacksidebar row {
 /*******************************************************************/
 /*                  PLACESSIDEBAR                                  */
 /*******************************************************************/
-/*--*/
 placessidebar.sidebar {
   background-color: transparent;
   background-image: linear-gradient(to right, #232831 40px, #2e3440 35px, #2e3440 36px, #2e3440 36px, #2e3440 99%, #2e3440 100%); }
