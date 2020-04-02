@@ -4043,9 +4043,14 @@ treeview ~ scrollbar.vertical {
     border-left: 1px solid #1f232b;
     border-right-style: none; }
   .sidebar:backdrop {
+<<<<<<< HEAD
     background-color: #363c4a;
     border-color: #22262f;
     transition: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+=======
+    background-color: #404859;
+    border-color: #272c36; }
+>>>>>>> 3e16c4a... Fix sidebar transition issue #52
   .sidebar row {
     padding: 8px 12px;
     transition: all .12s ease-in; }
@@ -4092,7 +4097,6 @@ stacksidebar row {
 /*******************************************************************/
 /*                  PLACESSIDEBAR                                  */
 /*******************************************************************/
-/*--*/
 placessidebar.sidebar {
   background-color: transparent;
   background-image: linear-gradient(to right, #252a34 40px, #2a2f3a 35px, #2a2f3a 36px, #2a2f3a 36px, #2a2f3a 99%, #2a2f3a 100%); }
