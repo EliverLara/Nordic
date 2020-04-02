@@ -28,7 +28,6 @@
   &:backdrop {
     background-color: $backdrop_sidebar_bg_color;
     border-color: $backdrop_borders_color;
-    transition: $sidebar_backdrop_transition;
   }
 
   row{
@@ -117,8 +116,6 @@ stacksidebar {
 /*******************************************************************/
 /*                  PLACESSIDEBAR                                  */
 /*******************************************************************/
-
-/*--*/
 
 placessidebar{
 	&.sidebar{
