@@ -843,6 +843,16 @@ StScrollBar {
       color: lighten($fg_color, 10%);
       &:focus, &:hover, &:active { color: lighten($fg_color, 10%); }
     }
+
+    // Remove default bottom border
+    &.clock-display {
+      &:active, &:overview, &:focus, &:checked {
+        box-shadow: none;
+        .clock {
+          box-shadow: none;
+        }
+      }
+    }
   }
 
   .panel-status-indicators-box,
@@ -880,6 +890,11 @@ StScrollBar {
 
   .calendar {
     margin-bottom: 1em;
+  }
+  
+  .calendar, .world-clocks-button, .weather-button {
+    background: transparent;
+    border: none;
   }
 
     .calendar,
@@ -940,7 +955,7 @@ StScrollBar {
     .weather-header,
     .events-section-title,
     .message-list-section-title {
-      color: darken($fg_color,40%);
+      color: darken($fg_color, 40%);
       font-weight: bold;
     }
 
@@ -1037,8 +1052,8 @@ StScrollBar {
       /* Message list */
       .message-list {
         width: 31.5em;
-        .message-title, .message-content{
-          color: darken($fg_color,5%);
+        .message-title, .message-content, .message-body {
+          color: darken($fg_color, 5%);
         }
       }
 
@@ -1335,7 +1350,16 @@ StScrollBar {
   }
 
   .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
-  .search-section-content { spacing: 32px; } // This is the space between the provider icon and the results container
+
+  .search-section-content { 
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    // This is the space between the provider icon and the results container
+    spacing: 32px; 
+  }
+  
   .search-statustext { // "no results"
     @extend %status_text;
   }
