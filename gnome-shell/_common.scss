@@ -524,12 +524,20 @@ StScrollBar {
     box-shadow: $depth6;
   }
 
-  .popup-menu-content { padding: 1em 0em; }
+  .popup-menu-content { padding: 16px 0; }
   .popup-menu-item {
-    spacing: 12px;
+    spacing: 6px;
+    padding: 6px;
 
-    &:ltr { padding: .4em 1.75em .4em 0em; }
-    &:rtl { padding: .4em 0em .4em 1.75em; }
+    &:ltr { padding-right: 1.75em; padding-left: 0; }
+    &:rtl { padding-right: 0; padding-left: 1.75em; }
+
+     // Fix overlaping text in 'opened windows' title
+    &:first-child:insensitive {
+      margin-bottom: 10px;
+      margin-left: 0;
+    }
+
     &:checked {
       background-color: transparentize($selected_bg_color,0.1);
       color: $selected_fg_color;
@@ -575,13 +583,20 @@ StScrollBar {
   }
 
   .popup-separator-menu-item {
-    //-margin-horizontal: 24px;
-    height: 1px; //not really the whole box
-    margin: 6px 64px;
-    background-color: transparent;
-    border-color: transparent;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+
+    &, &-separator {
+      //-margin-horizontal: 24px;
+      height: 1px; //not really the whole box
+      margin: 6px 64px;
+      background-color: transparent;
+      border-color: transparent;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+    .popup-sub-menu & &-separator { //submenu separators
+      margin: 0 64px 0 32px;
+      background: transparent;
+    }
   }
 
 
