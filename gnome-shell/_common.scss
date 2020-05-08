@@ -1113,6 +1113,7 @@ StScrollBar {
           border: 1px solid $borders_color;
           border-radius: 3px;
           background: darken($bg_color, 0.7%);
+          box-shadow: none;
         }
 
           .message-icon-bin {
@@ -1643,8 +1644,9 @@ StScrollBar {
       spacing: 1px;
     }
     .notification-button {
-      padding: 0px;
+      padding: 5px;
       background-color: transparentize($bg_color, 0.1);
+      box-shadow: none;
       &:first-child { border-radius: 0 0 0 3px; }
       &:last-child { border-radius: 0 0 3px 0; }
       &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}
