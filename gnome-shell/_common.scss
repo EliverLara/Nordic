@@ -8,7 +8,7 @@ $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
 $_bubble_transparent: transparentize($osd_bg_color, 0.17);
-$topbar_bg_color: transparentize($dracula,0.35);
+$topbar_bg_color: transparentize($dracula,0);
 
 stage {
   font-family: $font-family;
@@ -573,7 +573,7 @@ StScrollBar {
   }
   .popup-menu-boxpointer,
   .candidate-popup-boxpointer {
-    -arrow-border-radius: 3px;
+    -arrow-border-radius: 5px;
     -arrow-background-color: $bg_color;
     -arrow-border-width: 1px;
     -arrow-border-color: $borders_color;
@@ -751,7 +751,7 @@ StScrollBar {
   background-color: $_bubble_bg_color;
   border: 1px solid $borders_color;
   box-shadow: 0px 0px 5px $borders_color;
-  border-radius: 2px;
+  border-radius: 5px;
   padding: 12px;
 }
 
