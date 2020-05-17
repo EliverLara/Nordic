@@ -95,3 +95,4 @@ read if you used those and something break with a version upgrade you're on your
 //Budgie desktop
 @define-color budgie_tasklist_indicator_color #{"" +$selected_bg_color};
 @define-color budgie_tasklist_indicator_color_active #{"" +$selected_bg_color};
+@define-color placeholder_text_color #{"" +$backdrop_text_color};
