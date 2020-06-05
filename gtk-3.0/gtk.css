@@ -2923,7 +2923,8 @@ menu,
   margin: 4px;
   padding: 2px 0px;
   background: #2a2f3a;
-  border: 1px solid #1f232b; }
+  border: 1px solid #1f232b;
+  border-radius: 5px; }
   .csd menu, .csd
   .menu, .csd
   .context-menu {
@@ -3034,6 +3035,9 @@ menuitem radio {
   menuitem check:dir(rtl),
   menuitem radio:dir(rtl) {
     margin-left: 7px; }
+
+.csd.popup {
+  background-color: transparent; }
 
 /********
  * Misc *
@@ -3344,7 +3348,7 @@ popover.background {
   padding: 2px;
   border-radius: 5px;
   background: #2a2f3a;
-  box-shadow: 0 4px 6px transparent; }
+  box-shadow: 0 4px 6px #1f232b; }
   .csd popover.background, popover.background {
     border: 1px solid #1f232b; }
   popover.background:backdrop {
@@ -4634,9 +4638,9 @@ decoration {
   .ssd decoration {
     box-shadow: none; }
   .csd.popup decoration {
-    border-radius: 0;
-    box-shadow: 0 4px 8px transparent;
-    border: 1px solid #1f232b; }
+    border-radius: 7px;
+    box-shadow: 0 4px 8px #1f232b;
+    border: 1px solid rgba(31, 35, 43, 0.7); }
   tooltip.csd decoration {
     border-radius: 5px;
     box-shadow: none; }

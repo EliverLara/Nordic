@@ -40,9 +40,9 @@ decoration {
   .ssd & { box-shadow: none; } //just doing borders, wm draws actual shadows
 
   .csd.popup & {
-    border-radius: 0;
-    box-shadow:0 4px 8px $menu_shadow_color;
-    border: 1px solid $borders_color;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px $menu_shadow_color;
+    border: 1px solid transparentize($borders_color, 0.3);
   }
 
   tooltip.csd & {
