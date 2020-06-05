@@ -31,6 +31,7 @@ menu,
   padding: 2px 0px;
   background: $main_dark_color;
   border: 1px solid $borders_color; // adds borders in a non composited env
+  border-radius: 5px;
 
   .csd & { border: none; }  // axes borders in a composited env
 
@@ -124,4 +125,8 @@ menuitem {
     &:dir(ltr) { margin-right: 7px; }
     &:dir(rtl) { margin-left: 7px; }
   }
+}
+
+.csd.popup {
+  background-color: transparent;
 }
