@@ -1178,6 +1178,30 @@ StScrollBar {
               padding: 8px; }
           }
 
+/* Weather */
+.weather-button {
+
+  .weather-header {
+    color: darken($fg_color, 10%);
+    font-weight: bold;
+
+    &.location {
+      font-weight: normal;
+    }
+  }
+
+  .weather-forecast-time {
+    color: darken($fg_color, 10%);
+    font-feature-settings: "tnum";
+    font-weight: normal;
+    padding-top: 0.2em;
+    padding-bottom: 0.4em;
+  }
+
+  .weather-forecast-temp {
+    font-weight: bold;
+  }
+}
 
   // a little unstructured mess:
 
