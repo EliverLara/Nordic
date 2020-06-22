@@ -1752,7 +1752,7 @@ entry {
     border-radius: 0; }
   spinbutton:focus:not(.vertical),
   entry:focus {
-    border-color: #373e4c; }
+    border-color: #5d6982; }
   spinbutton:disabled:not(.vertical),
   entry:disabled {
     color: #8a909e;
@@ -1778,10 +1778,10 @@ entry {
     border-color: #1f232b;
     background-color: #2e3440;
     color: #b84f59;
-    border-color: #3c181c; }
+    border-color: #a9444e; }
     spinbutton.error:focus:not(.vertical),
     entry.error:focus {
-      border-color: #3c181c; }
+      border-color: #a9444e; }
     spinbutton.error:selected:focus:not(.vertical), spinbutton.error:selected:not(.vertical),
     entry.error:selected:focus,
     entry.error:selected {
@@ -1792,10 +1792,10 @@ entry {
     border-color: #1f232b;
     background-color: #2e3440;
     color: #c3674a;
-    border-color: #442116; }
+    border-color: #b75a3c; }
     spinbutton.warning:focus:not(.vertical),
     entry.warning:focus {
-      border-color: #442116; }
+      border-color: #b75a3c; }
     spinbutton.warning:selected:focus:not(.vertical), spinbutton.warning:selected:not(.vertical),
     entry.warning:selected:focus,
     entry.warning:selected {
@@ -1875,11 +1875,11 @@ entry:focus + button,
 entry:focus + combobox > box > button.combo, .linked:not(.vertical) > spinbutton:focus:not(.vertical) + entry, .linked:not(.vertical) >
 entry:focus +
 entry {
-  border-left-color: #373e4c; }
+  border-left-color: #5d6982; }
 
 .linked:not(.vertical) > spinbutton:focus:not(.vertical), .linked:not(.vertical) >
 entry:focus {
-  border-color: #373e4c; }
+  border-color: #5d6982; }
 
 .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + spinbutton:not(.vertical),
 .linked:not(.vertical) > spinbutton:drop(active):not(.vertical) + button,
@@ -1915,7 +1915,7 @@ entry:disabled + entry:disabled {
 .linked.vertical > spinbutton:not(.vertical) + entry:focus:not(:only-child), .linked.vertical > entry + spinbutton:focus:not(:only-child):not(.vertical),
 .linked.vertical >
 entry + entry:focus:not(:only-child) {
-  border-top-color: #373e4c; }
+  border-top-color: #5d6982; }
 
 .linked.vertical > spinbutton:not(.vertical) + spinbutton:drop(active):not(:only-child):not(.vertical),
 .linked.vertical > spinbutton:not(.vertical) + entry:drop(active):not(:only-child), .linked.vertical > entry + spinbutton:drop(active):not(:only-child):not(.vertical),
@@ -1933,7 +1933,7 @@ entry:focus:not(:only-child) + entry,
 entry:focus:not(:only-child) + button,
 .linked.vertical >
 entry:focus:not(:only-child) + combobox > box > button.combo {
-  border-top-color: #373e4c; }
+  border-top-color: #5d6982; }
 
 .linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + spinbutton:not(.vertical),
 .linked.vertical > spinbutton:drop(active):not(:only-child):not(.vertical) + entry,

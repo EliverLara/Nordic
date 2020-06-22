@@ -35,9 +35,9 @@
 
 // entries
 
-@function entry_focus_border($fc:$selected_bg_color) {
+@function entry_focus_border($fc:lighten($selected_bg_color, 13%)) {
   @if $variant == 'light' { @return $fc; }
-  @else { @return if($fc==$selected_bg_color, $selected_borders_color, darken($fc, 35%)); }
+  @else { @return if($fc==$selected_bg_color, $selected_borders_color, darken($fc, 5%)); }
 }
 
 
@@ -50,7 +50,7 @@
                                              $c 90%); }
 }
 
-@mixin entry($t, $fc:$selected_bg_color, $edge: none) {
+@mixin entry($t, $fc:lighten($selected_bg_color, 13%), $edge: none) {
 //
 // Entries drawing function
 //
