@@ -72,10 +72,10 @@ headerbar {
     &:backdrop,
     &:disabled,
     &:backdrop:disabled {
-      @include button(backdrop-header,red,transparentize($fg_color,0.8));
-      background-image: linear-gradient(to bottom, $main_dark_color, $main_dark_color);
-      border: 1px solid $borders_color;
-      border-radius: 4px;
+      @include button(backdrop-header, $main_dark_color,transparentize($fg_color,0.8));
+      // background-image: linear-gradient(to bottom, $main_dark_color, $main_dark_color);
+      // border: 1px solid $borders_color;
+      // border-radius: 4px;
     }
 
     &:backdrop {
