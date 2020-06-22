@@ -2371,11 +2371,7 @@ headerbar {
     headerbar button:disabled,
     headerbar button:backdrop:disabled {
       color: rgba(216, 222, 233, 0.2);
-      background-color: transparent;
-      border-radius: 0;
-      text-shadow: none;
-      box-shadow: none;
-      background-image: linear-gradient(to bottom, #2a2f3a, #2a2f3a);
+      background-color: #2a2f3a;
       border: 1px solid #1f232b;
       border-radius: 4px; }
     .titlebar button:backdrop:hover, .titlebar button:backdrop:active, .titlebar button:backdrop:checked,

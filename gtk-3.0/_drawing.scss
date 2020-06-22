@@ -262,14 +262,13 @@
 }
 
 @else if $t==backdrop-header {
-//
-// backdrop button headerbar look
-//
-color: if($tc==$text_color, transparentize($tc, 0.6), $tc);
-background-color: transparent;
-border-radius: 0;
-text-shadow: none;
-box-shadow: none;
+  //
+  // backdrop button headerbar look
+  //
+  color: if($tc==$text_color, transparentize($tc, 0.6), $tc);
+  background-color: $c;
+  border: 1px solid $borders_color;
+  border-radius: 4px;
 }
 
 
