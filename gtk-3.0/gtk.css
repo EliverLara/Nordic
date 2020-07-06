@@ -5689,6 +5689,13 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   border: 0;
   background-color: #3b4252; }
 
+/*********
+ * Gnucash *
+*********/
+.GncMainWindow entry.register-foreground {
+  background: transparent;
+  border: none; }
+
 /********
  * Gala *
  *******/
