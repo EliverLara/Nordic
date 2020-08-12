@@ -1,0 +1,1 @@
+After editing SVG files be sure to run currentColorFillFix.sh from plasma-framework
