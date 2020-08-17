@@ -63,6 +63,20 @@
 @define-color success_color #{"" +$success_color};
 //@define-color destructive_color #{$destructive_color}
 
+
+@define-color fg_color #{"" +$fg_color};
+@define-color text_color #{"" +$text_color};
+@define-color bg_color #{"" +$bg_color};
+@define-color base_color #{"" +$base_color};
+@define-color selected_bg_color #{"" +$selected_bg_color};
+@define-color selected_fg_color #fff;
+@define-color unfocused_fg_color #{"" +$backdrop_fg_color};
+@define-color unfocused_text_color #{"" +$text_color};
+@define-color unfocused_bg_color #{"" +$backdrop_bg_color};
+@define-color unfocused_base_color #{"" +$backdrop_base_color};
+@define-color unfocused_selected_bg_color #{"" +$selected_bg_color};
+@define-color unfocused_selected_fg_color #{"" + $selected_fg_color};
+
 //WM
 
 $_wm_highlight: if($variant=='light', $top_highlight,  // Sass gets mad if this is
