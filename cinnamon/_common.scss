@@ -1359,8 +1359,6 @@ StScrollBar {
 
 
 .grouped-window-list {
-
-
   &-item-box {
     border: 0 none transparent;
     border-image: none;
@@ -1399,7 +1397,7 @@ StScrollBar {
                                         (left, 2px 0),
                                         (right, -2px 0) {
           .panel-#{$position} & {
-            box-shadow: inset #{$_indicator} $selected_bg_color;
+            box-shadow: inset #{$_indicator} $blue;
           }
         }
     }

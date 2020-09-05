@@ -2,12 +2,12 @@
 // it gets @if ed depending on $variant
 
 
-$base_color: $nord1;
+$base_color: $nord0;
 $text_color: $nord4;
-$bg_color: $nord2;
+$bg_color: $nord1;
 $fg_color: $nord4;
 
-$main_dark_color: $nord0;
+$main_dark_color: darken($nord0, 2%);
 
 $lime: $nord7;
 $red: $nord11;
@@ -18,8 +18,8 @@ $darkpurple: #7b7bbd;
 $blue: $nord10;
 $cyan: $nord8;
 
-$selected_fg_color: $nord0;
-$selected_bg_color: if($accent == 'blue', $nord9, $nord7);
+$selected_fg_color: $nord4;
+$selected_bg_color: $nord3;
 $selected_borders_color: darken($selected_bg_color, 20%);
 $borders_color: darken($main_dark_color, 5%);
 
