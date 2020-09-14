@@ -6249,8 +6249,8 @@ ConversationListView {
     background: rgba(40, 45, 55, 0.7); }
   .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
   .nemo-window .places-treeview iconview.cell:selected {
-    background: #8fbcbb;
-    color: #2e3440; }
+    background: #81a1c1;
+    color: #fefefe; }
 
 .nemo-window .sidebar {
   background-color: #2e3440; }
@@ -6267,8 +6267,8 @@ ConversationListView {
   border-radius: 3px;
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.9), inset 1px 0 rgba(0, 0, 0, 0.96), inset -1px 0 rgba(0, 0, 0, 0.96), inset 0 -1px rgba(0, 0, 0, 0.98), 0 1px rgba(255, 255, 255, 0.6); }
   .nemo-window .nemo-window-pane widget.entry:selected {
-    background-color: #8fbcbb;
-    color: #2e3440; }
+    background-color: #81a1c1;
+    color: #fefefe; }
 
 .nemo-window toolbar.primary-toolbar {
   margin-bottom: -1px;
@@ -6283,17 +6283,17 @@ ConversationListView {
     min-height: 24px;
     padding: 3px; }
     .nemo-window toolbar.primary-toolbar button:hover {
-      color: #2e3440;
+      color: #fefefe;
       text-shadow: none;
-      background-color: rgba(143, 188, 187, 0.8); }
+      background-color: rgba(129, 161, 193, 0.8); }
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
-      color: #2e3440;
-      outline-color: rgba(46, 52, 64, 0.3);
-      background-color: #8fbcbb;
+      color: #fefefe;
+      outline-color: rgba(254, 254, 254, 0.3);
+      background-color: #81a1c1;
       text-shadow: none; }
       .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
-        color: rgba(46, 52, 64, 0.5);
-        background-color: rgba(143, 188, 187, 0.6);
+        color: rgba(254, 254, 254, 0.5);
+        background-color: rgba(129, 161, 193, 0.6);
         text-shadow: none;
         box-shadow: none; }
     .nemo-window toolbar.primary-toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:backdrop:disabled {
