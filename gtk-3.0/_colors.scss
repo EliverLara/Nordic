@@ -35,7 +35,7 @@ $link_visited_color:transparentize($link_color,0.5);
 $top_highlight: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));
 $bottom_highlight: if($variant == 'light', transparentize(black, 0.8), transparentize(black, 0.9));
 $dark_fill: mix($borders_color, $bg_color, 35%);
-$headerbar_color: $bg_color;
+$headerbar_color: mix($base_color, darken($bg_color, 8%), 30%);
 $headerbar_fg_color: $text_color;
 $menu_color: if($variant == 'light', $base_color, mix($bg_color, $base_color, 20%));
 $popover_bg_color: $base_color;
