@@ -5,7 +5,7 @@
 headerbar {
   padding: 0 13px;
   min-height: 34px;
-  background: if($variant == 'light', linear-gradient(to bottom, #EAEAEA, #DBDBDB) , mix($base_color, darken($headerbar_color, 8%), 30%));
+  background: $headerbar_color;
   color: $headerbar_fg_color;
   border-radius: 0;
   &:backdrop {
