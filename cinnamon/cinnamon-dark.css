@@ -15,7 +15,7 @@ stage {
   text-shadow: 0 1px rgba(59, 66, 82, 0);
   color: #d8dee9;
   background-color: #3f4758;
-  border: 1px solid #232831;
+  border: 1px solid #1f232b;
   box-shadow: inset 0 2px 4px rgba(63, 71, 88, 0.05); }
   .menu #notification .notification-button, .menu #notification .notification-icon-button,
   .popup-menu #notification .notification-button,
@@ -47,7 +47,7 @@ stage {
     text-shadow: 0 1px rgba(59, 66, 82, 0);
     color: #d8dee9;
     background-color: #4a5367;
-    border: 1px solid #232831;
+    border: 1px solid #1f232b;
     box-shadow: inset 0 2px 4px rgba(74, 83, 103, 0.05); }
   .menu #notification .notification-button:hover:focus, .menu #notification .notification-icon-button:hover:focus,
   .popup-menu #notification .notification-button:hover:focus,
@@ -72,7 +72,7 @@ stage {
   .popup-menu #notification .notification-icon-button:insensitive, .sound-button:insensitive {
     text-shadow: 0 1px rgba(59, 66, 82, 0);
     color: rgba(216, 222, 233, 0.45);
-    border: 1px solid rgba(35, 40, 49, 0.55);
+    border: 1px solid rgba(31, 35, 43, 0.55);
     background-color: rgba(63, 71, 88, 0.55);
     box-shadow: inset 0 2px 4px rgba(63, 71, 88, 0.05); }
 
@@ -113,7 +113,7 @@ stage {
   border-radius: 3px;
   color: #d8dee9;
   background-color: #3b4252;
-  border: 1px solid #232831;
+  border: 1px solid #1f232b;
   box-shadow: inset 0 2px 4px rgba(59, 66, 82, 0.05); }
   .menu #notification StEntry:focus,
   .popup-menu #notification StEntry:focus, #menu-search-entry:focus, .menu #notification StEntry:hover,
@@ -126,7 +126,7 @@ stage {
   .popup-menu #notification StEntry:insensitive, #menu-search-entry:insensitive {
     color: rgba(216, 222, 233, 0.45);
     background-color: #3f4757;
-    border-color: 1px solid #323845;
+    border-color: 1px solid #2f3642;
     box-shadow: inset 0 2px 4px rgba(63, 71, 87, 0.05); }
   .menu #notification StEntry StIcon.capslock-warning, .popup-menu #notification StEntry StIcon.capslock-warning, #menu-search-entry StIcon.capslock-warning {
     icon-size: 16px;
@@ -190,7 +190,7 @@ StScrollBar {
 .popup-slider-menu-item,
 .slider {
   -slider-height: 4px;
-  -slider-background-color: #232831;
+  -slider-background-color: #1f232b;
   -slider-border-color: rgba(0, 0, 0, 0);
   -slider-active-background-color: #8fbcbb;
   -slider-active-border-color: rgba(0, 0, 0, 0);
@@ -284,7 +284,10 @@ StScrollBar {
 .popup-menu,
 .popup-combo-menu {
   color: #d8dee9;
-  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9; }
+  background-color: #2e3440;
+  margin-bottom: 7px;
+  border: 1px solid #1f232b;
+  border-radius: 5px; }
   .menu-arrow,
   .popup-menu-arrow {
     icon-size: 16px; }
@@ -293,7 +296,7 @@ StScrollBar {
   .popup-combo-menu .popup-sub-menu {
     background-gradient-direction: none;
     box-shadow: none;
-    border-image: url("dark-assets/menu/submenu.svg") 9 9 9 9; }
+    background-color: #232831; }
     .menu .popup-sub-menu .popup-menu-item:ltr,
     .popup-menu .popup-sub-menu .popup-menu-item:ltr,
     .popup-combo-menu .popup-sub-menu .popup-menu-item:ltr {
@@ -325,8 +328,7 @@ StScrollBar {
     .popup-menu .popup-menu-item:active,
     .popup-combo-menu .popup-menu-item:active {
       color: #2e3440;
-      background-color: transparent;
-      border-image: url("common-assets/menu/menu-hover.svg") 9 9 1 1; }
+      background-color: #8fbcbb; }
     .menu .popup-menu-item:insensitive,
     .popup-menu .popup-menu-item:insensitive,
     .popup-combo-menu .popup-menu-item:insensitive {
@@ -574,7 +576,7 @@ StScrollBar {
   padding-bottom: 14px; }
 
 .about-scrollBox {
-  border: 1px solid #232831;
+  border: 1px solid #1f232b;
   border-radius: 2px;
   background-color: #3b4252;
   padding: 4px;
@@ -971,7 +973,7 @@ StScrollBar {
   padding: 10px;
   transition-duration: 300;
   background-color: #434c5e;
-  border: 1px solid #232831; }
+  border: 1px solid #1f232b; }
 
 .menu-favorites-button {
   padding: 10px;
@@ -1427,7 +1429,7 @@ StScrollBar {
 .applet-label {
   font-weight: bold;
   color: #d8dee9; }
-  .applet-label:hover, .applet-box:hover > .applet-label {
+  .applet-label:hover, .applet-box:hover .applet-label {
     color: #2e3440;
     text-shadow: none; }
 

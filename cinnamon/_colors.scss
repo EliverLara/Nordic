@@ -21,7 +21,7 @@ $cyan: $nord8;
 $selected_fg_color: $nord0;
 $selected_bg_color: if($accent == 'blue', $nord9, $nord7);
 $selected_borders_color: darken($selected_bg_color, 20%);
-$borders_color: darken($main_dark_color, 5%);
+$borders_color: darken(#2e3440, 7%);
 
 $link_color: $blue;
 $link_visited_color:transparentize($link_color,0.5);
