@@ -271,14 +271,17 @@ StScrollBar {
 .popup-menu,
 %menu {
   color: $fg_color;
-  border-image: url("#{$asset_path}/menu/menu.svg") 9 9 9 9;
+  background-color: $panel_bg;
+  margin-bottom: 7px;
+  border: 1px solid $borders_color;
+  border-radius: 5px;
 
   &-arrow { icon-size: 16px; }
 
   .popup-sub-menu {
     background-gradient-direction: none;
     box-shadow: none;
-    border-image: url("#{$asset_path}/menu/submenu.svg") 9 9 9 9;
+    background-color: darken($panel_bg, 5%);
 
     .popup-menu-item:ltr { padding-right: 0em; }
     .popup-menu-item:rtl { padding-left: 0em; }
@@ -296,8 +299,7 @@ StScrollBar {
 
     &:active {
       color: $selected_fg_color;
-      background-color: transparent;
-      border-image: url("common-assets/menu/menu-hover.svg") 9 9 1 1;
+      background-color: $selected_bg_color;
     }
     &:insensitive {
       color: transparentize($fg_color, 0.5);
@@ -1359,8 +1361,6 @@ StScrollBar {
 
 
 .grouped-window-list {
-
-
   &-item-box {
     border: 0 none transparent;
     border-image: none;
@@ -1682,7 +1682,7 @@ StScrollBar {
     font-weight: bold;
     color: $_shell_fg_color;
 
-    &:hover, .applet-box:hover > & {
+    &:hover, .applet-box:hover & {
       color: $selected_fg_color;
       text-shadow: none;
     }
