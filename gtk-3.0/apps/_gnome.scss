@@ -149,7 +149,15 @@
 /*********
  * Gnucash *
 *********/
-.GncMainWindow entry.register-foreground {
-  background: transparent;
-  border: none;
+#gnc-id-main-window {
+  entry.gnc-class-register-foreground {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  } 
+  .arrow.button.toggle {
+    transition: none;
+    box-shadow: none;
+    &:hover { border-color: $selected_bg_color; }
+  } 
 }
