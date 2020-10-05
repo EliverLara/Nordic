@@ -71,6 +71,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_b shade(#3b4252, 0.89);
 @define-color wm_button_active_color_c shade(#3b4252, 0.9);
 @define-color content_view_bg #2e3440;
+@define-color text_view_bg #2e3440;
 @define-color budgie_tasklist_indicator_color #4c566a;
 @define-color budgie_tasklist_indicator_color_active #4c566a;
 @define-color placeholder_text_color #b6bcc8;
@@ -5704,7 +5705,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   transition: none;
   box-shadow: none; }
   #gnc-id-main-window .arrow.button.toggle:hover {
-    border-color: #8fbcbb; }
+    border-color: #4c566a; }
 
 /********
  * Gala *
