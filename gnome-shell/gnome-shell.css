@@ -508,9 +508,6 @@ StScrollBar {
     .popup-menu .popup-menu-item:rtl {
       padding-right: 0;
       padding-left: 1.75em; }
-    .popup-menu .popup-menu-item:first-child:insensitive {
-      margin-bottom: 10px;
-      margin-left: 0; }
     .popup-menu .popup-menu-item:checked {
       background-color: rgba(129, 161, 193, 0.9);
       color: #fefefe;
@@ -549,7 +546,7 @@ StScrollBar {
   -arrow-rise: 11px;
   -arrow-box-shadow: 0 1px 3px black; }
 
-.popup-separator-menu-item, .popup-separator-menu-item-separator {
+.popup-separator-menu-item-separator {
   height: 1px;
   margin: 6px 64px;
   background-color: transparent;
