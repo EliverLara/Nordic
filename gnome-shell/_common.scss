@@ -536,12 +536,6 @@ StScrollBar {
     &:ltr { padding-right: 1.75em; padding-left: 0; }
     &:rtl { padding-right: 0; padding-left: 1.75em; }
 
-     // Fix overlaping text in 'opened windows' title
-    &:first-child:insensitive {
-      margin-bottom: 10px;
-      margin-left: 0;
-    }
-
     &:checked {
       background-color: transparentize($selected_bg_color,0.1);
       color: $selected_fg_color;
@@ -569,8 +563,6 @@ StScrollBar {
   }
 }
 
-
-
   .popup-menu-ornament {
     text-align: right;
     width: 1.2em;
@@ -588,7 +580,7 @@ StScrollBar {
 
   .popup-separator-menu-item {
 
-    &, &-separator {
+    &-separator {
       //-margin-horizontal: 24px;
       height: 1px; //not really the whole box
       margin: 6px 64px;
