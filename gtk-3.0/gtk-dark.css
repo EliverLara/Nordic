@@ -6272,7 +6272,7 @@ ConversationListView {
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       color: #d8dee9;
       outline-color: rgba(216, 222, 233, 0.3);
-      background-color: #4c566a;
+      background: #4c566a;
       text-shadow: none; }
       .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
         color: rgba(216, 222, 233, 0.5);
