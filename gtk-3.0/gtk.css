@@ -6105,9 +6105,9 @@ MsdOsdWindow.background.osd {
   border-radius: 2px;
   border: 1px solid #232831; }
   MsdOsdWindow.background.osd .progressbar {
-    background-color: #8fbcbb;
+    background-color: #81a1c1;
     border: none;
-    border-color: #8fbcbb;
+    border-color: #81a1c1;
     border-radius: 5px; }
   MsdOsdWindow.background.osd .trough {
     background-color: rgba(29, 33, 40, 0.93);
