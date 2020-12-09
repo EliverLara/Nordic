@@ -974,6 +974,10 @@ StScrollBar {
       font-weight: bold;
     }
 
+    .events-button .event-time {
+      color: darken($fg_color, 4%);
+    }
+
     .world-clocks-grid {
       spacing-rows: 0.4em;
     }
