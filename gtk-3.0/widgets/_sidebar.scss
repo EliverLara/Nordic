@@ -155,7 +155,7 @@ placessidebar{
             color: $selected_bg_color;
           }
 					background-color: transparent;
-					background-image:linear-gradient(to right, $selected_bg_color 40px,
+					background-image:linear-gradient(to right, transparentize($selected_bg_color, 0.3) 40px,
 																rgba(65,67,75,0) 36px, rgba(65,67,75,0)97%);
 					&:hover{
 						color: #ffffff;
