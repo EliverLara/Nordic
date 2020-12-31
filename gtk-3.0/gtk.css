@@ -2371,13 +2371,13 @@ headerbar {
     headerbar button:hover {
       color: #fff;
       text-shadow: none;
-      background-color: rgba(143, 188, 187, 0.8); }
+      background-color: rgba(143, 188, 187, 0.7); }
     .titlebar button:active, .titlebar button:checked,
     headerbar button:active,
     headerbar button:checked {
       color: #fff;
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: #8fbcbb;
+      background-color: rgba(143, 188, 187, 0.7);
       text-shadow: none; }
     .titlebar button:backdrop, .titlebar button:disabled, .titlebar button:backdrop:disabled,
     headerbar button:backdrop,
@@ -2563,7 +2563,7 @@ headerbar {
   headerbar .path-bar-box button:checked {
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #8fbcbb;
+    background-color: rgba(143, 188, 187, 0.7);
     text-shadow: none; }
     .titlebar .linked > button:active:backdrop,
     .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop, headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
@@ -2613,7 +2613,7 @@ headerbar {
     border-radius: 0px 4px 4px 0px;
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #8fbcbb;
+    background-color: rgba(143, 188, 187, 0.7);
     text-shadow: none; }
     .titlebar .path-bar-box widget > .text-button:last-child:backdrop, .titlebar .path-bar-box widget > .text-button:last-child:backdrop label,
     headerbar .path-bar-box widget > .text-button:last-child:backdrop,
@@ -4127,7 +4127,7 @@ placessidebar.sidebar {
   placessidebar.sidebar row.sidebar-row:selected {
     color: #fff;
     background-color: transparent;
-    background-image: linear-gradient(to right, #8fbcbb 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+    background-image: linear-gradient(to right, rgba(143, 188, 187, 0.7) 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
     placessidebar.sidebar row.sidebar-row:selected label {
       color: #8fbcbb; }
     placessidebar.sidebar row.sidebar-row:selected:hover {
@@ -5277,7 +5277,7 @@ button.raven-trigger {
       .raven .raven-header button:hover {
         color: #8fbcbb;
         text-shadow: none;
-        background-color: rgba(59, 66, 82, 0.8);
+        background-color: rgba(59, 66, 82, 0.7);
         border-radius: 0; }
       .raven .raven-header button:active, .raven .raven-header button:checked {
         color: #8fbcbb;
@@ -6307,7 +6307,7 @@ ConversationListView {
     .nemo-window toolbar.primary-toolbar button:hover {
       color: #2e3440;
       text-shadow: none;
-      background-color: rgba(143, 188, 187, 0.8); }
+      background-color: rgba(143, 188, 187, 0.7); }
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       color: #2e3440;
       outline-color: rgba(46, 52, 64, 0.3);

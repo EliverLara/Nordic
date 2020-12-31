@@ -258,7 +258,7 @@
   //
   color: if($tc==$text_color, $selected_bg_color, $tc);
   text-shadow: none;
-  background-color: transparentize($c, 0.2);
+  background-color: transparentize($c, 0.3);
 }
 
 @else if $t==backdrop-header {
