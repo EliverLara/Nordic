@@ -6321,3 +6321,59 @@ ConversationListView {
       background-color: #2a2f3a;
       border: 1px solid #1f232b;
       border-radius: 4px; }
+
+/* thunar */
+.thunar toolbar {
+  background-color: #2b303c; }
+
+/* buttons in toolbar */
+.thunar toolbar.horizontal button image {
+  -gtk-icon-transform: scale(0.72); }
+
+scrolledwindow.sidebar treeview.view {
+  background: #252a34;
+  padding: 1.5px; }
+
+/* path-bar of thunar */
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button {
+  color: #d8dee9;
+  border-radius: 4px;
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid #1f232b;
+  background-color: #2a2f3a;
+  border-radius: 0;
+  border-right: 0.5px solid #1f232b;
+  box-shadow: none;
+  min-height: 20px;
+  padding: 3px 4px; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:first-child {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right-style: solid; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:only-child {
+    border-radius: 4px;
+    border-style: solid; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:hover {
+    color: #4c566a; }
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:checked {
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(76, 86, 106, 0.7);
+    text-shadow: none; }
+
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .toggle.path-bar-button:hover {
+  color: #fff;
+  outline-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(76, 86, 106, 0.7);
+  text-shadow: none; }
+
+/* thunar sidepane */
+window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > scrolledwindow treeview.view:selected {
+  background: rgba(76, 86, 106, 0.7);
+  color: #d8dee9;
+  border-radius: 0;
+  box-shadow: none; }
