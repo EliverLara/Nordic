@@ -6347,22 +6347,22 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     border-radius: 4px;
     border-style: solid; }
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:hover {
-    color: #8fbcbb; }
+    color: #81a1c1; }
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:checked {
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(143, 188, 187, 0.7);
+    background-color: rgba(129, 161, 193, 0.7);
     text-shadow: none; }
 
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .toggle.path-bar-button:hover {
   color: #fff;
   outline-color: rgba(255, 255, 255, 0.3);
-  background-color: rgba(143, 188, 187, 0.7);
+  background-color: rgba(129, 161, 193, 0.7);
   text-shadow: none; }
 
 /* thunar sidepane */
 window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > scrolledwindow treeview.view:selected {
-  background: rgba(143, 188, 187, 0.7);
-  color: #2e3440;
+  background: rgba(129, 161, 193, 0.7);
+  color: #fefefe;
   border-radius: 0;
   box-shadow: none; }
