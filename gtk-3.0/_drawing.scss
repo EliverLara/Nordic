@@ -256,7 +256,7 @@
   //
   // hovered button headerbar look
   //
-  color: if($tc==$text_color, $selected_bg_color, $tc);
+  color: $tc;
   text-shadow: none;
   background-color: transparentize($c, 0.2);
 }
