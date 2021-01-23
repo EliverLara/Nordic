@@ -2707,7 +2707,7 @@ window.csd > .titlebar:not(headerbar) {
   box-shadow: none; }
 
 .titlebar:not(headerbar) > separator {
-  background: transparent; }
+  background: #353c4a; }
 
 /**************
  * GtkInfoBar *
