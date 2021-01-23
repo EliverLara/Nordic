@@ -296,7 +296,7 @@ headerbar {
   }
 
   > separator {
-    background: transparent;
+    background: $headerbar_color;
   }
 
   @extend %titlebar;
