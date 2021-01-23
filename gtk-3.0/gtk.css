@@ -2693,8 +2693,8 @@ window.csd > .titlebar:not(headerbar) {
   border-color: transparent;
   box-shadow: none; }
 
-.titlebar:not(headerbar) > separator {
-  background: transparent; }
+.titlebar:not(headerbar) > separator, .titlebar:not(headerbar) > separator:backdrop {
+  background: #2b303c; }
 
 /**************
  * GtkInfoBar *
@@ -5249,7 +5249,7 @@ button.raven-trigger {
       background-color: #2a2f3a;
       border-radius: 0; }
       .raven .raven-header button:hover {
-        color: #4c566a;
+        color: #d8dee9;
         text-shadow: none;
         background-color: rgba(46, 52, 64, 0.8);
         border-radius: 0; }
@@ -6279,7 +6279,7 @@ ConversationListView {
     min-height: 24px;
     padding: 3px; }
     .nemo-window toolbar.primary-toolbar button:hover {
-      color: #4c566a;
+      color: #d8dee9;
       text-shadow: none;
       background-color: rgba(76, 86, 106, 0.8); }
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {

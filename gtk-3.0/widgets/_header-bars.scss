@@ -298,7 +298,9 @@ headerbar {
   }
 
   > separator {
-    background: transparent;
+    &, &:backdrop {
+      background: $headerbar_color;
+    }
   }
 
   @extend %titlebar;
