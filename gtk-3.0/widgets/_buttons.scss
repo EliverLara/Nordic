@@ -343,7 +343,14 @@ button {
     @extend %linked;
   }
 
-  .primary-toolbar & { -gtk-icon-shadow: none; } // tango icons don't need shadows
+ .primary-toolbar &, .primary-toolbar .raised & { // tango icons don't need shadows
+    -gtk-icon-shadow: none; 
+
+    &:hover,
+    &:focus {
+      @include button(hover,$selected_bg_color,$selected_fg_color);
+    }
+  }
 
   .linked > &,
   .linked > &:hover,
