@@ -940,9 +940,9 @@ button {
   button:focus, .primary-toolbar .raised
   button:hover, .primary-toolbar .raised
   button:focus {
-    color: #2e3440;
-    outline-color: rgba(46, 52, 64, 0.3);
-    background-color: #8fbcbb;
+    color: #d8dee9;
+    outline-color: rgba(216, 222, 233, 0.3);
+    background-color: #4c566a;
     text-shadow: none; }
 
 .stack-switcher > button.needs-attention > label,
