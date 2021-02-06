@@ -932,8 +932,18 @@ button:backdrop {
   border-width: 1px; }
 
 .primary-toolbar
+button, .primary-toolbar .raised
 button {
   -gtk-icon-shadow: none; }
+  .primary-toolbar
+  button:hover, .primary-toolbar
+  button:focus, .primary-toolbar .raised
+  button:hover, .primary-toolbar .raised
+  button:focus {
+    color: #2e3440;
+    outline-color: rgba(46, 52, 64, 0.3);
+    background-color: #8fbcbb;
+    text-shadow: none; }
 
 .stack-switcher > button.needs-attention > label,
 .stack-switcher > button.needs-attention > image, stacksidebar row.needs-attention > label {
