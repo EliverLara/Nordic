@@ -3,7 +3,6 @@ $corner-radius: 2px;
 
 /* GLOBALS */
 $font-size: 10;
-$font-family: Roboto,Ubuntu, Cantarell, Sans-Serif;
 $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
@@ -11,7 +10,6 @@ $_bubble_transparent: transparentize($osd_bg_color, 0.17);
 $topbar_bg_color: transparentize($dracula,0);
 
 stage {
-  font-family: $font-family;
   @include fontsize($font-size);
   color: $fg_color;
 }
