@@ -5728,6 +5728,10 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   #gnc-id-main-window .arrow.button.toggle:hover {
     border-color: #8fbcbb; }
 
+.color-light label, .color-light.timed label {
+  color: #2e3440;
+  opacity: 1; }
+
 /********
  * Gala *
  *******/
