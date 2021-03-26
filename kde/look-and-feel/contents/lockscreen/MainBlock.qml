@@ -72,7 +72,7 @@ SessionManagementScreen {
                 opacity: 0.7
                 radius: parent.width / 2
                 height: 30
-                width: 220
+                width: passwordBox.width + 20
                 anchors.centerIn: parent
             }
 
