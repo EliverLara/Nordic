@@ -810,7 +810,6 @@ StScrollBar {
     -minimum-hpadding: 6px;
     font-weight: bold;
     color: $topbar_color;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
     transition-duration: 100ms;
 
     .app-menu-icon {
@@ -818,12 +817,6 @@ StScrollBar {
       margin-left: 4px;
       margin-right: 4px;
       //dimensions of the icon are hardcoded
-    }
-
-    .system-status-icon,
-    .app-menu-icon > StIcon,
-    .popup-menu-arrow {
-      icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
     }
 
     &:hover {
@@ -836,14 +829,7 @@ StScrollBar {
       // a box-shadow
       background: $selected_bg_color;
       box-shadow: inset 0 -2px 0px lighten($selected_bg_color,5%);
-      color: lighten($topbar_color,10%);
-      text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
-      .system-status-icon,
-      .app-menu-icon > StIcon,
-      .popup-menu-arrow {
-        icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
-      }
-      & > .system-status-icon { icon-shadow: red 0 2px 2px; }
+      color: #fff;
     }
 
     .system-status-icon { icon-size: 1.09em; padding: 0 5px; }
