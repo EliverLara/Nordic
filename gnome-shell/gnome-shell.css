@@ -730,36 +730,18 @@ StScrollBar {
     -minimum-hpadding: 6px;
     font-weight: bold;
     color: #d8dee9;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
     transition-duration: 100ms; }
     #panel .panel-button .app-menu-icon {
       -st-icon-style: symbolic;
       margin-left: 4px;
       margin-right: 4px; }
-    #panel .panel-button .system-status-icon,
-    #panel .panel-button .app-menu-icon > StIcon,
-    #panel .panel-button .popup-menu-arrow {
-      icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9); }
     #panel .panel-button:hover {
       background: #323946;
       color: #f9fafb; }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
       background: #4c566a;
       box-shadow: inset 0 -2px 0px #576279;
-      color: #f9fafb;
-      text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9); }
-      #panel .panel-button:active .system-status-icon,
-      #panel .panel-button:active .app-menu-icon > StIcon,
-      #panel .panel-button:active .popup-menu-arrow, #panel .panel-button:overview .system-status-icon,
-      #panel .panel-button:overview .app-menu-icon > StIcon,
-      #panel .panel-button:overview .popup-menu-arrow, #panel .panel-button:focus .system-status-icon,
-      #panel .panel-button:focus .app-menu-icon > StIcon,
-      #panel .panel-button:focus .popup-menu-arrow, #panel .panel-button:checked .system-status-icon,
-      #panel .panel-button:checked .app-menu-icon > StIcon,
-      #panel .panel-button:checked .popup-menu-arrow {
-        icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9); }
-      #panel .panel-button:active > .system-status-icon, #panel .panel-button:overview > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon {
-        icon-shadow: red 0 2px 2px; }
+      color: #fff; }
     #panel .panel-button .system-status-icon {
       icon-size: 1.09em;
       padding: 0 5px; }
