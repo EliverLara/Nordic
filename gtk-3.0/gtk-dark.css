@@ -5728,6 +5728,9 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   #gnc-id-main-window .arrow.button.toggle:hover {
     border-color: #8fbcbb; }
 
+/*******************
+ * Calendar events *
+********************/
 .color-light label, .color-light.timed label {
   color: #2e3440;
   opacity: 1; }
@@ -6393,3 +6396,10 @@ window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > 
   color: #2e3440;
   border-radius: 0;
   box-shadow: none; }
+
+.caja-notebook .entry {
+  background: #3b4252;
+  color: #d8dee9; }
+  .caja-notebook .entry:selected {
+    background: #8fbcbb;
+    color: #2e3440; }
