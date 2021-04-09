@@ -6396,8 +6396,8 @@ window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > 
   box-shadow: none; }
 
 .caja-notebook .entry {
-  background: #3b4252;
+  background: #2e3440;
   color: #d8dee9; }
   .caja-notebook .entry:selected {
-    background: #8fbcbb;
-    color: #2e3440; }
+    background: #4c566a;
+    color: #d8dee9; }
