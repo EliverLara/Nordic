@@ -68,12 +68,14 @@ SessionManagementScreen {
             palette.text: "#C3C7D1"
             
             background: Rectangle {
-                color: "#2e3440"
+                color: "#fc2"
                 opacity: 0.7
                 radius: parent.width / 2
                 height: 30
                 width: passwordBox.width + 20
                 anchors.centerIn: parent
+                border.width: 1
+                border.color: "#232831"
             }
 
 
