@@ -32,6 +32,7 @@ menu,
   background: $main_dark_color;
   border: 1px solid $borders_color; // adds borders in a non composited env
   border-radius: 5px;
+  font: initial;
 
   .csd & { border: none; }  // axes borders in a composited env
 
