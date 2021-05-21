@@ -6330,6 +6330,10 @@ ConversationListView {
       text-shadow: none;
       box-shadow: none; }
 
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
+.nemo-window .nemo-inactive-pane iconview {
+  background-color: #353b49; }
+
 /* thunar */
 .thunar toolbar {
   background-color: #353c4a; }
