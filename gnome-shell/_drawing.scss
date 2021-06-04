@@ -50,7 +50,7 @@
 //
 
   @if $t==normal {
-    background-color: $gray;
+    background-color: $base_color;
     border-color: $borders_color;
  
     @include _shadows($depth);
