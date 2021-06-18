@@ -110,7 +110,7 @@ PlasmaCore.ColorScope {
         anchors.fill: parent
         //use "black" because this is intended to look like a general darkening of the scene. a dark gray as normal background would just look too "washed out"
         color: "#2e3440"
-        opacity: 0.2
+        opacity: 0.6
     }
     MouseArea {
         anchors.fill: parent
