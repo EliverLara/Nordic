@@ -1004,6 +1004,11 @@ StScrollBar {
         &:rtl { background-image: url("assets/calendar-arrow-left.svg"); }
       }
 
+      .calendar-change-month-back StIcon,
+      .calendar-change-month-forward StIcon {
+        color:darken($fg_color, 7%);
+      }
+
     .calendar-day-base {
       font-size: 80%;
       text-align: center;
