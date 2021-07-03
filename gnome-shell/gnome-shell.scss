@@ -3,4 +3,6 @@ $subtheme: 'main';
 @import "colors"; //use gtk colors
 @import "drawing";
 @import "common";
-@import "extensions"
+@import "extensions";
+
+@import "cosmic";
