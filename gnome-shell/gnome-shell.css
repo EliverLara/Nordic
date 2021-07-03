@@ -1188,6 +1188,9 @@ StScrollBar {
 #overview {
   spacing: 24px; }
 
+#overview.cosmic-solid-bg {
+  background-color: #1d2128 !important; }
+
 .overview-controls {
   padding-bottom: 32px; }
 
@@ -2012,3 +2015,33 @@ StScrollBar {
 
 .openweather-current-databox-captions, .openweather-forecast-day {
   color: #81a1c1; }
+
+/* Pop_OS COSMIC Widget styling. */
+/* Pop_OS COSMIC Dock styling, append !important to any changed rules */
+.cosmic-dock #dock {
+  border-radius: 12px 12px 12px 12px !important;
+  border: 0 !important;
+  background-color: #2e3440;
+  margin: 4px !important; }
+
+.cosmic-dock.extended #dock {
+  border-radius: 0px !important;
+  margin: 0 !important; }
+
+.cosmic-dock.extended.side #dock {
+  border-top-width: 0 !important;
+  border-bottom-width: 0 !important; }
+
+.cosmic-dock.extended.side.left #dock {
+  border-left-width: 0 !important; }
+
+.cosmic-dock.extended.side.right #dock {
+  border-right-width: 0 !important; }
+
+.cosmic-dock.extended.bottom #dock {
+  border-bottom-width: 0 !important;
+  border-left-width: 0 !important;
+  border-right-width: 0 !important; }
+
+.cosmic-dock .app-well-app:hover .overview-icon, .cosmic-dock .app-well-app:focus .overview-icon, .cosmic-dock .app-well-app:selected .overview-icon {
+  border-radius: 11px; }
