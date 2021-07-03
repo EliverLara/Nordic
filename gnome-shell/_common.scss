@@ -1318,6 +1318,10 @@ StScrollBar {
   spacing: 24px; //
 }
 
+#overview.cosmic-solid-bg {
+  background-color: $topbar_bg_color !important;
+}
+
 .overview-controls {
   padding-bottom: 32px;
 }
