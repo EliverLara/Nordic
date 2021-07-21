@@ -1045,6 +1045,21 @@ StScrollBar {
     icon-size: 16px;
     padding: 8px; }
 
+/* World clocks */
+.world-clocks-button .world-clocks-city {
+  color: #d8dee9;
+  font-weight: normal; }
+
+.world-clocks-button .world-clocks-time {
+  font-weight: bold;
+  color: #d8dee9;
+  font-feature-settings: "lnum";
+  text-align: right; }
+
+.world-clocks-button .world-clocks-timezone {
+  color: #97a7c4;
+  font-feature-settings: "tnum"; }
+
 /* Weather */
 .weather-button .weather-header {
   color: #b7c2d7;
