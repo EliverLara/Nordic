@@ -19,7 +19,7 @@
 
 %scale_highlight {
   border: none;
-  background-color: $selected_bg_color;
+  background-color: $lime;
   border-radius: 3px;
   margin: 0;
 
@@ -30,8 +30,8 @@
 
   &:backdrop,
   &:active:backdrop {
-    border-color: lighten($selected_bg_color, 5%);
-    background-color: lighten($selected_bg_color, 5%);
+    border-color: lighten($lime, 5%);
+    background-color: lighten($lime, 5%);
     &:disabled {
       background-color: $scale_disabled_bg;
     }
@@ -49,12 +49,12 @@ scale {
 
   &.horizontal {
     trough,
-    progress { min-height: 6px; }
+    progress { min-height: 2px; }
   }
 
   &.vertical {
     trough,
-    progress { min-width: 6px; }
+    progress { min-width: 2px; }
   }
 
   // the slider is inside the trough, so to have make it bigger there's a negative margin
@@ -73,7 +73,7 @@ scale {
     transition-property: background, border, box-shadow;
 
     &:active {
-      background-color: $selected_bg_color;
+      background-color: $lime;
 
       &:disabled {
         background-color: $insensitive_bg_color;
