@@ -13,7 +13,8 @@ scrolledwindow.sidebar treeview.view {
 }
   
 /* path-bar of thunar */
-window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar {
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar,
+.thunar toolbar {
     .path-bar-button {
         @include button(normal-header);
         border-radius: 0;
