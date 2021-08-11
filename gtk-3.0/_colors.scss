@@ -3,9 +3,9 @@
 
 // Main definitions
 $base_color: #2e394c;
-$text_color: $nord4;
+$text_color: #d8dee9;
 $bg_color: #2a3344;
-$fg_color: $nord4;
+$fg_color: #d8dee9;
 $switch_bg: if($variant == 'light', #ffffff, transparentize(black,1));
 $shadow_color: rgba(162, 162, 165, 0.21);
 

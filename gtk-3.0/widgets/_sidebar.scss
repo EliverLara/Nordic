@@ -119,13 +119,9 @@ stacksidebar {
 
 placessidebar{
 	&.sidebar{
-		background-color: transparent;
-		background-image:linear-gradient(to right, darken($main_dark_color, 5%) 40px,
-												$_sidebar_color 35px,$_sidebar_color 36px,
-												$_sidebar_color 36px,$_sidebar_color 99%, 
-												$_sidebar_color 100%);
 		row{
 			&.sidebar-row {
+        margin: 0 5px;
 				&.sidebar-row{
 					.sidebar-icon {
 						margin-left:-14px;
@@ -150,25 +146,18 @@ placessidebar{
 				}
 
 				&:selected{
-          color: #fff;
-          label {
-            color: $selected_bg_color;
-          }
+         
+          border-radius: 5px;
+          border-left: 2px solid #f8ab95;
+          &, & label { color: $selected_fg_color; }
 					background-color: transparent;
-					background-image:linear-gradient(to right, transparentize($selected_bg_color, 0.3) 40px,
-																rgba(65,67,75,0) 36px, rgba(65,67,75,0)97%);
-					&:hover{
-						color: #ffffff;
-						background-color: rgba(0,0,0,0.24);
-						.sidebar-icon {
-							color: #ffffff;
-						}
-          }
-          &:backdrop{
-            color: rgba(0,0,0,0.54);;
-            background-color: transparent;
-            background-image:linear-gradient(to right, $selected_bg_color 40px,
-                                  rgba(65,67,75,0) 36px, rgba(65,67,75,0)97%);
+					background-image:linear-gradient(to right,#f8ab95, #ee73c8,
+          lighten($_sidebar_color, 7%) 40px,  lighten($_sidebar_color, 7%) 97%);
+			
+          &:backdrop {
+            &, & label { color:$backdrop_selected_fg_color; }
+            background-image:linear-gradient(to right,#f8ab95, #ee73c8,
+          lighten($_sidebar_color, 7%) 40px,  lighten($_sidebar_color, 7%) 97%);
 
             .sidebar-icon {
               -gtk-icon-shadow: none;  
@@ -200,11 +189,8 @@ placessidebar{
         }
 			}
 		}
-	}
-	list{ 
-		background-color: transparent; 
-		&:backdrop { background-color: transparent; }
-	}
+  }
   
+	list { &, &:backdrop { background-color: $_sidebar_color; } }
   
 }

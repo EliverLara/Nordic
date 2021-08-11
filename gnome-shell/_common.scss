@@ -7,7 +7,7 @@ $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
 $_bubble_transparent: transparentize($osd_bg_color, 0.17);
-$topbar_bg_color: transparentize($dracula,0);
+$topbar_bg_color: transparentize($dracula, 0.07);
 
 stage {
   @include fontsize($font-size);
@@ -17,7 +17,7 @@ stage {
 /* WIDGETS */
 
 /* Buttons */
-.button {
+.button, %button {
   @include button(normal);
   border-radius: 4px;
   border-width: 0;
@@ -111,24 +111,24 @@ StScrollBar {
 
 .slider {
   height: 1em;
-  color: $selected_fg_color;
+  color: darken($selected_fg_color, 25%);
   border-color: black;
-  -slider-height: 0.3em;
+  -slider-height: 0.1em;
   -slider-background-color: $gray; //background of the trough
   -slider-border-color: black; //trough border color
-  -slider-active-background-color: $selected_bg_color; //active trough fill
+  -slider-active-background-color: $cyan; //active trough fill
   -slider-active-border-color: $lime; //active trough border
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
 
-  -barlevel-height: 0.3em;
+  -barlevel-height: 0.1em;
   -barlevel-background-color: $gray;
   -barlevel-border-color: black;
-  -barlevel-active-background-color: $selected_bg_color;
+  -barlevel-active-background-color: $lime;
   -barlevel-active-border-color: $lime;
   -barlevel-border-width: 0;
   -barlevel-handle-radius: 6px; 
-  -barlevel-overdrive-color: $selected_bg_color;
+  -barlevel-overdrive-color: $cyan;
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 0px;
 }
@@ -142,9 +142,7 @@ StScrollBar {
     height: 22px;
     background-image: url("assets/checkbox-off.svg");
   }
-  &:focus, &:hover StBin { 
-    background-image: url("assets/checkbox-off-focused.svg"); 
-  }
+  &:focus, &:hover StBin { background-image: url("assets/checkbox-off-focused.svg"); }
   &:checked StBin { background-image: url("assets/checkbox.svg"); }
   &:focus:checked StBin { background-image: url("assets/checkbox-focused.svg"); }
 }
@@ -244,9 +242,10 @@ StScrollBar {
   spacing: 42px;
   border: none;
   & .modal-dialog-linked-button:last-child {
-    background: $error_color;
+    @include gradient();
+    color: #fff;
     &:hover, &:focus {
-      background: lighten($error_color, 3%);
+      background: darken($error_color, 3%);
       color: #fff;
     }
   }
@@ -522,6 +521,7 @@ StScrollBar {
   color: $fg_color;
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
+   
     background-color:  transparentize(darken($main_dark,57%), 0.8);
     box-shadow: $depth6;
   }
@@ -533,15 +533,15 @@ StScrollBar {
 
     &:ltr { padding-right: 1.75em; padding-left: 0; }
     &:rtl { padding-right: 0; padding-left: 1.75em; }
-
     &:checked {
-      background-color: transparentize($selected_bg_color,0.1);
+     // @include gradient();
+     background-color: transparentize(darken($bg_color, 4%), 0.07);
       color: $selected_fg_color;
-      box-shadow: inset 0 1px 0px lighten($borders_color,5%);
-      font-weight: bold;
+      box-shadow: inset 1px 0px 0px lighten($selected_bg_color,5%);
+      font-weight: normal;
       &:hover{
-        background-color: transparentize($selected_bg_color,0.1);
-        color: $selected_fg_color;
+        background-color: transparentize(darken($bg_color, 4%), 0.07);
+        color: $selected_bg_color;
       }
     }
     &.selected { background-color: transparentize($fg_color,0.9); color: $fg_color; }
@@ -561,13 +561,15 @@ StScrollBar {
   }
 }
 
+
+
   .popup-menu-ornament {
     text-align: right;
     width: 1.2em;
   }
   .popup-menu-boxpointer,
   .candidate-popup-boxpointer {
-    -arrow-border-radius: 5px;
+    -arrow-border-radius: 7px;
     -arrow-background-color: $bg_color;
     -arrow-border-width: 1px;
     -arrow-border-color: $borders_color;
@@ -577,8 +579,8 @@ StScrollBar {
   }
 
   .popup-separator-menu-item {
-
-    &-separator {
+    background-color: transparent;
+    &-separator { 
       //-margin-horizontal: 24px;
       height: 1px; //not really the whole box
       margin: 6px 64px;
@@ -587,6 +589,7 @@ StScrollBar {
       border-bottom-width: 1px;
       border-bottom-style: solid;
     }
+
     .popup-sub-menu & &-separator { //submenu separators
       margin: 0 64px 0 32px;
       background: transparent;
@@ -719,11 +722,14 @@ StScrollBar {
     spacing: 8px;
   }
 
-  .ws-switcher-active-up, .ws-switcher-active-down {
+  .ws-switcher-active-up,
+  .ws-switcher-active-down,
+  .ws-switcher-active-left,
+  .ws-switcher-active-right {
     height: 50px;
     background-color: $selected_bg_color;
     color: $selected_fg_color;
-    //background-image: url("resource:///org/gnome/shell/theme/assets/ws-switch-arrow-up.png");
+    border: none;
     background-size: 32px;
     border-radius: 8px;
   }
@@ -744,8 +750,8 @@ StScrollBar {
   color: $_bubble_fg_color;
   background-color: $_bubble_bg_color;
   border: 1px solid $borders_color;
-  box-shadow: 0px 0px 5px $borders_color;
   border-radius: 5px;
+  box-shadow: 0px 0px 7px $borders_color;
   padding: 12px;
 }
 
@@ -775,7 +781,7 @@ StScrollBar {
   /* transition from solid to transparent */
   transition-duration: 500ms;
   font-weight: bold;
-  height: 1.86em;
+  height: 2.1em;
   padding: 0px 0px;
 
   &.unlock-screen,
@@ -810,8 +816,12 @@ StScrollBar {
     -minimum-hpadding: 6px;
     font-weight: bold;
     color: $topbar_color;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
     transition-duration: 100ms;
-
+    &, &.clock-display .clock{
+      border-radius: 0;
+    }
+     
     .app-menu-icon {
       -st-icon-style: symbolic;
       margin-left: 4px;
@@ -819,17 +829,48 @@ StScrollBar {
       //dimensions of the icon are hardcoded
     }
 
+    .system-status-icon,
+    .app-menu-icon > StIcon,
+    .popup-menu-arrow {
+      icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+    }
+
     &:hover {
-      background: lighten($topbar_bg_color, 10%);
+      box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
       color: lighten($topbar_color, 10%);
+      transition-duration: 200ms;
+
+      &.clock-display {
+        box-shadow: none;
+
+        .clock {
+          box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
+        }
+      }
     }
 
     &:active, &:overview, &:focus, &:checked {
       // Trick due to St limitations. It needs a background to draw
       // a box-shadow
-      background: $selected_bg_color;
-      box-shadow: inset 0 -2px 0px lighten($selected_bg_color,5%);
-      color: #fff;
+      background-image: url("assets/top-shell-btn.svg");
+background-size: 100%;
+      color: $selected_fg_color;
+      text-shadow: 0px 0px 2px rgba(92, 92, 92, 0.9);
+      transition-duration: 200ms;
+      .system-status-icon,
+      .app-menu-icon > StIcon,
+      .popup-menu-arrow {
+        icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+      }
+      & > .system-status-icon { icon-shadow: red 0 2px 2px; }
+
+      &.clock-display {
+        box-shadow: none;
+
+        .clock {
+         // box-shadow: inset 0 0 0 100px $selected_bg_color;
+        }
+      }
     }
 
     .system-status-icon { icon-size: 1.09em; padding: 0 5px; }
@@ -838,16 +879,6 @@ StScrollBar {
     .lock-screen & {
       color: lighten($fg_color, 10%);
       &:focus, &:hover, &:active { color: lighten($fg_color, 10%); }
-    }
-
-    // Remove default bottom border
-    &.clock-display {
-      &:active, &:overview, &:focus, &:checked {
-        box-shadow: none;
-        .clock {
-          box-shadow: none;
-        }
-      }
     }
   }
 
@@ -887,10 +918,12 @@ StScrollBar {
   .calendar {
     margin-bottom: 1em;
   }
-  
+
   .calendar, .world-clocks-button, .weather-button, .events-button {
     background: transparent;
     border: none;
+    color: $fg_color;
+    box-shadow: none;
   }
 
     .calendar,
@@ -908,6 +941,7 @@ StScrollBar {
       border: 0 solid transparent;
       &:ltr { border-left-width: 1px; }
       &:rtl { border-right-width: 1px; }
+      background: darken($bg_color, 1.7%);
     }
 
     .datemenu-today-button,
@@ -954,7 +988,7 @@ StScrollBar {
     .events-section-title,
     .message-list-section-title,
     .events-title {
-      color: darken($fg_color, 40%);
+      color: darken($fg_color, 10%);
       font-weight: bold;
     }
 
@@ -997,7 +1031,7 @@ StScrollBar {
 
       .calendar-change-month-back StIcon,
       .calendar-change-month-forward StIcon {
-        color:darken($fg_color, 7%);
+        color:darken($fg_color,5%);
       }
 
     .calendar-day-base {
@@ -1010,12 +1044,12 @@ StScrollBar {
       color: $fg_color;
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active,&:selected {
-        color: lighten($selected_fg_color,5%);
+        color: $selected_fg_color;
         background-color: $selected_bg_color;
         border-color: transparent; //avoid jumparound due to today
       }
       &.calendar-day-heading {  //day of week heading
-        color: darken($fg_color,40%);
+        color: darken($fg_color, 10%);
         margin-top: 1em;
         font-size: 70%;
       }
@@ -1031,11 +1065,31 @@ StScrollBar {
       .calendar-nonwork-day {
         color: $insensitive_fg_color;
       }
+
+       // Today
       .calendar-today {
         font-weight: bold;
         //color: lighten($fg_color,10%);
         //background-color: darken($bg_color,5%);
         border: 1px solid transparentize($borders_color,0.5);
+        border: 1px solid $selected_bg_color;
+        background-color: transparent;
+        color: $selected_fg_color;
+
+        &:hover,&:focus {
+          background-color:lighten($selected_bg_color, 3%);
+          color: $selected_fg_color;
+        }
+
+        &:active,&:selected {
+          background-color: $selected_bg_color;
+          color: $selected_fg_color;
+
+          &:hover,&:focus {
+            background-color:lighten($selected_bg_color, 3%);
+            color: $selected_fg_color;
+          }
+        }
       }
       .calendar-day-with-events {
         color: lighten($fg_color,10%);
@@ -1053,23 +1107,21 @@ StScrollBar {
         border-radius: 2px;
         padding: 0.5em 0 0;
         margin: 6px;
-        background-color: transparentize($fg_color,0.7);
-        color: $bg_color;
+        background-color: darken($bg_color, 2%);
+        color: $fg_color;
       }
 
       /* Message list */
       .message-list {
         width: 31.5em;
         .message-title, .message-content, .message-body {
-          color: darken($fg_color, 5%);
+          color: darken($fg_color,4%);
         }
       }
 
         .message-list-clear-button.button {
-         // background-color: transparent;
-          border: 1px solid $borders_color;
-          box-shadow: none;
-          &:hover,&:focus { background-color: lighten($bg_color,5%); }
+          @include button(normal);
+          &:hover,&:focus { @include button(hover); }
           margin: 1.5em 1.5em 0;
         }
 
@@ -1099,13 +1151,13 @@ StScrollBar {
 
         .message {
           &:hover,&:focus { 
-            background-color: lighten($bg_color,2%);
+            background-color: darken($bg_color, 1%);
+            border-radius: 0px 5px 5px 0px;
             box-shadow: 3px 0px 0px 0px $selected_bg_color inset;
-           }
-          border: 1px solid $borders_color;
-          border-radius: 3px;
+          }
           background: darken($bg_color, 0.7%);
-          box-shadow: none;
+          border: 1px solid $borders_color;
+          border-radius: 5px;
         }
 
           .message-icon-bin {
@@ -1170,9 +1222,9 @@ StScrollBar {
               padding: 8px; }
           }
 
-/* World clocks */
+  /* World clocks */
 .world-clocks-button {
-  
+
   // city label
   .world-clocks-city {
     color: $fg_color;
@@ -1189,11 +1241,10 @@ StScrollBar {
 
   // timezone offset label
   .world-clocks-timezone {
-    color: darken($fg_color,20%);
+    color: darken($fg_color, 20%);
     font-feature-settings: "tnum";
   }
 }
-
 
 /* Weather */
 .weather-button {
@@ -1257,7 +1308,11 @@ StScrollBar {
       color: $selected_bg_color;
       background: transparent;
     }
-    &:active { background-color: darken($selected_bg_color, 10%); color: $selected_fg_color;}
+    &:active {
+       background-color: darken($selected_bg_color, 10%);
+       color: $selected_fg_color; 
+       border: 1px solid darken($selected_bg_color, 10%);
+      }
 
     & > StIcon { icon-size: 16px; }
   }
@@ -1317,7 +1372,7 @@ StScrollBar {
 
   .nm-dialog-airplane-text { color: $fg_color; }
   .nm-dialog-header-icon { icon-size: 32px; }
-  .nm-dialog-scroll-view { border: 2px solid $borders_color; background: transparent; }
+  .nm-dialog-scroll-view { border: 2px solid $borders_color; background: transparent;}
   .nm-dialog-header { font-weight: bold; }
 
   .nm-dialog-item {
@@ -1339,12 +1394,12 @@ StScrollBar {
 
 /* OVERVIEW */
 
-#overview {
+#overview,.controls-manager, .secondary-monitor-workspaces {
   spacing: 24px; //
 }
 
-#overview.cosmic-solid-bg {
-  background-color: $topbar_bg_color !important;
+#overviewGroup {
+  background-color: $base_color;
 }
 
 .overview-controls {
@@ -1354,13 +1409,12 @@ StScrollBar {
   .window-picker { //container around window thumbnails
     -horizontal-spacing: 16px;
     -vertical-spacing: 16px;
-    padding: 0 16px 16px;
 
     &.external-monitor { padding: 16px; }
   }
 
   .window-clone-border {
-    border: 4px solid transparentize($selected_bg_color, .7);
+    border: 1px solid transparentize(rgba(255, 255, 255, 0.3),.7);
     border-radius: 0px;
     // For window decorations with round corners we can't match
     // the exact shape when the window is scaled. So apply a shadow
@@ -1369,7 +1423,7 @@ StScrollBar {
   }
   .window-caption {
     spacing: 20px;
-    color: $fg_color;
+    color: $topbar_color;
     background-color: transparentize($osd_bg_color,.3);
     border-radius: 2px;
     padding: 4px 8px;
@@ -1379,22 +1433,18 @@ StScrollBar {
   .search-entry {
     width: 320px;
     padding: 9px;
-    border-radius: 2px;
-    border: none;
+    border-radius: 100px;
+    border: 1px solid $borders_color;
     color: $fg_color;
-    background-color: transparentize($bg_color, 0.4);
+    background-color: darken($bg_color, 2%);
     box-shadow: $depth;
-    &:focus {
-      border-width: 0;
-      color: $fg_color;
-      background-color: transparentize($bg_color, 0.2);
-      box-shadow: $depth2;
-    }
+
 
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
     &:hover, &:focus {
-      background-color: transparentize($bg_color, 0.2);
+      background-color: $bg_color;
+      border-color: transparentize($selected_bg_color, 0.5);
       .search-entry-icon { color: $fg_color; }
     }
   }
@@ -1412,7 +1462,6 @@ StScrollBar {
   }
 
   .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
-
   .search-section-content { 
     background-color: transparent;
     border-radius: 0;
@@ -1421,7 +1470,6 @@ StScrollBar {
     // This is the space between the provider icon and the results container
     spacing: 32px; 
   }
-  
   .search-statustext { // "no results"
     @extend %status_text;
   }
@@ -1439,34 +1487,13 @@ StScrollBar {
 
   /* DASHBOARD */
 
-  #dash {
-    font-size: 9pt;
-    color: $topbar_color;
-    background-color: $topbar_bg_color;
-    padding: 6px 0;
-    border: 1px solid $borders_color;
-    border-left: 0px;
-    border-radius: 0px 5px 5px 0px;
-
-    &:rtl {
-      border-radius: 9px 0 0 9px;
-    }
-
-    .placeholder {
-      background-image: url("assets/dash-placeholder.svg");
-      background-size: contain;
-      height: 24px;
-    }
-
-    .empty-dash-drop-target {
-      width: 24px;
-      height: 24px;
-    }
-
+  .dash-background {
+    background-color: darken($bg_color, 2%);
   }
 
-  .dash-item-container > StWidget {
-    padding: 4px 8px;
+  .dash-separator {
+    width: 1px;
+    background-color: $gray;
   }
 
   .dash-label { //osd tooltip
@@ -1530,19 +1557,21 @@ StScrollBar {
     & .overview-icon {
       @extend %icon_tile;
     }
-    &:active .overview-icon,
-    &:checked .overview-icon {
-      background-color: transparentize(darken($osd_bg_color,7%),.1);
-      box-shadow: inset $depth2;
-      color: $fg_color;
-    }
+   
     &:hover .overview-icon,
     &:focus .overview-icon,
     &:selected .overview-icon {
-      background-color: transparentize($bg_color,.5);
+      background-color: $main_dark;
       transition-duration: 0ms;
       border-image: none;
       background-image: none;
+    }
+
+    &:active .overview-icon,
+    &:checked .overview-icon {
+      background-color:  darken($main_dark, 7%);;
+      box-shadow: inset $depth2;
+      color: $fg_color;
     }
 
   }
@@ -1557,13 +1586,31 @@ StScrollBar {
 
   %icon_tile {
     color: $selected_fg_color;
-    border-radius: 2px;
-    padding: 7px 6px;
+    padding: 6px;
     border: none;
     transition-duration: 100ms;
     text-align: center;
-    box-shadow: $depth;
+    box-shadow: none;
   }
+
+    /* App Folders */
+.app-well-app.app-folder {
+  background-color: $_bubble_bg_color;
+}
+// expanded folder
+.app-folder-dialog { //style like the dash
+  background-color:  $_bubble_bg_color;
+  .edit-folder-button {
+    @extend %button;
+
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+
+    & > StIcon { icon-size: 16px }
+  }
+}
 
   .app-well-app.app-folder > .overview-icon {
     background-color: transparentize($osd_bg_color,.6);
@@ -1601,6 +1648,7 @@ StScrollBar {
       border-radius: 12px;
       background-image: none;
       background-color: rgba(255, 255, 255, 0.3);
+      border: none;
     }
 
     &:hover .page-indicator-icon {  
@@ -1610,11 +1658,13 @@ StScrollBar {
     &:active .page-indicator-icon { 
       background-image: none;
       background-color: rgba(255, 255, 255, 0.7);
+      margin: 0;
     }
     &:checked .page-indicator-icon{ 
       background-image: none;
       background-color: #FFFFFF;
-      transition-duration: 0s; 
+      transition-duration: 0.3s; 
+      transition-timing-function: ease-in-out;
     }
   }
 
@@ -1637,7 +1687,7 @@ StScrollBar {
     &:rtl { border-radius: 0;}
   }
   .workspace-thumbnail-indicator {
-    border: 4px solid transparentize($selected_bg_color, .2);
+    border: 4px solid transparentize($selected_bg_color, .5);
     box-shadow: $depth;
     padding: 0;
   }
@@ -1678,7 +1728,7 @@ StScrollBar {
     box-shadow: 0 1px 4px black;
     &:hover { background-color: transparentize($bg_color, 0.04); }
     &:focus { background-color: transparentize($bg_color, 0.04); }
-    *{ color: $topbar_color; }
+    *{ color: #fefefe; }
 
     .notification-icon { padding: 5px; }
     .notification-content { padding: 5px; spacing: 5px; }
@@ -1690,8 +1740,9 @@ StScrollBar {
     }
     .notification-button {
       padding: 5px;
-      background-color: transparentize($bg_color, 0.1);
+      background-color: $bg_color;
       box-shadow: none;
+      border: none;
       &:first-child { border-radius: 0 0 0 3px; }
       &:last-child { border-radius: 0 0 3px 0; }
       &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}

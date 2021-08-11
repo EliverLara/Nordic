@@ -156,8 +156,7 @@ headerbar {
   %linked-button {
     @extend %linked-header;
     &:active, &:checked {
-    //  @include button(active, transparentize($selected_bg_color, 0.3), #fff);
-      background: linear-gradient(to  right, #f8ab95, #f17dad, #ee73c8);
+      @include button(active-header);
       &:backdrop{
         color: $backdrop_selected_fg_color;
         label{
@@ -196,8 +195,7 @@ headerbar {
     }
     widget > .text-button:last-child{
       border-radius: 0px 4px 4px 0px;
-      @include button(active, transparentize($selected_bg_color, 0.3), #fff);
-      background: linear-gradient(to  right, #f8ab95, #f17dad, #ee73c8);
+      @include button(active-header);
       &:backdrop, &:backdrop label {
         color: $backdrop_selected_fg_color;
       }

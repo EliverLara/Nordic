@@ -50,7 +50,7 @@
 //
 
   @if $t==normal {
-    background-color: $base_color;
+    background-color: $gray;
     border-color: $borders_color;
  
     @include _shadows($depth);
@@ -148,6 +148,7 @@
     border: 1px solid $borders_color;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
+    border: 1px solid $borders_color;
   }
   @if $t==focus {
   //
@@ -168,7 +169,7 @@
   // active osd button
   //
     $_bg: if($c!=$osd_bg_color, transparentize($c, 0.3),
-                            lighten($osd_bg_color,2%));
+                            lighten($main_dark, 2%));
 
     color: $selected_bg_color;
     background-color: $_bg;
@@ -219,4 +220,10 @@
     text-shadow: none;
     icon-shadow: none;
   }
+}
+
+@mixin gradient($c1: $g1, $c2: $g2, $dir: horizontal) {
+  background-gradient-start: $c1;
+  background-gradient-end: $c2;
+  background-gradient-direction: $dir;
 }

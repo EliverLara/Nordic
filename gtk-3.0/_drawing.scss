@@ -278,7 +278,25 @@
   //
   color: $tc;
   outline-color: transparentize($tc, 0.7);
-  background:  linear-gradient(to  right, #f8ab95, #f17dad, #ee73c8);
+  background-image:  linear-gradient(to  right, #f8ab95, #f17dad, #ee73c8);
+  background-color: transparent;
+  text-shadow: none;
+ // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
+}
+
+@else if $t==active-header {
+  //
+  // pushed button
+  //
+  color: $tc;
+  outline-color: transparentize($tc, 0.7);
+  background:
+  linear-gradient(to  right, #f8ab95, #f17dad, #ee73c8)
+  left 
+  bottom
+  lighten($_sidebar_color, 7%)
+  no-repeat; 
+  background-size: 100% 3px;
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
 }

@@ -1,11 +1,10 @@
-@import '../gtk-3.0/_nord';
 
-/* Pop_OS COSMIC Widget styling. */
 /* Pop_OS COSMIC Dock styling, append !important to any changed rules */
+
 .cosmic-dock #dock {
   border-radius: 12px 12px 12px 12px !important;
   border: 0 !important;
-  background-color: $nord0;
+  background-color: darken($bg_color, 3%);
   margin: 4px !important; 
 }
 
