@@ -658,12 +658,16 @@ StScrollBar {
   padding: 0px;
   spacing: 8px; }
 
-.ws-switcher-active-up, .ws-switcher-active-down {
+.ws-switcher-active-up,
+.ws-switcher-active-down,
+.ws-switcher-active-left,
+.ws-switcher-active-right {
   height: 50px;
   background-color: #4c566a;
   color: #d8dee9;
   background-size: 32px;
-  border-radius: 8px; }
+  border-radius: 8px;
+  border-color: #8fbcbb; }
 
 .ws-switcher-active-up {
   background-image: url("assets/ws-switch-arrow-up.png"); }

@@ -719,13 +719,17 @@ StScrollBar {
     spacing: 8px;
   }
 
-  .ws-switcher-active-up, .ws-switcher-active-down {
+  .ws-switcher-active-up,
+  .ws-switcher-active-down,
+  .ws-switcher-active-left,
+  .ws-switcher-active-right {
     height: 50px;
     background-color: $selected_bg_color;
     color: $selected_fg_color;
     //background-image: url("resource:///org/gnome/shell/theme/assets/ws-switch-arrow-up.png");
     background-size: 32px;
     border-radius: 8px;
+    border-color: $selected_bg_color;
   }
   .ws-switcher-active-up {
     background-image: url("assets/ws-switch-arrow-up.png"); }
