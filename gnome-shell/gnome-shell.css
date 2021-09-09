@@ -497,7 +497,9 @@ StScrollBar {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
   .popup-menu .popup-menu-content {
-    padding: 16px 0; }
+    padding: 16px 0;
+    background-color: #2e3440;
+    border-radius: 5px; }
   .popup-menu .popup-menu-item {
     spacing: 6px;
     padding: 6px; }
@@ -667,7 +669,7 @@ StScrollBar {
   color: #fefefe;
   background-size: 32px;
   border-radius: 8px;
-  border-color: #8fbcbb; }
+  border-color: #4c566a; }
 
 .ws-switcher-active-up {
   background-image: url("assets/ws-switch-arrow-up.png"); }
