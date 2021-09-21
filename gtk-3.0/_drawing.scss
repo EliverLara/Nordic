@@ -296,7 +296,7 @@
   bottom
   lighten($_sidebar_color, 7%)
   no-repeat; 
-  background-size: 100% 3px;
+  background-size: 100% 1.5px;
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
 }

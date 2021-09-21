@@ -2580,7 +2580,7 @@ headerbar {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
     background: linear-gradient(to right, #f8ab95, #f17dad, #ee73c8) left bottom #2f384c no-repeat;
-    background-size: 100% 3px;
+    background-size: 100% 1.5px;
     text-shadow: none; }
     .titlebar .linked > button:active:backdrop,
     .titlebar headerbar .linked > button:active:backdrop, .titlebar .path-bar-box button:active:backdrop, headerbar .path-bar-box .titlebar button:active:backdrop, .titlebar .linked > button:checked:backdrop,
@@ -2631,7 +2631,7 @@ headerbar {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
     background: linear-gradient(to right, #f8ab95, #f17dad, #ee73c8) left bottom #2f384c no-repeat;
-    background-size: 100% 3px;
+    background-size: 100% 1.5px;
     text-shadow: none; }
     .titlebar .path-bar-box widget > .text-button:last-child:backdrop, .titlebar .path-bar-box widget > .text-button:last-child:backdrop label,
     headerbar .path-bar-box widget > .text-button:last-child:backdrop,

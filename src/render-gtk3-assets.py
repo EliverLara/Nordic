@@ -20,6 +20,7 @@ def optimize_png(png_file):
 
 
 def wait_for_prompt(process, command=None):
+    print(command)
     if command is not None:
         process.stdin.write((command+'\n').encode('utf-8'))
 
@@ -30,9 +31,9 @@ def wait_for_prompt(process, command=None):
         return
 
     output += process.stdout.read(1)
-    while output != b'\n>':
-        output += process.stdout.read(1)
-        output = output[1:]
+    # while output != b'\n>':
+    #     output += process.stdout.read(1)
+    #     output = output[1:]
 
 
 def start_inkscape():
@@ -49,7 +50,7 @@ def inkscape_render_rect(icon_file, rect, output_file):
     if inkscape_process is None:
         inkscape_process = start_inkscape()
     wait_for_prompt(inkscape_process,
-                    '%s -i %s -e %s' %
+                    'file-open:%s; export-id:%s; export-filename:%s; export-do' %
                     (icon_file, rect, output_file))
     optimize_png(output_file)
 
