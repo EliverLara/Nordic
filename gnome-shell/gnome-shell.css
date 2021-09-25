@@ -110,6 +110,8 @@ StEntry {
     icon-size: 16px;
     warning-color: #c3674a;
     padding: 0 4px; }
+  StEntry StLabel.hint-text {
+    color: rgba(216, 222, 233, 0.7); }
 
 /* Scrollbars */
 StScrollView.vfade {
