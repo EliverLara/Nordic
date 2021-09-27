@@ -8,7 +8,7 @@ stage {
 
 /* WIDGETS */
 /* Buttons */
-.button {
+.button, .app-folder-dialog .edit-folder-button {
   color: #d8dee9;
   background-color: #232831;
   box-shadow: none;
@@ -18,26 +18,26 @@ stage {
   border-radius: 4px;
   border-width: 0;
   padding: 4px 32px; }
-  .button:focus {
+  .button:focus, .app-folder-dialog .edit-folder-button:focus {
     color: #81a1c1;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
     border: 1px solid #1f232b; }
-  .button:insensitive {
+  .button:insensitive, .app-folder-dialog .edit-folder-button:insensitive {
     color: #838995;
     background-color: rgba(64, 70, 82, 0.66);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active {
+  .button:active, .app-folder-dialog .edit-folder-button:active {
     color: #81a1c1;
     background-color: rgba(46, 52, 64, 0.95);
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
-  .button:hover {
+  .button:hover, .app-folder-dialog .edit-folder-button:hover {
     color: #81a1c1;
     background-color: rgba(50, 57, 70, 0.95);
     border: 1px solid #1f232b;
@@ -499,9 +499,7 @@ StScrollBar {
     background-color: rgba(0, 0, 0, 0.2);
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
   .popup-menu .popup-menu-content {
-    padding: 16px 0;
-    background-color: #2e3440;
-    border-radius: 5px; }
+    padding: 16px 0; }
   .popup-menu .popup-menu-item {
     spacing: 6px;
     padding: 6px; }
@@ -716,7 +714,7 @@ StScrollBar {
   /* transition from solid to transparent */
   transition-duration: 500ms;
   font-weight: bold;
-  height: 1.86em;
+  height: 2.1em;
   padding: 0px 0px; }
   #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
     background-color: transparent; }
@@ -744,12 +742,19 @@ StScrollBar {
       margin-left: 4px;
       margin-right: 4px; }
     #panel .panel-button:hover {
-      background: #323946;
+      box-shadow: inset 0 0 0 100px #323946;
       color: #f9fafb; }
+      #panel .panel-button:hover.clock-display {
+        box-shadow: none; }
+        #panel .panel-button:hover.clock-display .clock {
+          box-shadow: inset 0 0 0 100px #323946; }
     #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-      background: #81a1c1;
-      box-shadow: inset 0 -2px 0px #92aec9;
+      box-shadow: inset 0 0 0 100px #81a1c1;
       color: #fff; }
+      #panel .panel-button:active.clock-display, #panel .panel-button:overview.clock-display, #panel .panel-button:focus.clock-display, #panel .panel-button:checked.clock-display {
+        box-shadow: none; }
+        #panel .panel-button:active.clock-display .clock, #panel .panel-button:overview.clock-display .clock, #panel .panel-button:focus.clock-display .clock, #panel .panel-button:checked.clock-display .clock {
+          box-shadow: inset 0 0 0 100px #81a1c1; }
     #panel .panel-button .system-status-icon {
       icon-size: 1.09em;
       padding: 0 5px; }
@@ -765,10 +770,6 @@ StScrollBar {
       .lock-screen #panel .panel-button:hover,
       .lock-screen #panel .panel-button:active {
         color: #f9fafb; }
-    #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked {
-      box-shadow: none; }
-      #panel .panel-button.clock-display:active .clock, #panel .panel-button.clock-display:overview .clock, #panel .panel-button.clock-display:focus .clock, #panel .panel-button.clock-display:checked .clock {
-        box-shadow: none; }
   #panel .panel-status-indicators-box,
   #panel .panel-status-menu-box {
     spacing: 2px; }
@@ -795,7 +796,9 @@ StScrollBar {
 
 .calendar, .world-clocks-button, .weather-button, .events-button {
   background: transparent;
-  border: none; }
+  border: none;
+  color: #d8dee9;
+  box-shadow: none; }
 
 .calendar,
 .datemenu-today-button,
@@ -1208,19 +1211,18 @@ StScrollBar {
   spacing: 12px; }
 
 /* OVERVIEW */
-#overview {
+#overview, .controls-manager, .secondary-monitor-workspaces {
   spacing: 24px; }
 
-#overview.cosmic-solid-bg {
-  background-color: #1d2128 !important; }
+#overviewGroup {
+  background-color: rgba(46, 52, 64, 0.95); }
 
 .overview-controls {
   padding-bottom: 32px; }
 
 .window-picker {
   -horizontal-spacing: 16px;
-  -vertical-spacing: 16px;
-  padding: 0 16px 16px; }
+  -vertical-spacing: 16px; }
   .window-picker.external-monitor {
     padding: 16px; }
 
@@ -1232,31 +1234,27 @@ StScrollBar {
 .window-caption {
   spacing: 20px;
   color: #d8dee9;
-  background-color: rgba(46, 52, 64, 0.65);
-  border-radius: 2px;
+  background-color: #1d2128;
+  border-radius: 7px;
   padding: 4px 8px; }
 
 .search-entry {
   width: 320px;
   padding: 9px;
-  border-radius: 2px;
-  border: none;
+  border: 1px solid #1f232b;
+  border-radius: 10px;
   color: #d8dee9;
-  background-color: rgba(46, 52, 64, 0.6);
+  background-color: #232831;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
-  .search-entry:focus {
-    border-width: 0;
-    color: #d8dee9;
-    background-color: rgba(46, 52, 64, 0.8);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
+  .search-entry:hover, .search-entry:focus {
+    background-color: #282d37;
+    border-color: rgba(129, 161, 193, 0.5); }
+    .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
+      color: #d8dee9; }
   .search-entry .search-entry-icon {
     icon-size: 1em;
     padding: 0 4px;
     color: rgba(216, 222, 233, 0.7); }
-  .search-entry:hover, .search-entry:focus {
-    background-color: rgba(46, 52, 64, 0.8); }
-    .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
-      color: #d8dee9; }
 
 #searchResultsBin {
   max-width: 1000px; }
@@ -1305,26 +1303,12 @@ StScrollBar {
   padding: 15px; }
 
 /* DASHBOARD */
-#dash {
-  font-size: 9pt;
-  color: #d8dee9;
-  background-color: #1d2128;
-  padding: 6px 0;
-  border: 1px solid #1f232b;
-  border-left: 0px;
-  border-radius: 0px 5px 5px 0px; }
-  #dash:rtl {
-    border-radius: 9px 0 0 9px; }
-  #dash .placeholder {
-    background-image: url("assets/dash-placeholder.svg");
-    background-size: contain;
-    height: 24px; }
-  #dash .empty-dash-drop-target {
-    width: 24px;
-    height: 24px; }
+.dash-background {
+  background-color: #232831; }
 
-.dash-item-container > StWidget {
-  padding: 4px 8px; }
+.dash-separator {
+  width: 1px;
+  background-color: #4e586d; }
 
 .dash-label {
   border-radius: 7px;
@@ -1382,17 +1366,6 @@ StScrollBar {
 .show-apps,
 .grid-search-result {
   border: none; }
-  .app-well-app:active .overview-icon,
-  .app-well-app:checked .overview-icon,
-  .app-well-app.app-folder:active .overview-icon,
-  .app-well-app.app-folder:checked .overview-icon,
-  .show-apps:active .overview-icon,
-  .show-apps:checked .overview-icon,
-  .grid-search-result:active .overview-icon,
-  .grid-search-result:checked .overview-icon {
-    background-color: rgba(31, 35, 43, 0.85);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
-    color: #d8dee9; }
   .app-well-app:hover .overview-icon,
   .app-well-app:focus .overview-icon,
   .app-well-app:selected .overview-icon,
@@ -1405,10 +1378,21 @@ StScrollBar {
   .grid-search-result:hover .overview-icon,
   .grid-search-result:focus .overview-icon,
   .grid-search-result:selected .overview-icon {
-    background-color: rgba(46, 52, 64, 0.5);
+    background-color: #1d2128;
     transition-duration: 0ms;
     border-image: none;
     background-image: none; }
+  .app-well-app:active .overview-icon,
+  .app-well-app:checked .overview-icon,
+  .app-well-app.app-folder:active .overview-icon,
+  .app-well-app.app-folder:checked .overview-icon,
+  .show-apps:active .overview-icon,
+  .show-apps:checked .overview-icon,
+  .grid-search-result:active .overview-icon,
+  .grid-search-result:checked .overview-icon {
+    background-color: #0e1013;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    color: #d8dee9; }
 
 .app-well-app-running-dot {
   width: 4px;
@@ -1424,12 +1408,25 @@ StScrollBar {
 .show-apps .overview-icon,
 .grid-search-result .overview-icon {
   color: #fefefe;
-  border-radius: 2px;
   padding: 7px 6px;
   border: none;
   transition-duration: 100ms;
   text-align: center;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  box-shadow: none; }
+
+/* App Folders */
+.app-well-app.app-folder {
+  background-color: #232831; }
+
+.app-folder-dialog {
+  background-color: rgba(35, 40, 49, 0.95); }
+  .app-folder-dialog .edit-folder-button {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px; }
+    .app-folder-dialog .edit-folder-button > StIcon {
+      icon-size: 16px; }
 
 .app-well-app.app-folder > .overview-icon {
   background-color: rgba(46, 52, 64, 0.35); }
@@ -2038,33 +2035,3 @@ StScrollBar {
 
 .openweather-current-databox-captions, .openweather-forecast-day {
   color: #81a1c1; }
-
-/* Pop_OS COSMIC Widget styling. */
-/* Pop_OS COSMIC Dock styling, append !important to any changed rules */
-.cosmic-dock #dock {
-  border-radius: 12px 12px 12px 12px !important;
-  border: 0 !important;
-  background-color: #2e3440;
-  margin: 4px !important; }
-
-.cosmic-dock.extended #dock {
-  border-radius: 0px !important;
-  margin: 0 !important; }
-
-.cosmic-dock.extended.side #dock {
-  border-top-width: 0 !important;
-  border-bottom-width: 0 !important; }
-
-.cosmic-dock.extended.side.left #dock {
-  border-left-width: 0 !important; }
-
-.cosmic-dock.extended.side.right #dock {
-  border-right-width: 0 !important; }
-
-.cosmic-dock.extended.bottom #dock {
-  border-bottom-width: 0 !important;
-  border-left-width: 0 !important;
-  border-right-width: 0 !important; }
-
-.cosmic-dock .app-well-app:hover .overview-icon, .cosmic-dock .app-well-app:focus .overview-icon, .cosmic-dock .app-well-app:selected .overview-icon {
-  border-radius: 11px; }
