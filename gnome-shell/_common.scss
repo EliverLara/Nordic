@@ -17,7 +17,7 @@ stage {
 /* WIDGETS */
 
 /* Buttons */
-.button {
+.button, %button {
   @include button(normal);
   border-radius: 4px;
   border-width: 0;
@@ -74,7 +74,7 @@ StEntry {
     warning-color: $warning_color;
     padding: 0 4px;
   }
-
+  
   StLabel.hint-text { color: transparentize($fg_color, 0.3); }
 
 }
@@ -529,11 +529,7 @@ StScrollBar {
     box-shadow: $depth6;
   }
 
-  .popup-menu-content { 
-    padding: 16px 0; 
-    background-color: $bg_color;
-    border-radius: 5px;
-  }
+  .popup-menu-content { padding: 16px 0; }
   .popup-menu-item {
     spacing: 6px;
     padding: 6px;
@@ -714,42 +710,41 @@ StScrollBar {
 /* Workspace Switcher */
 .workspace-switcher-group { padding: 12px; }
 
-  .workspace-switcher-container {
-    @extend %osd-panel;
-  }
+.workspace-switcher-container {
+  @extend %osd-panel;
+}
 
-  .workspace-switcher {
-    background: transparent;
-    border: 0px;
-    border-radius: 0px;
-    padding: 0px;
-    spacing: 8px;
-  }
+.workspace-switcher {
+  background: transparent;
+  border: 0px;
+  border-radius: 0px;
+  padding: 0px;
+  spacing: 8px;
+}
 
-  .ws-switcher-active-up,
-  .ws-switcher-active-down,
-  .ws-switcher-active-left,
-  .ws-switcher-active-right {
-    height: 50px;
-    background-color: $selected_bg_color;
-    color: $selected_fg_color;
-    //background-image: url("resource:///org/gnome/shell/theme/assets/ws-switch-arrow-up.png");
-    background-size: 32px;
-    border-radius: 8px;
-    border-color: $selected_bg_color;
-  }
-  .ws-switcher-active-up {
-    background-image: url("assets/ws-switch-arrow-up.png"); }
+.ws-switcher-active-up,
+.ws-switcher-active-down,
+.ws-switcher-active-left,
+.ws-switcher-active-right {
+  height: 50px;
+  background-color: $selected_bg_color;
+  color: $selected_fg_color;
+  background-size: 32px;
+  border-radius: 8px;
+  border-color: $selected_bg_color;
+}
+.ws-switcher-active-up {
+  background-image: url("assets/ws-switch-arrow-up.png"); }
 
-  .ws-switcher-active-down {
-    background-image: url("assets/ws-switch-arrow-down.png"); }
+.ws-switcher-active-down {
+  background-image: url("assets/ws-switch-arrow-down.png"); }
 
-  .ws-switcher-box {
-    height: 50px;
-    border: 1px solid transparentize($osd_fg_color,0.9);
-    background: darken($_bubble_bg_color, 10%);
-    border-radius: 8px;
-  }
+.ws-switcher-box {
+  height: 50px;
+  border: 1px solid transparentize($osd_fg_color,0.9);
+  background: darken($_bubble_bg_color, 10%);
+  border-radius: 8px;
+}
 
 %osd-panel {
   color: $_bubble_fg_color;
@@ -786,7 +781,7 @@ StScrollBar {
   /* transition from solid to transparent */
   transition-duration: 500ms;
   font-weight: bold;
-  height: 1.86em;
+  height: 2.1em;
   padding: 0px 0px;
 
   &.unlock-screen,
@@ -831,16 +826,32 @@ StScrollBar {
     }
 
     &:hover {
-      background: lighten($topbar_bg_color, 10%);
+      box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
       color: lighten($topbar_color, 10%);
+      &.clock-display {
+        box-shadow: none;
+
+        .clock {
+          box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
+        }
+      }
+
     }
 
     &:active, &:overview, &:focus, &:checked {
       // Trick due to St limitations. It needs a background to draw
       // a box-shadow
-      background: $selected_bg_color;
-      box-shadow: inset 0 -2px 0px lighten($selected_bg_color,5%);
+      box-shadow: inset 0 0 0 100px $selected_bg_color;
       color: #fff;
+
+      &.clock-display {
+        box-shadow: none;
+
+        .clock {
+          box-shadow: inset 0 0 0 100px $selected_bg_color;
+        }
+      }
+      
     }
 
     .system-status-icon { icon-size: 1.09em; padding: 0 5px; }
@@ -849,16 +860,6 @@ StScrollBar {
     .lock-screen & {
       color: lighten($fg_color, 10%);
       &:focus, &:hover, &:active { color: lighten($fg_color, 10%); }
-    }
-
-    // Remove default bottom border
-    &.clock-display {
-      &:active, &:overview, &:focus, &:checked {
-        box-shadow: none;
-        .clock {
-          box-shadow: none;
-        }
-      }
     }
   }
 
@@ -902,6 +903,8 @@ StScrollBar {
   .calendar, .world-clocks-button, .weather-button, .events-button {
     background: transparent;
     border: none;
+    color: $fg_color;
+    box-shadow: none;
   }
 
     .calendar,
@@ -1205,7 +1208,6 @@ StScrollBar {
   }
 }
 
-
 /* Weather */
 .weather-button {
 
@@ -1350,292 +1352,284 @@ StScrollBar {
 
 /* OVERVIEW */
 
-#overview {
+#overview,.controls-manager, .secondary-monitor-workspaces {
   spacing: 24px; //
 }
 
-#overview.cosmic-solid-bg {
-  background-color: $topbar_bg_color !important;
+#overviewGroup {
+  background-color: $_bubble_bg_color;
 }
 
 .overview-controls {
   padding-bottom: 32px;
 }
 
-  .window-picker { //container around window thumbnails
-    -horizontal-spacing: 16px;
-    -vertical-spacing: 16px;
-    padding: 0 16px 16px;
+.window-picker { //container around window thumbnails
+  -horizontal-spacing: 16px;
+  -vertical-spacing: 16px;
 
-    &.external-monitor { padding: 16px; }
+  &.external-monitor { padding: 16px; }
+}
+
+.window-clone-border {
+  border: 4px solid transparentize($selected_bg_color, .7);
+  border-radius: 0px;
+  // For window decorations with round corners we can't match
+  // the exact shape when the window is scaled. So apply a shadow
+  // to fix that case
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+.window-caption {
+  spacing: 20px;
+  color: $fg_color;
+  background-color: $topbar_bg_color;
+  border-radius: 7px;
+  padding: 4px 8px;
+}
+
+//search entry
+.search-entry {
+  width: 320px;
+  padding: 9px;
+  border: 1px solid $borders_color;
+  border-radius: 10px;
+  color: $fg_color;
+  background-color: $main_dark;
+  box-shadow: $depth;
+
+  &:hover, &:focus {
+    background-color: lighten($main_dark, 2%);
+    border-color: transparentize($selected_bg_color, 0.5);
+    .search-entry-icon { color: $fg_color; }
   }
+  .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
-  .window-clone-border {
-    border: 4px solid transparentize($selected_bg_color, .7);
-    border-radius: 0px;
-    // For window decorations with round corners we can't match
-    // the exact shape when the window is scaled. So apply a shadow
-    // to fix that case
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
-  }
-  .window-caption {
-    spacing: 20px;
-    color: $fg_color;
-    background-color: transparentize($osd_bg_color,.3);
-    border-radius: 2px;
-    padding: 4px 8px;
-  }
+}
 
-  //search entry
-  .search-entry {
-    width: 320px;
-    padding: 9px;
-    border-radius: 2px;
-    border: none;
-    color: $fg_color;
-    background-color: transparentize($bg_color, 0.4);
-    box-shadow: $depth;
-    &:focus {
-      border-width: 0;
-      color: $fg_color;
-      background-color: transparentize($bg_color, 0.2);
-      box-shadow: $depth2;
-    }
+//search results
 
-    .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
+#searchResultsBin {
+  max-width: 1000px;
+}
 
-    &:hover, &:focus {
-      background-color: transparentize($bg_color, 0.2);
-      .search-entry-icon { color: $fg_color; }
-    }
-  }
+#searchResultsContent {
+  padding-left: 20px;
+  padding-right: 20px;
+  spacing: 16px;
+}
 
-  //search results
+.search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
 
-  #searchResultsBin {
-    max-width: 1000px;
-  }
+.search-section-content { 
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  // This is the space between the provider icon and the results container
+  spacing: 32px; 
+}
 
-  #searchResultsContent {
-    padding-left: 20px;
-    padding-right: 20px;
-    spacing: 16px;
-  }
+.search-statustext { // "no results"
+  @extend %status_text;
+}
+.list-search-results { spacing: 3px; }
 
-  .search-section { spacing: 16px; } // This should be equal to #searchResultsContent spacing
+.search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
 
-  .search-section-content { 
-    background-color: transparent;
-    border-radius: 0;
-    border: none;
-    box-shadow: none;
-    // This is the space between the provider icon and the results container
-    spacing: 32px; 
-  }
+.list-search-result-content { spacing: 30px; }
+.list-search-result-title { color: lighten($topbar_color,5%); spacing: 12px; }
+.list-search-result-description { color: transparentize(lighten($topbar_color,15%), 0.5); }
+.list-search-provider-details { width: 150px; color: lighten($topbar_color,5%); margin-top: 0.24em; }
+.list-search-provider-content { spacing: 20px; }
+.search-provider-icon { padding: 15px; }
+
+
+/* DASHBOARD */
   
-  .search-statustext { // "no results"
-    @extend %status_text;
+.dash-background {
+  background-color: $main_dark;
+}
+
+.dash-separator {
+  width: 1px;
+  background-color: $gray;
+}
+
+.dash-label { //osd tooltip
+  border-radius: 7px;
+  padding: 4px 12px;
+  color: $topbar_color;
+  background-color: $topbar_bg_color;
+  text-align: center;
+  -x-offset: 8px;
+}
+
+/* App Vault/Grid */
+.icon-grid {
+  spacing: 30px;
+  -shell-grid-horizontal-item-size: 136px;
+  -shell-grid-vertical-item-size: 136px;
+
+  .overview-icon { icon-size: 96px; }
+}
+
+//.app-display { spacing: 20px; }
+
+.system-action-icon {
+  background-color: black;
+  color: white;
+  border-radius: 99px;
+  icon-size: 48px;
+}
+
+.app-view-controls { //favorties | all toggle container
+  padding-bottom: 32px;
+}
+.app-view-control { //favorties | all toggle button
+  padding: 4px 32px;
+  &:checked { @include button(active); }
+  &:first-child {
+    border-right-width: 0;
+    border-radius: 3px 0 0 3px;
   }
-  .list-search-results { spacing: 3px; }
-
-  .search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
-
-  .list-search-result-content { spacing: 30px; }
-  .list-search-result-title { color: lighten($topbar_color,5%); spacing: 12px; }
-  .list-search-result-description { color: transparentize(lighten($topbar_color,15%), 0.5); }
-  .list-search-provider-details { width: 150px; color: lighten($topbar_color,5%); margin-top: 0.24em; }
-  .list-search-provider-content { spacing: 20px; }
-  .search-provider-icon { padding: 15px; }
-
-
-  /* DASHBOARD */
-
-  #dash {
-    font-size: 9pt;
-    color: $topbar_color;
-    background-color: $topbar_bg_color;
-    padding: 6px 0;
-    border: 1px solid $borders_color;
-    border-left: 0px;
-    border-radius: 0px 5px 5px 0px;
-
-    &:rtl {
-      border-radius: 9px 0 0 9px;
-    }
-
-    .placeholder {
-      background-image: url("assets/dash-placeholder.svg");
-      background-size: contain;
-      height: 24px;
-    }
-
-    .empty-dash-drop-target {
-      width: 24px;
-      height: 24px;
-    }
-
+  &:last-child {
+    border-radius: 0 3px 3px 0;
   }
+}
 
-  .dash-item-container > StWidget {
-    padding: 4px 8px;
+//Icon tile
+.search-provider-icon,
+.list-search-result {
+  @extend %icon_tile;
+  &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
+  &:focus, &:selected, &:hover {
+    background-color: transparentize($bg_color,.7);
+    transition-duration: 200ms;
   }
-
-  .dash-label { //osd tooltip
-    border-radius: 7px;
-    padding: 4px 12px;
-    color: $topbar_color;
-    background-color: $topbar_bg_color;
-    text-align: center;
-    -x-offset: 8px;
-  }
-
-  /* App Vault/Grid */
-  .icon-grid {
-    spacing: 30px;
-    -shell-grid-horizontal-item-size: 136px;
-    -shell-grid-vertical-item-size: 136px;
-
-    .overview-icon { icon-size: 96px; }
-  }
-  //.app-display { spacing: 20px; }
-
-  .system-action-icon {
-    background-color: black;
-    color: white;
-    border-radius: 99px;
-    icon-size: 48px;
-  }
-
-  .app-view-controls { //favorties | all toggle container
-    padding-bottom: 32px;
-
-  }
-  .app-view-control { //favorties | all toggle button
-    padding: 4px 32px;
-    &:checked { @include button(active); }
-    &:first-child {
-      border-right-width: 0;
-      border-radius: 3px 0 0 3px;
-    }
-    &:last-child {
-     border-radius: 0 3px 3px 0;
-    }
-  }
-
-  //Icon tile
-  .search-provider-icon,
-  .list-search-result {
+}
+.app-well-app,
+.app-well-app.app-folder,
+.show-apps,
+.grid-search-result {
+  
+  border: none;
+  & .overview-icon {
     @extend %icon_tile;
-    &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
-    &:focus, &:selected, &:hover {
-      background-color: transparentize($bg_color,.7);
-      transition-duration: 200ms;
-    }
-  }
-  .app-well-app,
-  .app-well-app.app-folder,
-  .show-apps,
-  .grid-search-result {
-    
-    border: none;
-    & .overview-icon {
-      @extend %icon_tile;
-    }
-    &:active .overview-icon,
-    &:checked .overview-icon {
-      background-color: transparentize(darken($osd_bg_color,7%),.1);
-      box-shadow: inset $depth2;
-      color: $fg_color;
-    }
-    &:hover .overview-icon,
-    &:focus .overview-icon,
-    &:selected .overview-icon {
-      background-color: transparentize($bg_color,.5);
-      transition-duration: 0ms;
-      border-image: none;
-      background-image: none;
-    }
-
   }
 
-  .app-well-app-running-dot { //running apps indicator
-    width: 4px; height: 4px;
-    background-color: $selected_bg_color;
-    border-radius: 10px !important;
-    box-shadow: 0px 0px 5px 4px transparentize($selected_bg_color,0.2);
-    margin-bottom: 0px;
+  &:hover .overview-icon,
+  &:focus .overview-icon,
+  &:selected .overview-icon {
+    background-color: darken($main_dark, 3%);
+    transition-duration: 0ms;
+    border-image: none;
+    background-image: none;
   }
 
-  %icon_tile {
-    color: $selected_fg_color;
-    border-radius: 2px;
-    padding: 7px 6px;
-    border: none;
-    transition-duration: 100ms;
-    text-align: center;
-    box-shadow: $depth;
-  }
-
-  .app-well-app.app-folder > .overview-icon {
-    background-color: transparentize($osd_bg_color,.6);
-  }
-  .show-apps .show-apps-icon {
-    color: $topbar_color;
-  }
-  .show-apps:checked .show-apps-icon,
-  .show-apps:focus .show-apps-icon {
+  &:active .overview-icon,
+  &:checked .overview-icon {
+    background-color:  darken($main_dark, 10%);
+    box-shadow: inset $depth2;
     color: $fg_color;
-    transition-duration: 100ms;
   }
 
+}
 
-  // Collections
-  .app-folder-popup { //expanded collection
-    -arrow-border-radius: 8px;
-    -arrow-background-color: transparentize($bg_color,0.5);
-    -arrow-base: 24px;
-    -arrow-rise: 11px;
+.app-well-app-running-dot { //running apps indicator
+  width: 4px; height: 4px;
+  background-color: $selected_bg_color;
+  border-radius: 10px !important;
+  box-shadow: 0px 0px 5px 4px transparentize($selected_bg_color,0.2);
+  margin-bottom: 0px;
+}
+
+%icon_tile {
+  color: $selected_fg_color;
+  padding: 7px 6px;
+  border: none;
+  transition-duration: 100ms;
+  text-align: center;
+  box-shadow: none;
+}
+
+/* App Folders */
+.app-well-app.app-folder {
+  background-color: $main_dark;
+}
+// expanded folder
+.app-folder-dialog { //style like the dash
+  background-color:  darken($osd_bg_color,5%);
+  .edit-folder-button {
+    @extend %button;
+
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+
+    & > StIcon { icon-size: 16px }
   }
-  .app-folder-popup-bin { padding: 5px; background: transparentize($bg_color,.5);;}
-  .app-folder-icon {
-    padding: 5px;
-    spacing-rows: 5px;
-    spacing-columns: 5px;
+}
+.app-well-app.app-folder > .overview-icon {
+  background-color: transparentize($osd_bg_color,.6);
+}
+.show-apps .show-apps-icon {
+  color: $topbar_color;
+}
+.show-apps:checked .show-apps-icon,
+.show-apps:focus .show-apps-icon {
+  color: $fg_color;
+  transition-duration: 100ms;
+}
+
+
+// Collections
+.app-folder-popup { //expanded collection
+  -arrow-border-radius: 8px;
+  -arrow-background-color: transparentize($bg_color,0.5);
+  -arrow-base: 24px;
+  -arrow-rise: 11px;
+}
+.app-folder-popup-bin { padding: 5px; background: transparentize($bg_color,.5);;}
+.app-folder-icon {
+  padding: 5px;
+  spacing-rows: 5px;
+  spacing-columns: 5px;
+}
+
+.page-indicator {
+  padding: 15px 20px;
+
+  .page-indicator-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
-  .page-indicator {
-    padding: 15px 20px;
-
-    .page-indicator-icon {
-      width: 12px;
-      height: 12px;
-      border-radius: 12px;
-      background-image: none;
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    &:hover .page-indicator-icon {  
-      background-image: none;
-      background-color: rgba(255, 255, 255, 0.5); 
-    }
-    &:active .page-indicator-icon { 
-      background-image: none;
-      background-color: rgba(255, 255, 255, 0.7);
-    }
-    &:checked .page-indicator-icon{ 
-      background-image: none;
-      background-color: #FFFFFF;
-      transition-duration: 0s; 
-    }
+  &:hover .page-indicator-icon {  
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.5); 
   }
-
-  .no-frequent-applications-label { @extend %status_text; }
-
-  .app-well-app > .overview-icon.overview-icon-with-label,
-  .grid-search-result .overview-icon.overview-icon-with-label {
-    padding: 10px 8px 5px 8px;
-    spacing: 4px;
+  &:active .page-indicator-icon { 
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.7);
   }
+  &:checked .page-indicator-icon{ 
+    background-image: none;
+    background-color: #FFFFFF;
+    transition-duration: 0s; 
+  }
+}
+
+.no-frequent-applications-label { @extend %status_text; }
+
+.app-well-app > .overview-icon.overview-icon-with-label,
+.grid-search-result .overview-icon.overview-icon-with-label {
+  padding: 10px 8px 5px 8px;
+  spacing: 4px;
+}
 
   // Workspace pager
   .workspace-thumbnails { //container ala dash
