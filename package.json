@@ -19,7 +19,10 @@
   "homepage": "https://github.com/EliverLara/Nordic#readme",
   "dependencies": {
     "gulp": "^4.0.0",
-    "gulp-exec": "^5.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-exec": "^5.0.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.42.1"
   }
 }
