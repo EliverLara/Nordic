@@ -20,7 +20,6 @@ def optimize_png(png_file):
 
 
 def wait_for_prompt(process, command=None):
-    print(command)
     if command is not None:
         process.stdin.write((command+'\n').encode('utf-8'))
 
