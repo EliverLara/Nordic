@@ -1154,7 +1154,7 @@ StScrollBar {
       @extend %button:hover;
     }
     &-hover {
-      background-color: red;
+      background-color: transparentize($selected_bg_color, 0.7);
       border-radius: 2px;
     }
     &-greyed {
@@ -1807,3 +1807,28 @@ StScrollBar {
   background-color: rgba(0,0,0,0);
   border-radius: 0px;
 }
+
+// //
+// // Cinnamenu
+// //
+
+// .menu-category-button {
+
+//   padding: 7px;
+//   border: 1px solid rgba(0, 0, 0, 0); 
+  
+//   &-selected {
+//     padding: 7px;
+//     color: $selected_fg_color;
+//     background-color: $selected_bg_color;
+//     border: 1px solid $borders_color; 
+//     text-shadow: none;
+//   }
+
+//   &-hover {
+//     background-color: transparentize($selected_bg_color, 0.7);
+//     color: $fg_color;
+//     border-radius: 2px; 
+//     text-shadow: none;
+//   }
+// }
