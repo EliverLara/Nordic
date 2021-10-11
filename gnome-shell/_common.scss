@@ -32,29 +32,18 @@ stage {
 
 .modal-dialog-linked-button {
   padding: 10px;
-  border: 1px solid $borders_color;
-  color: $fg_color;
-  background: $main_dark;
-  text-shadow: none;
-  icon-shadow: none;
-  box-shadow: none;
+  @include button(normal);
   &:insensitive { @include button(insensitive); }
-  &:active {
-    @include button(active);
-  }
+  &:active { @include button(active); }
   &:focus {
     @include button(focus);
-    &:hover {
-      @include button(focus);
-    }
+    &:hover { @include button(focus); }
   }
-  &:hover {
-    @include button(hover);
-  }
+  &:hover { @include button(hover); }
 
-  &:first-child { border-radius: 0px 0px 0px 2px; }
-  &:last-child { border-radius: 0px 0px 2px 0px; }
-  &:first-child:last-child { border-radius: 0px 0px 2px 2px; }
+  &:first-child { border-radius: 0px 0px 0px 10px; }
+  &:last-child { border-radius: 0px 0px 10px 0px; }
+  &:first-child:last-child { border-radius: 0px 0px 10px 10px; }
 }
 
 /* Entries */
@@ -178,7 +167,7 @@ StScrollBar {
 
 .modal-dialog {
   border: none;
-  border-radius: 2px;
+  border-radius: 10px;
   color: $osd_fg_color;
   background-color: darken($osd_bg_color,5%);
   box-shadow: $depth6;
@@ -522,7 +511,7 @@ StScrollBar {
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
    
-    background-color:  transparentize(darken($main_dark,57%), 0.8);
+    background-color: lighten($bg_color, 2%);
     box-shadow: $depth6;
   }
 
@@ -561,8 +550,6 @@ StScrollBar {
   }
 }
 
-
-
   .popup-menu-ornament {
     text-align: right;
     width: 1.2em;
@@ -570,7 +557,7 @@ StScrollBar {
   .popup-menu-boxpointer,
   .candidate-popup-boxpointer {
     -arrow-border-radius: 7px;
-    -arrow-background-color: $bg_color;
+    -arrow-background-color: darken($bg_color, 2%);
     -arrow-border-width: 1px;
     -arrow-border-color: $borders_color;
     -arrow-base: 24px;
@@ -663,7 +650,7 @@ StScrollBar {
 
   .switcher-list .item-box {
     padding: 8px;
-    border-radius: 4px;
+    border-radius: 10px;
   }
 
   .switcher-list .item-box:outlined {
@@ -672,7 +659,7 @@ StScrollBar {
   }
 
   .switcher-list .item-box:selected {
-    background-color: $selected_bg_color;
+    background-color: darken($selected_bg_color, 15%);
     color: $selected_fg_color;
   }
 
@@ -750,8 +737,8 @@ StScrollBar {
   color: $_bubble_fg_color;
   background-color: $_bubble_bg_color;
   border: 1px solid $borders_color;
-  border-radius: 5px;
-  box-shadow: 0px 0px 7px $borders_color;
+  border-radius: 7px;
+  box-shadow: 0px 0px 7px transparentize($borders_color, 0.2);
   padding: 12px;
 }
 
@@ -932,7 +919,7 @@ StScrollBar {
       border: 0 solid transparent;
       &:ltr { border-left-width: 1px; }
       &:rtl { border-right-width: 1px; }
-      background: darken($bg_color, 1.7%);
+      background: darken($bg_color, 3.7%);
     }
 
     .datemenu-today-button,
@@ -1142,11 +1129,11 @@ StScrollBar {
 
         .message {
           &:hover,&:focus { 
-            background-color: darken($bg_color, 1%);
+            background-color: lighten($bg_color, 2%);
             border-radius: 0px 5px 5px 0px;
             box-shadow: 3px 0px 0px 0px $selected_bg_color inset;
           }
-          background: darken($bg_color, 0.7%);
+          background: $bg_color;
           border: 1px solid $borders_color;
           border-radius: 5px;
         }
@@ -1363,7 +1350,7 @@ StScrollBar {
 
   .nm-dialog-airplane-text { color: $fg_color; }
   .nm-dialog-header-icon { icon-size: 32px; }
-  .nm-dialog-scroll-view { border: 2px solid $borders_color; background: transparent;}
+  .nm-dialog-scroll-view { border: 2px solid $borders_color; background: $bg_color;}
   .nm-dialog-header { font-weight: bold; }
 
   .nm-dialog-item {
@@ -1424,8 +1411,8 @@ StScrollBar {
   .search-entry {
     width: 320px;
     padding: 9px;
-    border-radius: 100px;
-    border: 1px solid $borders_color;
+    border-radius: 7px;
+    border: 2px solid darken($bg_color, 2%);
     color: $fg_color;
     background-color: darken($bg_color, 2%);
     box-shadow: $depth;
@@ -1479,7 +1466,7 @@ StScrollBar {
   /* DASHBOARD */
 
   .dash-background {
-    background-color: darken($bg_color, 2%);
+    background-color: transparentize(darken($bg_color, 2%), 0.1);
   }
 
   .dash-separator {
@@ -1716,7 +1703,7 @@ StScrollBar {
     color: $topbar_color;
     background-color: $bg_color;
     border: 1px solid $borders_color;
-    box-shadow: 0 1px 4px black;
+    box-shadow: 0 1px 4px $main_dark;
     &:hover { background-color: transparentize($bg_color, 0.04); }
     &:focus { background-color: transparentize($bg_color, 0.04); }
     *{ color: #fefefe; }
@@ -1832,7 +1819,16 @@ StScrollBar {
 /* On-screen Keyboard */
 
 #keyboard {
-    background-color: transparentize($osd_bg_color, 0.3);
+    background-color: transparentize($main_dark, 0.08);
+    .page-indicator {
+      padding: 5px;
+  
+      .page-indicator-icon {
+        width: 8px;
+        height: 8px;
+      }
+    }
+  
 }
 
   .keyboard-layout {
@@ -1844,33 +1840,60 @@ StScrollBar {
 
   .keyboard-key {
    @include button(normal);
-    background-color: $base_color;
-    min-height: 2em;
-    min-width: 2em;
-    font-size: 14pt;
-    font-weight: bold;
-    border-radius: 5px;
+    min-height: 2.1em;
+    min-width: 2.1em;
+    font-size: 15pt;
+    font-weight: normal;
+    border-radius: 2px;
+    
     &:focus { @include button(focus); }
     &:hover,&:checked { @include button(hover); }
     &:active { @include button(active);}
+
     &:grayed { //FIXME
       background-color: $osd_bg_color;
       color: $osd_fg_color;
       border-color: $osd_borders_color;
     }
+
+    // non-character keys
+    &.default-key {
+      @include button(normal, $c:darken(mix($bg_color, $base_color, 15%), 5%));
+      &:hover, &:checked {@include button(hover, $c: $base_color);}
+      &:active { @include button(active, $c: $base_color);}
+
+    }
+
+    // enter key is suggested-action
+    &.enter-key {
+      @include gradient();
+      color: $selected_fg_color;
+    }
+
+    &.shift-key-uppercase { color: $selected_bg_color }
+  
   }
+
 
   .keyboard-subkeys { //long press on a key popup
     color: white;
     padding: 5px;
     -arrow-border-radius: 10px;
-    -arrow-background-color: transparentize($osd_bg_color, 0.3);
+    -arrow-background-color: transparentize($main_dark, 0.08);
     -arrow-border-width: 2px;
-    -arrow-border-color: $_bubble_borders_color;
     -arrow-base: 20px;
     -arrow-rise: 10px;
     -boxpointer-gap: 5px;
   }
+
+  .emoji-page {
+    .keyboard-key {
+      background-color: transparent;
+      border: none;
+      color: initial;
+    }
+  }
+  
 
 // IBus Candidate Popup
 

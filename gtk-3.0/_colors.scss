@@ -13,14 +13,14 @@ $main_dark_color: #272F3F;
 $_sidebar_color: darken($main_dark_color, 3%);
 
 // Primary colors
-$lime: #4C9E64;
+$lime: #8CA1A5;
 $red: #FF56AC;
 $orange: #ED878F;
 $yellow: #F3D88E;
 $purple: #A572A4;
 $darkpurple: #7b7bbd;
 $blue: $nord10;
-$cyan: #fc2;
+$cyan: #79B4B7;
 $slider: #7b7bbd;
 $teal: $nord14;
 
@@ -39,7 +39,7 @@ $headerbar_color: mix($base_color, darken($bg_color, 8%), 30%);
 $headerbar_fg_color: $text_color;
 $menu_color: if($variant == 'light', $base_color, mix($bg_color, $base_color, 20%));
 $popover_bg_color: $base_color;
-$popover_hover_color: darken($bg_color, 2%);
+$popover_hover_color: lighten($bg_color, 5%);
 
 $scrollbar_bg_color: mix($base_color, $bg_color, 50%);
 $scrollbar_slider_color: mix($fg_color, $bg_color, 60%);
