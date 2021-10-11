@@ -6372,17 +6372,11 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   .thunar toolbar .path-bar-button:only-child {
     border-radius: 4px;
     border-style: solid; }
-<<<<<<< HEAD
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:hover {
-    color: #81a1c1; }
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:checked {
-=======
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:hover,
   .thunar toolbar .path-bar-button:hover {
-    color: #8fbcbb; }
+    color: #81a1c1; }
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:checked,
   .thunar toolbar .path-bar-button:checked {
->>>>>>> d2caa05 (Xfce: Improve thunar 4.16 appearance)
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: rgba(129, 161, 193, 0.7);
@@ -6406,5 +6400,5 @@ window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > 
   background: #3b4252;
   color: #d8dee9; }
   .caja-notebook .entry:selected {
-    background: #8fbcbb;
-    color: #2e3440; }
+    background: #81a1c1;
+    color: #fefefe; }
