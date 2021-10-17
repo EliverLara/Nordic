@@ -2,7 +2,6 @@
  * Window Decorations *
  *********************/
 decoration {
-  border-radius: 4px 4px 0 0;
 
   // lamefun trick to get rounded borders regardless of CSD use
   border-width: 0px;
@@ -15,7 +14,7 @@ decoration {
     // lamefun trick to get rounded borders regardless of CSD use
   border-width: 0px;
 
-  box-shadow: 0 4px 10px 2px transparentize(#211A1E, 0.6);
+  box-shadow: 0 4px 10px 2px transparentize(#252525, 0.3);
   // FIXME rationalize shadows
 
   // this is used for the resize cursor area

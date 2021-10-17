@@ -1,0 +1,327 @@
+$_radius: 12px;
+$_inner_radius: $_radius - 4px;
+
+.background {
+    &.csd { 
+        border-radius: 0 0 $_radius $_radius ;
+    }
+    
+    &.maximized, &.solid-csd { 
+        border-radius: 0;
+    }
+}
+
+.titlebar, headerbar {
+    border-radius: $_radius $_radius 0 0 ;
+
+}
+
+actionbar > revealer > box {
+    .background.csd box.vertical > & {
+      border-radius: 0 0 $_radius $_radius ;
+    }
+}
+
+
+messagedialog { 
+    &.csd { 
+      &.background {
+        border-bottom-left-radius: $_radius;
+        border-bottom-right-radius: $_radius;
+      }
+    }
+}  
+
+
+filechooser {
+    .csd & {
+      border-radius: 0 0 $_radius $_radius;
+    }
+
+    stack.view {
+        scrolledwindow {
+            border-radius: 0 0 $_radius 0;
+        }
+    }
+    .csd & placessidebar {
+        border-bottom-left-radius: $_radius;
+      }
+}
+
+decoration {
+    border-radius: $_radius ;
+    messagedialog.csd & {
+        border-radius: $_radius;
+      }
+}
+
+.nautilus-window {
+
+    &.background.csd {
+      border-radius: 0 0 $_radius $_radius;
+    }
+    placessidebar {
+        border-radius: $_radius;
+    }
+}
+
+window.background.csd.unified {
+
+    &,
+    > decoration,
+    > decoration-overlay {
+      border-radius: $_radius;
+    }
+}
+
+.tweak-categories {  
+    .csd & {
+      border-bottom-left-radius: $_radius;
+    }
+}
+
+
+window.background.csd {
+  > headerbar.titlebar {
+    > leaflet,
+    > hdyleaflet {
+      > headerbar {
+        &:first-child:not(:only-child) {
+          border-top-left-radius: $_radius;
+        }
+
+        &:last-child:not(:only-child) {
+          border-top-right-radius: $_radius;
+        }
+
+        &:first-child:only-child, &:last-child:only-child {
+          border-top-right-radius: $_radius;
+          border-top-left-radius: $_radius;
+        }
+      }
+    }
+  }
+
+  > stack:not(.titlebar) > stack.background { border-radius: 0 0 $_radius $_radius; }
+
+  > leaflet,
+  > hdyleaflet,
+  > box.horizontal {
+    > stack.background {
+      background: none;
+
+      > widget {
+        > box.vertical > box.vertical { 
+          > scrolledwindow > viewport.frame {
+            background-color: $base_color;
+            border-bottom-right-radius: $_radius;
+
+            > box.vertical.view {
+              background: none;
+            }
+          }
+        }
+      }
+    }
+
+    > box.vertical > scrolledwindow.view { 
+      background-color: $base_color;
+      border-bottom-left-radius: $_radius;
+
+      > viewport.frame > stack {
+        background-color: transparent;
+
+        list { // left-pane
+          background-color: transparent;
+
+          row.activatable:not(:hover):not(:active):not(:selected) {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+  
+dialog.background.csd {
+  > box.vertical.dialog-vbox { 
+  //  background-color: red;
+    > notebook > stack > box.horizontal > notebook > stack {
+      border-radius: 0 0 $_radius $_radius;
+    }
+  }
+}
+
+
+/***************
+ * Gnome Music *
+ ***************/
+window.background.csd {
+  box.vertical > overlay > stack.background { border-radius: 0 0 $_radius $_radius; }
+}
+
+/****************
+ * Gnome Clocks *
+ ****************/
+ window.background.csd.unified {
+  border-top-left-radius: $_radius;
+  border-top-right-radius: $_radius;
+
+  > deck > deck > deck {
+    > box.vertical > headerbar.titlebar.windowhandle {
+      border-top-left-radius: $_radius;
+      border-top-right-radius: $_radius;
+
+      > viewswitchertitle > squeezer {
+        margin: 0 0;
+        background: none;
+
+        > viewswitcher > box.horizontal {
+          > button.radio {
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/***********
+ * Dialogs *
+ ***********/
+ dialog.background.csd {
+  > box.vertical.dialog-vbox {
+    > grid.horizontal {
+      > scrolledwindow.frame {
+        > viewport.frame {
+          list:first-child { border-radius: 0 0 0 $_radius; }
+          list:last-child { border-radius: 0 0 $_radius 0; }
+        }
+      }
+    }
+
+    > stack,
+    > stack > stack {
+      > scrolledwindow {
+        border-radius: 0 0 $_radius $_radius;
+        background-color: $base_color;
+
+        iconview.view:not(:hover):not(:selected):not(:active) { 
+          background-color: transparent;
+        }
+      }
+    }
+
+    > stack {
+      > scrolledwindow > viewport.frame {
+        > list {
+          border-radius: 0 0 $_radius $_radius;
+
+          row.activatable:not(:hover):not(:selected):not(:active) {
+            background-color: transparent;
+          }
+        }
+      }
+
+      > box.vertical > stack.view {
+        > scrolledwindow > treeview.view:not(:hover):not(:selected):not(:active) {
+          background-color: transparent;
+        }
+      }
+
+      toolbar.toolbar {
+        border-radius: 0 0 $_radius $_radius;
+      }
+    }
+
+    > notebook {
+      > stack {
+        border-radius: 0 0 $_radius $_radius;
+      }
+    }
+  }
+
+  stack scrolledwindow {
+    &.frame {
+      border-radius: $_inner_radius;
+
+      textview.view {
+        border-radius: $_inner_radius;
+
+        > text {
+          background: none;
+        }
+      }
+
+      treeview.view:not(:hover):not(:selected) { background: none; }
+    }
+
+    viewport.frame {
+      &.view { border-radius: $_inner_radius; }
+    }
+  }
+}
+
+
+notebook {
+
+  &, &.frame {
+    background-color: $base_color;
+    border-radius: $_inner_radius;
+  }
+
+  &.frame frame {
+    > border {
+      border: none;
+      border-radius: $_inner_radius;
+    }
+
+    > list {
+      row.activatable { border-radius: $_inner_radius; }
+    }
+  }
+
+  > header {
+    $_tab_radius: $_inner_radius - 4px;
+    &.top {
+      border-radius: $_inner_radius $_inner_radius 0 0;
+      > tabs > tab {
+        border-radius: $_tab_radius $_tab_radius 0 0;
+      }
+    }
+    &.bottom {
+      border-radius: 0 0 $_inner_radius $_inner_radius;
+      > tabs > tab {
+        border-radius: 0 0 $_tab_radius $_tab_radius;
+      }
+    }
+    &.right {
+      border-radius: 0 $_inner_radius $_inner_radius 0;
+      > tabs > tab {
+        border-radius: 0 $_tab_radius $_tab_radius 0;
+      }
+    }
+    &.left {
+      border-radius: $_inner_radius 0 0 $_inner_radius;
+      > tabs > tab {
+        border-radius: $_tab_radius 0 0 $_tab_radius;
+      }
+    }
+  }
+
+  > stack:not(:only-child) {
+    background-color: transparent;
+    border-radius: $_inner_radius;
+  }
+}
+
+/***********
+ * Tooltips *
+ ***********/
+
+tooltip.background.csd{
+  border-radius: $_inner_radius;
+}

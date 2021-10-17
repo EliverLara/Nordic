@@ -2511,14 +2511,6 @@ headerbar separator {
 
 .background:not(.tiled):not(.maximized) .titlebar {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px rgba(0, 0, 0, 0.1); }
-  .background:not(.tiled):not(.maximized) .titlebar:backdrop, .background:not(.tiled):not(.maximized) .titlebar {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px; }
-
-window:not(.tiled):not(.maximized) separator:first-child + headerbar:backdrop, window:not(.tiled):not(.maximized) separator:first-child + headerbar, window:not(.tiled):not(.maximized) headerbar:first-child:backdrop, window:not(.tiled):not(.maximized) headerbar:first-child {
-  border-top-left-radius: 4px; }
-window:not(.tiled):not(.maximized) headerbar:last-child:backdrop, window:not(.tiled):not(.maximized) headerbar:last-child {
-  border-top-right-radius: 4px; }
 
 window.csd > .titlebar:not(headerbar) {
   padding: 0;
@@ -4383,10 +4375,9 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
  * Window Decorations *
  *********************/
 decoration {
-  border-radius: 4px 4px 0 0;
   border-width: 0px;
   border-width: 0px;
-  box-shadow: 0 4px 10px 2px rgba(33, 26, 30, 0.4);
+  box-shadow: 0 4px 10px 2px rgba(37, 37, 37, 0.7);
   margin: 10px; }
   decoration:backdrop {
     box-shadow: 0 4px 10px 2px rgba(33, 26, 30, 0.2);
@@ -6132,5 +6123,185 @@ window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > 
   .caja-notebook .entry:selected {
     background: #cd7ebf;
     color: #fff; }
+
+.background.csd {
+  border-radius: 0 0 12px 12px; }
+.background.maximized, .background.solid-csd {
+  border-radius: 0; }
+
+.titlebar, headerbar {
+  border-radius: 12px 12px 0 0; }
+
+.background.csd box.vertical > actionbar > revealer > box {
+  border-radius: 0 0 12px 12px; }
+
+messagedialog.csd.background {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px; }
+
+.csd filechooser {
+  border-radius: 0 0 12px 12px; }
+filechooser stack.view scrolledwindow {
+  border-radius: 0 0 12px 0; }
+.csd filechooser placessidebar {
+  border-bottom-left-radius: 12px; }
+
+decoration {
+  border-radius: 12px; }
+  messagedialog.csd decoration {
+    border-radius: 12px; }
+
+.nautilus-window.background.csd {
+  border-radius: 0 0 12px 12px; }
+.nautilus-window placessidebar {
+  border-radius: 12px; }
+
+window.background.csd.unified,
+window.background.csd.unified > decoration,
+window.background.csd.unified > decoration-overlay {
+  border-radius: 12px; }
+
+.csd .tweak-categories {
+  border-bottom-left-radius: 12px; }
+
+window.background.csd > headerbar.titlebar > leaflet > headerbar:first-child:not(:only-child),
+window.background.csd > headerbar.titlebar > hdyleaflet > headerbar:first-child:not(:only-child) {
+  border-top-left-radius: 12px; }
+window.background.csd > headerbar.titlebar > leaflet > headerbar:last-child:not(:only-child),
+window.background.csd > headerbar.titlebar > hdyleaflet > headerbar:last-child:not(:only-child) {
+  border-top-right-radius: 12px; }
+window.background.csd > headerbar.titlebar > leaflet > headerbar:first-child:only-child, window.background.csd > headerbar.titlebar > leaflet > headerbar:last-child:only-child,
+window.background.csd > headerbar.titlebar > hdyleaflet > headerbar:first-child:only-child,
+window.background.csd > headerbar.titlebar > hdyleaflet > headerbar:last-child:only-child {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px; }
+window.background.csd > stack:not(.titlebar) > stack.background {
+  border-radius: 0 0 12px 12px; }
+window.background.csd > leaflet > stack.background,
+window.background.csd > hdyleaflet > stack.background,
+window.background.csd > box.horizontal > stack.background {
+  background: none; }
+  window.background.csd > leaflet > stack.background > widget > box.vertical > box.vertical > scrolledwindow > viewport.frame,
+  window.background.csd > hdyleaflet > stack.background > widget > box.vertical > box.vertical > scrolledwindow > viewport.frame,
+  window.background.csd > box.horizontal > stack.background > widget > box.vertical > box.vertical > scrolledwindow > viewport.frame {
+    background-color: #2e394c;
+    border-bottom-right-radius: 12px; }
+    window.background.csd > leaflet > stack.background > widget > box.vertical > box.vertical > scrolledwindow > viewport.frame > box.vertical.view,
+    window.background.csd > hdyleaflet > stack.background > widget > box.vertical > box.vertical > scrolledwindow > viewport.frame > box.vertical.view,
+    window.background.csd > box.horizontal > stack.background > widget > box.vertical > box.vertical > scrolledwindow > viewport.frame > box.vertical.view {
+      background: none; }
+window.background.csd > leaflet > box.vertical > scrolledwindow.view,
+window.background.csd > hdyleaflet > box.vertical > scrolledwindow.view,
+window.background.csd > box.horizontal > box.vertical > scrolledwindow.view {
+  background-color: #2e394c;
+  border-bottom-left-radius: 12px; }
+  window.background.csd > leaflet > box.vertical > scrolledwindow.view > viewport.frame > stack,
+  window.background.csd > hdyleaflet > box.vertical > scrolledwindow.view > viewport.frame > stack,
+  window.background.csd > box.horizontal > box.vertical > scrolledwindow.view > viewport.frame > stack {
+    background-color: transparent; }
+    window.background.csd > leaflet > box.vertical > scrolledwindow.view > viewport.frame > stack list,
+    window.background.csd > hdyleaflet > box.vertical > scrolledwindow.view > viewport.frame > stack list,
+    window.background.csd > box.horizontal > box.vertical > scrolledwindow.view > viewport.frame > stack list {
+      background-color: transparent; }
+      window.background.csd > leaflet > box.vertical > scrolledwindow.view > viewport.frame > stack list row.activatable:not(:hover):not(:active):not(:selected),
+      window.background.csd > hdyleaflet > box.vertical > scrolledwindow.view > viewport.frame > stack list row.activatable:not(:hover):not(:active):not(:selected),
+      window.background.csd > box.horizontal > box.vertical > scrolledwindow.view > viewport.frame > stack list row.activatable:not(:hover):not(:active):not(:selected) {
+        background-color: transparent; }
+
+dialog.background.csd > box.vertical.dialog-vbox > notebook > stack > box.horizontal > notebook > stack {
+  border-radius: 0 0 12px 12px; }
+
+/***************
+ * Gnome Music *
+ ***************/
+window.background.csd box.vertical > overlay > stack.background {
+  border-radius: 0 0 12px 12px; }
+
+/****************
+ * Gnome Clocks *
+ ****************/
+window.background.csd.unified {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; }
+  window.background.csd.unified > deck > deck > deck > box.vertical > headerbar.titlebar.windowhandle {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px; }
+    window.background.csd.unified > deck > deck > deck > box.vertical > headerbar.titlebar.windowhandle > viewswitchertitle > squeezer {
+      margin: 0 0;
+      background: none; }
+      window.background.csd.unified > deck > deck > deck > box.vertical > headerbar.titlebar.windowhandle > viewswitchertitle > squeezer > viewswitcher > box.horizontal > button.radio {
+        margin: 0;
+        padding: 0;
+        border-radius: 0; }
+
+/***********
+ * Dialogs *
+ ***********/
+dialog.background.csd > box.vertical.dialog-vbox > grid.horizontal > scrolledwindow.frame > viewport.frame list:first-child {
+  border-radius: 0 0 0 12px; }
+dialog.background.csd > box.vertical.dialog-vbox > grid.horizontal > scrolledwindow.frame > viewport.frame list:last-child {
+  border-radius: 0 0 12px 0; }
+dialog.background.csd > box.vertical.dialog-vbox > stack > scrolledwindow,
+dialog.background.csd > box.vertical.dialog-vbox > stack > stack > scrolledwindow {
+  border-radius: 0 0 12px 12px;
+  background-color: #2e394c; }
+  dialog.background.csd > box.vertical.dialog-vbox > stack > scrolledwindow iconview.view:not(:hover):not(:selected):not(:active), dialog.background.csd > box.vertical.dialog-vbox > stack > scrolledwindow iconview:not(:hover):not(:selected):not(:active),
+  dialog.background.csd > box.vertical.dialog-vbox > stack > stack > scrolledwindow iconview.view:not(:hover):not(:selected):not(:active),
+  dialog.background.csd > box.vertical.dialog-vbox > stack > stack > scrolledwindow iconview:not(:hover):not(:selected):not(:active) {
+    background-color: transparent; }
+dialog.background.csd > box.vertical.dialog-vbox > stack > scrolledwindow > viewport.frame > list {
+  border-radius: 0 0 12px 12px; }
+  dialog.background.csd > box.vertical.dialog-vbox > stack > scrolledwindow > viewport.frame > list row.activatable:not(:hover):not(:selected):not(:active) {
+    background-color: transparent; }
+dialog.background.csd > box.vertical.dialog-vbox > stack > box.vertical > stack.view > scrolledwindow > treeview.view:not(:hover):not(:selected):not(:active) {
+  background-color: transparent; }
+dialog.background.csd > box.vertical.dialog-vbox > stack toolbar.toolbar {
+  border-radius: 0 0 12px 12px; }
+dialog.background.csd > box.vertical.dialog-vbox > notebook > stack {
+  border-radius: 0 0 12px 12px; }
+dialog.background.csd stack scrolledwindow.frame {
+  border-radius: 8px; }
+  dialog.background.csd stack scrolledwindow.frame textview.view {
+    border-radius: 8px; }
+    dialog.background.csd stack scrolledwindow.frame textview.view > text {
+      background: none; }
+  dialog.background.csd stack scrolledwindow.frame treeview.view:not(:hover):not(:selected) {
+    background: none; }
+dialog.background.csd stack scrolledwindow viewport.frame.view {
+  border-radius: 8px; }
+
+notebook, notebook.frame {
+  background-color: #2e394c;
+  border-radius: 8px; }
+notebook.frame frame > border {
+  border: none;
+  border-radius: 8px; }
+notebook.frame frame > list row.activatable {
+  border-radius: 8px; }
+notebook > header.top {
+  border-radius: 8px 8px 0 0; }
+  notebook > header.top > tabs > tab {
+    border-radius: 4px 4px 0 0; }
+notebook > header.bottom {
+  border-radius: 0 0 8px 8px; }
+  notebook > header.bottom > tabs > tab {
+    border-radius: 0 0 4px 4px; }
+notebook > header.right {
+  border-radius: 0 8px 8px 0; }
+  notebook > header.right > tabs > tab {
+    border-radius: 0 4px 4px 0; }
+notebook > header.left {
+  border-radius: 8px 0 0 8px; }
+  notebook > header.left > tabs > tab {
+    border-radius: 4px 0 0 4px; }
+notebook > stack:not(:only-child) {
+  background-color: transparent;
+  border-radius: 8px; }
+
+/***********
+ * Tooltips *
+ ***********/
+tooltip.background.csd {
+  border-radius: 8px; }
 
 /*# sourceMappingURL=gtk-dark.css.map */
