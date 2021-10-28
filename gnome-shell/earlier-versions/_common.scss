@@ -1412,6 +1412,20 @@ StScrollBar {
 
   //search results
 
+  %search-section-content-item {  
+    &:focus,
+    &:hover,
+    &:selected {
+      background-color: transparentize($osd_fg_color, .9);
+      transition-duration: 200ms;
+    }
+  
+    &:active,
+    &:checked {
+      background-color: transparentize(darken($osd_bg_color, 10%), .1);
+    }
+  }
+
   #searchResultsBin {
     max-width: 1000px;
   }
@@ -1438,7 +1452,7 @@ StScrollBar {
   }
   .list-search-results { spacing: 3px; }
 
-  .search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
+  .search-section-separator { height: 2px; background-color: $gray; }
 
   .list-search-result-content { spacing: 30px; }
   .list-search-result-title { color: lighten($topbar_color,5%); spacing: 12px; }
@@ -1446,6 +1460,12 @@ StScrollBar {
   .list-search-provider-details { width: 150px; color: lighten($topbar_color,5%); margin-top: 0.24em; }
   .list-search-provider-content { spacing: 20px; }
   .search-provider-icon { padding: 15px; }
+
+  //Icon tile
+  .search-provider-icon,
+  .list-search-result {
+    @extend %search-section-content-item;
+  }
 
 
   /* DASHBOARD */
@@ -1522,16 +1542,6 @@ StScrollBar {
     }
   }
 
-  //Icon tile
-  .search-provider-icon,
-  .list-search-result {
-    @extend %icon_tile;
-    &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
-    &:focus, &:selected, &:hover {
-      background-color: transparentize($bg_color,.7);
-      transition-duration: 200ms;
-    }
-  }
   .app-well-app,
   .app-well-app.app-folder,
   .show-apps,
