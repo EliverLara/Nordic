@@ -116,7 +116,6 @@ StEntry {
 /* Scrollbars */
 StScrollView.vfade {
   -st-vfade-offset: 68px; }
-
 StScrollView.hfade {
   -st-hfade-offset: 68px; }
 
@@ -163,18 +162,14 @@ StScrollBar {
 /* Check Boxes */
 .check-box StBoxLayout {
   spacing: .8em; }
-
 .check-box StBin {
   width: 24px;
   height: 22px;
   background-image: url("assets/checkbox-off.svg"); }
-
 .check-box:focus, .check-box:hover StBin {
   background-image: url("assets/checkbox-off-focused.svg"); }
-
 .check-box:checked StBin {
   background-image: url("assets/checkbox.svg"); }
-
 .check-box:focus:checked StBin {
   background-image: url("assets/checkbox-focused.svg"); }
 
@@ -373,7 +368,6 @@ StScrollBar {
 
 .mount-dialog-app-list-item-icon:ltr {
   padding-right: 17px; }
-
 .mount-dialog-app-list-item-icon:rtl {
   padding-left: 17px; }
 
@@ -473,7 +467,6 @@ StScrollBar {
 .extension-dialog .message-dialog-main-layout {
   spacing: 24px;
   padding: 10px; }
-
 .extension-dialog .message-dialog-title {
   color: #8699bb; }
 
@@ -554,7 +547,6 @@ StScrollBar {
   border-color: transparent;
   border-bottom-width: 1px;
   border-bottom-style: solid; }
-
 .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
   margin: 0 64px 0 32px;
   background: transparent; }
@@ -758,17 +750,9 @@ StScrollBar {
     #panel .panel-button .system-status-icon {
       icon-size: 1.09em;
       padding: 0 5px; }
-    .unlock-screen #panel .panel-button,
-    .login-screen #panel .panel-button,
-    .lock-screen #panel .panel-button {
+    .unlock-screen #panel .panel-button, .login-screen #panel .panel-button, .lock-screen #panel .panel-button {
       color: #f9fafb; }
-      .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active,
-      .login-screen #panel .panel-button:focus,
-      .login-screen #panel .panel-button:hover,
-      .login-screen #panel .panel-button:active,
-      .lock-screen #panel .panel-button:focus,
-      .lock-screen #panel .panel-button:hover,
-      .lock-screen #panel .panel-button:active {
+      .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
         color: #f9fafb; }
   #panel .panel-status-indicators-box,
   #panel .panel-status-menu-box {
@@ -850,7 +834,6 @@ StScrollBar {
 .events-button:hover,
 .events-button:focus {
   background-color: #39404f; }
-
 .datemenu-today-button:active,
 .world-clocks-button:active,
 .weather-button:active,
@@ -991,9 +974,8 @@ StScrollBar {
   padding: 8px;
   color: #d8dee9;
   background-color: transparent; }
-
-.message-list-section-close:hover > StIcon,
-.message-list-section-close:focus > StIcon .message-list-section-close:active > StIcon {
+.message-list-section-close:hover > StIcon, .message-list-section-close:focus > StIcon
+.message-list-section-close:active > StIcon {
   color: #bf616a;
   background: transparent; }
 
@@ -1022,7 +1004,7 @@ StScrollBar {
   color: #a7b5cd;
   font-size: 0.7em;
   /* HACK: the label should be baseline-aligned with a 1em label,
-                     fake this with some bottom padding */
+           fake this with some bottom padding */
   padding-bottom: 0.13em; }
 
 .message-secondary-bin > StIcon {
@@ -1060,13 +1042,11 @@ StScrollBar {
 .world-clocks-button .world-clocks-city {
   color: #d8dee9;
   font-weight: normal; }
-
 .world-clocks-button .world-clocks-time {
   font-weight: bold;
   color: #d8dee9;
   font-feature-settings: "lnum";
   text-align: right; }
-
 .world-clocks-button .world-clocks-timezone {
   color: #97a7c4;
   font-feature-settings: "tnum"; }
@@ -1077,14 +1057,12 @@ StScrollBar {
   font-weight: bold; }
   .weather-button .weather-header.location {
     font-weight: normal; }
-
 .weather-button .weather-forecast-time {
   color: #b7c2d7;
   font-feature-settings: "tnum";
   font-weight: normal;
   padding-top: 0.2em;
   padding-bottom: 0.4em; }
-
 .weather-button .weather-forecast-temp {
   font-weight: bold; }
 
@@ -1256,6 +1234,17 @@ StScrollBar {
     padding: 0 4px;
     color: rgba(216, 222, 233, 0.7); }
 
+.search-provider-icon:focus,
+.list-search-result:focus, .search-provider-icon:hover,
+.list-search-result:hover, .search-provider-icon:selected,
+.list-search-result:selected {
+  background-color: rgba(216, 222, 233, 0.1);
+  transition-duration: 200ms; }
+.search-provider-icon:active,
+.list-search-result:active, .search-provider-icon:checked,
+.list-search-result:checked {
+  background-color: rgba(25, 28, 34, 0.85); }
+
 #searchResultsBin {
   max-width: 1000px; }
 
@@ -1279,7 +1268,7 @@ StScrollBar {
 
 .search-section-separator {
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.2); }
+  background-color: #4e586d; }
 
 .list-search-result-content {
   spacing: 30px; }
@@ -1349,26 +1338,12 @@ StScrollBar {
   .app-view-control:last-child {
     border-radius: 0 3px 3px 0; }
 
-.search-provider-icon:active, .search-provider-icon:checked,
-.list-search-result:active,
-.list-search-result:checked {
-  background-color: rgba(25, 28, 34, 0.85); }
-
-.search-provider-icon:focus, .search-provider-icon:selected, .search-provider-icon:hover,
-.list-search-result:focus,
-.list-search-result:selected,
-.list-search-result:hover {
-  background-color: rgba(46, 52, 64, 0.3);
-  transition-duration: 200ms; }
-
 .app-well-app,
 .app-well-app.app-folder,
 .show-apps,
 .grid-search-result {
   border: none; }
-  .app-well-app:hover .overview-icon,
-  .app-well-app:focus .overview-icon,
-  .app-well-app:selected .overview-icon,
+  .app-well-app:hover .overview-icon, .app-well-app:focus .overview-icon, .app-well-app:selected .overview-icon,
   .app-well-app.app-folder:hover .overview-icon,
   .app-well-app.app-folder:focus .overview-icon,
   .app-well-app.app-folder:selected .overview-icon,
@@ -1382,8 +1357,7 @@ StScrollBar {
     transition-duration: 0ms;
     border-image: none;
     background-image: none; }
-  .app-well-app:active .overview-icon,
-  .app-well-app:checked .overview-icon,
+  .app-well-app:active .overview-icon, .app-well-app:checked .overview-icon,
   .app-well-app.app-folder:active .overview-icon,
   .app-well-app.app-folder:checked .overview-icon,
   .show-apps:active .overview-icon,
@@ -1402,8 +1376,7 @@ StScrollBar {
   box-shadow: 0px 0px 5px 4px rgba(76, 86, 106, 0.8);
   margin-bottom: 0px; }
 
-.search-provider-icon,
-.list-search-result, .app-well-app .overview-icon,
+.app-well-app .overview-icon,
 .app-well-app.app-folder .overview-icon,
 .show-apps .overview-icon,
 .grid-search-result .overview-icon {
@@ -1804,8 +1777,7 @@ StScrollBar {
 
 .login-dialog-not-listed-label {
   padding-left: 2px; }
-  .login-dialog-not-listed-button:focus .login-dialog-not-listed-label,
-  .login-dialog-not-listed-button:hover .login-dialog-not-listed-label {
+  .login-dialog-not-listed-button:focus .login-dialog-not-listed-label, .login-dialog-not-listed-button:hover .login-dialog-not-listed-label {
     color: #d8dee9; }
 
 .login-dialog-not-listed-label {
@@ -1852,7 +1824,6 @@ StScrollBar {
 
 .user-widget-label:ltr {
   padding-left: 18px; }
-
 .user-widget-label:rtl {
   padding-right: 18px; }
 
@@ -1980,7 +1951,6 @@ StScrollBar {
 .lg-dialog StEntry {
   selection-background-color: #bbbbbb;
   selected-color: #333333; }
-
 .lg-dialog .shell-link {
   color: #999999; }
   .lg-dialog .shell-link:hover {
@@ -2035,3 +2005,5 @@ StScrollBar {
 
 .openweather-current-databox-captions, .openweather-forecast-day {
   color: #4c566a; }
+
+/*# sourceMappingURL=gnome-shell.css.map */
