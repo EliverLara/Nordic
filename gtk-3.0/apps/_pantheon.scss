@@ -306,3 +306,144 @@ LibraryWindow {
     }
   }
 }
+
+/**************************
+ * Colors in context menu *
+**************************/
+
+checkbutton.color-button {
+  border: 1px solid $borders_color;
+  border-radius: 100px;
+  background-clip: border-box;
+  padding: 0;
+  margin: 2px 1px;
+
+  > check {
+    -gtk-icon-source: none;
+    background: none;
+    margin-right: 0;
+    padding: 2px;
+  }
+
+  &.none {
+    > check {
+      background-color: transparent;
+      border-radius: 100px;
+      -gtk-icon-source: -gtk-icontheme("close-symbolic");
+    }
+  }
+
+}
+
+radiobutton.color-button {
+  > radio {
+    -gtk-icon-source: none;
+    margin-right: 0;
+    border: 1px solid rgba(black, 0.15);
+    border-radius: 100px;
+    background-clip: border-box;
+  }
+
+  &:active > radio {
+    border: 1px solid rgba(black, 0.35);
+  }
+}
+
+.color-button {
+  check,
+  check:checked,
+  radio,
+  radio:checked, {
+      background-image: none;
+      border: 1px solid rgba(black, 0.2);
+      border-radius: 50%;
+      box-shadow: inset-shadow();
+      color: $base_color;
+      -gtk-icon-source: -gtk-icontheme("check-active-symbolic");
+      min-height: rem(12px);
+      min-width: rem(12px);
+      padding: rem(3px);
+  }
+
+  &.red check,
+  &.red radio,
+  &.strawberry check,
+  &.strawberry radio {
+      background-color: #{'@STRAWBERRY_300'};
+      -gtk-icon-shadow: 0 1px 1px #{'@STRAWBERRY_500'};
+  }
+
+  &.orange check,
+  &.orange radio {
+      background-color: #{'@ORANGE_300'};
+      -gtk-icon-shadow: 0 1px 1px #{'@ORANGE_500'};
+  }
+
+  &.yellow check,
+  &.yellow radio,
+  &.banana check,
+  &.banana radio {
+      background-color: #{'@BANANA_500'};
+      -gtk-icon-shadow: 0 1px 1px #{'@BANANA_700'};
+  }
+
+  &.green check,
+  &.green radio,
+  &.lime check,
+  &.lime radio {
+      background-color: #{'@LIME_500'};
+      -gtk-icon-shadow: 0 1px 1px #{'@LIME_700'};
+  }
+
+  &.blue check,
+  &.blue radio,
+  &.blueberry check,
+  &.blueberry radio {
+      background-color: #{'@BLUEBERRY_500'};
+      -gtk-icon-shadow: 0 1px 1px #{'@BLUEBERRY_700'};
+  }
+
+  &.purple check,
+  &.purple radio,
+  &.grape check,
+  &.grape radio {
+      background-color: #{'@GRAPE_500'};
+      -gtk-icon-shadow: 0 1px 1px #{'@GRAPE_700'};
+  }
+
+  &.brown check,
+  &.brown radio,
+  &.cocoa check,
+  &.cocoa radio {
+      background-color: #{'@COCOA_300'};
+      -gtk-icon-shadow: 0 1px 1px #{'@COCOA_500'};
+  }
+
+  &.mint check,
+  &.mint radio  {
+      background-color: #{'@MINT_500'};
+      -gtk-icon-shadow: 0 1px 1px #{'@MINT_700'};
+  }
+
+  &.pink check,
+  &.pink radio,
+  &.bubblegum check,
+  &.bubblegum radio  {
+      background-color: #{'@BUBBLEGUM_500'};
+      -gtk-icon-shadow: 0 1px 1px #{'@BUBBLEGUM_700'};
+  }
+
+  &.slate check,
+  &.slate radio  {
+      background-color: #{'@SLATE_300'};
+      -gtk-icon-shadow: 0 1px 1px #{'@SLATE_500'};
+
+  }
+
+  &.auto radio {
+      background-image: url("assets/color-button-auto.png");
+      background-position: -1px -1px;
+      background-repeat: no-repeat;
+      background-size: calc(100% + 2px);
+  }
+}
