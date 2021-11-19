@@ -5745,13 +5745,10 @@ radiobutton.color-button:active > radio {
   background-image: none;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  box-shadow: inset-shadow();
   color: #3b4252;
-  -gtk-icon-source: -gtk-icontheme("check-active-symbolic");
-  min-height: rem(12px);
-  min-width: rem(12px);
-  padding: rem(3px); }
-.color-button.red check, .color-button.red radio, .color-button.strawberry check, .color-button.strawberry radio {
+  -gtk-icon-source: -gtk-icontheme("check-active-symbolic"); }
+.color-button.red check, .color-button.red radio, s
+.color-button.strawberry check, .color-button.strawberry radio {
   background-color: @STRAWBERRY_300;
   -gtk-icon-shadow: 0 1px 1px @STRAWBERRY_500; }
 .color-button.orange check, .color-button.orange radio {
