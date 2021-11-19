@@ -357,16 +357,12 @@ radiobutton.color-button {
       background-image: none;
       border: 1px solid rgba(black, 0.2);
       border-radius: 50%;
-      box-shadow: inset-shadow();
       color: $base_color;
       -gtk-icon-source: -gtk-icontheme("check-active-symbolic");
-      min-height: rem(12px);
-      min-width: rem(12px);
-      padding: rem(3px);
   }
 
   &.red check,
-  &.red radio,
+  &.red radio,s
   &.strawberry check,
   &.strawberry radio {
       background-color: #{'@STRAWBERRY_300'};
