@@ -1016,122 +1016,141 @@ StScrollBar {
     color: #8fbcbb; }
 
 .window-list-box {
-  spacing: 0; }
-  .window-list-box .panel-top:ltr, .panel-bottom .window-list-box:ltr {
-    padding: 0 0 0 8px; }
-  .window-list-box .panel-top:rtl, .panel-bottom .window-list-box:rtl {
-    padding: 0 8px 0 0; }
+  spacing: 6px;
+  padding-left: 10px;
+  padding-top: 1px; }
   .window-list-box.vertical {
-    padding: 6px 0 0 0; }
+    spacing: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
   .window-list-box:highlight {
-    background-color: #8fbcbb; }
+    background-color: rgba(252, 65, 56, 0.5); }
+.window-list-item-label {
+  font-weight: bold;
+  width: 15em;
+  min-width: 5px; }
 .window-list-item-box {
-  border: 0 none transparent;
-  border-image: none;
+  font-weight: bold;
   background-image: none;
-  background-color: #2e3440;
-  color: #BAC3CF;
-  box-shadow: none;
-  font-weight: 400; }
-  .window-list-item-box:hover {
-    color: #2e3440; }
-    .panel-top .window-list-item-box:hover {
-      box-shadow: inset 0 2px #8fbcbb; }
-    .panel-bottom .window-list-item-box:hover {
-      box-shadow: inset 0 -2px #8fbcbb; }
-    .panel-left .window-list-item-box:hover {
-      box-shadow: inset 2px 0 #8fbcbb; }
-    .panel-right .window-list-item-box:hover {
-      box-shadow: inset -2px 0 #8fbcbb; }
-  .window-list-item-box:active, .window-list-item-box:active:hover, .window-list-item-box:checked, .window-list-item-box:checked:hover, .window-list-item-box:focus, .window-list-item-box:focus:hover {
-    color: #2e3440; }
-    .panel-top .window-list-item-box:active, .panel-top .window-list-item-box:active:hover, .panel-top .window-list-item-box:checked, .panel-top .window-list-item-box:checked:hover, .panel-top .window-list-item-box:focus, .panel-top .window-list-item-box:focus:hover {
-      box-shadow: inset 0 2px #bf616a; }
-    .panel-bottom .window-list-item-box:active, .panel-bottom .window-list-item-box:active:hover, .panel-bottom .window-list-item-box:checked, .panel-bottom .window-list-item-box:checked:hover, .panel-bottom .window-list-item-box:focus, .panel-bottom .window-list-item-box:focus:hover {
-      box-shadow: inset 0 -2px #bf616a; }
-    .panel-left .window-list-item-box:active, .panel-left .window-list-item-box:active:hover, .panel-left .window-list-item-box:checked, .panel-left .window-list-item-box:checked:hover, .panel-left .window-list-item-box:focus, .panel-left .window-list-item-box:focus:hover {
-      box-shadow: inset 2px 0 #bf616a; }
-    .panel-right .window-list-item-box:active, .panel-right .window-list-item-box:active:hover, .panel-right .window-list-item-box:checked, .panel-right .window-list-item-box:checked:hover, .panel-right .window-list-item-box:focus, .panel-right .window-list-item-box:focus:hover {
-      box-shadow: inset -2px 0 #bf616a; }
-  .panel-top .window-list-item-box StIcon, .panel-bottom .window-list-item-box StIcon,
-  .panel-top .window-list-item-box StBin, .panel-bottom .window-list-item-box StBin {
-    padding: 0 4px; }
-  .window-list-item-box.vertical StIcon, .window-list-item-box.vertical StBin {
-    padding: 0; }
-  .window-list-item-box StLabel {
-    font-weight: 400; }
-    .panel-top .window-list-item-box StLabel:ltr, .panel-bottom .window-list-item-box StLabel:ltr {
-      padding: 0 4px 0 0; }
-    .panel-top .window-list-item-box StLabel:rtl, .panel-bottom .window-list-item-box StLabel:rtl {
-      padding: 0 0 0 4px; }
-  .window-list-item-box:progress,
+  padding-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition-duration: 100;
+  color: rgba(46, 52, 64, 0.6); }
+  .window-list-item-box.top, .window-list-item-box.bottom {
+    border-bottom-width: 2px; }
+    .window-list-item-box.top StLabel, .window-list-item-box.bottom StLabel {
+      padding-left: 2px; }
+  .window-list-item-box.right {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right-width: 2px; }
+    .window-list-item-box.right StBin {
+      padding-right: 0; }
+  .window-list-item-box.left {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-left-width: 2px; }
+    .window-list-item-box.left StBin {
+      padding-left: 1px; }
+  .window-list-item-box:hover, .window-list-item-box:groupFocus {
+    color: #2e3440;
+    background-color: rgba(46, 52, 64, 0.1); }
+  .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
+    color: #2e3440;
+    border-color: #8fbcbb; }
   .window-list-item-box .progress {
-    background-gradient-start: #8fbcbb;
-    background-gradient-end: #8fbcbb; }
+    background-color: rgba(143, 188, 187, 0.8); }
 .window-list-item-demands-attention {
-  background-gradient-start: #8fbcbb;
-  background-gradient-end: #8fbcbb;
-  color: #2e3440; }
-  .panel-top .window-list-item-demands-attention {
-    box-shadow: inset 0 2px #8fbcbb; }
-  .panel-bottom .window-list-item-demands-attention {
-    box-shadow: inset 0 -2px #8fbcbb; }
-  .panel-left .window-list-item-demands-attention {
-    box-shadow: inset 2px 0 #8fbcbb; }
-  .panel-right .window-list-item-demands-attention {
-    box-shadow: inset -2px 0 #8fbcbb; }
+  background-gradient-direction: vertical;
+  background-gradient-start: #F04A50;
+  background-gradient-end: #F04A50; }
 .window-list-preview {
-  padding: 12px;
-  spacing: 8px;
-  border: none;
-  border-image: url("assets/misc/osd.svg") 9 9 9 9;
-  border-radius: 2px;
-  color: #BAC3CF;
-  background: none; }
+  spacing: 6px;
+  color: #d8dee9;
+  border: 1px solid #1f232b;
+  background-color: #434c5e;
+  border-radius: 3px;
+  padding: 6px 12px 12px 12px;
+  font-size: 1em; }
 
+.grouped-window-list-item-label {
+  font-weight: bold;
+  width: 15em;
+  min-width: 5px; }
 .grouped-window-list-item-box {
-  border: 0 none transparent;
-  border-image: none;
+  text-align: left;
+  font-weight: bold;
   background-image: none;
-  background-color: #2e3440;
-  color: #BAC3CF;
-  box-shadow: none;
-  font-weight: 400; }
-  .panel-top .grouped-window-list-item-box StIcon, .panel-bottom .grouped-window-list-item-box StIcon,
-  .panel-top .grouped-window-list-item-box StBin, .panel-bottom .grouped-window-list-item-box StBin {
-    padding: 0 4px; }
-  .panel-top .grouped-window-list-item-box:active, .panel-top .grouped-window-list-item-box:checked {
-    box-shadow: inset 0 2px #59647b; }
-  .panel-bottom .grouped-window-list-item-box:active, .panel-bottom .grouped-window-list-item-box:checked {
-    box-shadow: inset 0 -2px #59647b; }
-  .panel-left .grouped-window-list-item-box:active, .panel-left .grouped-window-list-item-box:checked {
-    box-shadow: inset 2px 0 #59647b; }
-  .panel-right .grouped-window-list-item-box:active, .panel-right .grouped-window-list-item-box:checked {
-    box-shadow: inset -2px 0 #59647b; }
-  .panel-top .grouped-window-list-item-box:hover, .panel-top .grouped-window-list-item-box:active:hover, .panel-top .grouped-window-list-item-box:focus, .panel-top .grouped-window-list-item-box:active:focus, .panel-top .grouped-window-list-item-box:focus:hover, .panel-top .grouped-window-list-item-box:active:focus:hover {
-    box-shadow: inset 0 2px #8fbcbb; }
-  .panel-bottom .grouped-window-list-item-box:hover, .panel-bottom .grouped-window-list-item-box:active:hover, .panel-bottom .grouped-window-list-item-box:focus, .panel-bottom .grouped-window-list-item-box:active:focus, .panel-bottom .grouped-window-list-item-box:focus:hover, .panel-bottom .grouped-window-list-item-box:active:focus:hover {
-    box-shadow: inset 0 -2px #8fbcbb; }
-  .panel-left .grouped-window-list-item-box:hover, .panel-left .grouped-window-list-item-box:active:hover, .panel-left .grouped-window-list-item-box:focus, .panel-left .grouped-window-list-item-box:active:focus, .panel-left .grouped-window-list-item-box:focus:hover, .panel-left .grouped-window-list-item-box:active:focus:hover {
-    box-shadow: inset 2px 0 #8fbcbb; }
-  .panel-right .grouped-window-list-item-box:hover, .panel-right .grouped-window-list-item-box:active:hover, .panel-right .grouped-window-list-item-box:focus, .panel-right .grouped-window-list-item-box:active:focus, .panel-right .grouped-window-list-item-box:focus:hover, .panel-right .grouped-window-list-item-box:active:focus:hover {
-    box-shadow: inset -2px 0 #8fbcbb; }
-  .grouped-window-list-item-box:progress,
+  padding-top: 0;
+  padding-left: 8px;
+  padding-right: 8px;
+  transition-duration: 100;
+  color: rgba(46, 52, 64, 0.6); }
+  .grouped-window-list-item-box.top, .grouped-window-list-item-box.bottom {
+    border-bottom-width: 2px; }
+    .grouped-window-list-item-box.top StLabel, .grouped-window-list-item-box.bottom StLabel {
+      padding-left: 2px; }
+  .grouped-window-list-item-box.right {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right-width: 2px; }
+    .grouped-window-list-item-box.right StBin {
+      padding-right: 0; }
+  .grouped-window-list-item-box.left {
+    padding-left: 0px;
+    padding-right: 0px;
+    border-left-width: 2px; }
+    .grouped-window-list-item-box.left StBin {
+      padding-left: 1px; }
+  .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
+    color: #2e3440;
+    border-color: #59647b; }
+  .grouped-window-list-item-box:hover, .grouped-window-list-item-box:active:hover, .grouped-window-list-item-box:focus, .grouped-window-list-item-box:active:focus, .grouped-window-list-item-box:focus:hover, .grouped-window-list-item-box:active:focus:hover {
+    color: #2e3440;
+    border-color: #8fbcbb; }
   .grouped-window-list-item-box .progress {
-    background-gradient-start: #8fbcbb;
-    background-gradient-end: #8fbcbb; }
+    background-color: rgba(143, 188, 187, 0.8); }
 .grouped-window-list-item-demands-attention {
-  background-gradient-start: #8fbcbb;
-  background-gradient-end: #8fbcbb;
-  color: #2e3440; }
-  .panel-top .grouped-window-list-item-demands-attention {
-    box-shadow: inset 0 2px #8fbcbb; }
-  .panel-bottom .grouped-window-list-item-demands-attention {
-    box-shadow: inset 0 -2px #8fbcbb; }
-  .panel-left .grouped-window-list-item-demands-attention {
-    box-shadow: inset 2px 0 #8fbcbb; }
-  .panel-right .grouped-window-list-item-demands-attention {
-    box-shadow: inset -2px 0 #8fbcbb; }
+  background-gradient-direction: vertical;
+  background-gradient-start: #F04A50;
+  background-gradient-end: #F04A50; }
+.grouped-window-list-thumbnail-label {
+  padding-left: 4px; }
+.grouped-window-list-number-label {
+  z-index: 99;
+  color: #d8dee9; }
+.grouped-window-list-badge {
+  border-radius: 256px;
+  background-color: #2e3440; }
+.grouped-window-list-button-label {
+  padding-left: 4px; }
+.grouped-window-list-thumbnail-alert {
+  background: rgba(255, 52, 52, 0.3); }
+.grouped-window-list-thumbnail-menu {
+  color: #d8dee9;
+  border: 1px solid #1f232b;
+  background-color: #434c5e;
+  border-radius: 3px;
+  padding: 0px; }
+  .grouped-window-list-thumbnail-menu > StBoxLayout {
+    padding: 4px; }
+  .grouped-window-list-thumbnail-menu .item-box {
+    padding: 10px;
+    border-radius: 2px;
+    spacing: 4px; }
+    .grouped-window-list-thumbnail-menu .item-box:outlined {
+      padding: 8px;
+      border: 1px solid #8fbcbb; }
+    .grouped-window-list-thumbnail-menu .item-box:selected {
+      border: 1px solid #8fbcbb; }
+  .grouped-window-list-thumbnail-menu .thumbnail {
+    width: 256px; }
+  .grouped-window-list-thumbnail-menu .separator {
+    width: 1px;
+    background: rgba(255, 255, 255, 0.2); }
 
 .sound-button {
   width: 22px;
