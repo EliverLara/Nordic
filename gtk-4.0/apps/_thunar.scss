@@ -1,0 +1,56 @@
+
+/* thunar */
+.thunar toolbar { background-color: $headerbar_color; }
+  
+/* buttons in toolbar */
+.thunar toolbar.horizontal button image {
+    -gtk-icon-transform:scale(0.72);
+}
+
+scrolledwindow.sidebar treeview.view {
+    background: darken($_sidebar_color, 2%);
+    padding: 1.5px;
+}
+  
+/* path-bar of thunar */
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar,
+.thunar toolbar {
+    .path-bar-button {
+        @include button(normal-header);
+        border-radius: 0;
+        border-right: 0.5px solid $borders_color;
+        box-shadow: none;
+        min-height: 20px;
+        padding: 3px 4px;
+        &:first-child {
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+
+        &:last-child {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-right-style: solid;
+        }
+
+        &:only-child {
+            border-radius: 4px;
+            border-style: solid;
+        }
+        &:hover { color: $selected_bg_color; }
+        &:checked { @include button(active, transparentize($selected_bg_color, 0.3), #fff); }
+    }
+    .toggle.path-bar-button:hover {
+        @include button(active, transparentize($selected_bg_color, 0.3), #fff);
+    }
+}
+  
+/* thunar sidepane */
+window.thunar paned > scrolledwindow treeview.view {
+    &:hover,  &:selected {
+        background: transparentize($selected_bg_color, 0.3);
+        color: $selected_fg_color;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
