@@ -1,0 +1,13 @@
+
+
+$variant: 'dark';
+$accent: 'green';
+
+@import '../gtk-3.0/nord';
+@import '../gtk-3.0/colors';
+@import '../gtk-3.0/elementary-colors';
+@import '../gtk-3.0/colors-public';
+@import 'drawing';
+@import 'common';
+@import 'widgets';
+@import 'apps';
