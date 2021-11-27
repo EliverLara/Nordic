@@ -38,7 +38,7 @@ $button_transition: all 200ms $ease-out-quad;
   outline-color: transparentize($fg_color, 0.7);
   outline-style: dashed;
   outline-offset: -3px;
-  outline-width: 1px;
+  outline-width: 0px;
   -gtk-outline-radius: 2px;
 
   -gtk-secondary-caret-color: $selected_bg_color;
