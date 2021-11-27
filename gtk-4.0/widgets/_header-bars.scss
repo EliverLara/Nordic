@@ -1,0 +1,301 @@
+/***************
+ * Header bars *
+ ***************/
+%titlebar,
+headerbar {
+  padding: 0 13px;
+  min-height: 34px;
+  background: $headerbar_color;
+  color: $headerbar_fg_color;
+  border-radius: 0;
+  &:backdrop {
+    border-color: $backdrop_borders_color;
+   // background-image: none;
+
+    transition: $backdrop_transition;
+  }
+
+  .title {
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .subtitle {
+    font-size: smaller;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    @extend .dim-label;
+  }
+ 
+  entry { min-height: 24px;}  
+  
+  button {
+    @include button(normal-header);
+    min-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: none;
+    &.image-button{
+       padding: 3px 4px;
+    }
+    &.suggested-action{
+      box-shadow: none;
+      border: none;
+      background-image: $suggested_bg_color;
+        &:disabled, &:disabled:backdrop, &:backdrop {
+          border: none;
+          background-image: $suggested_bg_color;
+          &:hover,
+          &:active,
+          &:checked {
+            border: none;
+            background-image: $suggested_bg_color;
+          }
+        }
+        
+      }
+      
+    &.appmenu{
+      background: transparent;
+      &:backdrop{background: transparent;}
+    }
+    &:hover {
+      @include button(hover-header, $selected_bg_color, #fff);
+    }
+    &:active,
+    &:checked {
+      @include button(active, transparentize($selected_bg_color, 0.3), #fff);
+    }
+
+    &:backdrop,
+    &:disabled,
+    &:backdrop:disabled {
+      @include button(backdrop-header, $main_dark_color, transparentize($headerbar_fg_color, 0.8));
+    }
+
+    &:backdrop {
+      &:hover,
+      &:active,
+      &:checked {
+        @include button(backdrop-header, $backdrop_selected_bg_color, $selected_bg_color);
+      }
+    }
+
+    @each $b_type, $b_color in (suggested-action, $cyan),
+                               (destructive-action, $destructive_color) {
+      &.#{$b_type} {
+        font-weight: bold;
+        min-height: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 4px;
+        @include button(normal, $b_color, white);
+        box-shadow: none;
+
+        &:hover { @include button(hover, $b_color, white); }
+
+        &:active { @include button(active, $b_color, white); }
+
+        &:disabled {
+          @include button(insensitive, $b_color, white);
+          label {color: transparentize(white,0.5);}
+        }
+
+        &:backdrop {
+          @include button(backdrop, $b_color, white);
+          border-radius: 3px;
+        }
+
+        &:backdrop:disabled { @include button(backdrop-insensitive, $b_color, white); }
+
+      }
+    }
+
+    //Reset style
+    &.titlebutton {
+      color: transparent;
+      box-shadow: none;
+      border: none;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      &:hover,
+      &:active,
+      &:checked,
+      &:backdrop,
+      &:backdrop:hover,* {
+        color: transparent;
+        box-shadow: none;
+        background-color: transparent;
+      }
+    }
+  }
+  %linked-header {
+    border-radius: 0;
+    border-right-style: none;
+    box-shadow: none;
+    margin: 5px 0px;
+    min-height: 20px;
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-right-style: solid;
+    }
+
+    &:only-child {
+      border-radius: 4px;
+      border-style: solid;
+    }
+  }
+  %linked-button {
+    @extend %linked-header;
+    &:active, &:checked {
+      @include button(active, transparentize($selected_bg_color, 0.3), #fff);
+      &:backdrop{
+        color: $backdrop_selected_fg_color;
+        label{
+          color: $backdrop_selected_fg_color;
+        }
+      }
+    }
+  }
+  .linked > button {
+    @extend %linked-button;
+  }
+  .linked > button:hover,
+  .linked > button:backdrop { @extend %linked-header; }
+  // End reset style
+
+  .path-bar-box {
+    .dim-label {
+      color: transparent;
+      margin-right: -6px;
+    }
+    button {
+      @extend %linked-button;
+      &:last-child {
+        margin-left: -1px;
+        border-radius: 0px;
+        &:active, &:checked {
+          border-radius: 0px 4px 4px 0px;
+        }
+      }
+      &:first-child {
+        border-radius: 4px 0px 0px 4px;
+        &:active, &:checked {
+          border-radius: 4px;
+        }
+      }
+    }
+    widget > .text-button:last-child{
+      border-radius: 0px 4px 4px 0px;
+      @include button(active, transparentize($selected_bg_color, 0.3), #fff);
+      &:backdrop, &:backdrop label {
+        color: $backdrop_selected_fg_color;
+      }
+      &:only-child{
+        border-radius: 4px;
+      } 
+    }
+  }
+
+  &.selection-mode {
+    button {
+      &:backdrop {
+        &.flat, & {
+          &:active,
+          &:checked {
+            //@include button(backdrop-active, $selected_bg_color, $selected_fg_color);
+            label{
+              color:$backdrop_selected_bg_color;
+            }
+            border-color: $selected_borders_color;
+          }
+        }
+      }
+    }
+
+  }
+
+  .tiled &,
+  .maximized & {
+    &.titlebar {
+      @if $variant == 'light' { box-shadow: none; }
+      @else { box-shadow: inset 0 -1px $bottom_highlight; }
+    }
+    &:backdrop, & { border-radius: 0; }
+  } // squared corners when the window is maximized or tiled
+
+  &.default-decoration {
+    padding: 5px 4px; 
+    min-height: 20px;
+
+    button.titlebutton {
+      min-height: 20px;
+      min-width: 20px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+headerbar {
+  // add vertical margins to common widget on the headerbar to avoid them spanning the whole height
+  entry,
+  spinbutton,
+  separator {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  switch {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  separator { background: transparent; }
+}
+
+.background:not(.tiled):not(.maximized) .titlebar {
+  @if $variant == 'light' { box-shadow: inset 0 1px $top_highlight; }
+  @else { box-shadow: inset 0 1px $top_highlight,inset 0 -1px $bottom_highlight; }
+
+
+  &:backdrop, & {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+}
+
+headerbar {
+  window:not(.tiled):not(.maximized) separator:first-child + &, // tackles the paned container case
+  window:not(.tiled):not(.maximized) &:first-child { &:backdrop, & { border-top-left-radius: 4px; }}
+
+  window:not(.tiled):not(.maximized) &:last-child { &:backdrop, & { border-top-right-radius: 4px; }}
+}
+
+.titlebar:not(headerbar) {
+  window.csd > & {
+    // in csd we assume every titlebar is a headerbar so reset anything, this is needed for split toolbars cases
+    padding: 0;
+    background-color: transparent;
+    background-image: none;
+    border-style: none;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  > separator {
+    background: $headerbar_color;
+  }
+
+  @extend %titlebar;
+}
+
+.titlebar{
+  @extend %titlebar;
+}

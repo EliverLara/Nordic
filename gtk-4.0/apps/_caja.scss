@@ -1,0 +1,8 @@
+.caja-notebook .entry {
+    background: $base_color;
+    color: $fg_color;
+    &:selected {
+      background: $selected_bg_color;
+      color: $selected_fg_color;
+    }
+}
