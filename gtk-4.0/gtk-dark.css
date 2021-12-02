@@ -2790,15 +2790,15 @@ menubar,
   -GtkWidget-window-dragging: true;
   padding: 0px;
   box-shadow: inset 0 -1px rgba(0, 0, 0, 0.1); }
-  menubar > menuitem,
-  .menubar > menuitem {
+  menubar > item,
+  .menubar > item {
     min-height: 16px;
     padding: 4px 8px; }
-    menubar > menuitem:hover,
-    .menubar > menuitem:hover {
+    menubar > item:hover,
+    .menubar > item:hover {
       box-shadow: inset 0 -3px #8fbcbb; }
-    menubar > menuitem:disabled,
-    .menubar > menuitem:disabled {
+    menubar > item:disabled,
+    .menubar > item:disabled {
       color: #8e95a4;
       box-shadow: none; }
 
