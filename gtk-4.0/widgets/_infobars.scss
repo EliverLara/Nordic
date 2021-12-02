@@ -79,41 +79,37 @@ infobar {
 
 .info {
   @extend %color_infobar;
-  background-color: $info_color;
-
-  &:backdrop {
-    background-color:lighten($info_color,10%);
-    color: $backdrop_selected_fg_color;
+  
+  &, &:backdrop {
+    color: $info_color;
+    background-color: transparent;
   }
 }
 
 .warning {
   @extend %color_infobar;
-  background-color: $warning_color;
 
-  &:backdrop {
-    background-color:lighten($warning_color,10%);
-    color: $backdrop_selected_fg_color;
+  &, &:backdrop {
+    color: $warning_color;
+    background-color: transparent;
   }
 }
 
 .question {
   @extend %color_infobar;
-  background-color: $question_color;
 
-  &:backdrop {
-    background-color:lighten($question_color,10%);
-    color: $backdrop_selected_fg_color;
+  &, &:backdrop {
+    color: $question_color;
+    background-color: transparent;
   }
 
 }
 
 .error {
   @extend %color_infobar;
-  background-color: $error_color;
 
-  &:backdrop {
-    background-color:lighten($error_color,10%);
-    color: $backdrop_selected_fg_color;
+  &, &:backdrop {
+    color: $error_color;
+    background-color: transparent;
   }
 }
