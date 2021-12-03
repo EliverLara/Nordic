@@ -103,7 +103,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
     color: $panel_color;
     .container { padding: 0; }
 
-    button:hover { -gtk-icon-effect: none; }
+    button:hover { -gtk-icon-filter: none; }
 
     entry.search {
         border: none;
@@ -350,8 +350,8 @@ button.raven-trigger {
     .view-header {
         font-size: 14px;
         padding: 10px;
-        border-bottom: #{"1px solid mix(@theme_base_color, #000000, 0.35);"};
-        box-shadow: #{"0px 1px 1px alpha(@theme_fg_color, 0.04);"};
+        border-bottom: #{"1px solid mix(@theme_base_color, #000000, 0.35)"};
+        box-shadow: #{"0px 1px 1px alpha(@theme_fg_color, 0.04)"};
     }
 
     .display-settings-button {
@@ -359,8 +359,8 @@ button.raven-trigger {
         border-top-right-radius: 0px;
         border: none;
         padding: 3px;
-        border-top: #{"1px solid mix(@theme_base_color, #000000, 0.35);"};
-        box-shadow: #{"inset 0px 1px 1px alpha(@theme_fg_color, 0.04);"};
+        border-top: #{"1px solid mix(@theme_base_color, #000000, 0.35)"};
+        box-shadow: #{"inset 0px 1px 1px alpha(@theme_fg_color, 0.04)"};
     }
 }
 
