@@ -12,7 +12,6 @@
   &:backdrop {
     background-color: darken($backdrop_bg_color, 10%);
     box-shadow: none;
-    -gtk-icon-effect: dim;
   }
 
   &:first-child {

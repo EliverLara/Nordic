@@ -20,8 +20,6 @@
    Everytime a wildcard is used a kitten dies, painfully.
 */
 
-*:disabled { -gtk-icon-effect: dim; }
-
 .gtkstyle-fallback {
   color: $fg_color;
   background-color: $bg_color;
