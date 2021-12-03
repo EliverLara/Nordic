@@ -9,26 +9,6 @@ $unity_panel_color: darken($unity_color, 10%); /* Unity panel color #454D50 */
 
 UnityDecoration {
 
-  /* Border properties (top, right, bottom, left) */
-  -UnityDecoration-extents: 28px 1px 1px 1px;/* the size of the decorations  */
-  -UnityDecoration-input-extents: 10px;/* the extra size of the input areas */
-
-  /* Shadows settings */
-  -UnityDecoration-shadow-offset-x: 1px;/* Size property, the shadow x offset */
-  -UnityDecoration-shadow-offset-y: 1px;/* Size property, the shadow y offset */
-  -UnityDecoration-active-shadow-color: rgba (0, 0, 0, 0.647);/* Color property, active window shadow color */
-  -UnityDecoration-active-shadow-radius: 8px;/* Size property, active window shadow radius */
-  -UnityDecoration-inactive-shadow-color: rgba (0, 0, 0, 0.647);/* Color property, inactive windows shadow color */
-  -UnityDecoration-inactive-shadow-radius: 5px;/* Size property, inactive windows shadow radius */
-
-  /* Glow applied to the selected scaled window */
-  -UnityDecoration-glow-size: 8px;/* Size property, size of glow */
-  -UnityDecoration-glow-color: $selected_bg_color;/* Color property of the glow */
-
-  /* Title settings */
-  -UnityDecoration-title-indent: 10px;/* Size property, left indent of the title */
-  -UnityDecoration-title-fade: 35px;/* Size property, space of the title that can be faded */
-  -UnityDecoration-title-alignment: 0.0;/* Float from 0.0 to 1.0, to align the title */
   background-color: $unity_color;
   color: $unity_text_color;
 

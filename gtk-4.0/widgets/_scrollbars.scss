@@ -4,12 +4,6 @@
 scrollbar {
   $_slider_min_length: 40px;
 
-  // disable steppers
-  @at-root * {
-    -GtkScrollbar-has-backward-stepper: false;
-    -GtkScrollbar-has-forward-stepper: false;
-  }
-
   background-color: $scrollbar_bg_color;
   transition: 300ms $ease-out-quad;
 
