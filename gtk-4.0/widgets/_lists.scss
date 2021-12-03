@@ -1,7 +1,7 @@
 /*********
  * Lists *
  *********/
-list {
+list, listview {
   color: $text_color;
   background-color: $base_color;
   border-color: $borders_color;
@@ -10,6 +10,16 @@ list {
     background-color: $backdrop_base_color;
     border-color: $backdrop_borders_color;
   }
+
+  &.horizontal row.separator,
+  &.separators.horizontal > row:not(.separator) {
+    border-left: 1px solid $borders_color;
+  }
+  &:not(.horizontal) row.separator,
+  &.separators:not(.horizontal) > row:not(.separator) {
+    border-bottom: 1px solid $borders_color;
+  }
+
 }
 
 row {
