@@ -4,23 +4,12 @@
 // stuff for .needs-attention
 $_dot_color: if($variant=='light', $selected_bg_color,
                                    lighten($selected_bg_color,15%));
-@keyframes needs_attention {
-  from {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.01,
-                                    to($_dot_color),
-                                    to(transparent));
-  }
 
-  to {
-    background-image: -gtk-gradient(radial,
-                                    center center, 0,
-                                    center center, 0.5,
-                                    to($selected_bg_color),
-                                    to(transparent));
-  }
+@keyframes needs_attention {
+  from { background-image: radial-gradient(farthest-side, $_dot_color 0%, transparentize($_dot_color, 1) 0%); }
+  to { background-image: radial-gradient(farthest-side, $_dot_color 95%, transparentize($_dot_color, 1)); }
 }
+
 
 %button,
 button {
@@ -52,7 +41,7 @@ button {
 
     &:hover {
       @include button(hover,$selected_bg_color,$selected_fg_color);
-      -gtk-icon-effect: highlight;
+     -gtk-icon-filter: brightness(1.2);
     }
 
     &:active,
@@ -67,7 +56,7 @@ button {
         @include button(backdrop);
 
         transition: $backdrop_transition;
-        -gtk-icon-effect: none;
+        -gtk-icon-filter: none;
 
         &:active,
         &:checked { @include button(backdrop-active); }
@@ -369,16 +358,7 @@ button {
   animation: needs_attention 150ms ease-in;
   $_dot_shadow: _text_shadow_color();
   $_dot_shadow_r: if($variant=='light',0.5,0.45);
-  background-image: -gtk-gradient(radial,
-                                  center center, 0,
-                                  center center, 0.5,
-                                  to($_dot_color),
-                                  to(transparent)),
-                    -gtk-gradient(radial,
-                                  center center, 0,
-                                  center center, $_dot_shadow_r,
-                                  to($_dot_shadow),
-                                  to(transparent));
+  background-image: radial-gradient(farthest-side, $_dot_color 96%, transparentize($_dot_color,1 ));
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
 
