@@ -25,7 +25,7 @@ entry {
     }
 
     &.flat {
-      &:focus, & {
+      &:focus-within, & {
         min-height: 0;
         padding: 2px;
         background-image: none;
@@ -35,7 +35,7 @@ entry {
       }
     }
 
-    &:focus { @include entry(focus); }
+    &:focus-within { @include entry(focus); }
 
     &:disabled { @include entry(insensitive); }
 
@@ -57,7 +57,7 @@ entry {
         color: $e_color;
         border-color: entry_focus_border($e_color);
 
-        &:focus { @include entry(focus, $e_color); }
+        &:focus-within { @include entry(focus, $e_color); }
 
         &:selected { &:focus, & { background-color: $e_color; }}
       }
@@ -74,7 +74,7 @@ entry {
     }
 
     &:drop(active) {
-      &:focus, & {
+      &:focus-within, & {
         border-color: $drop_target_color;
         box-shadow: inset 0 0 0 1px $drop_target_color;
       }
@@ -83,7 +83,7 @@ entry {
     .osd & {
       @include entry(osd);
 
-      &:focus { @include entry(osd-focus); }
+      &:focus-within { @include entry(osd-focus); }
 
       &:backdrop { @include entry(osd-backdrop); }
 
@@ -106,11 +106,11 @@ entry {
 
    // linked entries
   .linked:not(.vertical) > & { @extend %linked; }
-  .linked:not(.vertical) > &:focus + &,
-  .linked:not(.vertical) > &:focus + button,
-  .linked:not(.vertical) > &:focus + combobox > box > button.combo { border-left-color: entry_focus_border(); }
+  .linked:not(.vertical) > &:focus-within + &,
+  .linked:not(.vertical) > &:focus-within + button,
+  .linked:not(.vertical) > &:focus-within + combobox > box > button.combo { border-left-color: entry_focus_border(); }
 
-  .linked:not(.vertical) > &:focus { border-color: entry_focus_border(); }
+  .linked:not(.vertical) > &:focus-within { border-color: entry_focus_border(); }
 
   .linked:not(.vertical) > &:drop(active) + &,
   .linked:not(.vertical) > &:drop(active) + button,
@@ -164,7 +164,7 @@ entry {
 }
 
 treeview entry {
-  &:focus {
+  &:focus-within {
     &:dir(rtl), &:dir(ltr) { // specificity bump hack
       background-color: $base_color;
       transition-property: color, background;
@@ -176,6 +176,6 @@ treeview entry {
     background-image: none;
     background-color: $base_color;
 
-    &:focus { border-color: $selected_bg_color; }
+    &:focus-within { border-color: $selected_bg_color; }
   }
 }
