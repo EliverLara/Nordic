@@ -1,0 +1,210 @@
+/***********
+ * Sidebar *
+ ***********/
+ .sidebar {
+  border-style: none;
+  border-width: 0;
+  background-color: mix($bg_color, $base_color, 50%);
+
+  .frame{
+    border: none;
+  }
+
+  @at-root %sidebar_left,
+  &:dir(ltr),
+  &.left,
+  &.left:dir(rtl) {
+    border-right: none;
+    border-left-style: none;
+  }
+
+  @at-root %sidebar_right
+  &:dir(rtl),
+  &.right {
+    border-left: 1px solid $borders_color;
+    border-right-style: none;
+  }
+
+  &:backdrop {
+    background-color: $backdrop_sidebar_bg_color;
+    border-color: $backdrop_borders_color;
+  }
+
+  row{
+    padding: 8px 12px;
+    transition: all .12s ease-in;
+    label{
+      color: #98abb2;
+    }
+    &:selected{
+      color: $selected_fg_color;
+      // border-left: 4px solid $selected_bg_color;
+      &:backdrop{
+        color: $backdrop_selected_fg_color;
+        background: $backdrop_selected_bg_color;
+        label{
+          color: $selected_fg_color;
+        }  
+      }
+      &:hover{
+        // background-color: transparentize($selected_bg_color, 0.8);
+      }
+      label{
+        color: $selected_fg_color;
+      }
+    }
+  }
+
+    //elementary os file manager
+    &.source-list{
+      background: $_sidebar_color;
+      padding: 4px 0px;
+      &.view{
+        transition: all .12s ease-in;
+        &:selected {
+          padding-left: 4px;
+          background: $selected_bg_color;
+          color: $selected_fg_color;
+          
+          &:active { box-shadow: inset 0 2px 3px -1px transparentize(black, 0.5); }
+    
+          &.has-open-popup,
+          &:hover { background-color: transparentize($selected_bg_color, 0.1); }
+    
+          &:backdrop { background-color: $backdrop_selected_bg_color; }
+        }
+        &:hover, iconview.source-list:hover { 
+            background-color: if(variant == light, transparentize($bg_color, 0.6), transparentize($bg_color, 0.6)); 
+        }
+      }
+    }
+    
+
+  paned & { &.left, &.right, &.left:dir(rtl), &:dir(rtl), &:dir(ltr), & {
+    border-style: none;
+    border-color: $borders_color;
+  }
+}
+}
+
+stacksidebar {
+  &.sidebar {
+    &:dir(ltr),
+    &.left,
+    &.left:dir(rtl) { list { @extend %sidebar_left; }}
+
+    &:dir(rtl),
+    &.right { list { @extend %sidebar_right; }}
+  }
+
+  row {
+    padding: 10px 4px;
+
+    > label {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+
+    &.needs-attention > label {
+      @extend %needs_attention;
+
+      background-size: 6px 6px, 0 0;
+    }
+  }
+}
+
+/*******************************************************************/
+/*                  PLACESSIDEBAR                                  */
+/*******************************************************************/
+
+placessidebar{
+	&.sidebar{
+		background-color: transparent;
+		background-image:linear-gradient(to right, darken($main_dark_color, 5%) 40px,
+												$_sidebar_color 35px,$_sidebar_color 36px,
+												$_sidebar_color 36px,$_sidebar_color 99%, 
+												$_sidebar_color 100%);
+		row{
+			&.sidebar-row {
+				&.sidebar-row{
+					.sidebar-icon {
+						margin-left:-14px;
+						margin-right: 12px;
+						padding-left: 14px;
+						padding-right: 12px;
+						color: #98abb2;
+					}
+				}
+				&:hover{
+					transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+					color: rgba(0,0,0,0.76);
+					background-color: transparent; /*rgba(65,67,75,0.4); */
+					background-image:linear-gradient(to right, rgba(65,67,75,0) 40px, rgba(0,0,0,0.12) 40px,rgba(0,0,0,0.12) 97%);
+				}
+
+				&:active{
+					&:hover{
+						color: rgba(0,0,0,0.76);
+						background-color: rgba(0,0,0,0.23);
+					}
+				}
+
+				&:selected{
+          color: #fff;
+          label {
+            color: $selected_bg_color;
+          }
+					background-color: transparent;
+					background-image:linear-gradient(to right, transparentize($selected_bg_color, 0.3) 40px,
+																rgba(65,67,75,0) 36px, rgba(65,67,75,0)97%);
+					&:hover{
+						color: #ffffff;
+						background-color: rgba(0,0,0,0.24);
+						.sidebar-icon {
+							color: #ffffff;
+						}
+          }
+          &:backdrop{
+            color: rgba(0,0,0,0.54);;
+            background-color: transparent;
+            background-image:linear-gradient(to right, $selected_bg_color 40px,
+                                  rgba(65,67,75,0) 36px, rgba(65,67,75,0)97%);
+
+            .sidebar-icon {
+              -gtk-icon-shadow: none;  
+            }
+          }
+
+					.sidebar-icon {
+						-gtk-icon-shadow: 0 1px transparentize(#fff, 0.2);
+						color: inherit; 
+					}
+        }
+        
+        &.sidebar-new-bookmark-row { 
+          &, label, .sidebar-icon {
+            color: $yellow; 
+          }
+        }
+
+        &:drop(active):not(:disabled) {
+          &, label, image { color: $drop_target_color; }
+    
+          box-shadow: inset 0 1px $drop_target_color,
+                      inset 0 -1px $drop_target_color;
+    
+          &:selected {
+            &, label, image { color: $selected_fg_color; }
+            background: $drop_target_color;
+          }
+        }
+			}
+		}
+	}
+	list{ 
+		background-color: transparent; 
+		&:backdrop { background-color: transparent; }
+	}
+  
+  
+}

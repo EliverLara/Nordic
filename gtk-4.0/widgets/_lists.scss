@@ -1,0 +1,61 @@
+/*********
+ * Lists *
+ *********/
+list, listview {
+  color: $text_color;
+  background-color: $base_color;
+  border-color: $borders_color;
+
+  &:backdrop {
+    background-color: $backdrop_base_color;
+    border-color: $backdrop_borders_color;
+  }
+
+  &.horizontal row.separator,
+  &.separators.horizontal > row:not(.separator) {
+    border-left: 1px solid $borders_color;
+  }
+  &:not(.horizontal) row.separator,
+  &.separators:not(.horizontal) > row:not(.separator) {
+    border-bottom: 1px solid $borders_color;
+  }
+
+}
+
+row {
+  padding: 1px 11px;
+  transition: all 150ms $ease-out-quad;
+
+  label {
+    padding-left: 8px;
+  }
+
+  &:hover { transition: none; }
+
+  &:backdrop { transition: $backdrop_transition; }
+
+  &.activatable {
+    &.has-open-popup, // this is for indicathing which row generated a popover see https://bugzilla.gnome.org/show_bug.cgi?id=754411
+
+    &:hover { background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.95)); }
+
+    &:active { box-shadow: inset 0 2px 2px -2px transparentize(black, 0.8); }
+
+    &:backdrop:hover { background-color: transparent; }
+
+    button.flat{
+      background-color: transparent;
+    }
+
+    &:selected {
+      &:active { box-shadow: inset 0 2px 3px -1px transparentize(black, 0.5); }
+
+      &.has-open-popup,
+      &:hover { background-color: transparentize($selected_bg_color, 0.5); }
+
+      &:backdrop { background-color: $backdrop_selected_bg_color; }
+    }
+  }
+
+  &:selected { @extend %selected_items; }
+}
