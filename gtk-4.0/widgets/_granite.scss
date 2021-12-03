@@ -3,12 +3,6 @@
  ************/
 
 GraniteWidgetsPopOver {
-
-  -GraniteWidgetsPopOver-arrow-width: 21;
-  -GraniteWidgetsPopOver-arrow-height: 10;
-  -GraniteWidgetsPopOver-border-radius: 8px;
-  -GraniteWidgetsPopOver-border-width: 0;
-  -GraniteWidgetsPopOver-shadow-size: 12;
   
   border: 1px solid $base_color;
   background: $base_color;
@@ -68,8 +62,6 @@ GraniteWidgetsWelcome {
 ***************/
 
 .source-list {
-  -GtkTreeView-horizontal-separator: 1px;
-  -GtkTreeView-vertical-separator: 6px;
 
   background-color: $bg_color;
   border: solid $borders_color;

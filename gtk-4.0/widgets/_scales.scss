@@ -104,7 +104,6 @@ scale {
     highlight,
     trough {
       border-radius: 5px;
-      -gtk-outline-radius: 7px;
     }
   }
 
@@ -113,7 +112,6 @@ scale {
     @extend %scale_trough;
 
     outline-offset: 2px;
-    -gtk-outline-radius: 5px;
     outline-color: transparent;
   }
 
