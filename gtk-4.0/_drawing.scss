@@ -521,17 +521,13 @@
     @if $t==backdrop { $_small_gradient_color: $backdrop_borders_color; }
   }
 
-  $_small_gradient: -gtk-gradient(radial,
-                                  $_position, 0,
-                                  $_position, 0.5,
-                                  to($_small_gradient_color),
-                                  to(transparentize($_small_gradient_color, 1)));
+  $_small_gradient: radial-gradient(farthest-side at $p,
+                                    $_small_gradient_color 85%,
+                                    transparentize($_small_gradient_color, 1));
 
-  $_big_gradient: -gtk-gradient(radial,
-                                $_position, 0,
-                                $_position, 0.6,
-                                from(transparentize($_big_gradient_color, 0.87)),
-                                to(transparentize($_big_gradient_color, 1)));
+$_big_gradient: radial-gradient(farthest-side at $p,
+                                $_big_gradient_color,
+                                transparentize($_big_gradient_color, 1));
 
   @if $t==normal {
     background-image: $_small_gradient, $_big_gradient;
