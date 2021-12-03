@@ -3,7 +3,7 @@ import QtQuick 2.5
 
 Image {
     id: root
-    source: "images/Nordic.png"
+    source: "images/bg.jpg"
 
     property int stage
 
@@ -84,7 +84,7 @@ Image {
                     bottom: parent.bottom
                 }
                 width: (parent.width / 6) * (stage - 1)
-                color: "#8FBCBB"
+                color: "#4c566a"
                 Behavior on width { 
                     PropertyAnimation {
                         duration: 250
