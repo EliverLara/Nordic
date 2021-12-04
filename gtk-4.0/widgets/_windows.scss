@@ -133,7 +133,7 @@ headerbar.selection-mode button.titlebutton,
 
   @at-root %nobg_selected_items, & {
     color: $selected_fg_color;
-    font-weight: bold;
+    font-weight: normal;
     //&:hover{background-color: transparent;}
     @if $variant == 'light' { outline-color: transparentize($selected_fg_color, 0.7); }
 
