@@ -3,43 +3,64 @@
  ***************/
 
 popover.background {
-  padding: 2px;
-  border-radius: 5px;
-  background: $main_dark_color;
 
-  .csd &, & { border: 1px solid $borders_color; }
+  background-color: transparent;
+  font: initial;
 
-  box-shadow: 0 4px 6px $menu_shadow_color;
-  
+  > arrow,
+  > contents {
+    $_popover_border: if($variant=='light', transparentize(black, 0.77), transparentize(black, 0.25));
+
+    background-color: $main_dark_color;
+    background-clip: padding-box;
+    border: 1px solid $borders_color;
+    box-shadow: 0 4px 6px $menu_shadow_color;
+  }
+
   &:backdrop {
-    background-color: $backdrop_bg_color;
+    background-color: transparent;
     box-shadow: none;
   }
 
-  > list,
-  > .view,
-  > toolbar {
-    border-style: none;
-    background-color: transparent;
+  > contents {
+    padding: 8px;
+    border-radius: 5px;
+
+    > list,
+    > .view,
+    > toolbar {
+      border-style: none;
+      background-color: transparent;
+    }
+
+    separator {
+      background-color: mix($bg_color, $borders_color, 30%);
+      margin: 3px;
+    }
+
+    list separator { margin: 0; }
   }
 
-  .csd &, & {
-    &.touch-selection,
-    &.magnifier {
+  .osd &,
+  &.touch-selection,
+  &.magnifier {
+    background-color: transparent;
+
+    > arrow,
+    > contents {
       @extend %osd;
 
       border: 1px solid transparentize(white, 0.9);
-
-      button { @extend %osd_button };
+      box-shadow: none;
     }
-
-    &.osd { @extend %osd; }
   }
 
-  separator { margin: 3px; }
+  &.touch-selection,
+  &.magnifier {
+    button { @extend %osd_button; }
+  }
+}
 
-  list separator { margin: 0px; }
-
-  checkbutton,
-  radiobutton { @extend modelbutton.flat; }
+magnifier {
+  background-color: $base_color;
 }
