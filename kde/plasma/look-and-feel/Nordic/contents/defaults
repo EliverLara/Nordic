@@ -8,7 +8,7 @@ ColorScheme=Nordic
 Theme=candy-icons
 
 [kcminputrc][Mouse]
-cursorTheme=breeze_cursors
+cursorTheme=Nordic_cursors
 
 [plasmarc][Theme]
 name=Nordic
