@@ -281,6 +281,11 @@ headerbar {
   window:not(.tiled):not(.maximized) &:last-child { &:backdrop, & { border-top-right-radius: 4px; }}
 }
 
+window {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
 .titlebar:not(headerbar) {
   window.csd > & {
     // in csd we assume every titlebar is a headerbar so reset anything, this is needed for split toolbars cases
