@@ -4413,37 +4413,41 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
 /**********************
  * Window Decorations *
  *********************/
-decoration, window {
-  border-radius: 4px 4px 0 0;
-  border-width: 0px;
-  border-width: 0px;
-  box-shadow: 0 4px 10px 2px rgba(33, 26, 30, 0.4);
-  margin: 10px; }
-  decoration:backdrop, window:backdrop {
-    box-shadow: 0 4px 10px 2px rgba(33, 26, 30, 0.2);
-    transition: 200ms ease-out; }
-  .maximized decoration, .fullscreen decoration, .tiled decoration, .maximized window, .fullscreen window, .tiled window {
-    border-radius: 0; }
-  .popup decoration, .popup window {
-    box-shadow: none; }
-  .ssd decoration, .ssd window {
-    box-shadow: none; }
-  .csd.popup decoration, .csd.popup window {
-    border-radius: 7px;
-    box-shadow: 0 4px 8px #1f232b;
-    border: 1px solid rgba(31, 35, 43, 0.7); }
-  tooltip.csd decoration, tooltip.csd window {
-    border-radius: 5px;
-    box-shadow: none; }
-  messagedialog.csd decoration, messagedialog.csd window {
-    border-radius: 7px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(31, 35, 43, 0.8); }
-  .solid-csd decoration, .solid-csd window {
-    border-radius: 0;
+window {
+  border-width: 0px; }
+  window.csd {
+    box-shadow: 0 3px 9px 1px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.75);
     margin: 0px;
-    background-color: #3b4252;
-    border: solid 1px #22262f;
+    border-radius: 4px 4px 0 0; }
+    window.csd:backdrop {
+      box-shadow: 0 3px 9px 1px transparent, 0 2px 6px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.75);
+      transition: 200ms ease-out; }
+    window.csd.popup {
+      border-radius: 7px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.65); }
+    window.csd.dialog.message {
+      border-radius: 4px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.65); }
+  window.solid-csd {
+    margin: 0;
+    padding: 4px;
+    border: solid 1px #1f232b;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 4px #1f232b, inset 0 0 0 3px #2b313c, inset 0 1px rgba(216, 222, 233, 0.07); }
+    window.solid-csd:backdrop {
+      box-shadow: inset 0 0 0 4px #1f232b, inset 0 0 0 3px #3b4252, inset 0 1px rgba(216, 222, 233, 0.07); }
+  window.maximized, window.fullscreen {
+    border-radius: 0;
     box-shadow: none; }
+  window.tiled, window.tiled-top, window.tiled-left, window.tiled-right, window.tiled-bottom {
+    border-radius: 0;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75), 0 0 0 20px transparent; }
+  window:backdrop {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75), 0 0 0 20px transparent; }
+  window.popup {
+    box-shadow: none; }
+  window.ssd {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75); }
 
 windowcontrols button.close, windowcontrols button.maximize, windowcontrols button.minimize {
   min-width: 20px;
