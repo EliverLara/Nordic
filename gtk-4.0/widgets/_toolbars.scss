@@ -54,14 +54,13 @@ toolbar {
   border-radius: 0  0 5px 5px;
 }
 
-searchbar,
-.location-bar {
+searchbar > revealer > box {
   @extend %toolbar;
 
   @extend %darkbar;
 
   border-width: 0 0 1px;
-  padding: 3px;
+  padding: 5px;
 }
 
 %darkbar {
