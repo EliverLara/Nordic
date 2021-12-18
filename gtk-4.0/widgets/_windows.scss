@@ -1,68 +1,77 @@
 /**********************
  * Window Decorations *
  *********************/
- decoration, window {
-  border-radius: 4px 4px 0 0;
-
+ window {
   // lamefun trick to get rounded borders regardless of CSD use
   border-width: 0px;
 
   // this needs to be transparent
   // see bug #722563
-  $_wm_border: if($variant=='light', transparentize(black, 0.77), transparentize($borders_color, 0.1));
-  $_wm_border_backdrop: if($variant=='light', transparentize(black, 0.82), transparentize($borders_color, 0.1));
+  $_wm_border: if($variant=='light', transparentize(black, 0.77), transparentize(black, 0.25));
+  $_wm_border_backdrop: if($variant=='light', transparentize(black, 0.82), transparentize(black, 0.25));
+  $_window_radius: 4px;
+  $_menu_radius: 7px;
 
-    // lamefun trick to get rounded borders regardless of CSD use
-  border-width: 0px;
+  &.csd {
+    box-shadow: 0 3px 9px 1px transparentize(black, 0.5),
+                0 0 0 1px $_wm_border; //doing borders with box-shadow
+    margin: 0px;
+    border-radius: $_window_radius $_window_radius 0 0;
+    &:backdrop {
+      // the transparent shadow here is to enforce that the shadow extents don't
+      // change when we go to backdrop, to prevent jumping windows.
+      // The biggest shadow should be in the same order then in the active state
+      // or the jumping will happen during the transition.
+      box-shadow: 0 3px 9px 1px transparent,
+                  0 2px 6px 2px transparentize(black, 0.8),
+                  0 0 0 1px $_wm_border_backdrop;
+      transition: $backdrop_transition;
+    }
 
-  box-shadow: 0 4px 10px 2px transparentize(#211A1E, 0.6);
-  // FIXME rationalize shadows
+    &.popup {
+      border-radius: $_menu_radius;
+      box-shadow: 0 1px 2px transparentize(black, 0.8),
+                  0 0 0 1px transparentize($_wm_border, 0.1);
+    }
 
-  // this is used for the resize cursor area
-  margin: 10px;
-
-  &:backdrop {
-    // the transparent shadow here is to enforce that the shadow extents don't
-    // change when we go to backdrop, to prevent jumping windows.
-    // The biggest shadow should be in the same order then in the active state
-    // or the jumping will happen during the transition.
-    box-shadow: 0 4px 10px 2px transparentize(#211A1E, 0.8);
-    transition: $backdrop_transition;
+    &.dialog.message {
+      border-radius: $_window_radius;
+      box-shadow: 0 1px 2px transparentize(black, 0.8),
+                  0 0 0 1px transparentize($_wm_border, 0.1);
+    }
   }
 
-  .maximized &,
-  .fullscreen &,
-  .tiled & { border-radius: 0; }
+  &.solid-csd {
+    margin: 0;
+    padding: 4px;
+    border: solid 1px $borders_color;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 4px $borders_color, inset 0 0 0 3px $headerbar_color, inset 0 1px transparentize($fg_color, 0.93);
 
-  .popup & { box-shadow: none; }
+    &:backdrop { box-shadow: inset 0 0 0 4px $borders_color, inset 0 0 0 3px $backdrop_bg_color, inset 0 1px transparentize($fg_color, 0.93); }
+  }
+
+  &.maximized,
+  &.fullscreen { border-radius: 0; box-shadow: none; }
+
+  &.tiled,
+  &.tiled-top,
+  &.tiled-left,
+  &.tiled-right,
+  &.tiled-bottom {
+   border-radius: 0;
+   box-shadow: 0 0 0 1px $_wm_border_backdrop,
+               0 0 0 20px transparent; //transparent control workaround -- #3670
+   }
+   &:backdrop { box-shadow: 0 0 0 1px $_wm_border_backdrop,
+                            0 0 0 20px transparent; // #3670
+  }
+
+  &.popup { box-shadow: none; }
 
   // server-side decorations as used by mutter
-  .ssd & { box-shadow: none; } //just doing borders, wm draws actual shadows
+  &.ssd { box-shadow: 0 0 0 1px $_wm_border; } //just doing borders, wm draws actual shadows
 
-  .csd.popup & {
-    border-radius: 7px;
-    box-shadow: 0 4px 8px $menu_shadow_color;
-    border: 1px solid transparentize($borders_color, 0.3);
-  }
-
-  tooltip.csd & {
-    border-radius: 5px;
-    box-shadow: none;
-  }
-
-  messagedialog.csd & {
-    border-radius: 7px;
-    box-shadow: 0 1px 2px transparentize(black, 0.8),
-                  0 0 0 1px transparentize($_wm_border,0.1);
-  }
-
-  .solid-csd & {
-    border-radius: 0;
-    margin: 0px;
-    background-color: $backdrop_bg_color;
-    border: solid 1px $backdrop_borders_color;
-    box-shadow: none;
-  }
 }
 
 // Window Close button
