@@ -623,7 +623,7 @@ StScrollBar {
     border: 1px solid $borders_color;
 
     -barlevel-height: 0.4em;
-    -barlevel-background-color: transparentize(darken($main_dark,15%),0.5);
+    -barlevel-background-color: $gray;
     -barlevel-active-background-color: $selected_bg_color;
     -barlevel-overdrive-color: $red;
     -barlevel-overdrive-separator-width: 0.2em; 
