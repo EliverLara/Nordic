@@ -1,2 +1,46 @@
 @import "../gtk-3.0/nord";
 
+.workspace-thumbnail-indicator {
+  border-style: solid !important;
+  border-width: 2px !important;
+	border-color: $nord8 !important;
+}
+
+// cosmic application menu
+.cosmic-applications {
+  &-dialog {
+    background-color: $nord1 !important;
+    color: $nord5;
+    font-weight: bold;
+    & .overview-icon {
+      color: $nord5;
+    }
+    & .app-well-app-running-dot {
+      background-color: $nord8;
+    }
+  }
+  &-search-entry {
+    background-color: $nord3 !important;
+    font-size: 24px;
+    padding: 5px;
+    margin-bottom: 24px;
+  }
+  &-available {
+    color: $nord5;
+  }
+  
+  &-icon {
+    color: $nord8;
+  }
+  &-folder {
+    &-title {
+      color: $nord5;
+    }
+    &-edit-button {
+      background-color: $nord8;
+      &:hover {
+        background: $nord2;
+      }
+    }
+  }
+}
