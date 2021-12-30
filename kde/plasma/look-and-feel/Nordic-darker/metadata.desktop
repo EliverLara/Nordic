@@ -10,4 +10,4 @@ X-KDE-PluginInfo-Version=0.1
 X-KDE-PluginInfo-Website=https://github.com/EliverLara/Nordic
 X-KDE-ServiceTypes=Plasma/LookAndFeel
 
-X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1629062,kns://plasma-themes.knsrc/api.kde-look.org/1633673,kns://aurorae.knsrc/api.kde-look.org/1326274,kns://sddmtheme.knsrc/api.kde-look.org/1366843,,kns://xcursor.knsrc/api.kde-look.org/1662218
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1629062,kns://plasma-themes.knsrc/api.kde-look.org/1633673,kns://aurorae.knsrc/api.kde-look.org/1326274,kns://sddmtheme.knsrc/api.kde-look.org/1366843,kns://xcursor.knsrc/api.kde-look.org/1662218
