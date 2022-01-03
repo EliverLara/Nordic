@@ -1,7 +1,7 @@
 
-![](Art/nordic.png)
+![](Art/_banner-github.jpg)
 
-> Nordic is a Gtk3.20+ theme created using the awesome [Nord](https://github.com/arcticicestudio/nord) color pallete.
+> Nordic is a Gtk3.20+ theme created using the awesome [Nord](https://github.com/arcticicestudio/nord) color palette.
 
 #### Installation
 
