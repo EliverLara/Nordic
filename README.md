@@ -13,5 +13,5 @@ To set the theme on Gnome, run the following commands in Terminal:
 gsettings set org.gnome.desktop.interface gtk-theme "Nordic"
 gsettings set org.gnome.desktop.wm.preferences theme "Nordic"
 ```
-or Change via distribution specific tool.
+or Change via distribution specific tweak tool.
 
