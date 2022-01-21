@@ -241,7 +241,6 @@ StScrollBar {
 .popup-combo-menu {
   color: #d8dee9;
   background-color: #2e3440;
-  margin-bottom: 7px;
   border: 1px solid #1f232b;
   border-radius: 5px; }
   .menu-arrow,
