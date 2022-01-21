@@ -240,7 +240,9 @@ StScrollBar {
 .popup-menu,
 .popup-combo-menu {
   color: #d8dee9;
-  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9; }
+  background-color: #2e3440;
+  border: 1px solid #232831;
+  border-radius: 5px; }
   .menu-arrow,
   .popup-menu-arrow {
     icon-size: 16px; }
