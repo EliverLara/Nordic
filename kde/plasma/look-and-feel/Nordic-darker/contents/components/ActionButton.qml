@@ -55,7 +55,7 @@ Item {
         width: iconSize + units.smallSpacing
         height: width
         radius: width / 2
-        color: "#8fbcbb"
+        color: "#67748E"
         opacity: activeFocus || containsMouse ? (softwareRendering ? 0.8 : 0.15) : (softwareRendering ? 0.6 : 0)
         Behavior on opacity {
                 PropertyAnimation { // OpacityAnimator makes it turn black at random intervals
