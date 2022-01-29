@@ -40,18 +40,6 @@
 @define-color warning_color #c3674a;
 @define-color error_color #b84f59;
 @define-color success_color #49688e;
-@define-color fg_color #d8dee9;
-@define-color text_color #d8dee9;
-@define-color bg_color #3b4252;
-@define-color base_color #2e3440;
-@define-color selected_bg_color #4c566a;
-@define-color selected_fg_color #fff;
-@define-color unfocused_fg_color #8a909e;
-@define-color unfocused_text_color #d8dee9;
-@define-color unfocused_bg_color #3b4252;
-@define-color unfocused_base_color #303643;
-@define-color unfocused_selected_bg_color #4c566a;
-@define-color unfocused_selected_fg_color #d8dee9;
 /* these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
 @define-color wm_title shade(#d8dee9, 1.8);
@@ -634,7 +622,7 @@ button.suggested-action {
   color: white;
   border-radius: 4px;
   background: linear-gradient(to right, #5e81ac 0%, #5e81ac 100%); }
-  .selection-mode windowcontrols button, button.suggested-action.flat {
+  button.suggested-action.flat {
     box-shadow: none;
     color: white;
     border-radius: 4px;
@@ -649,33 +637,33 @@ button.suggested-action {
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: #5e81ac;
     text-shadow: none; }
-  .selection-mode windowcontrols button:backdrop, button.suggested-action:backdrop, button.suggested-action.flat:backdrop {
+  button.suggested-action:backdrop, button.suggested-action.flat:backdrop {
     color: rgba(255, 255, 255, 0.4);
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: #5e81ac;
     text-shadow: none; }
-    .selection-mode windowcontrols button:backdrop label, button.suggested-action:backdrop label, button.suggested-action.flat:backdrop label {
+    button.suggested-action:backdrop label, button.suggested-action.flat:backdrop label {
       color: rgba(255, 255, 255, 0.5); }
-    .selection-mode windowcontrols button:backdrop:active, .selection-mode windowcontrols button:backdrop:checked, button.suggested-action:backdrop:active, button.suggested-action:backdrop:checked, button.suggested-action.flat:backdrop:active, button.suggested-action.flat:backdrop:checked {
+    button.suggested-action:backdrop:active, button.suggested-action:backdrop:checked, button.suggested-action.flat:backdrop:active, button.suggested-action.flat:backdrop:checked {
       color: rgba(216, 222, 233, 0.7);
       outline-color: rgba(255, 255, 255, 0.3);
       background-color: #4c566a;
       text-shadow: none; }
-      .selection-mode windowcontrols button:backdrop:active label, .selection-mode windowcontrols button:backdrop:checked label, button.suggested-action:backdrop:active label, button.suggested-action:backdrop:checked label, button.suggested-action.flat:backdrop:active label, button.suggested-action.flat:backdrop:checked label {
+      button.suggested-action:backdrop:active label, button.suggested-action:backdrop:checked label, button.suggested-action.flat:backdrop:active label, button.suggested-action.flat:backdrop:checked label {
         color: rgba(216, 222, 233, 0.7); }
-    .selection-mode windowcontrols button:backdrop:disabled, button.suggested-action:backdrop:disabled, button.suggested-action.flat:backdrop:disabled {
+    button.suggested-action:backdrop:disabled, button.suggested-action.flat:backdrop:disabled {
       color: white;
       border-color: rgba(31, 35, 43, 0.3);
       background-color: #5e81ac;
       text-shadow: none; }
-      .selection-mode windowcontrols button:backdrop:disabled label, button.suggested-action:backdrop:disabled label, button.suggested-action.flat:backdrop:disabled label {
+      button.suggested-action:backdrop:disabled label, button.suggested-action.flat:backdrop:disabled label {
         color: rgba(255, 255, 255, 0.5); }
-      .selection-mode windowcontrols button:backdrop:disabled:active, .selection-mode windowcontrols button:backdrop:disabled:checked, button.suggested-action:backdrop:disabled:active, button.suggested-action:backdrop:disabled:checked, button.suggested-action.flat:backdrop:disabled:active, button.suggested-action.flat:backdrop:disabled:checked {
+      button.suggested-action:backdrop:disabled:active, button.suggested-action:backdrop:disabled:checked, button.suggested-action.flat:backdrop:disabled:active, button.suggested-action.flat:backdrop:disabled:checked {
         color: rgba(216, 222, 233, 0.7);
         outline-color: rgba(255, 255, 255, 0.3);
         background-color: #4c566a;
         text-shadow: none; }
-  .selection-mode windowcontrols button:backdrop, .selection-mode windowcontrols button:disabled, .selection-mode windowcontrols button:backdrop:disabled, button.suggested-action.flat:backdrop, button.suggested-action.flat:disabled, button.suggested-action.flat:backdrop:disabled {
+  button.suggested-action.flat:backdrop, button.suggested-action.flat:disabled, button.suggested-action.flat:backdrop:disabled {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -4452,31 +4440,26 @@ window {
 windowcontrols button.close, windowcontrols button.maximize, windowcontrols button.minimize {
   min-width: 20px;
   min-height: 20px;
-  margin: 0;
-  padding: 0 1px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 16px 16px; }
-  windowcontrols button.close, windowcontrols button.close:hover, windowcontrols button.close:focus, windowcontrols button.close:active, windowcontrols button.close:backdrop, windowcontrols button.close:backdrop:hover, windowcontrols button.maximize, windowcontrols button.maximize:hover, windowcontrols button.maximize:focus, windowcontrols button.maximize:active, windowcontrols button.maximize:backdrop, windowcontrols button.maximize:backdrop:hover, windowcontrols button.minimize, windowcontrols button.minimize:hover, windowcontrols button.minimize:focus, windowcontrols button.minimize:active, windowcontrols button.minimize:backdrop, windowcontrols button.minimize:backdrop:hover {
-    background-color: transparent;
-    border: none;
+  margin-right: 1px;
+  color: #d8dee9;
+  border-color: transparent; }
+  windowcontrols button.close, windowcontrols button.close:backdrop, windowcontrols button.close:backdrop:hover, windowcontrols button.maximize, windowcontrols button.maximize:backdrop, windowcontrols button.maximize:backdrop:hover, windowcontrols button.minimize, windowcontrols button.minimize:backdrop, windowcontrols button.minimize:backdrop:hover {
+    background: transparent;
     box-shadow: none;
-    color: transparent; }
-windowcontrols button.close {
-  background-image: -gtk-scaled(url("../assets/close.png"), url("../assets/close@2.png")); }
-  windowcontrols button.close:hover, windowcontrols button.close:active {
-    background-image: -gtk-scaled(url("../assets/close_prelight.png"), url("../assets/close_prelight@2.png")); }
-windowcontrols button.maximize {
-  background-image: -gtk-scaled(url("../assets/maximize.png"), url("../assets/maximize@2.png")); }
-  windowcontrols button.maximize:hover, windowcontrols button.maximize:active {
-    background-image: -gtk-scaled(url("../assets/maximize_prelight.png"), url("../assets/maximize_prelight@2.png")); }
-windowcontrols button.minimize {
-  background-image: -gtk-scaled(url("../assets/min.png"), url("../assets/min@2.png")); }
-  windowcontrols button.minimize:hover, windowcontrols button.minimize:active {
-    background-image: -gtk-scaled(url("../assets/min_prelight.png"), url("../assets/min_prelight@2.png")); }
-windowcontrols button:backdrop {
-  -gtk-icon-shadow: none;
-  background-image: -gtk-scaled(url("../assets/close_unfocused.png"), url("../assets/close_unfocused@2.png")); }
+    border-color: transparent; }
+  windowcontrols button.close:checked, windowcontrols button.close:hover, windowcontrols button.close:backdrop:hover, windowcontrols button.maximize:checked, windowcontrols button.maximize:hover, windowcontrols button.maximize:backdrop:hover, windowcontrols button.minimize:checked, windowcontrols button.minimize:hover, windowcontrols button.minimize:backdrop:hover {
+    color: #d8dee9;
+    border-radius: 4px;
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid #1f232b;
+    background-color: #2a2f3a; }
+windowcontrols button.close:hover, windowcontrols button.close:active {
+  color: #bf616a; }
+windowcontrols button.maximize:hover, windowcontrols button.maximize:active {
+  color: #8fbcbb; }
+windowcontrols button.minimize:hover, windowcontrols button.minimize:active {
+  color: #ebcb8b; }
 
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
@@ -4499,7 +4482,7 @@ textview text selection, flowbox flowboxchild:selected, modelbutton.flat:selecte
 entry selection:focus,
 entry selection, row:selected, treeview.view:selected:focus, treeview.view:selected {
   background-color: #4c566a; }
-  row:selected label, label:selected, .selection-mode windowcontrols button, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
+  row:selected label, label:selected, .view:selected:focus, iconview:selected:focus, .view:selected, iconview:selected,
   .view text:selected:focus,
   iconview text:selected:focus,
   textview text:selected:focus,
@@ -4513,7 +4496,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
   entry selection, row:selected, treeview.view:selected:focus, treeview.view:selected {
     color: #d8dee9;
     font-weight: normal; }
-    row:selected label:disabled, label:disabled:selected, .selection-mode windowcontrols button:disabled, iconview:disabled:selected:focus, .view:disabled:selected, iconview:disabled:selected,
+    row:selected label:disabled, label:disabled:selected, iconview:disabled:selected:focus, .view:disabled:selected, iconview:disabled:selected,
     iconview text:disabled:selected:focus,
     textview text:disabled:selected:focus,
     .view text:disabled:selected,
@@ -4523,7 +4506,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     .menuitem.button.flat:disabled:selected, calendar:disabled:selected, spinbutton:not(.vertical) selection:disabled,
     entry selection:disabled, row:disabled:selected {
       color: #929aaa; }
-    row:selected label:backdrop, label:backdrop:selected, .selection-mode windowcontrols button:backdrop, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected,
+    row:selected label:backdrop, label:backdrop:selected, iconview:backdrop:selected:focus, .view:backdrop:selected, iconview:backdrop:selected,
     iconview text:backdrop:selected:focus,
     textview text:backdrop:selected:focus,
     .view text:backdrop:selected,
@@ -4533,7 +4516,7 @@ entry selection, row:selected, treeview.view:selected:focus, treeview.view:selec
     .menuitem.button.flat:backdrop:selected, calendar:backdrop:selected, spinbutton:not(.vertical) selection:backdrop,
     entry selection:backdrop, row:backdrop:selected {
       color: rgba(216, 222, 233, 0.5); }
-      row:selected label:backdrop:disabled, label:backdrop:disabled:selected, .selection-mode windowcontrols button:backdrop:disabled, .view:backdrop:disabled:selected, iconview:backdrop:disabled:selected,
+      row:selected label:backdrop:disabled, label:backdrop:disabled:selected, .view:backdrop:disabled:selected, iconview:backdrop:disabled:selected,
       .view text:backdrop:disabled:selected,
       iconview text:backdrop:disabled:selected,
       textview text:backdrop:disabled:selected, .view text selection:backdrop:disabled, iconview text selection:backdrop:disabled,
