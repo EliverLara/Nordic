@@ -75,57 +75,33 @@
 }
 
 // Window Close button
-windowcontrols {
-  button {
-    &.close, &.maximize, &.minimize {
-      min-width: 20px;
-      min-height: 20px;
-      margin: 0;
-      padding: 0 1px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 16px 16px;
-  
-      &, &:hover, &:focus, &:active, &:backdrop, &:backdrop:hover {
-       background-color: transparent;
-       border: none;
-       box-shadow: none;
-        color: transparent;
-      }
-  
+windowcontrols button {
+  &.close, &.maximize, &.minimize {
+    min-width: 20px;
+    min-height: 20px;
+    margin-right: 1px;
+    color: $headerbar_fg_color;
+    border-color: transparent;
+    &, &:backdrop, &:backdrop:hover {
+      background: transparent;
+      box-shadow: none;
+      border-color: transparent;
     }
-    
-    &.close {
-      background-image: -gtk-scaled(url("../assets/close.png"),url("../assets/close@2.png"));
-      &:hover,&:active {
-        background-image: -gtk-scaled(url("../assets/close_prelight.png"),url("../assets/close_prelight@2.png"));
-      }
-    }
-    &.maximize {
-      background-image: -gtk-scaled(url("../assets/maximize.png"),url("../assets/maximize@2.png"));
-      &:hover,&:active {
-        background-image: -gtk-scaled(url("../assets/maximize_prelight.png"),url("../assets/maximize_prelight@2.png"));
-      }
-    }
-    &.minimize {
-      background-image: -gtk-scaled(url("../assets/min.png"),url("../assets/min@2.png"));
-      &:hover,&:active {
-        background-image: -gtk-scaled(url("../assets/min_prelight.png"),url("../assets/min_prelight@2.png"));
-      }
-    }
-  
-    .selection-mode & {
-      @extend %button.flat.suggested-action;
-  
-      @extend %nobg_selected_items;
-    }
-  
-    &:backdrop { 
-      -gtk-icon-shadow: none; 
-      background-image: -gtk-scaled(url("../assets/close_unfocused.png"),url("../assets/close_unfocused@2.png"));
+    &:checked,
+    &:hover,
+    &:backdrop:hover {
+      @include button(normal-header);
     }
   }
+  
+  &.close:hover, &.close:active { color: $red; }
+
+  &.maximize:hover, &.maximize:active { color: $lime; }
+
+  &.minimize:hover, &.minimize:active { color: $yellow; }
+
 }
+
 
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
