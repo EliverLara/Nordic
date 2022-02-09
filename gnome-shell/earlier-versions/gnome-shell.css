@@ -19,7 +19,8 @@ stage {
   border-width: 0;
   padding: 4px 32px; }
   .button:focus {
-    color: #8fbcbb;
+    background-color: rgba(143, 188, 187, 0.7);
+    color: #fefefe;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
@@ -38,8 +39,8 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .button:hover {
-    color: #8fbcbb;
-    background-color: rgba(50, 57, 70, 0.95);
+    background-color: rgba(143, 188, 187, 0.7);
+    color: #fefefe;
     border: 1px solid #1f232b;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
@@ -66,20 +67,22 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:focus {
-    color: #8fbcbb;
+    background-color: rgba(143, 188, 187, 0.7);
+    color: #fefefe;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
     border: 1px solid #1f232b; }
     .modal-dialog-linked-button:focus:hover {
-      color: #8fbcbb;
+      background-color: rgba(143, 188, 187, 0.7);
+      color: #fefefe;
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black;
       box-shadow: none;
       border: 1px solid #1f232b; }
   .modal-dialog-linked-button:hover {
-    color: #8fbcbb;
-    background-color: rgba(50, 57, 70, 0.95);
+    background-color: rgba(143, 188, 187, 0.7);
+    color: #fefefe;
     border: 1px solid #1f232b;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
@@ -1643,14 +1646,15 @@ StScrollBar {
   font-weight: bold;
   border-radius: 5px; }
   .keyboard-key:focus {
-    color: #8fbcbb;
+    background-color: rgba(143, 188, 187, 0.7);
+    color: #fefefe;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none;
     border: 1px solid #1f232b; }
   .keyboard-key:hover, .keyboard-key:checked {
-    color: #8fbcbb;
-    background-color: rgba(50, 57, 70, 0.95);
+    background-color: rgba(143, 188, 187, 0.7);
+    color: #fefefe;
     border: 1px solid #1f232b;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
@@ -1740,8 +1744,8 @@ StScrollBar {
       text-shadow: 0 1px black;
       icon-shadow: 0 1px black; }
       .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
-        color: #8fbcbb;
         background-color: rgba(143, 188, 187, 0.7);
+        color: #fefefe;
         border: 1px solid #1f232b;
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
