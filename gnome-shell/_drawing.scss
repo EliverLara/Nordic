@@ -143,25 +143,25 @@
   //
 
     color: $fg_color;
-    background-color: darken($bg_color, 2%);
+    background-color: lighten($base_color, 3%);
     box-shadow: none;
     border: 1px solid $borders_color;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
   }
   @if $t==focus {
-  //
-  // focused button
-  //
-    $_bg: if($c!=$osd_bg_color, transparentize($c, 0.5),
-                          $osd_bg_color);
-
-    background-color: $selected_bg_color;
-    color: $selected_fg_color;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
-    box-shadow: none;
-    border: 1px solid $borders_color;
+    //
+    // focused button
+    //
+      $_bg: if($c!=$osd_bg_color, transparentize($c, 0.5),
+                            $osd_bg_color);
+  
+      background-color: lighten($base_color, 6%);
+      color: $selected_fg_color;
+      text-shadow: 0 1px black;
+      icon-shadow: 0 1px black;
+      box-shadow: none;
+      border: 1px solid $borders_color;
   }
 
   @else if $t==hover {
@@ -171,7 +171,7 @@
     $_bg: if($c!=$osd_bg_color, transparentize($c, 0.3),
                             lighten($osd_bg_color,2%));
 
-    background-color: $selected_bg_color;
+    background-color: lighten($base_color, 6%);
     color: $selected_fg_color;
     border: 1px solid $borders_color;
     text-shadow: 0 1px black;
