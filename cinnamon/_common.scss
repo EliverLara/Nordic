@@ -11,8 +11,6 @@ $_bubble_borders_color: transparentize($osd_fg_color,0.8);
 $_shell_fg_color: $fg_color;
 
 stage {
-  font-family: $font-family;
-  @include fontsize($font-size);
   color: $fg_color;
 }
 
@@ -356,7 +354,6 @@ StScrollBar {
 // Panel
 //
 #panel {
-  font-size: 10pt; 
   height: 28px; 
   width: 32px; 
   font-weight: 700; 
