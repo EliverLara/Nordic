@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   style="isolation:isolate"
+   viewBox="0 0 48 48"
+   width="48pt"
+   height="48pt"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="folder-music.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs14">
+    <linearGradient
+       id="linearGradient4227">
+      <stop
+         id="stop00"
+         offset="0.0"
+         style="stop-color:#f7aa94;stop-opacity:1.0" />
+      <stop
+         id="stop01"
+         offset="0.5"
+         style="stop-color:#f07cac;stop-opacity:1.0" />
+      <stop
+         id="stop02"
+         offset="1.0"
+         style="stop-color:#ed72c7;stop-opacity:1.0" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="8.9375"
+     inkscape:cx="31.160839"
+     inkscape:cy="31.72028"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <path
+     d=" M 1.247 13.3 L 1.247 41.208 C 1.247 42.864 2.591 44.208 4.247 44.208 L 43.229 44.208 C 44.885 44.208 46.229 42.864 46.229 41.208 L 46.229 17.465 C 46.229 15.809 44.885 14.464 43.229 14.463 L 21.116 14.446 C 20.564 14.445 19.799 14.128 19.409 13.737 L 17.299 11.623 C 16.519 10.842 14.99 10.214 13.886 10.221 L 4.247 10.281 C 2.591 10.292 1.247 11.644 1.247 13.3 Z "
+     id="path2"
+     style="fill:#6c8489;fill-opacity:1" />
+  <path
+     d=" M 6.5 16 L 41.5 16 C 42.604 16 43.5 16.896 43.5 18 L 43.5 28 C 43.5 29.104 42.604 30 41.5 30 L 6.5 30 C 5.396 30 4.5 29.104 4.5 28 L 4.5 18 C 4.5 16.896 5.396 16 6.5 16 Z "
+     id="path4"
+     style="fill:#d2d2d2;fill-opacity:1" />
+  <path
+     d="m 1.247,17.965 v 25.243 c 0,1.656 1.344,3 3,3 h 38.982 c 1.656,0 3,-1.344 3,-3 V 20.965 c 0,-1.656 -1.344,-3.001 -3,-3.002 L 21.116,17.946 c -0.552,-0.001 -1.448,-0.001 -2,0 z"
+     id="path6"
+     style="fill:#8ca1a5;fill-opacity:1"
+     sodipodi:nodetypes="cssssscccc" />
+  <path
+     d=" M 31.504 24.448 C 31.037 24.068 30.431 23.92 29.84 24.042 L 22.072 25.674 C 21.152 25.864 20.484 26.685 20.484 27.625 L 20.484 35.075 C 19.937 34.667 19.259 34.426 18.525 34.426 C 16.713 34.426 15.238 35.9 15.238 37.713 C 15.238 39.525 16.713 41 18.525 41 C 20.333 41 21.804 39.533 21.812 37.728 C 21.812 37.727 21.812 37.725 21.812 37.724 L 21.812 30.251 L 30.91 28.316 L 30.91 32.95 C 30.362 32.542 29.684 32.301 28.951 32.301 C 27.138 32.301 25.664 33.775 25.664 35.588 C 25.664 37.4 27.138 38.875 28.951 38.875 C 29.306 38.875 29.656 38.818 29.991 38.707 C 30.339 38.591 30.527 38.215 30.411 37.867 C 30.295 37.519 29.919 37.331 29.571 37.447 C 29.372 37.513 29.163 37.547 28.951 37.547 C 27.871 37.547 26.992 36.668 26.992 35.588 C 26.992 34.508 27.871 33.629 28.951 33.629 C 30.031 33.629 30.91 34.508 30.91 35.588 L 30.91 35.592 C 30.91 35.959 31.207 36.256 31.574 36.256 C 31.941 36.256 32.238 35.959 32.238 35.592 L 32.238 25.992 L 32.238 25.992 L 32.238 25.992 C 32.238 25.391 31.97 24.828 31.504 24.448 L 31.504 24.448 Z  M 18.525 39.672 C 17.445 39.672 16.566 38.793 16.566 37.713 C 16.566 36.633 17.445 35.754 18.525 35.754 C 19.605 35.754 20.484 36.633 20.484 37.713 C 20.484 38.793 19.605 39.672 18.525 39.672 Z  M 21.812 27.625 C 21.812 27.311 22.035 27.038 22.344 26.974 L 30.111 25.342 C 30.156 25.333 30.202 25.328 30.247 25.328 C 30.398 25.328 30.545 25.38 30.665 25.477 C 30.821 25.604 30.91 25.792 30.91 25.992 L 30.91 26.958 L 21.812 28.893 L 21.812 27.625 Z "
+     id="path8"
+     style="fill:#516367;fill-opacity:1" />
+</svg>

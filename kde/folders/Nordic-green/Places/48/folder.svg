@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   style="isolation:isolate"
+   viewBox="0 0 48 48"
+   width="48pt"
+   height="48pt"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="folder.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12">
+    <linearGradient
+       id="linearGradient4227">
+      <stop
+         id="stop00"
+         offset="0.0"
+         style="stop-color:#f7aa94;stop-opacity:1.0" />
+      <stop
+         id="stop01"
+         offset="0.5"
+         style="stop-color:#f07cac;stop-opacity:1.0" />
+      <stop
+         id="stop02"
+         offset="1.0"
+         style="stop-color:#ed72c7;stop-opacity:1.0" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="8.9375"
+     inkscape:cx="31.160839"
+     inkscape:cy="31.72028"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     d=" M 1.247 13.3 L 1.247 41.208 C 1.247 42.864 2.591 44.208 4.247 44.208 L 43.229 44.208 C 44.885 44.208 46.229 42.864 46.229 41.208 L 46.229 17.465 C 46.229 15.809 44.885 14.464 43.229 14.463 L 21.116 14.446 C 20.564 14.445 19.799 14.128 19.409 13.737 L 17.299 11.623 C 16.519 10.842 14.99 10.214 13.886 10.221 L 4.247 10.281 C 2.591 10.292 1.247 11.644 1.247 13.3 Z "
+     id="path2"
+     style="fill:#6c8489;fill-opacity:1" />
+  <path
+     d=" M 6.5 16 L 41.5 16 C 42.604 16 43.5 16.896 43.5 18 L 43.5 28 C 43.5 29.104 42.604 30 41.5 30 L 6.5 30 C 5.396 30 4.5 29.104 4.5 28 L 4.5 18 C 4.5 16.896 5.396 16 6.5 16 Z "
+     id="path4"
+     style="fill:#d2d2d2;fill-opacity:1" />
+  <path
+     d="m 1.247,17.965 v 25.243 c 0,1.656 1.344,3 3,3 h 38.982 c 1.656,0 3,-1.344 3,-3 V 20.965 c 0,-1.656 -1.344,-3.001 -3,-3.002 L 21.116,17.946 c -0.552,-0.001 -1.448,-0.001 -2,0 z"
+     id="path6"
+     style="fill:#8ca1a5;fill-opacity:1"
+     sodipodi:nodetypes="cssssscccc" />
+</svg>
