@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   style="isolation:isolate"
+   viewBox="0 0 64 64"
+   width="64pt"
+   height="64pt"
+   version="1.1"
+   id="svg37"
+   sodipodi:docname="system-file-manager.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+   id="namedview39"
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1.0"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:document-units="pt"
+   showgrid="false"
+   inkscape:zoom="2.643364"
+   inkscape:cx="13.61901"
+   inkscape:cy="42.748558"
+   inkscape:window-width="1920"
+   inkscape:window-height="1019"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg37" />
+<defs
+   id="defs5">
+  <filter
+     id="SOFJODKIrrCJS7EWBckGESIqFdaYJacl"
+     x="-2.4000001"
+     y="-2.4000001"
+     width="5.8000001"
+     height="5.8000001"
+     filterUnits="objectBoundingBox"
+     color-interpolation-filters="sRGB">
+    <feGaussianBlur
+       stdDeviation="1.1"
+       id="feGaussianBlur2" />
+  </filter>
+</defs>
+<g
+   filter="url(#SOFJODKIrrCJS7EWBckGESIqFdaYJacl)"
+   style="mix-blend-mode:normal;"
+   opacity="0.3"
+   id="g9">
+  <path
+     d="M 0.5 -0.05 L 0.5 -0.05 C 0.804 -0.05 1.05 0.196 1.05 0.5 L 1.05 0.5 C 1.05 0.804 0.804 1.05 0.5 1.05 L 0.5 1.05 C 0.196 1.05 -0.05 0.804 -0.05 0.5 L -0.05 0.5 C -0.05 0.196 0.196 -0.05 0.5 -0.05 Z"
+     style="stroke:none;fill:#000000;stroke-miterlimit:10;"
+     id="path7" />
+</g>
+<path
+   d=" M 17.503 4.5 C 10.3 4.5 4.502 10.299 4.502 17.502 L 4.502 46.498 C 4.502 53.701 10.3 59.5 17.503 59.5 L 46.499 59.5 C 53.702 59.5 59.501 53.701 59.501 46.498 L 59.501 17.502 C 59.501 10.299 53.702 4.5 46.499 4.5 L 17.503 4.5 Z "
+   id="path11"
+   style="fill:#4c566a;fill-opacity:1" />
+<path
+   d=" M 18.339 10.5 C 13.997 10.5 10.501 13.996 10.501 18.338 L 10.501 45.662 C 10.501 50.004 13.997 53.5 18.339 53.5 L 45.663 53.5 C 50.005 53.5 53.501 50.004 53.501 45.662 L 53.501 18.338 C 53.501 13.996 50.005 10.5 45.663 10.5 L 18.339 10.5 Z "
+   id="path13"
+   style="fill:#9ea2aa;fill-opacity:1;opacity:0.2" />
+
+/&gt;
+  <g
+   id="g31">
+  <g
+     opacity="0.6"
+     id="g17">
+    <path
+       d=" M 15.572 25.966 C 15.55 26.116 15.537 26.272 15.517 26.426 L 48.48 26.426 C 48.46 26.272 48.446 26.116 48.422 25.966 L 15.572 25.966 Z "
+       fill="rgb(240,135,5)"
+       id="path15" />
+  </g>
+  <g
+     opacity="0.6"
+     id="g21">
+    <path
+       d=" M 16.116 15.979 C 16.135 16.132 16.154 16.286 16.175 16.439 L 47.833 16.439 C 47.852 16.273 47.869 16.142 47.887 15.979 L 16.116 15.979 Z "
+       fill="rgb(77,100,111)"
+       id="path19" />
+  </g>
+  <g
+     opacity="0.6"
+     id="g25">
+    <path
+       d=" M 15.572 35.953 C 15.55 36.103 15.537 36.259 15.517 36.413 L 48.48 36.413 C 48.46 36.259 48.446 36.103 48.422 35.953 L 15.572 35.953 Z "
+       fill="rgb(240,135,5)"
+       id="path23" />
+  </g>
+  <g
+     opacity="0.6"
+     id="g29">
+    <path
+       d=" M 15.572 45.941 C 15.55 46.09 15.537 46.247 15.517 46.4 L 48.48 46.4 C 48.46 46.247 48.446 46.09 48.422 45.941 L 15.572 45.941 Z "
+       fill="rgb(240,135,5)"
+       id="path27" />
+  </g>
+</g>
+<path
+   d=" M 6.622 13.568 C 5.443 13.568 4.495 14.517 4.495 15.695 L 4.495 22.604 C 4.495 22.689 4.51 22.771 4.52 22.854 C 4.499 24.897 4.501 27.225 4.501 30.281 L 4.501 31.129 L 4.499 31.129 L 4.499 46.498 C 4.499 46.636 4.514 46.769 4.518 46.906 C 4.526 47.1 4.53 47.294 4.548 47.484 C 5.025 53.893 10.101 58.97 16.509 59.451 C 16.831 59.482 17.157 59.5 17.489 59.5 C 17.494 59.5 17.498 59.5 17.503 59.5 L 46.497 59.5 L 46.499 59.5 C 46.837 59.5 47.168 59.482 47.495 59.451 C 53.886 58.969 58.951 53.914 59.448 47.527 C 59.481 47.189 59.501 46.846 59.501 46.498 L 59.501 30.836 C 59.501 30.829 59.503 30.823 59.503 30.816 L 59.503 23.908 C 59.503 22.729 58.554 21.781 57.376 21.781 L 34.672 21.781 C 33.646 21.781 32.843 21.712 32.176 21.535 C 31.51 21.358 30.982 21.073 30.51 20.644 C 30.039 20.216 29.623 19.643 29.182 18.888 C 28.741 18.133 28.274 17.197 27.698 16.041 C 27.42 15.357 27.032 14.86 26.608 14.502 C 26.184 14.143 25.724 13.921 25.297 13.785 C 24.444 13.511 23.729 13.58 23.729 13.58 L 14.079 13.58 C 14.039 13.577 14.002 13.568 13.961 13.568 L 10.502 13.568 L 6.622 13.568 Z "
+   id="path33"
+   style="fill:#3f4757;fill-opacity:1" />
+<path
+   d="M 11.13 19.65 L 22.94 19.65 C 23.492 19.65 23.94 20.098 23.94 20.65 L 23.94 20.65 C 23.94 21.202 23.492 21.65 22.94 21.65 L 11.13 21.65 C 10.578 21.65 10.13 21.202 10.13 20.65 L 10.13 20.65 C 10.13 20.098 10.578 19.65 11.13 19.65 Z"
+   style="stroke:none;fill:#9ea2aa;stroke-miterlimit:10;fill-opacity:1;opacity:0.2"
+   id="path35" />
+</svg>

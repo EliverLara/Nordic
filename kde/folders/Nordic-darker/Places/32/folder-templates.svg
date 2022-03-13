@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="32"
+   version="1.1"
+   viewBox="0 0 32 32"
+   id="svg7"
+   sodipodi:docname="folder-templates.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="9.3409091"
+     inkscape:cx="10.973236"
+     inkscape:cy="10.973236"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
+     inkscape:window-x="0"
+     inkscape:window-y="36"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <defs
+     id="defs3">
+    <style
+       id="current-color-scheme"
+       type="text/css">.ColorScheme-Text { color:#aaaaaa; } .ColorScheme-Highlight { color:#5294e2; }</style>
+  </defs>
+  <path
+     class="ColorScheme-Text"
+     d="M 10.666667,8 C 10.075733,8 9.6,8.4757333 9.6,9.0666667 v 9.6000003 h 1.066667 V 17.6 h 1.066666 v -7.466667 h 5.333334 v 3.2 h 3.2 v 9.6 h 1.066666 V 21.866667 H 22.4 v -9.6 L 18.133333,8 Z M 21.333333,22.933333 V 24 H 22.4 v -1.066667 z m -1.066666,0 H 19.2 V 24 h 1.066667 z m -1.066667,0 v -1.066666 h -1.066667 v 1.066666 z m -1.066667,0 H 17.066667 V 24 h 1.066666 z m -1.066666,0 V 21.866667 H 16 v 1.066666 z m -1.066667,0 H 14.933333 V 24 H 16 Z m -1.066667,0 v -1.066666 h -1.066666 v 1.066666 z m -1.066666,0 H 12.8 V 24 h 1.066667 z m -1.066667,0 v -1.066666 h -1.066667 v 1.066666 z m -1.066667,0 H 10.666667 V 24 h 1.066666 z m -1.066666,0 V 21.866667 H 9.6 v 1.066666 z m 0,-1.066666 h 1.066666 V 20.8 h -1.066666 z m 0,-1.066667 V 19.733333 H 9.6 V 20.8 Z m 0,-1.066667 h 1.066666 v -1.066666 h -1.066666 z"
+     fill="currentColor"
+     id="path5"
+     style="stroke-width:1.06667" />
+</svg>
