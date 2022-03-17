@@ -3951,36 +3951,44 @@ stacksidebar row {
 placessidebar.sidebar {
   background-color: transparent;
   background-image: linear-gradient(to right, #232831 40px, #2e3440 35px, #2e3440 36px, #2e3440 36px, #2e3440 99%, #2e3440 100%); }
+  placessidebar.sidebar:dir(rtl) {
+    background-image: linear-gradient(to left, #232831 40px, #2e3440 35px, #2e3440 36px, #2e3440 36px, #2e3440 99%, #2e3440 100%); }
   placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon {
     margin-left: -14px;
     margin-right: 12px;
     padding-left: 14px;
     padding-right: 12px;
     color: #98abb2; }
+    placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon:dir(rtl) {
+      margin-right: -14px;
+      margin-left: 12px;
+      padding-right: 14px;
+      padding-left: 12px; }
   placessidebar.sidebar row.sidebar-row:hover {
     transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     color: rgba(0, 0, 0, 0.76);
     background-color: transparent;
-    /*rgba(65,67,75,0.4); */
-    background-image: linear-gradient(to right, rgba(65, 67, 75, 0) 40px, rgba(0, 0, 0, 0.12) 40px, rgba(0, 0, 0, 0.12) 97%); }
+    background-image: linear-gradient(to right, rgba(65, 67, 75, 0) 40px, rgba(0, 0, 0, 0.12) 35px, rgba(0, 0, 0, 0.12) 36px, rgba(0, 0, 0, 0.12) 36px, rgba(0, 0, 0, 0.12) 99%, rgba(0, 0, 0, 0.12) 100%); }
+    placessidebar.sidebar row.sidebar-row:hover:dir(rtl) {
+      background-image: linear-gradient(to left, rgba(65, 67, 75, 0) 40px, rgba(0, 0, 0, 0.12) 35px, rgba(0, 0, 0, 0.12) 36px, rgba(0, 0, 0, 0.12) 36px, rgba(0, 0, 0, 0.12) 99%, rgba(0, 0, 0, 0.12) 100%); }
   placessidebar.sidebar row.sidebar-row:active:hover {
     color: rgba(0, 0, 0, 0.76);
     background-color: rgba(0, 0, 0, 0.23); }
   placessidebar.sidebar row.sidebar-row:selected {
     color: #fff;
     background-color: transparent;
-    background-image: linear-gradient(to right, rgba(143, 188, 187, 0.7) 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+    background-image: linear-gradient(to right, rgba(143, 188, 187, 0.7) 40px, rgba(65, 67, 75, 0) 35px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 99%, rgba(65, 67, 75, 0) 100%); }
     placessidebar.sidebar row.sidebar-row:selected label {
       color: #8fbcbb; }
+    placessidebar.sidebar row.sidebar-row:selected:dir(rtl) {
+      background-image: linear-gradient(to left, rgba(143, 188, 187, 0.7) 40px, rgba(65, 67, 75, 0) 35px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 99%, rgba(65, 67, 75, 0) 100%); }
     placessidebar.sidebar row.sidebar-row:selected:hover {
       color: #ffffff;
       background-color: rgba(0, 0, 0, 0.24); }
       placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon {
         color: #ffffff; }
     placessidebar.sidebar row.sidebar-row:selected:backdrop {
-      color: rgba(0, 0, 0, 0.54);
-      background-color: transparent;
-      background-image: linear-gradient(to right, #8fbcbb 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+      color: rgba(46, 52, 64, 0.5); }
       placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon {
         -gtk-icon-shadow: none; }
     placessidebar.sidebar row.sidebar-row:selected .sidebar-icon {
