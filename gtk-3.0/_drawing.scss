@@ -590,3 +590,13 @@
   border: none;
   box-shadow: none;
 }
+
+
+@mixin sidebar_bg ($dir, $c1, $c2) {
+
+
+  background-image: linear-gradient(to $dir, $c1 40px,
+                                    $c2 35px,$c2 36px,
+                                    $c2 36px,$c2 99%, 
+                                    $c2 100%);
+}
