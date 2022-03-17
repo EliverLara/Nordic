@@ -2555,8 +2555,8 @@ headerbar separator {
   margin-top: 5px;
   margin-bottom: 5px; }
 headerbar switch {
-  margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-top: 5px;
+  margin-bottom: 5px; }
 headerbar separator {
   background: transparent; }
 headerbar viewswitcher > box.horizontal > button.radio, headerbar switcher > box.horizontal > button.radio {
