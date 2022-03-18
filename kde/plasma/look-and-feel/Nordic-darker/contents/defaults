@@ -5,7 +5,7 @@ widgetStyle=kvantum
 ColorScheme=Nordic-Darker
 
 [kdeglobals][Icons]
-Theme=candy-icons
+Theme=Nordic-darker
 
 [kcminputrc][Mouse]
 cursorTheme=Nordic-cursors
