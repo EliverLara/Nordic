@@ -51,9 +51,9 @@ stage {
     @include button(hover);
   }
 
-  &:first-child { border-radius: 0px 0px 0px 2px; }
-  &:last-child { border-radius: 0px 0px 2px 0px; }
-  &:first-child:last-child { border-radius: 0px 0px 2px 2px; }
+  &:first-child { border-radius: 0px 0px 0px 10px; }
+  &:last-child { border-radius: 0px 0px 10px 0px; }
+  &:first-child:last-child { border-radius: 0px 0px 10px 10px; }
 }
 
 /* Entries */
@@ -181,8 +181,8 @@ StScrollBar {
 .flashspot { background-color: white; }
 
 .modal-dialog {
-  border: none;
-  border-radius: 2px;
+  border: 1px solid $borders_color;
+  border-radius: 10px;
   color: $osd_fg_color;
   background-color: darken($osd_bg_color,5%);
   box-shadow: $depth6;
@@ -1323,7 +1323,7 @@ StScrollBar {
 
   .nm-dialog-airplane-text { color: $fg_color; }
   .nm-dialog-header-icon { icon-size: 32px; }
-  .nm-dialog-scroll-view { border: 2px solid $borders_color; background: transparent; }
+  .nm-dialog-scroll-view { border: 2px solid $borders_color; background: $bg_color; }
   .nm-dialog-header { font-weight: bold; }
 
   .nm-dialog-item {
