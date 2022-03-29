@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="380.00266"
    height="635.00043"
    version="1.1"
    viewBox="0 0 380.00266 635.00043"
    id="svg1764"
    sodipodi:docname="Nordic-Solid.svg"
-   inkscape:version="1.0rc1 (09960d6f05, 2020-04-09)">
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata1768">
     <rdf:RDF>
@@ -36,18 +36,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0.98823529"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="722"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
      id="namedview1766"
      showgrid="false"
-     inkscape:zoom="2.3865763"
-     inkscape:cx="-30.531534"
-     inkscape:cy="574.73458"
+     inkscape:zoom="6.7502571"
+     inkscape:cx="257.84203"
+     inkscape:cy="38.44298"
      inkscape:window-x="0"
-     inkscape:window-y="22"
+     inkscape:window-y="36"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg1764"
-     inkscape:document-rotation="0" />
+     inkscape:current-layer="g1401"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0" />
   <defs
      id="defs116">
     <linearGradient
@@ -642,9 +643,9 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter2077"
-       x="-0.096"
+       x="-0.095999998"
        width="1.192"
-       y="-0.096"
+       y="-0.095999998"
        height="1.192">
       <feGaussianBlur
          inkscape:collect="always"
@@ -5398,7 +5399,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#8fbcbb;fill-opacity:1"
          id="path1362"
          inkscape:connector-curvature="0" />
     </g>
@@ -5413,7 +5414,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#8fbcbb;fill-opacity:1"
          id="path1367"
          inkscape:connector-curvature="0" />
     </g>
@@ -5428,7 +5429,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#8fbcbb;fill-opacity:1"
          id="path1372"
          inkscape:connector-curvature="0" />
     </g>
@@ -5443,7 +5444,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#8fbcbb;fill-opacity:1"
          id="path1377"
          inkscape:connector-curvature="0" />
     </g>
@@ -5458,7 +5459,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#8fbcbb;fill-opacity:1"
          id="path1382"
          inkscape:connector-curvature="0" />
     </g>
@@ -5473,7 +5474,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#8fbcbb;fill-opacity:1"
          id="path1387"
          inkscape:connector-curvature="0" />
     </g>
@@ -5488,7 +5489,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#8fbcbb;fill-opacity:1"
          id="path1392"
          inkscape:connector-curvature="0" />
     </g>
@@ -5503,7 +5504,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#232831;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.82;fill:#8fbcbb;fill-opacity:1"
          id="path1397"
          inkscape:connector-curvature="0" />
     </g>
