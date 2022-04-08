@@ -153,19 +153,18 @@ StScrollBar {
   height: 1em; }
 
 .popup-slider-menu-item, .slider {
-  -slider-height: 4px;
-  -slider-background-color: #232831;
-  -slider-border-color: rgba(0, 0, 0, 0);
+  -slider-height: 0.3em;
+  -slider-background-color: #464e61;
+  -slider-border-color: rgba(67, 76, 94, 0.3);
   -slider-active-background-color: #8fbcbb;
-  -slider-active-border-color: rgba(0, 0, 0, 0);
-  -slider-border-width: 0;
-  -slider-handle-radius: 4px;
-  height: 18px;
+  -slider-active-border-color: rgba(67, 76, 94, 0.3);
+  -slider-border-width: 1px;
+  -slider-handle-radius: 0.5em;
+  height: 1em;
   min-width: 15em;
   border: 0 solid transparent;
   border-right-width: 1px;
-  border-left-width: 5px;
-  color: transparent; }
+  border-left-width: 5px; }
   .popup-menu-item:active .popup-slider-menu-item,
   .popup-menu-item:active .slider {
     -slider-background-color: rgba(0, 0, 0, 0.2);
