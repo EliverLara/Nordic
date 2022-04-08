@@ -1022,11 +1022,11 @@ StScrollBar {
   .window-list-box:highlight {
     background-color: rgba(252, 65, 56, 0.5); }
 .window-list-item-label {
-  font-weight: bold;
+  font-weight: normal;
   width: 15em;
   min-width: 5px; }
 .window-list-item-box {
-  font-weight: bold;
+  font-weight: normal;
   background-image: none;
   padding-top: 0;
   padding-left: 8px;
@@ -1071,12 +1071,12 @@ StScrollBar {
   font-size: 1em; }
 
 .grouped-window-list-item-label {
-  font-weight: bold;
+  font-weight: normal;
   width: 15em;
   min-width: 5px; }
 .grouped-window-list-item-box {
   text-align: left;
-  font-weight: bold;
+  font-weight: normal;
   background-image: none;
   padding-top: 0;
   padding-left: 8px;
