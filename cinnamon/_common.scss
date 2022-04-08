@@ -1270,13 +1270,13 @@ StScrollBar {
   }
 
   &-item-label {
-    font-weight: bold;
+    font-weight: normal;
     width: 15em;
     min-width: 5px;
   }
 
   &-item-box {
-    font-weight: bold;
+    font-weight: normal;
     background-image: none;
     padding-top: 0;
     padding-left: 8px;
@@ -1309,7 +1309,7 @@ StScrollBar {
 
     &:hover,
     &:groupFocus {
-      color: $selected_fg_color;
+      color: $fg_color;
       background-color: transparentize($selected_fg_color, 0.9);
     }
 
@@ -1317,7 +1317,7 @@ StScrollBar {
     &:checked,
     &:focus,
     &:running {
-      color: $selected_fg_color;
+      color: $fg_color;
       border-color: $selected_bg_color;
     }
 
@@ -1350,14 +1350,14 @@ StScrollBar {
 .grouped-window-list {
 
   &-item-label {
-    font-weight: bold;
+    font-weight: normal;
     width: 15em;
     min-width: 5px;
   }
 
   &-item-box {
     text-align: left;
-    font-weight: bold;
+    font-weight: normal;
     background-image: none;
     padding-top: 0;
     padding-left: 8px;
@@ -1390,7 +1390,7 @@ StScrollBar {
 
     &:active,
     &:checked {
-      color: $selected_fg_color;
+      color: $fg_color;
       border-color: lighten($panel_bg, 20%);
     }
 
@@ -1400,7 +1400,7 @@ StScrollBar {
     &:active:focus,
     &:focus:hover,
     &:active:focus:hover {
-      color: $selected_fg_color;
+      color: $fg_color;
       border-color: $selected_bg_color;
     }
 

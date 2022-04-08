@@ -1024,11 +1024,11 @@ StScrollBar {
   .window-list-box:highlight {
     background-color: rgba(252, 65, 56, 0.5); }
 .window-list-item-label {
-  font-weight: bold;
+  font-weight: normal;
   width: 15em;
   min-width: 5px; }
 .window-list-item-box {
-  font-weight: bold;
+  font-weight: normal;
   background-image: none;
   padding-top: 0;
   padding-left: 8px;
@@ -1052,10 +1052,10 @@ StScrollBar {
     .window-list-item-box.left StBin {
       padding-left: 1px; }
   .window-list-item-box:hover, .window-list-item-box:groupFocus {
-    color: #2e3440;
+    color: #d8dee9;
     background-color: rgba(46, 52, 64, 0.1); }
   .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
-    color: #2e3440;
+    color: #d8dee9;
     border-color: #8fbcbb; }
   .window-list-item-box .progress {
     background-color: rgba(143, 188, 187, 0.8); }
@@ -1073,12 +1073,12 @@ StScrollBar {
   font-size: 1em; }
 
 .grouped-window-list-item-label {
-  font-weight: bold;
+  font-weight: normal;
   width: 15em;
   min-width: 5px; }
 .grouped-window-list-item-box {
   text-align: left;
-  font-weight: bold;
+  font-weight: normal;
   background-image: none;
   padding-top: 0;
   padding-left: 8px;
@@ -1102,10 +1102,10 @@ StScrollBar {
     .grouped-window-list-item-box.left StBin {
       padding-left: 1px; }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
-    color: #2e3440;
+    color: #d8dee9;
     border-color: #59647b; }
   .grouped-window-list-item-box:hover, .grouped-window-list-item-box:active:hover, .grouped-window-list-item-box:focus, .grouped-window-list-item-box:active:focus, .grouped-window-list-item-box:focus:hover, .grouped-window-list-item-box:active:focus:hover {
-    color: #2e3440;
+    color: #d8dee9;
     border-color: #8fbcbb; }
   .grouped-window-list-item-box .progress {
     background-color: rgba(143, 188, 187, 0.8); }
