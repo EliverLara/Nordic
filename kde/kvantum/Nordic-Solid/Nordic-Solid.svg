@@ -40,13 +40,13 @@
      inkscape:window-height="1019"
      id="namedview1766"
      showgrid="false"
-     inkscape:zoom="6.7502571"
-     inkscape:cx="257.84203"
-     inkscape:cy="38.44298"
+     inkscape:zoom="0.59664407"
+     inkscape:cx="257.27231"
+     inkscape:cy="421.52434"
      inkscape:window-x="0"
      inkscape:window-y="36"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1401"
+     inkscape:current-layer="g454"
      inkscape:document-rotation="0"
      inkscape:pagecheckerboard="0" />
   <defs
@@ -1873,23 +1873,23 @@
        style="opacity:0.12999998;fill:#555761;fill-opacity:1;fill-rule:evenodd" />
     <g
        id="g2022"
-       style="fill:#d08770;fill-opacity:1">
+       style="fill:#8fbcbb;fill-opacity:1">
       <rect
-         style="fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          height="10"
          width="10"
          y="420"
          x="80"
          id="floating-tab-toggled-bottom" />
       <rect
-         style="fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          height="10"
          width="10"
          y="420"
          x="90"
          id="floating-tab-toggled-bottomright" />
       <rect
-         style="fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          height="10"
          width="10"
          y="420"
@@ -3040,50 +3040,50 @@
      id="g703">
     <g
        id="g2039"
-       style="fill:#d08770;fill-opacity:1">
+       style="fill:#8fbcbb;fill-opacity:1">
       <path
          inkscape:connector-curvature="0"
-         style="text-transform:none;fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="text-transform:none;fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          d="m 235,170 h -5 v 5 h 5 z"
          id="progress-pattern-normal-left" />
       <path
          inkscape:connector-curvature="0"
-         style="text-transform:none;fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="text-transform:none;fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          d="m 235,175 h -5 v 5 h 5 z"
          id="progress-pattern-normal-bottomleft" />
       <path
          inkscape:connector-curvature="0"
-         style="text-transform:none;fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="text-transform:none;fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          d="m 240,175 h -5 v 5 h 5 z"
          id="progress-pattern-normal-bottom" />
       <path
          inkscape:connector-curvature="0"
-         style="text-transform:none;fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="text-transform:none;fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          d="m 245,175 h -5 v 5 h 5 z"
          id="progress-pattern-normal-bottomright" />
       <path
          inkscape:connector-curvature="0"
-         style="text-transform:none;fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="text-transform:none;fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          d="m 245,170 h -5 v 5 h 5 z"
          id="progress-pattern-normal-right" />
       <path
          inkscape:connector-curvature="0"
-         style="text-transform:none;fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="text-transform:none;fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          d="m 245,165 h -5 v 5 h 5 z"
          id="progress-pattern-normal-topright" />
       <path
          inkscape:connector-curvature="0"
-         style="text-transform:none;fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="text-transform:none;fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          d="m 240,165 h -5 v 5 h 5 z"
          id="progress-pattern-normal-top" />
       <path
          inkscape:connector-curvature="0"
-         style="text-transform:none;fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="text-transform:none;fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          d="m 235,165 h -5 v 5 h 5 z"
          id="progress-pattern-normal-topleft" />
       <path
          inkscape:connector-curvature="0"
-         style="fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+         style="fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
          d="m 240,170 h -5 v 5 h 5 z"
          id="progress-pattern-normal" />
     </g>
@@ -3293,7 +3293,7 @@
     <path
        id="slider-toggled-left"
        d="m 30,177 v 16.5003 h 12 v -16.5 H 30 Z"
-       style="fill:#d08770;fill-opacity:1;fill-rule:evenodd"
+       style="fill:#8fbcbb;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <path
        id="slider-toggled-topright"
