@@ -50,14 +50,17 @@
 //
 
   @if $t==normal {
-    background-color: $base_color;
+    background-color: lighten($base_color, 4%);
     border-color: $borders_color;
- 
-    @include _shadows($depth);
-
   }
-  @if $t==focus { @include _shadows($depth); }
-  @if $t==hover { }
+  @if $t==focus { 
+    @include _shadows($depth);
+    border-color: transparentize($selected_bg_color, 0.2); 
+  }
+  @if $t==hover {  
+    @include _shadows($depth);
+    background-color: lighten($base_color, 7%);
+  }
   @if $t==insensitive {
     color: $insensitive_fg_color;
     box-shadow: $depth;
