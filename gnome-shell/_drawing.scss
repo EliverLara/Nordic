@@ -52,13 +52,9 @@
   @if $t==normal {
     background-color: lighten($base_color, 4%);
     border-color: $borders_color;
- 
- //   @include _shadows($depth);
-
   }
   @if $t==focus { 
     @include _shadows($depth);
-    // background-color: lighten($main_dark, 2%);
     border-color: transparentize($selected_bg_color, 0.2); 
   }
   @if $t==hover {  
