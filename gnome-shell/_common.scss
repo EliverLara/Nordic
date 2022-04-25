@@ -59,11 +59,11 @@ stage {
 /* Entries */
 StEntry {
   @include entry(normal);
-  border-radius: 2px;
+  border-radius: 6px;
   padding: 4px;
-  border-width: 0;
+   border-width: 2px;
   color: $fg_color;
-  //&:hover { @include entry(hover);}
+  &:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
   &:insensitive { @include entry(insensitive);}
   selection-background-color: $selected_bg_color;
@@ -1383,17 +1383,9 @@ StScrollBar {
 .search-entry {
   width: 320px;
   padding: 9px;
-  border: 1px solid $borders_color;
   border-radius: 10px;
-  color: $fg_color;
-  background-color: $main_dark;
-  box-shadow: $depth;
-
-  &:hover, &:focus {
-    background-color: lighten($main_dark, 2%);
-    border-color: transparentize($selected_bg_color, 0.5);
-    .search-entry-icon { color: $fg_color; }
-  }
+  border-color: transparent;
+  
   .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
 }
