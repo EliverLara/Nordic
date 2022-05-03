@@ -1032,6 +1032,7 @@ StScrollBar {
         color: lighten($selected_fg_color,5%);
         background-color: $selected_bg_color;
         border-color: transparent; //avoid jumparound due to today
+        box-shadow: none;
       }
       &.calendar-day-heading {  //day of week heading
         color: darken($fg_color,40%);
@@ -1052,9 +1053,24 @@ StScrollBar {
       }
       .calendar-today {
         font-weight: bold;
-        //color: lighten($fg_color,10%);
-        //background-color: darken($bg_color,5%);
-        border: 1px solid transparentize($borders_color,0.5);
+        border: 1px solid $selected_bg_color;
+        background-color: transparent;
+        color: $selected_fg_color;
+
+        &:hover,&:focus {
+          background-color:lighten($selected_bg_color, 3%);
+          color: $selected_fg_color;
+        }
+
+        &:active,&:selected {
+          background-color: $selected_bg_color;
+          color: $selected_fg_color;
+
+          &:hover,&:focus {
+            background-color:lighten($selected_bg_color, 3%);
+            color: $selected_fg_color;
+          }
+        }
       }
       .calendar-day-with-events {
         color: lighten($fg_color,10%);
