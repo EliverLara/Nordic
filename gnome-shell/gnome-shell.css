@@ -1194,7 +1194,7 @@ StScrollBar {
   spacing: 24px; }
 
 #overviewGroup {
-  background-color: rgba(46, 52, 64, 0.95); }
+  background-color: #2e3440; }
 
 .overview-controls {
   padding-bottom: 32px; }
