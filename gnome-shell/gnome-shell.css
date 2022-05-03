@@ -913,7 +913,8 @@ StScrollBar {
   .calendar-day-base:active, .calendar-day-base:selected {
     color: #e8ecf2;
     background-color: #5E6A82;
-    border-color: transparent; }
+    border-color: transparent;
+    box-shadow: none; }
   .calendar-day-base.calendar-day-heading {
     color: #58709d;
     margin-top: 1em;
@@ -933,7 +934,18 @@ StScrollBar {
 
 .calendar-today {
   font-weight: bold;
-  border: 1px solid rgba(31, 35, 43, 0.5); }
+  border: 1px solid #5E6A82;
+  background-color: transparent;
+  color: #d8dee9; }
+  .calendar-today:hover, .calendar-today:focus {
+    background-color: #64718b;
+    color: #d8dee9; }
+  .calendar-today:active, .calendar-today:selected {
+    background-color: #5E6A82;
+    color: #d8dee9; }
+    .calendar-today:active:hover, .calendar-today:active:focus, .calendar-today:selected:hover, .calendar-today:selected:focus {
+      background-color: #64718b;
+      color: #d8dee9; }
 
 .calendar-day-with-events {
   color: #f9fafb;
