@@ -1095,6 +1095,7 @@ StScrollBar {
       /* Message list */
       .message-list {
         width: 31.5em;
+        border: none;
         .message-title, .message-content, .message-body {
           color: darken($fg_color, 5%);
         }
@@ -1568,10 +1569,12 @@ StScrollBar {
 /* App Folders */
 .app-well-app.app-folder {
   background-color: lighten($bg_color, 7%);
+  border-radius: 12px;
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
   background-color:  darken($osd_bg_color,5%);
+  border: none;
   .edit-folder-button {
     @extend %button;
 
