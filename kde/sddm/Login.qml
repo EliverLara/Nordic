@@ -122,7 +122,7 @@ SessionManagementScreen {
         background: Rectangle {
             id: buttonBackground
             width: parent.width
-            height: 30
+            height: width / 9
             radius: width / 2
             color: "#82ABAA"
             opacity: enabled ? 1.0 : 0.3
