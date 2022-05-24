@@ -55,7 +55,7 @@
   }
   @if $t==focus { 
     @include _shadows($depth);
-    border-color: transparentize($selected_bg_color, 0.2); 
+    border-color: $selected_bg_color; 
   }
   @if $t==hover {  
     @include _shadows($depth);

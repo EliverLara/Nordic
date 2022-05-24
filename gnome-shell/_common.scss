@@ -573,7 +573,8 @@ StScrollBar {
   &:focus { background-color: lighten($bg_color, 6%) !important; color: $fg_color; }
 
   &:checked { 
-    background-color: transparentize($selected_bg_color, 0.5) !important;
+    background-color: transparentize($selected_bg_color, 0.1) !important;
+    font-weight: bold;
     border-radius: 6px 6px 0px 0px;
     box-shadow: none;
   }
@@ -875,7 +876,7 @@ StScrollBar {
       // Trick due to St limitations. It needs a background to draw
       // a box-shadow
       box-shadow: inset 0 0 0 100px $selected_bg_color;
-      color: #fff;
+      color: $selected_fg_color;
 
       &.clock-display {
         box-shadow: none;
@@ -1053,7 +1054,7 @@ StScrollBar {
         font-weight: bold;
         border: 1px solid $selected_bg_color;
         background-color: transparent;
-        color: $selected_fg_color;
+        color: $selected_fg_color !important;
 
         &:hover,&:focus {
           background-color:lighten($selected_bg_color, 3%);
