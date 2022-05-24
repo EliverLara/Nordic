@@ -12,7 +12,7 @@ $purple: #b48ead;
 $cyan: #88c0d0;
 
 $selected_fg_color: #fefefe;
-$selected_bg_color:#8fbcbb;
+$selected_bg_color:transparentize(#8fbcbb, 0.3);
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: darken(#2e3440, 7%);
 $borders_edge: transparentize(white, 0.9);
