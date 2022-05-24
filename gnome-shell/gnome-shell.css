@@ -789,54 +789,20 @@ StScrollBar {
     #panel.solid .popup-menu-arrow {
       icon-shadow: none; }
 
-#calendarArea {
-  padding: 0.75em 1.0em; }
-
-.calendar {
-  margin-bottom: 1em; }
-
-.calendar, .world-clocks-button, .weather-button, .events-button {
-  background: transparent;
-  border: none;
-  color: #d8dee9;
-  box-shadow: none; }
-
-.calendar,
-.datemenu-today-button,
-.datemenu-displays-box,
-.message-list-sections {
-  margin: 0 1.5em; }
-
-.datemenu-calendar-column {
-  spacing: 0.5em; }
-
-.datemenu-displays-section {
-  padding-bottom: 3em; }
-
-.datemenu-displays-box {
-  spacing: 1em; }
-
-.datemenu-calendar-column {
-  border: 0 solid transparent;
+.world-clocks-button, .weather-button, .events-button {
   background: #2e3440;
   border-radius: 7px;
-  box-shadow: 0px 0px 1px 1px #1f232b inset; }
+  padding: 12px; }
+
+.datemenu-calendar-column {
+  border: 0 solid transparent; }
 
 .datemenu-today-button,
-.world-clocks-button,
-.weather-button,
 .events-section-title,
-.message-list-section-title,
-.events-button {
+.message-list-section-title {
   border-radius: 4px;
   color: #d8dee9;
   padding: .4em; }
-
-.message-list-section-list:ltr {
-  padding-left: .4em; }
-
-.message-list-section-list:rtl {
-  padding-right: .4em; }
 
 .datemenu-today-button:hover, .datemenu-today-button:focus,
 .world-clocks-button:hover,
@@ -867,11 +833,11 @@ StScrollBar {
 .events-section-title,
 .message-list-section-title,
 .events-title {
-  color: #58709d;
+  color: #d8dee9;
   font-weight: bold; }
 
 .events-button .event-time {
-  color: #cbd3e2; }
+  color: #e5e9f0; }
 
 .world-clocks-grid {
   spacing-rows: 0.4em; }
@@ -925,7 +891,7 @@ StScrollBar {
     border-color: transparent;
     box-shadow: none; }
   .calendar-day-base.calendar-day-heading {
-    color: #58709d;
+    color: #d8dee9;
     margin-top: 1em;
     font-size: 70%; }
 
@@ -979,7 +945,7 @@ StScrollBar {
 /* Message list */
 .message-list {
   width: 31.5em;
-  border: none; }
+  border-color: #373e4c; }
   .message-list .message-title, .message-list .message-content, .message-list .message-body {
     color: #c8d0e0; }
 
