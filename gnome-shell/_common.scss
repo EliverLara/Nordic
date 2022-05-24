@@ -925,56 +925,25 @@ StScrollBar {
 }
 
   // calendar popover
-  #calendarArea {
-    padding: 0.75em 1.0em;
-  }
 
-  .calendar {
-    margin-bottom: 1em;
+ .world-clocks-button, .weather-button, .events-button {
+  background: $bg_color;
+  border-radius: 7px;
+  // box-shadow: 0px 0px 1px 1px $borders_color inset;
+  padding: 12px;
   }
-  
-  .calendar, .world-clocks-button, .weather-button, .events-button {
-    background: transparent;
-    border: none;
-    color: $fg_color;
-    box-shadow: none;
-  }
-
-    .calendar,
-    .datemenu-today-button,
-    .datemenu-displays-box,
-    .message-list-sections {
-      margin: 0 1.5em;
-    }
-
-    .datemenu-calendar-column { spacing: 0.5em; }
-    .datemenu-displays-section { padding-bottom: 3em; }
-    .datemenu-displays-box { spacing: 1em; }
 
     .datemenu-calendar-column {
       border: 0 solid transparent;
-      background: $bg_color;
-      border-radius: 7px;
-      box-shadow: 0px 0px 1px 1px $borders_color inset;
+
     }
 
     .datemenu-today-button,
-    .world-clocks-button,
-    .weather-button,
     .events-section-title,
-    .message-list-section-title,
-    .events-button {
+    .message-list-section-title {
       border-radius: 4px;
       color: $fg_color;
       padding: .4em;
-    }
-
-    .message-list-section-list:ltr {
-      padding-left: .4em;
-    }
-
-    .message-list-section-list:rtl {
-      padding-right: .4em;
     }
 
     .datemenu-today-button,
@@ -1002,12 +971,12 @@ StScrollBar {
     .events-section-title,
     .message-list-section-title,
     .events-title {
-      color: darken($fg_color, 40%);
+      color: $fg_color;
       font-weight: bold;
     }
 
     .events-button .event-time {
-      color: darken($fg_color, 4%);
+      color: lighten($fg_color, 4%);
     }
 
     .world-clocks-grid {
@@ -1064,7 +1033,7 @@ StScrollBar {
         box-shadow: none;
       }
       &.calendar-day-heading {  //day of week heading
-        color: darken($fg_color,40%);
+        color: $fg_color;
         margin-top: 1em;
         font-size: 70%;
       }
@@ -1124,7 +1093,7 @@ StScrollBar {
       /* Message list */
       .message-list {
         width: 31.5em;
-        border: none;
+        border-color: lighten($base_color, 4%);
         .message-title, .message-content, .message-body {
           color: darken($fg_color, 5%);
         }
