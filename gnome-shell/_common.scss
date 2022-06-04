@@ -575,6 +575,7 @@ StScrollBar {
   &:checked { 
     background-color: transparentize($selected_bg_color, 0.1) !important;
     font-weight: bold;
+    color: $selected_fg_color !important;
     border-radius: 6px 6px 0px 0px;
     box-shadow: none;
   }
@@ -927,11 +928,17 @@ StScrollBar {
 
   // calendar popover
 
+  .calendar {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
  .world-clocks-button, .weather-button, .events-button {
-  background: $bg_color;
-  border-radius: 7px;
-  // box-shadow: 0px 0px 1px 1px $borders_color inset;
-  padding: 12px;
+    background: $bg_color;
+    border-radius: 7px;
+    padding: 12px;
+    color: $fg_color;
   }
 
     .datemenu-calendar-column {
@@ -1024,7 +1031,7 @@ StScrollBar {
       width: 2.4em; height: 2.4em;
       padding: 0.1em;
       margin: 2px;
-      border-radius: 1.4em;
+      border-radius: 99px;
       color: $fg_color;
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active,&:selected {
@@ -1093,7 +1100,6 @@ StScrollBar {
 
       /* Message list */
       .message-list {
-        width: 31.5em;
         border-color: lighten($base_color, 4%);
         .message-title, .message-content, .message-body {
           color: darken($fg_color, 5%);
