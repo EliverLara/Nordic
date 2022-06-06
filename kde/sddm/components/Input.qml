@@ -10,7 +10,7 @@ TextField {
     font.family: config.font
     background: Rectangle {
         color: "#2e3440"
-        radius: parent.width / 2
+        radius: 8
         width: parent.width
         height: width / 9
         opacity: 0.7
