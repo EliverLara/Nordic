@@ -1004,11 +1004,11 @@ StScrollBar {
   .message-close-button:hover {
     background-color: rgba(191, 97, 106, 0.3); }
     .message-close-button:hover > StIcon {
-      color: #fefefe; }
+      color: #d8dee9; }
   .message-close-button:active {
     background-color: rgba(191, 97, 106, 0.5); }
     .message-close-button:active > StIcon {
-      color: #fefefe; }
+      color: #d8dee9; }
 
 .message-media-control {
   padding: 12px;
