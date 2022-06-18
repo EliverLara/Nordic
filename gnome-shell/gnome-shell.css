@@ -984,18 +984,6 @@ StScrollBar {
     box-shadow: 3px 0px 0px 0px rgba(143, 188, 187, 0.7) inset;
     border-radius: 1px 7px 7px 1px; }
 
-.message-icon-bin {
-  padding: 10px 3px 10px 10px; }
-  .message-icon-bin:rtl {
-    padding: 10px 10px 10px 3px; }
-
-.message-icon-bin > StIcon {
-  icon-size: 16px;
-  -st-icon-style: symbolic; }
-
-.message-secondary-bin {
-  padding: 0 12px; }
-
 .message-secondary-bin > .event-time {
   color: #a7b5cd;
   font-size: 0.7em;
@@ -1008,9 +996,19 @@ StScrollBar {
 
 .message-content {
   padding: 10px; }
-  .message-content *:hover > StIcon,
-  .message-content *:focus > StIcon {
-    color: #bf616a; }
+
+.message-close-button {
+  color: #d8dee9;
+  background-color: rgba(216, 222, 233, 0.1);
+  border-radius: 99px; }
+  .message-close-button:hover {
+    background-color: rgba(191, 97, 106, 0.3); }
+    .message-close-button:hover > StIcon {
+      color: #fefefe; }
+  .message-close-button:active {
+    background-color: rgba(191, 97, 106, 0.5); }
+    .message-close-button:active > StIcon {
+      color: #fefefe; }
 
 .message-media-control {
   padding: 12px;
@@ -1477,15 +1475,15 @@ StScrollBar {
   font-size: 11pt;
   width: 34em;
   margin: 5px;
-  border-radius: 3px;
+  border-radius: 12px;
   color: #d8dee9;
   background-color: #2e3440;
   border: 1px solid #1f232b;
-  box-shadow: 0 1px 4px black; }
-  .notification-banner:hover {
-    background-color: rgba(46, 52, 64, 0.96); }
-  .notification-banner:focus {
-    background-color: rgba(46, 52, 64, 0.96); }
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.445); }
+  .notification-banner:hover, .notification-banner:focus {
+    background-color: #343b49;
+    box-shadow: none;
+    border-radius: 12px; }
   .notification-banner * {
     color: #d8dee9; }
   .notification-banner .notification-icon {
@@ -1498,15 +1496,16 @@ StScrollBar {
   .notification-banner .notification-actions {
     background-color: #2a2f3a;
     padding-top: 2px;
-    spacing: 1px; }
+    spacing: 1px;
+    border-radius: 0px 0px 12px 12px; }
   .notification-banner .notification-button {
-    padding: 5px;
+    padding: 7px;
     background-color: rgba(46, 52, 64, 0.9);
     box-shadow: none; }
     .notification-banner .notification-button:first-child {
-      border-radius: 0 0 0 3px; }
+      border-radius: 0 0 0 12px; }
     .notification-banner .notification-button:last-child {
-      border-radius: 0 0 3px 0; }
+      border-radius: 0 0 12px 0; }
     .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
       background-color: #2a2f3a;
       color: rgba(143, 188, 187, 0.7); }
