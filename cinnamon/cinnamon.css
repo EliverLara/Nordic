@@ -1103,7 +1103,7 @@ StScrollBar {
     border-color: #545f75; }
   .grouped-window-list-item-box:hover, .grouped-window-list-item-box:active:hover, .grouped-window-list-item-box:focus, .grouped-window-list-item-box:active:focus, .grouped-window-list-item-box:focus:hover, .grouped-window-list-item-box:active:focus:hover {
     color: #d8dee9;
-    border-color: #4c566a; }
+    border-color: #99a3b6; }
   .grouped-window-list-item-box .progress {
     background-color: rgba(76, 86, 106, 0.8); }
 .grouped-window-list-item-demands-attention {

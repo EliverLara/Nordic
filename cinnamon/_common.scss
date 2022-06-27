@@ -1399,7 +1399,7 @@ StScrollBar {
     &:focus:hover,
     &:active:focus:hover {
       color: $fg_color;
-      border-color: $selected_bg_color;
+      border-color: lighten($selected_bg_color, 30%);
     }
 
     & .progress {
