@@ -423,7 +423,6 @@ PlasmaCore.ColorScope {
         //Footer
         RowLayout {
             id: footer
-            opacity: 0
             anchors {
                 bottom: parent.bottom
                 left: parent.left
@@ -455,7 +454,6 @@ PlasmaCore.ColorScope {
         RowLayout {
             id: footerRight
             spacing: 10
-            opacity: 0
             anchors {
                 bottom: parent.bottom
                 right: parent.right
