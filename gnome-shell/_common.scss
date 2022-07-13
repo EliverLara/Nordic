@@ -1182,15 +1182,27 @@ StScrollBar {
           }
 
 
-          .message-media-control {
-            padding: 12px;
-            color: darken($fg_color, 20%);
+/* Media Controls */
+.message-media-control {
 
-            &:last-child:ltr { padding-right: 18px; }
-            &:last-child:rtl { padding-left: 18px; }
-            &:hover { color: $fg_color; }
-            &:insensitive { color: darken($fg_color,40%); }
-          }
+  color: $fg_color;
+
+  // colors are lightened since the media controls are in a card
+  &:hover {
+    background-color: lighten($base_color, 8%);
+    color: $selected_fg_color;
+  }
+
+  &:active { 
+    background-color: lighten($base_color, 12%);
+    color: $selected_fg_color;
+  }
+
+  &:insensitive { color: lighten($insensitive_fg_color, 5%); }
+  
+}
+
+
 
           .media-message-cover-icon {
             icon-size: 48px !important;
