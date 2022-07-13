@@ -1010,17 +1010,17 @@ StScrollBar {
     .message-close-button:active > StIcon {
       color: #d8dee9; }
 
+/* Media Controls */
 .message-media-control {
-  padding: 12px;
-  color: #97a7c4; }
-  .message-media-control:last-child:ltr {
-    padding-right: 18px; }
-  .message-media-control:last-child:rtl {
-    padding-left: 18px; }
+  color: #d8dee9; }
   .message-media-control:hover {
-    color: #d8dee9; }
+    background-color: #3f4758;
+    color: #fefefe; }
+  .message-media-control:active {
+    background-color: #485164;
+    color: #fefefe; }
   .message-media-control:insensitive {
-    color: #58709d; }
+    color: #9196a1; }
 
 .media-message-cover-icon {
   icon-size: 48px !important; }
