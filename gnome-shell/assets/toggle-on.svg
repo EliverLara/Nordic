@@ -2,20 +2,20 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="72"
    height="21"
    id="svg2857"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="toggle-on.svg">
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="toggle-on.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2859">
     <linearGradient
@@ -89,9 +89,9 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter930"
-       x="-0.036"
+       x="-0.035999999"
        width="1.072"
-       y="-0.036"
+       y="-0.035999999"
        height="1.072">
       <feGaussianBlur
          inkscape:collect="always"
@@ -107,15 +107,15 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="8.7549371"
-     inkscape:cx="40.993693"
-     inkscape:cy="9.1634726"
+     inkscape:cx="31.696401"
+     inkscape:cy="9.2519226"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1280"
      inkscape:window-height="707"
      inkscape:window-x="86"
-     inkscape:window-y="25"
+     inkscape:window-y="31"
      inkscape:window-maximized="0"
      borderlayer="true"
      inkscape:showpageshadow="false"
@@ -126,7 +126,9 @@
      inkscape:snap-bbox-edge-midpoints="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     showborder="true">
+     showborder="true"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#37474f">
     <inkscape:grid
        type="xygrid"
        id="grid3078"
@@ -158,7 +160,7 @@
        transform="translate(444.64286,782.36218)"
        id="path900" />
     <path
-       style="fill:#8fbcbb;fill-opacity:1;stroke:#8fbcbb;stroke-opacity:1"
+       style="fill:#5e81ac;fill-opacity:1;stroke:#5e81ac;stroke-opacity:1"
        d="m 472.64286,782.86218 a 9.5,9.5 0 0 0 -9.5,9.5 9.5,9.5 0 0 0 9.5,9.5 h 7.5 2 7.5 a 9.5,9.5 0 0 0 9.5,-9.5 9.5,9.5 0 0 0 -9.5,-9.5 h -7.5 -2 z"
        id="path872"
        inkscape:connector-curvature="0" />
@@ -179,7 +181,7 @@
        id="rect912"
        style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:0.2;fill-rule:nonzero;stroke:none;stroke-width:1.76470685;stroke-opacity:1;marker:none;enable-background:new;filter:url(#filter930)" />
     <rect
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#3b4252;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76470685;stroke-opacity:1;marker:none;enable-background:new"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.76470685;stroke-opacity:1;marker:none;enable-background:new"
        id="rect3872"
        width="15"
        height="15"
