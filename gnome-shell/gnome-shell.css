@@ -383,7 +383,7 @@ StScrollBar {
 .prompt-dialog {
   width: 34em;
   border: none;
-  border-radius: 2px; }
+  border-radius: 10px; }
   .prompt-dialog .message-dialog-main-layout {
     spacing: 24px;
     padding: 10px; }
