@@ -390,7 +390,7 @@ StScrollBar {
   //this is the width of the entire modal popup
   width: 34em;
   border: none;
-  border-radius: 2px;
+  border-radius: 10px;
 
   .message-dialog-main-layout { spacing: 24px; padding: 10px; }
   .message-dialog-content { spacing: 16px; }
