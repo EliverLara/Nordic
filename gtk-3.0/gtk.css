@@ -2850,34 +2850,6 @@ menu, .menu, .context-menu {
         margin-right: 10px; }
     menu menuitem label:dir(rtl), menu menuitem label:dir(ltr), .menu menuitem label:dir(rtl), .menu menuitem label:dir(ltr), .context-menu menuitem label:dir(rtl), .context-menu menuitem label:dir(ltr) {
       color: inherit; }
-  menu > arrow, .menu > arrow, .context-menu > arrow {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    min-height: 16px;
-    min-width: 16px;
-    padding: 4px;
-    background-color: #313744;
-    border-radius: 0; }
-    menu > arrow.top, .menu > arrow.top, .context-menu > arrow.top {
-      margin-top: -6px;
-      border-bottom: 1px solid #3f4551;
-      -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
-    menu > arrow.bottom, .menu > arrow.bottom, .context-menu > arrow.bottom {
-      margin-bottom: -6px;
-      border-top: 1px solid #3f4551;
-      -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
-    menu > arrow:hover, .menu > arrow:hover, .context-menu > arrow:hover {
-      background-color: #3f4551; }
-    menu > arrow:backdrop, .menu > arrow:backdrop, .context-menu > arrow:backdrop {
-      background-color: #323846; }
-    menu > arrow:disabled, .menu > arrow:disabled, .context-menu > arrow:disabled {
-      color: transparent;
-      background-color: transparent;
-      border-color: transparent; }
 
 menuitem accelerator {
   color: alpha(currentColor,0.55); }
