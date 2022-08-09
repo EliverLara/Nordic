@@ -82,37 +82,37 @@ menu,
   }
 
   // overflow arrows
-  > arrow {
-    @include button(undecorated);
+  // > arrow {
+  //   @include button(undecorated);
 
-    min-height: 16px;
-    min-width: 16px;
-    padding: 4px;
-    background-color: $menu_color;
-    border-radius: 0;
+  //   min-height: 16px;
+  //   min-width: 16px;
+  //   padding: 4px;
+  //   background-color: $menu_color;
+  //   border-radius: 0;
 
-    &.top {
-      margin-top: -6px;
-      border-bottom: 1px solid mix($fg_color, $base_color, 10%);
-      -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
-    }
+  //   &.top {
+  //     margin-top: -6px;
+  //     border-bottom: 1px solid mix($fg_color, $base_color, 10%);
+  //     -gtk-icon-source: -gtk-icontheme('pan-up-symbolic');
+  //   }
 
-    &.bottom {
-      margin-bottom: -6px;
-      border-top: 1px solid mix($fg_color, $base_color, 10%);
-      -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
-    }
+  //   &.bottom {
+  //     margin-bottom: -6px;
+  //     border-top: 1px solid mix($fg_color, $base_color, 10%);
+  //     -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
+  //   }
 
-    &:hover { background-color: mix($fg_color, $base_color, 10%); }
+  //   &:hover { background-color: mix($fg_color, $base_color, 10%); }
 
-    &:backdrop { background-color: $backdrop_menu_color; }
+  //   &:backdrop { background-color: $backdrop_menu_color; }
 
-    &:disabled {
-      color: transparent;
-      background-color: transparent;
-      border-color: transparent ;
-    }
-  }
+  //   &:disabled {
+  //     color: transparent;
+  //     background-color: transparent;
+  //     border-color: transparent ;
+  //   }
+  // }
 }
 
 menuitem {
