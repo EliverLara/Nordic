@@ -11,7 +11,7 @@ TextField {
     background: Rectangle {
         color: "#2e3440"
         border.color: parent.focus ? config.selected_color : "#2e3440"
-        radius: 8
+        radius: 10
         width: parent.width
         height: width / 9
         opacity: 0.85
