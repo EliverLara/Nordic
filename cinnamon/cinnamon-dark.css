@@ -1260,14 +1260,12 @@ StScrollBar {
 .workspace-button {
   width: 20px;
   height: 10px;
-  color: #2e3440;
+  color: #d8dee9;
   padding: 3px;
   padding-top: 4px;
   transition-duration: 300; }
-  .workspace-button:outlined, .workspace-button:outlined:hover {
+  .workspace-button:outlined, .workspace-button:outlined:hover, .workspace-button:hover {
     color: #8fbcbb; }
-  .workspace-button:hover {
-    color: rgba(143, 188, 187, 0.5); }
 
 /* Controls the style when using the "Visual representation" option */
 .workspace-graph {
