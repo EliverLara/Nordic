@@ -1611,13 +1611,12 @@ StScrollBar {
 .workspace-button {
   width: 20px;
   height: 10px;
-  color: $selected_fg_color;
+  color: $fg_color;
   padding: 3px;
   padding-top: 4px;
   transition-duration: 300;
 
-  &:outlined, &:outlined:hover { color: $selected_bg_color; }
-  &:hover { color: transparentize($selected_bg_color, 0.5) }
+  &:outlined, &:outlined:hover, &:hover { color: $selected_bg_color; }
 }
 
 /* Controls the style when using the "Visual representation" option */
