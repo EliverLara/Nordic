@@ -1615,8 +1615,7 @@ StScrollBar {
   padding-top: 4px;
   transition-duration: 300;
 
-  &:outlined, &:outlined:hover { color: $selected_bg_color; }
-  &:hover { color: transparentize($selected_bg_color, 0.5) }
+  &:hover, &:outlined, &:outlined:hover { color: $blue; }
 }
 
 /* Controls the style when using the "Visual representation" option */
