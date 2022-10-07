@@ -174,7 +174,7 @@ placessidebar{
 						}
           }
           &:backdrop{
-            color: $backdrop_selected_fg_color;
+            color: $backdrop_fg_color;
             .sidebar-icon {
               -gtk-icon-shadow: none;  
             }
