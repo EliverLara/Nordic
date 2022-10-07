@@ -3970,7 +3970,7 @@ placessidebar.sidebar {
       placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon {
         color: #ffffff; }
     placessidebar.sidebar row.sidebar-row:selected:backdrop {
-      color: rgba(46, 52, 64, 0.5); }
+      color: #8e95a4; }
       placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon {
         -gtk-icon-shadow: none; }
     placessidebar.sidebar row.sidebar-row:selected .sidebar-icon {
