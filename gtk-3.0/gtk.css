@@ -215,8 +215,8 @@ read if you used those and something break with a version upgrade you're on your
    Everytime a wildcard is used a kitten dies, painfully.
 */
 selection {
-  background-color: #8fbcbb;
-  color: #2e3440; }
+  background-color: #4c566a;
+  color: #d8dee9; }
 
 *:disabled {
   -gtk-icon-effect: dim; }
