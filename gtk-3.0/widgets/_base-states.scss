@@ -20,6 +20,11 @@
    Everytime a wildcard is used a kitten dies, painfully.
 */
 
+selection {
+  background-color: $selected_bg_color;
+  color: $selected_fg_color;
+}
+
 *:disabled { -gtk-icon-effect: dim; }
 
 .gtkstyle-fallback {
