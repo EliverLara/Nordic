@@ -250,7 +250,7 @@ headerbar {
     .current-dir  {
       label { padding: 3px 12px; }
 
-      label, image { @include button(active, transparentize($selected_bg_color, 0.3), #fff); }
+      label, image { @include button(active, $selected_bg_color, #fff); }
     }
 
     button.current-dir:only-child {
