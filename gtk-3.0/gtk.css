@@ -2573,7 +2573,7 @@ GraniteWidgetsWelcome {
     headerbar .path-buttons-box .current-dir image {
       color: #fff;
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: rgba(143, 188, 187, 0.7);
+      background-color: rgba(129, 161, 193, 0.7);
       text-shadow: none; }
     .titlebar .path-buttons-box button.current-dir:only-child image,
     headerbar .path-buttons-box button.current-dir:only-child image {
