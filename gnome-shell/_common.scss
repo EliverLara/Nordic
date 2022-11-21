@@ -569,7 +569,7 @@ $slider_size: 16px;
   &:active,
   &.selected,
   &:hover,
-  &:focus { background-color: lighten($bg_color, 6%) !important; color: $fg_color; }
+  &:focus { background-color: lighten($bg_color, 6%) !important; color: $fg_color !important; }
 
   &:checked { 
     background-color: transparentize($selected_bg_color, 0.5) !important;
