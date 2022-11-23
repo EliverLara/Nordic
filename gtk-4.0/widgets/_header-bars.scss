@@ -10,7 +10,7 @@ headerbar {
   border-radius: 0;
   &:backdrop {
     border-color: $backdrop_borders_color;
-   // background-image: none;
+    // background-image: none;
 
     transition: $backdrop_transition;
   }
@@ -28,17 +28,17 @@ headerbar {
 
     @extend .dim-label;
   }
- 
-  entry { min-height: 24px;}  
+
+  entry { min-height: 24px; }  
   
   button {
     @include button(normal-header);
     min-height: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     box-shadow: none;
     &.image-button{
-       padding: 3px 4px;
+        padding: 3px 4px;
     }
     &.suggested-action{
       box-shadow: none;
@@ -84,7 +84,7 @@ headerbar {
     }
 
     @each $b_type, $b_color in (suggested-action, $cyan),
-                               (destructive-action, $destructive_color) {
+                                (destructive-action, $destructive_color) {
       &.#{$b_type} {
         font-weight: bold;
         min-height: 14px;
@@ -249,13 +249,25 @@ headerbar {
   // add vertical margins to common widget on the headerbar to avoid them spanning the whole height
   entry,
   spinbutton,
-  separator {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  separator:not(.sidebar),
+  button,
+  menubutton {
+    margin-top: 3px;
+    margin-bottom: 3px;
   }
+  // Reset margins for buttons inside menubutton
+  menubutton > button,
+  spinbutton > button,
+  splitbutton > button,
+  splitbutton > menubutton,
+  entry > menubutton {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   switch {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   separator { background: transparent; }
 }
