@@ -5453,7 +5453,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   headerbar .nautilus-window #NautilusPathBar button:focus .subtitle {
     color: #fff;
     text-shadow: none;
-    background-color: rgba(143, 188, 187, 0.7); }
+    background-color: rgba(129, 161, 193, 0.7); }
   .nautilus-window #NautilusPathBar button > .horizontal > image.dim-label, .nautilus-window #NautilusPathBar .titlebar button > .horizontal > image.subtitle, .titlebar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle,
   .nautilus-window #NautilusPathBar headerbar button > .horizontal > image.subtitle,
   headerbar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle {
@@ -5470,7 +5470,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .nautilus-window #NautilusPathBar .current-dir label, .nautilus-window #NautilusPathBar .current-dir image {
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(143, 188, 187, 0.7);
+    background-color: rgba(129, 161, 193, 0.7);
     text-shadow: none; }
   .nautilus-window #NautilusPathBar button.current-dir:only-child image {
     margin-right: -6px;
