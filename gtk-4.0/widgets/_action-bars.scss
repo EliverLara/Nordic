@@ -2,7 +2,7 @@
 * Action bars *
 ***************/
 
-.action-bar {
+.action-bar, actionbar > revealer > box {
   background-color: darken($bg_color, 10%);
   border: solid $borders_color;
   border-width: 1px 0 0 0;
