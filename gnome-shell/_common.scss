@@ -111,17 +111,19 @@ StScrollBar {
 
 /* Slider */
 
-$slider_size: 16px;
+$slider_size: 19px;
 
 .slider {
   color: $fg_color;
+  height: 20px;
+  border-radius: 16px;
   // slider trough
-  -barlevel-height: 3px;
+  -barlevel-height: 19px;
   -barlevel-background-color: transparentize($fg_color, 0.6); //background of the trough
   -barlevel-border-width: 2px; 
   -barlevel-border-color: transparent; // trough border color
   // fill style
-  -barlevel-active-background-color: $selected_bg_color;
+  -barlevel-active-background-color: transparentize($selected_bg_color, 0.1);
   -barlevel-active-border-color: transparent;
   // overfill style (red in this case)
   -barlevel-overdrive-color: $destructive_color;
@@ -2208,12 +2210,10 @@ $slider_size: 16px;
   
   .quick-toggle {
     border-radius: 99px;
-    min-width: 12em;
-    max-width: 12em;
     min-height: 40px;
   
     &:checked { 
-      @include button(active, transparentize($selected_bg_color, 0.6));
+      @include button(active, transparentize($selected_bg_color, 0.4));
       color: $selected_fg_color;
     }
   

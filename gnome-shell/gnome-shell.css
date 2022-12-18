@@ -144,16 +144,18 @@ StScrollBar {
 /* Slider */
 .slider {
   color: #d8dee9;
-  -barlevel-height: 3px;
+  height: 20px;
+  border-radius: 16px;
+  -barlevel-height: 19px;
   -barlevel-background-color: rgba(216, 222, 233, 0.4);
   -barlevel-border-width: 2px;
   -barlevel-border-color: transparent;
-  -barlevel-active-background-color: #81a1c1;
+  -barlevel-active-background-color: rgba(129, 161, 193, 0.9);
   -barlevel-active-border-color: transparent;
   -barlevel-overdrive-color: #9b1b32;
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 0px;
-  -slider-handle-radius: 8px;
+  -slider-handle-radius: 9.5px;
   -slider-handle-border-width: 0;
   -slider-handle-border-color: transparent; }
 
@@ -1988,14 +1990,12 @@ StScrollBar {
 
 .quick-toggle {
   border-radius: 99px;
-  min-width: 12em;
-  max-width: 12em;
   min-height: 40px;
   /* Move padding into the box; this is to allow menu arrows
      to extend to the border */ }
   .quick-toggle:checked {
     color: #81a1c1;
-    background-color: rgba(129, 161, 193, 0.4);
+    background-color: rgba(129, 161, 193, 0.6);
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none;
