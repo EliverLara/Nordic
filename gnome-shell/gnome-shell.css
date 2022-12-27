@@ -1111,14 +1111,20 @@ StScrollBar {
   icon-size: 1.09em; }
 
 .window-close {
-  background-color: transparent;
-  background-image: url("assets/close-window.svg");
-  background-size: 32px;
-  border: none;
-  box-shadow: none;
-  color: transparent;
-  height: 32px;
-  width: 32px; }
+  background-color: #bf616a;
+  color: #d8dee9;
+  border-radius: 21px;
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #b9525c;
+  transition-duration: 300ms; }
+  .window-close StIcon {
+    icon-size: 23px; }
+  .window-close:hover {
+    background-color: #c36c74; }
+  .window-close:active {
+    background-color: #b84f59; }
 
 .window-close {
   -shell-close-overlap: 16px; }
