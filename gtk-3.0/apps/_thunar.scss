@@ -6,11 +6,6 @@
 .thunar toolbar.horizontal button image {
     -gtk-icon-transform:scale(0.72);
 }
-
-scrolledwindow.sidebar treeview.view {
-    background: darken($_sidebar_color, 2%);
-    padding: 1.5px;
-}
   
 /* path-bar of thunar */
 window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar,
@@ -46,8 +41,10 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 }
   
 /* thunar sidepane */
-window.thunar paned > scrolledwindow treeview.view {
-    &:hover,  &:selected {
+.thunar scrolledwindow.sidebar treeview.view {
+    background: darken($_sidebar_color, 2%);
+    padding: 1.5px; 
+    &:hover, &:selected {
         background: transparentize($selected_bg_color, 0.3);
         color: $selected_fg_color;
         border-radius: 0;
