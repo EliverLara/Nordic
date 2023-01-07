@@ -5844,7 +5844,7 @@ radiobutton.color-button:active > radio {
   color: rgba(216, 222, 233, 0.8);
   border-radius: 0;
   border: none;
-  background-color: rgba(46, 52, 64, 0); }
+  background-color: #2e3440; }
   #tasklist-button:hover {
     color: #f9fafb;
     background-color: rgba(0, 0, 0, 0.17); }
@@ -5853,19 +5853,19 @@ radiobutton.color-button:active > radio {
     background-color: rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 -2px #8fbcbb; }
 
-.xfce4-panel.panel button.flat {
+.xfce4-panel.panel button, .xfce4-panel.panel button.flat {
   color: #d8dee9;
   border-radius: 0;
   border: none;
-  background-color: rgba(46, 52, 64, 0); }
-  .xfce4-panel.panel button.flat:hover {
+  background-color: #2e3440; }
+  .xfce4-panel.panel button:hover {
     border: none;
     background-color: #434c5e; }
-  .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
+  .xfce4-panel.panel button:active, .xfce4-panel.panel button:checked {
     color: #2e3440;
     border: none;
     background-color: #8fbcbb; }
-    .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
+    .xfce4-panel.panel button:active label, .xfce4-panel.panel button:active image, .xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked image {
       color: inherit; }
 
 #whiskermenu-window button {
