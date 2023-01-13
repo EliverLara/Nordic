@@ -2763,7 +2763,7 @@ columnview > listview > row {
     columnview > listview > row > cell:not(:first-child) {
       border-left: 1px solid transparent; }
 columnview.column-separators > listview > row > cell {
-  border-left-color: #1f232b; }
+  border-left-color: #232831; }
 columnview.data-table > listview > row > cell {
   padding-top: 2px;
   padding-bottom: 2px; }
@@ -2777,16 +2777,16 @@ treeexpander {
  * https://gitlab.gnome.org/GNOME/gtk/-/issues/2929     *
  ********************************************************/
 columnview row:not(:selected) cell editablelabel:not(.editing):focus-within {
-  outline: 2px solid #1f232b; }
+  outline: 2px solid #232831; }
 
 columnview row:not(:selected) cell editablelabel.editing:focus-within {
-  outline: 2px solid #4c566a; }
+  outline: 2px solid #81a1c1; }
 
 columnview row:not(:selected) cell editablelabel.editing text selection {
-  background-color: rgba(76, 86, 106, 0.6);
+  background-color: rgba(129, 161, 193, 0.6);
   color: transparent; }
   columnview row:not(:selected) cell editablelabel.editing text selection:focus-within {
-    background-color: #4c566a;
+    background-color: #81a1c1;
     color: #d8dee9; }
 
 /*******************************************************
