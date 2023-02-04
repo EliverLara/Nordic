@@ -3245,7 +3245,7 @@ popover.background {
       border-style: none;
       background-color: transparent; }
     popover.background > contents separator {
-      background-color: #2d333f;
+      background-color: #3d4556;
       margin: 3px; }
     popover.background > contents list separator {
       margin: 0; }
@@ -3260,6 +3260,78 @@ popover.background {
 
 magnifier {
   background-color: #3b4252; }
+
+/**********************
+ * Popover Base Menus *
+ **********************/
+popover.menu {
+  padding: 0; }
+  popover.menu box.inline-buttons {
+    padding: 0 12px; }
+    popover.menu box.inline-buttons button.image-button.model {
+      border-color: transparent;
+      background-color: transparent;
+      background-image: none;
+      box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+      text-shadow: none;
+      -gtk-icon-shadow: none;
+      min-height: 30px;
+      min-width: 30px;
+      padding: 0;
+      border: none;
+      outline: none;
+      transition: none; }
+      popover.menu box.inline-buttons button.image-button.model:selected {
+        background: image(#3f4758); }
+  popover.menu box.circular-buttons {
+    padding: 12px 12px 6px; }
+    popover.menu box.circular-buttons button.circular.image-button.model {
+      padding: 11px; }
+      popover.menu box.circular-buttons button.circular.image-button.model:focus {
+        background-color: #3f4758;
+        border-color: #3f4758; }
+  popover.menu > arrow, popover.menu.background > contents {
+    background-color: #2e3440;
+    padding: 5px; }
+  popover.menu.background separator {
+    margin: 6px 0; }
+  popover.menu accelerator {
+    color: alpha(currentColor,0.55); }
+    popover.menu accelerator:dir(ltr) {
+      margin-left: 12px; }
+    popover.menu accelerator:dir(rtl) {
+      margin-right: 12px; }
+  popover.menu check:hover, popover.menu check:active,
+  popover.menu radio:hover,
+  popover.menu radio:active {
+    background-color: transparent; }
+  popover.menu radio {
+    border-color: #232831; }
+    popover.menu radio:active {
+      border-color: rgba(35, 40, 49, 0.5); }
+  popover.menu arrow.left,
+  popover.menu radio.left,
+  popover.menu check.left {
+    margin-left: -2px;
+    margin-right: 6px; }
+  popover.menu arrow.right,
+  popover.menu radio.right,
+  popover.menu check.right {
+    margin-left: 6px;
+    margin-right: -2px; }
+  popover.menu modelbutton {
+    min-height: 30px;
+    min-width: 40px;
+    padding: 0 12px;
+    border-radius: 5px; }
+    popover.menu modelbutton:selected {
+      color: #d8dee9;
+      background-color: #3f4758; }
+    popover.menu modelbutton:selected:active {
+      background-color: #545f76; }
+  popover.menu label.title {
+    font-weight: bold;
+    padding: 4px 32px; }
 
 /*****************
  * Progress bars *
