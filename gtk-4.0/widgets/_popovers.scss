@@ -15,6 +15,7 @@ popover.background {
     background-clip: padding-box;
     border: 1px solid $borders_color;
     box-shadow: 0 4px 6px $menu_shadow_color;
+    color: $fg_color;
   }
 
   &:backdrop {
@@ -116,6 +117,7 @@ magnifier {
    & > arrow,
    &.background > contents {
      background-color: $main_dark_color;
+     color: $fg_color;
      padding: 5px;
    }
  

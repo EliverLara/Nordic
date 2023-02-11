@@ -3219,7 +3219,8 @@ popover.background {
     background-color: #2a2f3a;
     background-clip: padding-box;
     border: 1px solid #1f232b;
-    box-shadow: 0 4px 6px #1f232b; }
+    box-shadow: 0 4px 6px #1f232b;
+    color: #d8dee9; }
   popover.background:backdrop {
     background-color: transparent;
     box-shadow: none; }
@@ -3280,6 +3281,7 @@ popover.menu {
         border-color: #373d4c; }
   popover.menu > arrow, popover.menu.background > contents {
     background-color: #2a2f3a;
+    color: #d8dee9;
     padding: 5px; }
   popover.menu.background separator {
     margin: 6px 0; }
