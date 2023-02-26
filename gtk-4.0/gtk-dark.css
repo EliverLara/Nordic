@@ -2832,7 +2832,7 @@ menu, .menu, .context-menu {
   margin: 4px;
   padding: 2px 0px;
   background: #2a2f3a;
-  border: 1px solid #1f232b;
+  border: none;
   border-radius: 5px;
   font: initial; }
   .csd menu,
