@@ -1998,7 +1998,7 @@ StScrollBar {
   border-radius: 99px;
   min-height: 40px;
   /* Move padding into the box; this is to allow menu arrows
-     to extend to the border */ }
+      to extend to the border */ }
   .quick-toggle:checked {
     color: rgba(143, 188, 187, 0.7);
     background-color: rgba(143, 188, 187, 0.4);
@@ -2053,6 +2053,13 @@ StScrollBar {
   spacing: 12px; }
 .quick-settings-system-item .icon-button {
   border-radius: 50px; }
+
+.quick-slider .icon-button:hover {
+  background-color: #3b4252;
+  color: #fefefe;
+  border: 1px solid #1f232b;
+  text-shadow: 0 1px black;
+  icon-shadow: 0 1px black; }
 
 .openweather-current-summarybox,
 .openweather-forecast-icon,
