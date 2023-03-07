@@ -2288,3 +2288,5 @@ $slider_size: 19px;
 
     }
   }
+
+  .quick-slider .icon-button:hover { @include button(hover); }
