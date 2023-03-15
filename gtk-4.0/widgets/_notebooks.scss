@@ -296,4 +296,29 @@
   }
 }
 
-tabbox { background-color: darken($base_color, 5%); }
+tabbar {
+  &:backdrop .box {
+    > scrolledwindow,
+    > .start-action,
+    > .end-action {
+      filter: opacity(1);
+    }
+  }
+  tabbox {
+    background-color: darken($base_color, 5%);
+    padding: 0px;
+    color: darken($fg_color, 15%);
+    > tabboxchild {
+      margin: 0 -3px;
+      border-radius: 0;
+    }
+    > tab,
+    > tabboxchild > tab {
+      border-radius: 0;
+      &:checked, &:selected { 
+        background-color: $base_color; 
+        color: lighten($fg_color, 15%);
+      }
+    }
+  }
+}
