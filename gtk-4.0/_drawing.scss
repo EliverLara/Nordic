@@ -249,7 +249,7 @@
   text-shadow: none;
   box-shadow: none;
   border: 1px solid $borders_color;
-  background-color: $main_dark_color;       
+  background-color: lighten($headerbar_color, 4%);       
 }
 
   @else if $t==hover-header {
