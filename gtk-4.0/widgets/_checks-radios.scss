@@ -36,6 +36,7 @@
   radio#{$s}{
     -gtk-icon-source: if($variant == 'light', -gtk-scaled(url("../assets/radio#{$ch}.png"),url("../assets/radio#{$ch}@2.png")), -gtk-scaled(url("../assets/radio#{$ch}-dark.png"),url("../assets/radio#{$ch}@2.png")));
     -gtk-icon-shadow: none;
+    background: none;
   }
 }
 
