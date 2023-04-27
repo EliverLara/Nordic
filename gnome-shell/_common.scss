@@ -2222,57 +2222,78 @@ $slider_size: 19px;
   }
 
 
-  .quick-settings {
-    padding: 14px;
-    border-radius: 12px;
-  
-    .icon-button, .button {
-      padding: 6px*1.75;
-    }
+.quick-settings {
+  padding: 14px;
+  border-radius: 12px;
+
+  .icon-button, .button {
+    padding: 6px*1.75;
   }
-  
-  $base_padding: 6px;
-  
-  .quick-toggle {
-    border-radius: 99px;
-    min-height: 40px;
-  
+}
+
+$base_padding: 6px;
+
+.quick-toggle {
+  border-radius: 99px;
+
+  &:checked { 
+    @include button(active, transparentize($selected_bg_color, 0.4));
+    color: $selected_fg_color;
+  }
+
+  &, &:hover, &:checked { border: none; }
+
+  & > StBoxLayout { spacing: $base_padding; }
+
+  /* Move padding into the box; this is to allow menu arrows
+      to extend to the border */
+  &.button { padding: 0; }
+  & > StBoxLayout { padding: 0 6px*2; }
+  &:ltr > StBoxLayout { padding-left: $base_padding*2.5; }
+  &:rtl > StBoxLayout { padding-right: $base_padding*2.5; }
+
+  .quick-toggle-label { font-weight: bold; }
+  //.quick-toggle-icon, .quick-toggle-arrow { icon-size: $base_icon_size; }
+}
+
+.quick-menu-toggle {
+  &:ltr > StBoxLayout { padding-right: 0; }
+  &:rtl > StBoxLayout { padding-left: 0; }
+
+  & .quick-toggle {
+    min-width: auto;
+    max-width: auto;
+
+    &:ltr { border-radius: 99px 0 0 99px; }
+    &:rtl { border-radius: 0 99px 99px 0; }
+
+    &:ltr:last-child { border-radius: 99px; }
+    &:rtl:last-child { border-radius: 99px; }
+  }
+
+
+  & .quick-toggle-arrow {
+    background-color: lighten($base_color, 1%);
+    padding: $base_padding $base_padding*1.75;
+    border-width: 0;
     &:checked { 
-      @include button(active, transparentize($selected_bg_color, 0.3));
+      @include button(active, transparentize($selected_bg_color, 0.1));
       color: $selected_fg_color;
+      border-width: 0;
     }
   
-    & > StBoxLayout { spacing: $base_padding; }
-  
-    /* Move padding into the box; this is to allow menu arrows
-       to extend to the border */
-    &.button { padding: 0; }
-    & > StBoxLayout { padding: 0 6px*2; }
-    &:ltr > StBoxLayout { padding-left: $base_padding*2.5; }
-    &:rtl > StBoxLayout { padding-right: $base_padding*2.5; }
-  
-    .quick-toggle-label { font-weight: bold; }
-    //.quick-toggle-icon, .quick-toggle-arrow { icon-size: $base_icon_size; }
+
+    &:ltr { border-radius: 0 99px 99px 0; }
+    &:rtl { border-radius: 99px 0 0 99px; }
   }
-  
-  .quick-menu-toggle {
-    &:ltr > StBoxLayout { padding-right: 0; }
-    &:rtl > StBoxLayout { padding-left: 0; }
-  
-    & .quick-toggle-arrow {
-      background-color: transparentize($fg_color, 0.9);
-      padding: $base_padding $base_padding*1.75;
-  
-      &:ltr { border-radius: 0 99px 99px 0; }
-      &:rtl { border-radius: 99px 0 0 99px; }
-    }
-  }
-  
+}
+    
   .quick-toggle-menu {
     background-color: $base_color;
     border-radius: 12px;
     padding: $base_padding*2;
     margin: $base_padding*2 $base_padding*3 0;
+    color: $fg_color;
   
     .popup-menu-item > StIcon { -st-icon-style: symbolic; }
   
