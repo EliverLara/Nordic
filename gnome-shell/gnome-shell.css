@@ -2014,16 +2014,17 @@ StScrollBar {
 
 .quick-toggle {
   border-radius: 99px;
-  min-height: 40px;
   /* Move padding into the box; this is to allow menu arrows
-     to extend to the border */ }
+      to extend to the border */ }
   .quick-toggle:checked {
     color: #5E6A82;
-    background-color: rgba(94, 106, 130, 0.7);
+    background-color: rgba(94, 106, 130, 0.6);
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none;
     color: #d8dee9; }
+  .quick-toggle, .quick-toggle:hover, .quick-toggle:checked {
+    border: none; }
   .quick-toggle > StBoxLayout {
     spacing: 6px; }
   .quick-toggle.button {
@@ -2041,9 +2042,29 @@ StScrollBar {
   padding-right: 0; }
 .quick-menu-toggle:rtl > StBoxLayout {
   padding-left: 0; }
+.quick-menu-toggle .quick-toggle {
+  min-width: auto;
+  max-width: auto; }
+  .quick-menu-toggle .quick-toggle:ltr {
+    border-radius: 99px 0 0 99px; }
+  .quick-menu-toggle .quick-toggle:rtl {
+    border-radius: 0 99px 99px 0; }
+  .quick-menu-toggle .quick-toggle:ltr:last-child {
+    border-radius: 99px; }
+  .quick-menu-toggle .quick-toggle:rtl:last-child {
+    border-radius: 99px; }
 .quick-menu-toggle .quick-toggle-arrow {
-  background-color: rgba(216, 222, 233, 0.1);
-  padding: 6px 10.5px; }
+  background-color: #303643;
+  padding: 6px 10.5px;
+  border-width: 0; }
+  .quick-menu-toggle .quick-toggle-arrow:checked {
+    color: #5E6A82;
+    background-color: rgba(94, 106, 130, 0.9);
+    border: 1px solid #1f232b;
+    text-shadow: none;
+    icon-shadow: none;
+    color: #d8dee9;
+    border-width: 0; }
   .quick-menu-toggle .quick-toggle-arrow:ltr {
     border-radius: 0 99px 99px 0; }
   .quick-menu-toggle .quick-toggle-arrow:rtl {
@@ -2053,7 +2074,8 @@ StScrollBar {
   background-color: #2e3440;
   border-radius: 12px;
   padding: 12px;
-  margin: 12px 18px 0; }
+  margin: 12px 18px 0;
+  color: #d8dee9; }
   .quick-toggle-menu .popup-menu-item > StIcon {
     -st-icon-style: symbolic; }
   .quick-toggle-menu .header {
