@@ -564,6 +564,7 @@ $slider_size: 19px;
   spacing: 6px;
   border-radius: 6px;
   background-gradient-direction: none;
+  color: $fg_color;
 
   &:ltr {padding-left: 6px;}
   &:rtl {padding-right: 6px;}
@@ -2293,7 +2294,7 @@ $base_padding: 6px;
 }
 
 .quick-toggle-menu {
-  background-color: $base_color;
+  background-color: $base_color !important;
   border-radius: 12px;
   padding: $base_padding*2;
   margin: $base_padding*2 $base_padding*3 0;
