@@ -19,7 +19,7 @@
 
 %scale_highlight {
   border: none;
-  background-color: $selected_bg_color;
+  background-color: lighten($selected_bg_color, 13%);
   border-radius: 3px;
   margin: 0;
 
@@ -73,7 +73,7 @@ scale {
     transition-property: background, border, box-shadow;
 
     &:active {
-      background-color: $selected_bg_color;
+      background-color: lighten($selected_bg_color, 13%);
 
       &:disabled {
         background-color: $insensitive_bg_color;
