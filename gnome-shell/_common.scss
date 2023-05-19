@@ -1709,17 +1709,17 @@ $slider_size: 19px;
   }
 
 .page-navigation-arrow {
-  &  > StIcon {
-    margin: 6px;
-    padding: 18px;
-    width: 24px;
-    height: 24px;
-    border-radius: 99px;
-  }
 
-  &:insensitive > StIcon { @include button(undecorated, $osd_fg_color, transparentize($osd_bg_color, 0.5));}
-  &:hover > StIcon { background-color: transparentize($selected_bg_color, 0.5);}
-  &:active > StIcon {background-color: $selected_bg_color;}
+  margin: 6px;
+  padding: 18px;
+  width: 24px;
+  height: 24px;
+  border-radius: 99px;
+  
+
+  &:insensitive { @include button(undecorated, $osd_fg_color, transparentize($osd_bg_color, 0.5));}
+  &:hover { background-color: transparentize($selected_bg_color, 0.5);}
+  &:active {background-color: $selected_bg_color;}
 }
 
 %overview-panel {
