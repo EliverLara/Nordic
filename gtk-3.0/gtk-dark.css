@@ -2703,9 +2703,9 @@ infobar {
       box-shadow: none; }
 
 .info {
-  background-color: #8fbcbb; }
+  background-color: #81a1c1; }
   .info:backdrop {
-    background-color: #afcfce;
+    background-color: #81A1C1;
     color: rgba(254, 254, 254, 0.5); }
 
 .warning {
@@ -3936,7 +3936,7 @@ treeview ~ scrollbar.vertical {
     padding: 8px 12px;
     transition: all .12s ease-in; }
     .sidebar row label {
-      color: #98abb2; }
+      color: #d8dee9; }
     .sidebar row:selected {
       color: #fefefe; }
       .sidebar row:selected:backdrop {
@@ -3988,7 +3988,7 @@ placessidebar.sidebar {
     margin-right: 12px;
     padding-left: 14px;
     padding-right: 12px;
-    color: #98abb2; }
+    color: #d8dee9; }
     placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon:dir(rtl) {
       margin-right: -14px;
       margin-left: 12px;
@@ -6209,7 +6209,7 @@ ConversationListView {
 .nemo-window .sidebar {
   background-color: #2e3440; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
-    color: #98abb2;
+    color: #d8dee9;
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
   background-clip: padding-box;
