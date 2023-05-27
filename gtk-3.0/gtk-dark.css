@@ -5835,10 +5835,12 @@ radiobutton.color-button:active > radio {
   background-repeat: no-repeat;
   background-size: calc(100% + 2px); }
 
-.xfce4-panel.panel {
-  background-color: #2e3440;
-  text-shadow: none;
-  -gtk-icon-shadow: none; }
+.xfce4-panel {
+  border-radius: 0; }
+  .xfce4-panel.panel {
+    background-color: #2e3440;
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
 
 #tasklist-button {
   color: rgba(216, 222, 233, 0.8);
