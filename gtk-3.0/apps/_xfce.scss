@@ -1,10 +1,16 @@
-.xfce4-panel.panel {
+.xfce4-panel {
+
+  border-radius: 0;
+
+  &.panel{
     background-color: $panel_bg_color;
     text-shadow: none;
     -gtk-icon-shadow: none;
 
     button, button.flat { @extend %panelbutton; }
   }
+
+}
 
   #tasklist-button {
     color: transparentize($panel_fg_color, 0.2);
