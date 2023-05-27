@@ -2620,7 +2620,7 @@ infobar {
       box-shadow: none; }
 
 .info, .info:backdrop {
-  color: #8fbcbb;
+  color: #81a1c1;
   background-color: transparent; }
 
 .warning, .warning:backdrop {
@@ -4042,7 +4042,7 @@ treeview ~ scrollbar.vertical {
     padding: 8px 12px;
     transition: all .12s ease-in; }
     .sidebar row label {
-      color: #98abb2; }
+      color: #d8dee9; }
     .sidebar row:selected {
       color: #fefefe; }
       .sidebar row:selected:backdrop {
@@ -4095,7 +4095,7 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
       margin-right: 12px;
       padding-left: 14px;
       padding-right: 12px;
-      color: #98abb2; }
+      color: #d8dee9; }
   placessidebar.sidebar row.sidebar-row:hover, .nautilus-window .navigation-sidebar row.sidebar-row:hover {
     background: rgba(0, 0, 0, 0.12);
     color: inherit; }
@@ -4664,7 +4664,7 @@ windowcontrols button.close, windowcontrols button.maximize, windowcontrols butt
 windowcontrols button.close:hover, windowcontrols button.close:active {
   color: #bf616a; }
 windowcontrols button.maximize:hover, windowcontrols button.maximize:active {
-  color: #8fbcbb; }
+  color: #81a1c1; }
 windowcontrols button.minimize:hover, windowcontrols button.minimize:active {
   color: #ebcb8b; }
 
@@ -6352,7 +6352,7 @@ ConversationListView .view .cell, ConversationListView iconview .cell {
 .nemo-window .sidebar {
   background-color: #2e3440; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
-    color: #98abb2;
+    color: #d8dee9;
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
   background-clip: padding-box;
