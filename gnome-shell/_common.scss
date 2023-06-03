@@ -540,7 +540,8 @@ $slider_size: 19px;
   .popup-menu-item {
     border-radius: 0;
     margin: 0;
-
+    background-color: lighten($bg_color, 4%);
+    
     &:last-child {
       border-radius: 0 0 6px 6px;
     }
@@ -564,7 +565,7 @@ $slider_size: 19px;
   spacing: 6px;
   border-radius: 6px;
   background-gradient-direction: none;
-  color: $fg_color;
+  color: $fg_color !important;
 
   &:ltr {padding-left: 6px;}
   &:rtl {padding-right: 6px;}
