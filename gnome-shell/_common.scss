@@ -1601,17 +1601,20 @@ $slider_size: 19px;
   transition-duration: 100ms;
   text-align: center;
   box-shadow: none;
+  border-radius: 18px;
 }
 
 /* App Folders */
 .app-well-app.app-folder {
   background-color: lighten($bg_color, 7%);
-  border-radius: 12px;
+  border-radius: 18px;
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
   background-color:  darken($osd_bg_color,5%);
   border: none;
+  box-shadow: none;
+  border-radius: 30px;
   .edit-folder-button {
     @extend %button;
 
