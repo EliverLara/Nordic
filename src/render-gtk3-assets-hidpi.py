@@ -49,9 +49,8 @@ def inkscape_render_rect(icon_file, rect, output_file):
     if inkscape_process is None:
         inkscape_process = start_inkscape()
     wait_for_prompt(inkscape_process,
-                    'export-dpi:180; file-open:%s; export-id:%s; export-filename:%s; export-do'
-                    % (icon_file, rect, output_file)
-                    )
+                    'file-open:%s; export-id:%s; export-filename:%s; export-dpi:180; export-do' %
+                    (icon_file, rect, output_file))
     optimize_png(output_file)
 
 
