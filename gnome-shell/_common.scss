@@ -119,7 +119,7 @@ $slider_size: 19px;
   border-radius: 16px;
   // slider trough
   -barlevel-height: 19px;
-  -barlevel-background-color: transparentize($fg_color, 0.6); //background of the trough
+  -barlevel-background-color: lighten($base_color, 8%); //background of the trough
   -barlevel-border-width: 2px; 
   -barlevel-border-color: transparent; // trough border color
   // fill style
