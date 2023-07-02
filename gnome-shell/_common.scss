@@ -1586,11 +1586,11 @@ $slider_size: 19px;
 }
 
 .app-well-app-running-dot { //running apps indicator
-  width: 4px; height: 4px;
+  width: 5px; height: 5px;
   background-color: $selected_bg_color;
-  border-radius: 10px !important;
+  border-radius: 5px !important;
   box-shadow: 0px 0px 5px 4px transparentize($selected_bg_color,0.2);
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 
 %icon_tile {
