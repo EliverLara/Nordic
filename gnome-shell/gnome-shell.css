@@ -1362,12 +1362,12 @@ StScrollBar {
     color: #d8dee9; }
 
 .app-well-app-running-dot {
-  width: 4px;
-  height: 4px;
-  background-color: #5E6A82;
-  border-radius: 10px !important;
+  width: 5px;
+  height: 5px;
+  background-color: #81a1c1;
+  border-radius: 5px !important;
   box-shadow: 0px 0px 5px 4px rgba(94, 106, 130, 0.8);
-  margin-bottom: 0px; }
+  margin-bottom: 8px; }
 
 .app-well-app .overview-icon,
 .app-well-app.app-folder .overview-icon,
