@@ -1033,7 +1033,7 @@ StScrollBar {
   padding-left: 8px;
   padding-right: 8px;
   transition-duration: 100;
-  color: rgba(46, 52, 64, 0.6); }
+  color: rgba(186, 195, 207, 0.8); }
   .window-list-item-box.top, .window-list-item-box.bottom {
     border-bottom-width: 2px; }
     .window-list-item-box.top StLabel, .window-list-item-box.bottom StLabel {
@@ -1052,10 +1052,11 @@ StScrollBar {
       padding-left: 1px; }
   .window-list-item-box:hover, .window-list-item-box:groupFocus {
     color: #d8dee9;
-    background-color: rgba(46, 52, 64, 0.1); }
+    background-color: rgba(186, 195, 207, 0.1); }
   .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
     color: #d8dee9;
-    border-color: #8fbcbb; }
+    border-color: #8fbcbb;
+    background-color: rgba(186, 195, 207, 0.1); }
   .window-list-item-box .progress {
     background-color: rgba(143, 188, 187, 0.8); }
 .window-list-item-demands-attention {
@@ -1293,30 +1294,25 @@ StScrollBar {
   -inactive-window-background: #39404f;
   -inactive-window-border: rgba(0, 0, 0, 0.8); }
 
-#panel-launchers-box {
-  padding-left: 7px; }
-  #panel-launchers-box.vertical {
-    padding: 2px 0; }
-
-.panel-launcher,
-.launcher {
-  margin: 1px;
-  padding: 1px;
-  transition-duration: 200; }
-  .panel-launcher:hover, .launcher:hover {
-    background-gradient-direction: none;
-    border: 0px solid #8fbcbb; }
-    .panel-bottom .panel-launcher:hover,
-    .panel-bottom .launcher:hover {
-      border-bottom-width: 1px; }
-    .panel-top .panel-launcher:hover, .panel-top .launcher:hover {
-      border-top-width: 1px; }
-    .panel-left .panel-launcher:hover, .panel-left .launcher:hover {
-      border-left-width: 1px;
-      padding-left: 0; }
-    .panel-right .panel-launcher:hover, .panel-right .launcher:hover {
-      border-right-width: 1px;
-      padding-right: 0; }
+.panel-launchers {
+  padding-left: 7px;
+  spacing: 2px; }
+  .panel-launchers .launcher {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    transition-duration: 200; }
+    .panel-launchers .launcher:hover {
+      background-color: rgba(186, 195, 207, 0.1); }
+  .panel-launchers.vertical {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    spacing: 1px; }
+    .panel-launchers.vertical .launcher {
+      padding-top: 2px;
+      padding-bottom: 2px; }
 
 #overview-corner {
   background-image: url("common-assets/misc/overview.png"); }
