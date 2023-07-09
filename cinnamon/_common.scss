@@ -1308,7 +1308,7 @@ StScrollBar {
     &:hover,
     &:groupFocus {
       color: $fg_color;
-      background-color: transparentize($selected_fg_color, 0.9);
+      background-color: transparentize($panel_fg, 0.9);
     }
 
     &:active,
@@ -1316,7 +1316,8 @@ StScrollBar {
     &:focus,
     &:running {
       color: $fg_color;
-      border-color: $selected_bg_color;
+      border-color: lighten($selected_bg_color, 30%);
+      background-color: transparentize($panel_fg, 0.9);
     }
 
     & .progress {
@@ -1652,31 +1653,32 @@ StScrollBar {
 //
 // Panel Launchers Applet (panelLaunchers.js)
 //
-#panel-launchers-box {
+.panel-launchers {
   padding-left: 7px;
+  spacing: 2px;
+
+  & .launcher {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    // border-bottom-width: 1px;
+    transition-duration: 200;
+    &:hover { background-color: transparentize($panel_fg, 0.9); }
+  }
 
   &.vertical {
-    padding: 2px 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left:0px;
+    padding-right: 0px;
+    spacing: 1px;
+
+    & .launcher {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
   }
 }
-
-.panel-launcher,
-.launcher {
-  margin: 1px;
-  padding: 1px;
-  transition-duration: 200;
-
-  &:hover {
-    background-gradient-direction: none;
-    border: 0px solid $selected_bg_color;
-
-    .panel-bottom & { border-bottom-width: 1px; }
-    .panel-top & { border-top-width: 1px; }
-    .panel-left & { border-left-width: 1px; padding-left: 0; }
-    .panel-right & { border-right-width: 1px; padding-right: 0; }
-  }
-}
-
 //
 // Overview corner
 //
