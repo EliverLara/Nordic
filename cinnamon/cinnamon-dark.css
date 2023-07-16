@@ -536,9 +536,125 @@ StScrollBar {
   color: #888; }
 
 .calendar {
-  padding: .4em 1.75em;
-  spacing-rows: 0px;
-  spacing-columns: 0px; }
+  spacing-rows: 0;
+  spacing-columns: 0; }
+
+.calendar-main-box {
+  margin: 0 .8em .5em .8em; }
+
+.calendar-events-main-box {
+  height: 300px;
+  margin-right: .5em;
+  padding: .5em;
+  min-width: 350px;
+  border: 1px solid #1f232b;
+  background-color: #3b4252; }
+
+.calendar-events-no-events-button {
+  margin: 6px 0 6px 0;
+  padding: 6px; }
+  .calendar-events-no-events-button:hover {
+    background-color: #8fbcbb; }
+    .calendar-events-no-events-button:hover .calendar-events-no-events-icon,
+    .calendar-events-no-events-button:hover .calendar-events-no-events-label {
+      color: #2e3440; }
+
+.calendar-events-no-events-icon,
+.calendar-events-no-events-label {
+  font-weight: bold;
+  color: #d8dee9;
+  text-align: center; }
+
+.calendar-events-date-label {
+  padding: .1em .1em .5em .1em;
+  color: #d8dee9;
+  font-weight: bold;
+  text-align: center; }
+
+.calendar-events-event-container {
+  padding: 0; }
+
+.calendar-event-button {
+  border: 1px solid rgba(0, 0, 0, 0); }
+  .calendar-event-button .calendar-event-time-past {
+    color: rgba(216, 222, 233, 0.4);
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .2em; }
+  .calendar-event-button .calendar-event-time-present {
+    color: #d8dee9;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .2em; }
+    .calendar-event-button .calendar-event-time-present:all-day {
+      color: #8fbcbb; }
+  .calendar-event-button .calendar-event-time-future {
+    color: #d8dee9;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: .2em; }
+  .calendar-event-button .calendar-event-summary {
+    color: #d8dee9;
+    text-align: left;
+    width: 200px; }
+  .calendar-event-button .calendar-event-countdown {
+    text-align: right;
+    margin-bottom: .6em;
+    color: #d8dee9; }
+    .calendar-event-button .calendar-event-countdown:soon {
+      font-weight: bold; }
+    .calendar-event-button .calendar-event-countdown:imminent {
+      font-weight: bold;
+      color: #F27835; }
+    .calendar-event-button .calendar-event-countdown:current {
+      font-weight: bold;
+      color: #8fbcbb; }
+  .calendar-event-button:hover {
+    background-color: #8fbcbb;
+    border: 1px solid #1f232b; }
+    .calendar-event-button:hover .calendar-event-time-past,
+    .calendar-event-button:hover .calendar-event-time-present,
+    .calendar-event-button:hover .calendar-event-time-future,
+    .calendar-event-button:hover .calendar-event-summary {
+      color: #2e3440; }
+    .calendar-event-button:hover .calendar-event-countdown {
+      text-align: right;
+      margin-bottom: .6em;
+      color: #2e3440; }
+      .calendar-event-button:hover .calendar-event-countdown:soon {
+        font-weight: bold; }
+      .calendar-event-button:hover .calendar-event-countdown:imminent {
+        font-weight: bold; }
+      .calendar-event-button:hover .calendar-event-countdown:current {
+        font-weight: bold; }
+
+.calendar-event-color-strip {
+  width: 2px; }
+
+.calendar-today-home-button {
+  padding: 6px; }
+
+.calendar-today-day-label {
+  font-size: 1.75em;
+  color: #d8dee9;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: .1em; }
+
+.calendar-today-date-label {
+  font-size: 1.1em;
+  color: #d8dee9;
+  font-weight: bold;
+  text-align: center; }
+
+.calendar-today-home-button-enabled {
+  padding: 6px; }
+  .calendar-today-home-button-enabled:hover {
+    background-color: #8fbcbb; }
+    .calendar-today-home-button-enabled:hover .calendar-today-day-label {
+      color: #2e3440; }
+    .calendar-today-home-button-enabled:hover .calendar-today-date-label {
+      color: #2e3440; }
 
 .calendar-month-label {
   color: #d8dee9;
@@ -576,30 +692,35 @@ StScrollBar {
     .calendar-change-month-forward:rtl:active {
       background-image: url("common-assets/misc/calendar-arrow-left.svg"); }
 
-.datemenu-date-label {
-  padding: .4em 1.75em;
-  font-weight: bold;
-  text-align: center;
-  color: #d8dee9;
-  border-radius: 2px; }
+.calendar-day-event-dot-box {
+  margin-top: 1.7em;
+  max-rows: 1; }
+
+.calendar-day-event-dot {
+  margin: 1px;
+  border-radius: 2px;
+  width: 4px;
+  height: 4px; }
 
 .calendar-day-base {
-  font-size: 80%;
+  font-size: 1em;
   text-align: center;
-  width: 25px;
-  height: 25px;
-  padding: 0.1em;
-  margin: 2px;
-  border-radius: 12.5px; }
+  width: 2.2em;
+  height: 2.2em;
+  padding: 0.1em; }
+  .calendar-day-base:hover {
+    font-weight: bold;
+    color: #2e3440;
+    background-color: #8fbcbb; }
 
 .calendar-day-heading {
   color: rgba(216, 222, 233, 0.85);
   margin-top: 1em;
-  font-size: 70%; }
+  font-size: 1.05em; }
 
 .calendar-day {
   border-width: 0;
-  color: rgba(216, 222, 233, 0.8); }
+  color: rgba(216, 222, 233, 0.9); }
 
 .calendar-day-top {
   border-top-width: 0; }
@@ -612,22 +733,34 @@ StScrollBar {
   background-color: transparent;
   font-weight: bold; }
 
-.calendar-today,
-.calendar-today:active,
-.calendar-today:focus,
-.calendar-today:hover {
-  font-weight: bold;
-  color: #2e3440;
-  background-color: #8fbcbb;
+.calendar-today {
+  color: #d8dee9;
+  background-color: rgba(143, 188, 187, 0.4);
   border-width: 0; }
+  .calendar-today:selected {
+    font-weight: bold; }
+
+.calendar-not-today {
+  color: #d8dee9; }
+  .calendar-not-today:selected {
+    font-weight: bold;
+    background-color: rgba(216, 222, 233, 0.4); }
+    .calendar-not-today:selected:hover {
+      font-weight: bold;
+      color: #d8dee9; }
 
 .calendar-other-month-day {
   color: rgba(216, 222, 233, 0.3);
   opacity: 1; }
 
+.calendar-other-month-day:hover {
+  color: #2e3440;
+  opacity: 1; }
+
 .calendar-week-number {
-  color: rgba(216, 222, 233, 0.7);
-  font-size: 80%; }
+  color: rgba(216, 222, 233, 0.85);
+  font-size: 0.8em;
+  margin-top: 0.8em; }
 
 #notification {
   border-radius: 3px;
