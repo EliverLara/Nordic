@@ -89,7 +89,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
       background: transparent;
         // @include button(normal-header);
         &:hover {
-          color: $selected_bg_color;
+          @include button(hover-header, $selected_bg_color, $selected_fg_color);
         }
     }
 }
@@ -133,7 +133,7 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
         border-radius: 2px 0 0 2px;
 
         &:hover {
-          background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.85));
+          background-color: transparent;
           color: $fg_color;
         }
         &:active { box-shadow: inset 0 2px 2px -2px transparentize(black, 0.8); }
