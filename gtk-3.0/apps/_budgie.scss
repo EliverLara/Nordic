@@ -8,11 +8,11 @@ $entry_border: transparent;
 $mpris_overlay_fg: $fg_color;
 $mpris_overlay_bg: transparentize(if($variant=='light',$base_color, darken($bg_color, 10%)), 0.1);
 $mpris_overlay_border: $top_highlight;
-$panel_bg: transparentize( darken($headerbar_color,10%),0.05);
+$panel_bg: darken($nord0, 8%);
 $panel_color: $headerbar_fg_color;
 $panel_border: transparentize(darken($headerbar_color, 7%), 0.08);
 $panel_shadow: transparentize(black, 0.7);
-$raven_bg: transparentize($headerbar_color, 0.08);
+$raven_bg: darken($nord0, 2%);
 $raven_expander_border: transparentize($borders_color, 0.05);
 $raven_border: transparentize($borders_color, 0.08);
 $raven_expander_bg: transparentize(lighten($panel_bg, 15%), 0.5);
@@ -27,7 +27,7 @@ inset 0px 1px 0px 0px $top_highlight;
     @return unquote("alpha(#{$c},#{$a})");
 }
 
-$roundness: 2px;
+$roundness: 8px;
 $border_width: 1px;
 $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
 
@@ -68,9 +68,9 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
 
 .budgie-popover,
 .budgie-popover.background {
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 0;
-    background: $panel_bg;
+    background: darken($nord0, 2%);
     background-clip: border-box;
     box-shadow: 0 2px 3px 1px transparentize(black, 0.65);
     border: 1px solid $borders_color;
@@ -133,13 +133,13 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
         border-radius: 2px 0 0 2px;
 
         &:hover {
-          background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.95));
+          background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.85));
           color: $fg_color;
         }
         &:active { box-shadow: inset 0 2px 2px -2px transparentize(black, 0.8); }
         &:checked {
           color: $selected_fg_color;
-          background: $suggested_bg_color;
+          background: $selected_bg_color;
           &:hover { 
             color: transparentize($selected_fg_color, 0.4);
           }
@@ -162,7 +162,10 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
       padding-bottom: 5px;
       border-radius: 0;
       box-shadow: none;
-      background:yellow;    
+      background:transparent;
+      &:hover {
+        @include button(hover-header, $selected_bg_color, #fff);
+      }
     }
     button{
         border: none;
@@ -525,74 +528,9 @@ button.raven-trigger {
 // Raven
 .raven {
     padding: 0;
-    color: $red;
-    background: $panel_bg;
+    color: $panel_color;
+    background: $raven_bg;
     transition: 170ms ease-out;
-
-    .raven-header {
-        * {
-          padding-top: 0;
-          padding-bottom: 0;
-        }
-
-        min-height: 32px;
-        color: $panel_color;
-        border: solid $raven_expander_border;
-        border-width: 1px 0;
-        background-color: $raven_expander_bg;
-
-        &.top {
-          border-top-style: none;
-          border-color: transparent;
-          margin-top: 3px;
-          min-height: 32px;
-          button.image-button {
-            &:hover {
-              color: darken($selected_bg_color,5%);
-              box-shadow: none;
-            }
-          }
-        }
-
-        > button.text-button {
-          border-radius: 2px;
-          color: $selected_fg_color;
-          background-color: transparentize(darken($red,5%), 0.1);
-          @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
-          &:hover {
-            border-radius: 2px;
-            color: $selected_fg_color;
-            background-color: transparentize($red, 0.1);
-            @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
-          }
-          &:active {
-            color: $selected_fg_color;
-            background-color: transparentize(lighten($red,5%), 0.1);
-            @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
-          }
-        }
-
-        &.bottom { border-bottom-style: none; }
-        button {
-            @include button(normal-header);
-            border-radius: 0;
-
-          &:hover {
-            @include button(hover-header);
-            border-radius: 0;
-          }
-          
-          &:active,
-          &:checked {
-            color: $selected_bg_color;
-            background-color: darken($main_dark_color, 2%);
-          }
-
-          &:disabled {
-            color: $insensitive_fg_color;
-          }
-        }
-    }
 
     list {
       color: $panel_color;
@@ -670,7 +608,7 @@ button.raven-trigger {
 
 // Calendar
 calendar.raven-calendar {
-  padding: 6px;
+  padding: 4px;
   color: $panel_color;
   background: transparent;
   border-color: transparent;
@@ -678,8 +616,8 @@ calendar.raven-calendar {
   &:indeterminate { color: gtkalpha(currentColor,0.3); }
 
   &:selected {
-    background: transparent;
-    color: darken($selected_bg_color, 4%);
+    background: transparentize($selected_bg_color, 0.4);
+    color:$panel_color;
     font-weight: bold;
   }
 
