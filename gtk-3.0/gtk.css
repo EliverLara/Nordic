@@ -4910,8 +4910,8 @@ button.raven-trigger {
       background: transparent;
       border: none; }
       .budgie-panel button.flat:hover, .budgie-panel button.flat:active, .budgie-panel button.flat:checked {
-        background: transparent;
-        color: #8fbcbb; }
+        background: rgba(143, 188, 187, 0.7);
+        color: #e8ecf2; }
   .budgie-panel popover list,
   .budgie-panel popover row {
     padding: 0;
@@ -4920,7 +4920,7 @@ button.raven-trigger {
     color: #d8dee9;
     font-weight: 700; }
   .budgie-panel.transparent {
-    background-color: rgba(29, 33, 40, 0.25); }
+    background-color: rgba(29, 33, 40, 0.85); }
     .top .budgie-panel.transparent {
       border-bottom-color: transparent; }
     .bottom .budgie-panel.transparent {
