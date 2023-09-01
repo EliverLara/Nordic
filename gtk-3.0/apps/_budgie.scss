@@ -391,8 +391,8 @@ button.raven-trigger {
           background: transparent;
           border: none;
           &:hover, &:active, &:checked {
-            background: transparent;
-            color: $selected_bg_color;
+            background: transparentize($selected_bg_color, 0.3);
+            color: lighten($fg_color, 5%);
           }
       }
     }
@@ -409,7 +409,7 @@ button.raven-trigger {
     }
 
     &.transparent {
-        background-color: transparentize($panel_bg, 0.75);
+        background-color: transparentize($panel_bg, 0.15);
 
         .top & {
             border-bottom-color: transparent;
