@@ -1145,13 +1145,13 @@ $slider_size: 19px;
 
         .message {
           &:hover,&:focus { 
-            background-color: lighten($bg_color, 3%);
+            background-color: lighten($bg_color, 4%);
             box-shadow: 3px 0px 0px 0px $selected_bg_color inset;
             border-radius: 1px 7px 7px 1px;
            }
-          border: 1px solid $borders_color;
+          border: none;
           border-radius: 7px;
-          background: lighten($bg_color, 1%);
+          background: lighten($bg_color, 2%);
           box-shadow: none;
         }
 
@@ -1186,7 +1186,7 @@ $slider_size: 19px;
             border-radius: 99px;
 
             &:hover {
-              background-color: transparentize($red, 0.7);
+              background-color: transparentize($red, 0.1);
                > StIcon { color: $selected_fg_color; }
             }
             &:active {

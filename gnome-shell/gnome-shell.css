@@ -978,12 +978,12 @@ StScrollBar {
   background: transparent; }
 
 .message {
-  border: 1px solid #1f232b;
+  border: none;
   border-radius: 7px;
-  background: #303643;
+  background: #323946;
   box-shadow: none; }
   .message:hover, .message:focus {
-    background-color: #343b49;
+    background-color: #373e4c;
     box-shadow: 3px 0px 0px 0px #5E6A82 inset;
     border-radius: 1px 7px 7px 1px; }
 
@@ -1005,7 +1005,7 @@ StScrollBar {
   background-color: rgba(216, 222, 233, 0.1);
   border-radius: 99px; }
   .message-close-button:hover {
-    background-color: rgba(191, 97, 106, 0.3); }
+    background-color: rgba(191, 97, 106, 0.9); }
     .message-close-button:hover > StIcon {
       color: #d8dee9; }
   .message-close-button:active {
