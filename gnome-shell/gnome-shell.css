@@ -261,7 +261,6 @@ StScrollBar {
 
 /* End Session Dialog */
 .end-session-dialog {
-  spacing: 42px;
   border: none; }
   .end-session-dialog .modal-dialog-linked-button:last-child {
     background: #b84f59; }
