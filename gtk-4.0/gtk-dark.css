@@ -5666,6 +5666,8 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     margin: 0;
     -gtk-icon-size: 12px;
     padding: 0 4px; }
+    .nautilus-window #NautilusQueryEditor > menubutton > button:hover image, .nautilus-window #NautilusQueryEditor > menubutton > button:active image, .nautilus-window #NautilusQueryEditor > menubutton > button:focus image {
+      color: #d8dee9; }
   .nautilus-window #NautilusQueryEditor > text, .nautilus-window #NautilusQueryEditor > image {
     margin: 0; }
 .nautilus-window notebook > stack:only-child {
