@@ -5845,21 +5845,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 /*********
  * Panel *
  ********/
-.panel {
-  background-color: transparent;
-  transition: all 100ms ease-in-out; }
-  .panel.maximized {
-    background-color: #2a2f3a; }
-  .panel.translucent {
-    background-color: rgba(42, 47, 58, 0.5); }
-  .panel.color-light.translucent {
-    background-color: rgba(216, 222, 233, 0.85); }
-
-menubar.panel,
-.panel menubar {
-  box-shadow: none;
-  border: none; }
-
 .composited-indicator > revealer,
 .composited-indicator > revealer image,
 .composited-indicator > revealer label,
