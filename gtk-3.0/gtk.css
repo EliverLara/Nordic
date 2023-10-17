@@ -2400,7 +2400,7 @@ GraniteWidgetsWelcome {
         text-shadow: none;
         box-shadow: none;
         border: 1px solid #232831;
-        background-color: #2e3440; }
+        background-color: #343b48; }
       .titlebar button.titlebutton.close:hover,
       headerbar button.titlebutton.close:hover {
         color: #bf616a; }
@@ -5817,6 +5817,12 @@ radiobutton.color-button:active > radio {
   margin: 1px 2px; }
   #whiskermenu-window button:hover, #whiskermenu-window button:checked {
     background-color: #8fbcbb; }
+
+/* Vala-appmenu-plugin*/
+.-vala-panel-appmenu-core scrolledwindow,
+.-vala-panel-appmenu-private > menuitem,
+.-vala-panel-appmenu-private > menuitem:first-child > label {
+  color: #d8dee9; }
 
 /********
 * Unity *
