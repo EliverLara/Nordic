@@ -5679,7 +5679,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     -gtk-icon-size: 12px;
     padding: 0 4px; }
     .nautilus-window #NautilusQueryEditor > menubutton > button:hover image, .nautilus-window #NautilusQueryEditor > menubutton > button:active image, .nautilus-window #NautilusQueryEditor > menubutton > button:focus image {
-      color: #d8dee9; }
+      color: #fefefe; }
   .nautilus-window #NautilusQueryEditor > text, .nautilus-window #NautilusQueryEditor > image {
     margin: 0; }
 .nautilus-window notebook > stack:only-child {
@@ -6052,6 +6052,12 @@ radiobutton.color-button:active > radio {
   margin: 1px 2px; }
   #whiskermenu-window button:hover, #whiskermenu-window button:checked {
     background-color: #81a1c1; }
+
+/* Vala-appmenu-plugin*/
+.-vala-panel-appmenu-core scrolledwindow,
+.-vala-panel-appmenu-private > menuitem,
+.-vala-panel-appmenu-private > menuitem:first-child > label {
+  color: #d8dee9; }
 
 /********
 * Unity *
