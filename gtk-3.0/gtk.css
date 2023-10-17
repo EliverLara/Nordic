@@ -5829,6 +5829,12 @@ radiobutton.color-button:active > radio {
   #whiskermenu-window button:hover, #whiskermenu-window button:checked {
     background-color: #81a1c1; }
 
+/* Vala-appmenu-plugin*/
+.-vala-panel-appmenu-core scrolledwindow,
+.-vala-panel-appmenu-private > menuitem,
+.-vala-panel-appmenu-private > menuitem:first-child > label {
+  color: #d8dee9; }
+
 /********
 * Unity *
 *********/
