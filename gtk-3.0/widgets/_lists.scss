@@ -13,12 +13,8 @@ list {
 }
 
 row {
-  padding: 1px 11px;
-  transition: all 150ms $ease-out-quad;
-
-  label {
-    padding-left: 8px;
-  }
+  background-color: transparent;
+  border-color: $borders_color;
 
   &:hover { transition: none; }
 
