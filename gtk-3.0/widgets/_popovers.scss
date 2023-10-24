@@ -40,6 +40,8 @@ popover.background {
 
   list separator { margin: 0px; }
 
+  list row { padding: 8px; }
+
   checkbutton,
   radiobutton { @extend modelbutton.flat; }
 }
