@@ -2570,7 +2570,7 @@ GraniteWidgetsWelcome {
     headerbar .path-buttons-box .current-dir image {
       color: #fff;
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: #4c566a;
+      background: #4c566a;
       text-shadow: none; }
     .titlebar .path-buttons-box button.current-dir:only-child image,
     headerbar .path-buttons-box button.current-dir:only-child image {
@@ -2825,7 +2825,7 @@ list {
 
 row {
   background-color: transparent;
-  border-color: #232831; }
+  border-color: #1f232b; }
   row:hover {
     transition: none; }
   row:backdrop {
