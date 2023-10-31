@@ -6016,19 +6016,19 @@ radiobutton.color-button:active > radio {
     background-color: rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 -2px #4c566a; }
 
-.xfce4-panel.panel button.flat {
+.xfce4-panel.panel button.flat:not(.open_group) {
   color: #d8dee9;
   border-radius: 0;
   border: none;
   background-color: rgba(42, 47, 58, 0); }
-  .xfce4-panel.panel button.flat:hover {
+  .xfce4-panel.panel button.flat:hover:not(.open_group) {
     border: none;
     background-color: #3f4758; }
-  .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.flat:checked {
+  .xfce4-panel.panel button.flat:active:not(.open_group), .xfce4-panel.panel button.flat:checked:not(.open_group) {
     color: #d8dee9;
     border: none;
     background-color: #4c566a; }
-    .xfce4-panel.panel button.flat:active label, .xfce4-panel.panel button.flat:active image, .xfce4-panel.panel button.flat:checked label, .xfce4-panel.panel button.flat:checked image {
+    .xfce4-panel.panel button.flat:active:not(.open_group) label, .xfce4-panel.panel button.flat:active:not(.open_group) image, .xfce4-panel.panel button.flat:checked:not(.open_group) label, .xfce4-panel.panel button.flat:checked:not(.open_group) image {
       color: inherit; }
 
 #whiskermenu-window button {
