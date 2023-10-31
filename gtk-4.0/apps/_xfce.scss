@@ -3,7 +3,7 @@
     text-shadow: none;
     -gtk-icon-shadow: none;
 
-    button.flat { @extend %panelbutton; }
+    button.flat:not(.open_group) { @extend %panelbutton; }
   }
 
   #tasklist-button {
