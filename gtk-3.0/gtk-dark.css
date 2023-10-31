@@ -5805,19 +5805,19 @@ radiobutton.color-button:active > radio {
     background-color: rgba(0, 0, 0, 0.25);
     box-shadow: inset 0 -2px #8fbcbb; }
 
-.xfce4-panel.panel button, .xfce4-panel.panel button.flat {
+.xfce4-panel.panel button:not(.open_group), .xfce4-panel.panel button.flat:not(.open_group) {
   color: #d8dee9;
   border-radius: 0;
   border: none;
   background-color: #2e3440; }
-  .xfce4-panel.panel button:hover {
+  .xfce4-panel.panel button:hover:not(.open_group) {
     border: none;
     background-color: #434c5e; }
-  .xfce4-panel.panel button:active, .xfce4-panel.panel button:checked {
+  .xfce4-panel.panel button:active:not(.open_group), .xfce4-panel.panel button:checked:not(.open_group) {
     color: #2e3440;
     border: none;
     background-color: #8fbcbb; }
-    .xfce4-panel.panel button:active label, .xfce4-panel.panel button:active image, .xfce4-panel.panel button:checked label, .xfce4-panel.panel button:checked image {
+    .xfce4-panel.panel button:active:not(.open_group) label, .xfce4-panel.panel button:active:not(.open_group) image, .xfce4-panel.panel button:checked:not(.open_group) label, .xfce4-panel.panel button:checked:not(.open_group) image {
       color: inherit; }
 
 #whiskermenu-window button {
