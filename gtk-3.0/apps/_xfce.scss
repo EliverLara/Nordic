@@ -7,7 +7,7 @@
     text-shadow: none;
     -gtk-icon-shadow: none;
 
-    button, button.flat { @extend %panelbutton; }
+    button:not(.open_group), button.flat:not(.open_group) { @extend %panelbutton; }
   }
 
 }
