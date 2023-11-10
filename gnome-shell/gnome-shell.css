@@ -898,7 +898,7 @@ StScrollBar {
     color: white;
     background-color: #81a1c1;
     border-color: transparent;
-    box-shadow: inset 0 0 0 2px rgba(143, 188, 187, 0.3) !important; }
+    box-shadow: inset 0 0 0 2px rgba(129, 161, 193, 0.6) !important; }
   .calendar-day-base.calendar-day-heading, .calendar-day.calendar-day-heading {
     color: #d8dee9;
     margin-top: 1em;
