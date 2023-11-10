@@ -311,3 +311,20 @@ headerbar {
 .titlebar{
   @extend %titlebar;
 }
+
+// Gnome 45
+.nautilus-window {
+  .sidebar-pane .top-bar {
+    headerbar, &:backdrop {
+      background-image: linear-gradient(to right, darken($main_dark_color, 5%) 41px,
+                                          $_sidebar_color 35px,$_sidebar_color 36px,
+                                          $_sidebar_color 36px,$_sidebar_color 99%, 
+                                          $_sidebar_color 100%
+                                        );
+      border-top-right-radius: 0;
+    }
+  }
+  .content-pane .top-bar headerbar {
+    border-top-left-radius: 0;
+  }
+}
