@@ -2171,7 +2171,7 @@ GraniteWidgetsWelcome {
  * Header bars *
  ***************/
 .titlebar:not(headerbar), .titlebar, headerbar {
-  padding: 0 13px;
+  padding: 0 6px;
   min-height: 34px;
   background: #2b313c;
   color: #d8dee9;
@@ -4665,7 +4665,7 @@ windowcontrols button.close, windowcontrols button.maximize, windowcontrols butt
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #232831;
-    background-color: #2e3440; }
+    background-color: #343b48; }
 windowcontrols button.close:hover, windowcontrols button.close:active {
   color: #bf616a; }
 windowcontrols button.maximize:hover, windowcontrols button.maximize:active {
