@@ -3311,6 +3311,10 @@ popover.menu {
     background-color: #2a2f3a;
     color: #d8dee9;
     padding: 5px; }
+    popover.menu > arrow .view, popover.menu > arrow iconview, popover.menu.background > contents .view, popover.menu.background > contents iconview {
+      background-color: transparent; }
+      popover.menu > arrow .view row, popover.menu > arrow iconview row, popover.menu.background > contents .view row, popover.menu.background > contents iconview row {
+        margin: 0; }
   popover.menu.background separator {
     margin: 6px 0; }
   popover.menu accelerator {
@@ -3337,15 +3341,15 @@ popover.menu {
   popover.menu check.right {
     margin-left: 6px;
     margin-right: -2px; }
-  popover.menu modelbutton {
+  popover.menu modelbutton, popover.menu.background > contents .view row, popover.menu.background > contents iconview row {
     min-height: 30px;
     min-width: 40px;
     padding: 0 12px;
     border-radius: 5px; }
-    popover.menu modelbutton:selected {
+    popover.menu modelbutton:selected, popover.menu.background > contents .view row:selected, popover.menu.background > contents iconview row:selected {
       color: #d8dee9;
       background-color: #373d4c; }
-    popover.menu modelbutton:selected:active {
+    popover.menu modelbutton:selected:active, popover.menu.background > contents .view row:selected:active, popover.menu.background > contents iconview row:selected:active {
       background-color: #4c556a; }
   popover.menu label.title {
     font-weight: bold;
