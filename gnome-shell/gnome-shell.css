@@ -1368,7 +1368,7 @@ StScrollBar {
   background-color: #81a1c1;
   border-radius: 5px !important;
   box-shadow: 0px 0px 5px 4px rgba(94, 106, 130, 0.8);
-  margin-bottom: 8px; }
+  margin-bottom: 0px !important; }
 
 .app-well-app .overview-icon,
 .app-well-app.app-folder .overview-icon,
