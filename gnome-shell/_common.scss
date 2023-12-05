@@ -1595,7 +1595,7 @@ $slider_size: 19px;
   background-color: $selected_bg_color;
   border-radius: 5px !important;
   box-shadow: 0px 0px 5px 4px transparentize($selected_bg_color,0.2);
-  margin-bottom: 8px;
+  margin-bottom: 0px !important;
 }
 
 %icon_tile {
