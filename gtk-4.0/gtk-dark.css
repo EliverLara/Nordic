@@ -3181,7 +3181,7 @@ tabbar tabbox {
       border-radius: 10px; }
       tabbar tabbox > tab button.flat:hover,
       tabbar tabbox > tabboxchild > tab button.flat:hover {
-        background-color: #5b667e;
+        background-color: #4e586d;
         color: #d8dee9; }
     tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
     tabbar tabbox > tabboxchild > tab:checked,
@@ -5638,10 +5638,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     background-color: rgba(46, 52, 64, 0.5); }
     .nautilus-window .sidebar .list-row:hover:active {
       background-color: rgba(76, 86, 106, 0.9); }
-.nautilus-window.background {
-  background-color: rgba(40, 45, 55, 0.95); }
-  .nautilus-window.background:backdrop {
-    background-color: rgba(40, 45, 55, 0.95); }
 .nautilus-window #NautilusPathBar {
   height: 20px;
   margin-top: 7px;
