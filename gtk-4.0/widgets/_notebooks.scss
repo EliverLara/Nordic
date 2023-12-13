@@ -315,6 +315,17 @@ tabbar {
     > tab,
     > tabboxchild > tab {
       border-radius: 0;
+      button.flat {
+        padding: 0;
+        margin: 4px;
+        min-width: 20px;
+        min-height: 20px;
+        border-radius: 10px;
+        &:hover {
+          background-color: lighten($base_color, 15%);
+          color: $fg_color;
+        }
+      }
       &:checked, &:selected { 
         background-color: $base_color; 
         color: lighten($fg_color, 15%);
