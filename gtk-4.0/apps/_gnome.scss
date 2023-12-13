@@ -47,13 +47,7 @@
       }
     }
   }
-  &.background {
-    background-color: transparentize(darken($base_color,3%),0.05);
-    &:backdrop {
-      background-color: transparentize(darken($base_color,3%),0.05);
-    }
-  }
-
+  
    // Gnome 43 path-bar
   #NautilusPathBar {
     height: 20px;
