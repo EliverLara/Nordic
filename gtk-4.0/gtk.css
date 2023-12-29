@@ -2746,27 +2746,22 @@ list, listview {
   list:not(.horizontal) row.separator, list.separators:not(.horizontal) > row:not(.separator), listview:not(.horizontal) row.separator, listview.separators:not(.horizontal) > row:not(.separator) {
     border-bottom: 1px solid #232831; }
 
-row {
-  padding: 1px 11px;
-  transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
-  row label {
-    padding-left: 8px; }
-  row:hover {
-    transition: none; }
-  row:backdrop {
-    transition: 200ms ease-out; }
-  row.activatable.has-open-popup, row.activatable:hover {
-    background-color: rgba(216, 222, 233, 0.05); }
-  row.activatable:active {
-    box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
-  row.activatable:backdrop:hover {
-    background-color: transparent; }
-  row.activatable:selected:active {
-    box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
-  row.activatable:selected.has-open-popup, row.activatable:selected:hover {
-    background-color: rgba(143, 188, 187, 0.5); }
-  row.activatable:selected:backdrop {
-    background-color: rgba(143, 188, 187, 0.6); }
+row:hover {
+  transition: none; }
+row:backdrop {
+  transition: 200ms ease-out; }
+row.activatable.has-open-popup, row.activatable:hover {
+  background-color: rgba(216, 222, 233, 0.05); }
+row.activatable:active {
+  box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
+row.activatable:backdrop:hover {
+  background-color: transparent; }
+row.activatable:selected:active {
+  box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
+row.activatable:selected.has-open-popup, row.activatable:selected:hover {
+  background-color: rgba(143, 188, 187, 0.5); }
+row.activatable:selected:backdrop {
+  background-color: rgba(143, 188, 187, 0.6); }
 
 columnview > listview > row {
   padding: 0; }
@@ -4109,7 +4104,10 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
   background-image: linear-gradient(to right, #232831 40px, #2e3440 35px, #2e3440 36px, #2e3440 36px, #2e3440 99%, #2e3440 100%); }
   placessidebar.sidebar row.sidebar-row.sidebar-row, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row {
     margin: 0;
-    border-radius: 0; }
+    border-radius: 0;
+    padding: 1px 11px; }
+    placessidebar.sidebar row.sidebar-row.sidebar-row label, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row label {
+      padding-left: 8px; }
     placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row .sidebar-icon {
       margin-left: -14px;
       margin-right: 12px;
