@@ -1,62 +1,80 @@
-/*************
- * Level Bar *
- *************/
+$_levelbar_size: 5px;
+$_levelbar_border_radius: 5px;
+
 levelbar {
-  block {
-    min-width: 32px;
-    min-height: 6px;
-  }
+  &.horizontal {
+    trough > block {
+      min-height: $_levelbar_size;
+      border-radius: $_levelbar_border_radius;
 
-  &.vertical block {
-    min-width: 6px;
-    min-height: 32px;
-  }
+      &:dir(rtl) {
+        border-radius: 0 $_levelbar_border_radius $_levelbar_border_radius 0;
+      }
 
-  &:backdrop { transition: $backdrop_transition; }
+      &:dir(ltr) {
+        border-radius: $_levelbar_border_radius 0 0 $_levelbar_border_radius;
+      }
 
-  trough {
-    padding: 3px;
-    border-radius: 3px;
-    background-color: if($variant == 'light' ,transparentize(white,0.2),transparentize(white,0.8));
-    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+      &.empty,&.full {
+        border-radius: $_levelbar_border_radius;
+      }
+    }
 
-    &:backdrop {
-      background-color: if($variant == 'light' ,transparentize(white,0.4),transparentize(white,0.94));
-      box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
+    // segmented level bar
+    &.discrete {
+      trough > block {
+        min-height: 2px;
+        margin: 1px;
+        min-width: 24px;
+        border-radius:0;
+        &:first-child {border-radius: 2px 0 0 2px;}
+        &:last-child {
+          border-radius: 0 2px 2px 0;
+        }
+      }
     }
   }
 
-  &.horizontal.discrete block { margin: 0 1px; }
+  &.vertical {
+    trough > block {
+      min-width: $_levelbar_size;
+      border-radius: $_levelbar_border_radius;
+    }
 
-  &.vertical.discrete block { margin: 1px 0; }
+    &.discrete > trough > block {
+      min-width: $_levelbar_size - 7px;
+      margin: 1px 0;
+      min-height: 32px;
+    }
+  }
 
-  block {
-    border-radius: 2px;
+  > trough {
+    padding: 0;
+  }
 
-    &:backdrop { box-shadow: none; }
+  // level bar colours
+  > trough > block {
+    border: 1px solid;
 
     &.low {
+      border-color: $warning_color;
       background-color: $warning_color;
-
-      &:backdrop { border-color: $warning_color; };
     }
 
     &.high,
     &:not(.empty) {
-      background-color: $cyan;
-
-      &:backdrop { border-color: $cyan; }
+      border-color: $nord9;
+      background-color: $nord9;
     }
 
     &.full {
+      border-color: $success_color;
       background-color: $success_color;
-
-      &:backdrop { border-color: $success_color; };
     }
 
     &.empty {
-      background-color:  if($variant == 'light' ,transparentize(black, 0.86),transparentize(black,0.65));
-      box-shadow: none;
+      background-color: lighten($base_color, 10%);
+      border-color: lighten($base_color, 10%);
     }
   }
 }
