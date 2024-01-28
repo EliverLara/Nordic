@@ -2984,8 +2984,7 @@ notebook > header {
   border-width: 1px;
   background-color: #303643; }
   notebook > header:backdrop {
-    border-color: #262c36;
-    background-color: #434c5e; }
+    border-color: #262c36; }
   notebook > header tabs {
     margin: 0px; }
   notebook > header.top {
@@ -6258,5 +6257,24 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   .caja-notebook .entry:selected {
     background: #81a1c1;
     color: #fefefe; }
+
+.terminator-terminal-window .notebook.header.top,
+.terminator-terminal-window notebook header.top {
+  border-bottom-style: solid; }
+  .terminator-terminal-window .notebook.header.top > tabs,
+  .terminator-terminal-window notebook header.top > tabs {
+    margin: -2px;
+    background-color: #2c313d; }
+    .terminator-terminal-window .notebook.header.top > tabs > tab:backdrop,
+    .terminator-terminal-window notebook header.top > tabs > tab:backdrop {
+      box-shadow: none; }
+    .terminator-terminal-window .notebook.header.top > tabs > tab:checked,
+    .terminator-terminal-window notebook header.top > tabs > tab:checked {
+      background-color: #3b4252;
+      border: none;
+      box-shadow: none; }
+      .terminator-terminal-window .notebook.header.top > tabs > tab:checked:hover,
+      .terminator-terminal-window notebook header.top > tabs > tab:checked:hover {
+        background-color: #3b4252; }
 
 /*# sourceMappingURL=gtk-dark.css.map */
