@@ -1,0 +1,21 @@
+.terminator-terminal-window .notebook.header,
+.terminator-terminal-window notebook header {
+  &.top {
+    border-bottom-style: solid;
+    > tabs {
+      margin: -2px;
+      background-color: darken($base_color, 7%);
+      > tab {
+
+        &:backdrop { box-shadow: none; }
+
+        &:checked {
+          background-color: $base_color;
+          border: none;
+          box-shadow: none;
+          &:hover{background-color: $base_color;}
+        }
+      }
+    }
+  }
+}
