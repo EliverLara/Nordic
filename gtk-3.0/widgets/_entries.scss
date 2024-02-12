@@ -19,10 +19,6 @@ entry {
       &.right { padding-left: 6px; padding-right: 0; }
     }
 
-    undershoot {
-      &.left { @include undershoot(left); }
-      &.right { @include undershoot(right); }
-    }
 
     &.flat {
       &:focus, & {
