@@ -5907,6 +5907,18 @@ MsdOsdWindow.background.osd {
     border: none;
     border-radius: 5px; }
 
+.mate-panel-menu-bar {
+  background-color: #2e3440;
+  border-radius: 0; }
+  .mate-panel-menu-bar button {
+    border-radius: 0; }
+    .mate-panel-menu-bar button, .mate-panel-menu-bar button:hover {
+      background-color: transparent;
+      color: #d8dee9; }
+    .mate-panel-menu-bar button:active, .mate-panel-menu-bar button:checked {
+      box-shadow: 0 -2px 0 #8fbcbb inset;
+      color: #d8dee9; }
+
 /***********************
  * App-Specific Styles *
  ***********************/
