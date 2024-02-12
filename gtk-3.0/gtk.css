@@ -5932,7 +5932,7 @@ MsdOsdWindow.background.osd {
     border-radius: 5px; }
 
 .mate-panel-menu-bar {
-  background-color: #2e3440;
+  background-color: #2a2f3a;
   border-radius: 0; }
   .mate-panel-menu-bar button {
     border-radius: 0; }
@@ -5940,7 +5940,7 @@ MsdOsdWindow.background.osd {
       background-color: transparent;
       color: #d8dee9; }
     .mate-panel-menu-bar button:active, .mate-panel-menu-bar button:checked {
-      box-shadow: 0 -2px 0 #8fbcbb inset;
+      box-shadow: 0 -2px 0 #4c566a inset;
       color: #d8dee9; }
 
 /***********************
