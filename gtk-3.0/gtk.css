@@ -6178,12 +6178,89 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     border-radius: 0;
     box-shadow: none; }
 
+.caja-notebook .frame {
+  border-width: 0 0 1px; }
 .caja-notebook .entry {
-  background: #2e3440;
-  color: #d8dee9; }
+  background: #3b4252;
+  color: #d8dee9;
+  border-color: #1f232b; }
   .caja-notebook .entry:selected {
     background: #4c566a;
     color: #d8dee9; }
+
+/**************
+* Caja sidebar *
+**************/
+.caja-side-pane {
+  background: #2a2f3a; }
+  .caja-side-pane .frame {
+    border-width: 1px 0 0; }
+  .caja-side-pane treeview.view,
+  .caja-side-pane textview.view text,
+  .caja-side-pane viewport.frame,
+  .caja-side-pane widget .vertical {
+    background: #2a2f3a;
+    padding: 3px 2px; }
+    .caja-side-pane treeview.view:hover,
+    .caja-side-pane textview.view text:hover,
+    .caja-side-pane viewport.frame:hover,
+    .caja-side-pane widget .vertical:hover {
+      background-color: rgba(52, 59, 73, 0.95); }
+    .caja-side-pane treeview.view:selected,
+    .caja-side-pane textview.view text:selected,
+    .caja-side-pane viewport.frame:selected,
+    .caja-side-pane widget .vertical:selected {
+      color: #d8dee9;
+      background: rgba(52, 59, 73, 0.93); }
+      .caja-side-pane treeview.view:selected:hover,
+      .caja-side-pane textview.view text:selected:hover,
+      .caja-side-pane viewport.frame:selected:hover,
+      .caja-side-pane widget .vertical:selected:hover {
+        background: rgba(52, 59, 73, 0.93);
+        color: #fff; }
+
+/**************
+* Caja pathbar *
+**************/
+.caja-navigation-window paned {
+  background: #2e3440; }
+
+.caja-navigation-window .primary-toolbar {
+  background: #2b313c; }
+  .caja-navigation-window .primary-toolbar button, .caja-navigation-window .primary-toolbar button:backdrop {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
+  .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:checked {
+    background: #4c566a;
+    box-shadow: none; }
+    .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:hover label, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:active label, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:active label, .caja-navigation-window .primary-toolbar button:backdrop:checked, .caja-navigation-window .primary-toolbar button:backdrop:checked label {
+      color: #d8dee9; }
+
+.caja-pathbar button {
+  color: #d8dee9;
+  border-radius: 4px;
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid #1f232b;
+  background-color: #2a2f3a;
+  border-radius: 0px;
+  border-right: 1px solid #1f232b;
+  border-left: none;
+  box-shadow: none;
+  min-height: 20px;
+  padding: 3px 5px;
+  margin-right: -3px; }
+  .caja-pathbar button:first-child {
+    border-left: 1px solid #1f232b; }
+  .caja-pathbar button:hover, .caja-pathbar button:checked {
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background: #4c566a;
+    text-shadow: none; }
 
 .terminator-terminal-window .notebook.header.top,
 .terminator-terminal-window notebook header.top {
