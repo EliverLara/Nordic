@@ -2338,7 +2338,7 @@ GraniteWidgetsWelcome {
         text-shadow: none;
         box-shadow: none;
         border: 1px solid #232831;
-        background-color: #2e3440; }
+        background-color: #343b48; }
       .titlebar button.titlebutton.close:hover,
       headerbar button.titlebutton.close:hover {
         color: #bf616a; }
@@ -5927,7 +5927,7 @@ MsdOsdWindow.background.osd {
       background-color: transparent;
       color: #d8dee9; }
     .mate-panel-menu-bar button:active, .mate-panel-menu-bar button:checked {
-      box-shadow: 0 -2px 0 #8fbcbb inset;
+      box-shadow: 0 -2px 0 #81a1c1 inset;
       color: #d8dee9; }
 
 /***********************
@@ -6258,10 +6258,10 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     text-shadow: none;
     -gtk-icon-shadow: none; }
   .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:checked {
-    background: #8fbcbb;
+    background: #81a1c1;
     box-shadow: none; }
     .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:hover label, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:active label, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:active label, .caja-navigation-window .primary-toolbar button:backdrop:checked, .caja-navigation-window .primary-toolbar button:backdrop:checked label {
-      color: #2e3440; }
+      color: #fefefe; }
 
 .caja-pathbar button {
   color: #d8dee9;
@@ -6282,12 +6282,12 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   .caja-pathbar button:hover {
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(143, 188, 187, 0.5);
+    background-color: rgba(129, 161, 193, 0.5);
     text-shadow: none; }
   .caja-pathbar button:checked {
     color: #fff;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(143, 188, 187, 0.7);
+    background-color: rgba(129, 161, 193, 0.7);
     text-shadow: none; }
 
 .terminator-terminal-window .notebook.header.top,
