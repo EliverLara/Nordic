@@ -2782,7 +2782,9 @@ row {
   row:backdrop {
     transition: 200ms ease-out; }
   row.activatable.has-open-popup, row.activatable:hover {
-    background-color: rgba(216, 222, 233, 0.05); }
+    background-color: rgba(216, 222, 233, 0.15); }
+    row.activatable.has-open-popup, row.activatable.has-open-popup label, row.activatable:hover, row.activatable:hover label {
+      color: #d8dee9; }
   row.activatable:active {
     box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
   row.activatable:backdrop:hover {
