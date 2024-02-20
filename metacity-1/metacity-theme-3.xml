@@ -10,10 +10,10 @@
 
 
 <!-- CONSTANTS -->
-<constant name="C_titlebar" value="#353c4a" />
-<constant name="C_titlebar_unfocused" value="#353c4a" />
-<constant name="C_border_focused" value="#353c4a" />
-<constant name="C_border_unfocused" value="#353c4a" />
+<constant name="C_titlebar" value="#2b313c" />
+<constant name="C_titlebar_unfocused" value="#2b313c" />
+<constant name="C_border_focused" value="#2b313c" />
+<constant name="C_border_unfocused" value="#2b313c" />
 <constant name="C_title_focused" value="#d8dee9" />
 <constant name="C_title_unfocused" value="#93979f" />
 
