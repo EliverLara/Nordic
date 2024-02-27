@@ -117,13 +117,12 @@
     }
   
     > menubutton > button {
-      min-width: 16px;
-      min-height: 16px;
-      margin: 0;
+      @include button(undecorated);
+      margin-right: -7px;
       -gtk-icon-size: 12px;
       padding: 0 4px;
       &:hover, &:active, &:focus, &:checked {
-        image { color: $headerbar_fg_color; }
+        image { color: #fff; }
       }
     }
   

@@ -110,7 +110,10 @@ entry {
   .linked:not(.vertical) > &:focus-within + button,
   .linked:not(.vertical) > &:focus-within + combobox > box > button.combo { border-left-color: entry_focus_border(); }
 
-  .linked:not(.vertical) > &:focus-within { border-color: entry_focus_border(); }
+  .linked:not(.vertical) > &:focus-within {
+    border-color: entry_focus_border(); 
+    box-shadow: 0px 0px 1px 1px $selected_bg_color inset;
+  }
 
   .linked:not(.vertical) > &:drop(active) + &,
   .linked:not(.vertical) > &:drop(active) + button,
