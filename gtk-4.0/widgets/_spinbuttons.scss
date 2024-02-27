@@ -9,8 +9,9 @@ spinbutton {
     @extend %entry;
 
     padding: 0;
+    border-spacing: 0;
 
-    entry {
+    %spinbutton_horz_entry {
       min-width: 28px;
       // reset all the other props since the spinbutton node is styled here
       margin: 0;
@@ -19,9 +20,18 @@ spinbutton {
       border: none;
       border-radius: 0;
       box-shadow: none;
+      padding: 6px;
+
+      &:backdrop:disabled { background-color: transparent; }
     }
 
-    button {
+    > text {
+      @extend %spinbutton_horz_entry;
+    }
+
+    /* :not here just to bump specificity above that of the list button styling */
+    > button.image-button.up:not(.flat),
+    > button.image-button.down:not(.flat) {
       min-height: 16px;
       margin: 0;
       padding-bottom: 0;
@@ -31,48 +41,40 @@ spinbutton {
       border-style: none none none solid;
       border-color: transparentize($borders_color, 0.7);
       border-radius: 0;
-      box-shadow: inset 1px 0px 0px 0px rgba(0,0,0,0.07);
+      box-shadow: none;
+      background-color: transparent;
 
       &:dir(rtl) { border-style: none solid none none; }
 
       &:hover {
         color: $fg_color;
-        background-color: $base_hover_color;
+        background-color: darken($bg_color,5%);
       }
 
-      &:disabled { color: transparentize($insensitive_fg_color, 0.7); }
+      &:disabled {
+        color: transparentize($insensitive_fg_color, 0.7);
+        background-color: transparent;
+      }
 
       &:active {
         background-color: transparentize(black, 0.9);
         box-shadow: inset 0 2px 3px -1px transparentize(black, 0.8);
       }
 
-      &:backdrop {
-        color: mix($backdrop_fg_color, $backdrop_base_color, 90%);
-        background-color: transparent;
-        border-color: transparentize($backdrop_borders_color, 0.7);
-        transition: $backdrop_transition;
-      }
+      &:dir(ltr):last-child { border-radius: 0 6px 6px 0; }
 
-      &:backdrop:disabled {
-        color: transparentize($backdrop_insensitive_color,0.7);
-        background-image: none;
-        border-style: none none none solid; // It is needed or it gets overridden
-        box-shadow: inset 1px 0px 0px 0px rgba(0,0,0,0.07);
-
-        &:dir(rtl) { border-style: none solid none none; }
-      }
-
-      &:last-child {
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-      }
+      &:dir(rtl):first-child { border-radius: 6px 0 0 6px; }
     }
   }
 
   // OSD horizontal
   .osd &:not(.vertical) {
-    button {
+    > text {
+      @extend %spinbutton_horz_entry;
+    }
+
+    > button.image-button.up:not(.flat),
+    > button.image-button.down:not(.flat) {
       @include button(undecorated);
 
       color: $osd_fg_color;
@@ -89,17 +91,8 @@ spinbutton {
 
         color: $osd_fg_color;
         border-color: transparentize(opacify($osd_borders_color, 1), 0.5);
-        background-color: transparentize($osd_fg_color, 0.9);
+        background-color: darken($osd_bg_color,10%);
         -gtk-icon-shadow: 0 1px black;
-        box-shadow: none;
-      }
-
-      &:backdrop {
-        @include button(undecorated);
-
-        color: $osd_fg_color;
-        border-color: transparentize(opacify($osd_borders_color, 1), 0.5);
-        -gtk-icon-shadow: none;
         box-shadow: none;
       }
 
@@ -112,9 +105,9 @@ spinbutton {
         box-shadow: none;
       }
 
-      &:last-child { border-radius: 0 3px 3px 0; }
+      &:dir(ltr):last-child { border-radius: 0 6px 6px 0; }
 
-      &:dir(rtl):first-child { border-radius: 3px 0 0 3px; }
+      &:dir(rtl):first-child { border-radius: 6px 0 0 6px; }
     }
   }
 
@@ -127,27 +120,34 @@ spinbutton {
     // FIXME: this should not be set at all, but otherwise it gets the wrong
     // color
     &:disabled { color: $insensitive_fg_color; }
-    &:backdrop:disabled { color: $backdrop_insensitive_color; }
 
     &:drop(active) {
       border-color: transparent;
       box-shadow: none;
     }
 
-    entry {
+    > text {
+      @extend %entry;
+
       min-height: 32px;
       min-width: 32px;
       padding: 0;
       border-radius: 0;
+
+      > selection {
+        background-color: $backdrop_selected_bg_color;
+        color: transparent;
+        &:focus-within {
+          color: $fg_color;
+        }
+      }
+      > block-cursor { @include entry(block_cursor); }
     }
 
-    button {
+    > button {
       min-height: 32px;
       min-width: 32px;
       padding: 0;
-      border-width: 1px;
-      border-color: $borders_color;
-      box-shadow: 0 1px $top_highlight;
 
       &.up { @extend %top_button; }
 
@@ -155,18 +155,20 @@ spinbutton {
     }
 
     %top_button {
-      border-radius: 3px 3px 0 0;
-      border-style: solid solid none solid;
+      border-bottom-style: none;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
 
     %bottom_button {
-      border-radius: 0 0 3px 3px;
-      border-style: none solid solid solid;
+      border-top-style: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
   }
 
   // OSD vertical
-  .osd &.vertical button:first-child {
+  .osd &.vertical > button:first-child {
     @include button(osd);
 
     &:hover { @include button(osd-hover);}
@@ -174,8 +176,6 @@ spinbutton {
     &:active { @include button(osd-active); }
 
     &:disabled { @include button(osd-insensitive); }
-
-    &:backdrop { @include button(osd-backdrop); }
   }
 
   // Misc
@@ -184,9 +184,12 @@ spinbutton {
     border-style: none;
     border-radius: 0;
 
-    entry {
+    > text {
       min-height: 0;
       padding: 1px 2px;
     }
   }
+
+  font-feature-settings: "tnum";
 }
+
