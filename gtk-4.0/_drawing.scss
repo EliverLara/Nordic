@@ -74,6 +74,7 @@
   }
   @if $t==focus {
     border-color: entry_focus_border($fc);
+    box-shadow: 0px 0px 1px 1px $selected_bg_color inset;
   }
   @if $t==insensitive {
     color: $insensitive_fg_color;
