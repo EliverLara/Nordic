@@ -6092,16 +6092,16 @@ ConversationListView {
 .nemo-window .sidebar {
   background-color: #2e3440; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
-    color: #98abb2;
+    color: #d8dee9;
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
   background-clip: padding-box;
   min-height: 28px;
   padding: 5px;
   color: #d8dee9;
-  border: 1px solid #232831;
-  border-radius: 3px;
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.9), inset 1px 0 rgba(0, 0, 0, 0.96), inset -1px 0 rgba(0, 0, 0, 0.96), inset 0 -1px rgba(0, 0, 0, 0.98), 0 1px rgba(255, 255, 255, 0.6); }
+  border: 1px solid #81a1c1;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px 1px #81a1c1 inset; }
   .nemo-window .nemo-window-pane widget.entry:selected {
     background-color: #81a1c1;
     color: #fefefe; }
