@@ -1,7 +1,9 @@
 /***********
  * Dialogs *
  ***********/
-messagedialog { // Message Dialog styling
+messagedialog, .messagedialog, .dialog { // Message Dialog styling
+
+  background-color: $main_dark_color;
   .titlebar:not(headerbar) {
     background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
   }
@@ -16,7 +18,7 @@ messagedialog { // Message Dialog styling
 
   &.csd { // rounded bottom border styling for csd version
     &.background {
-      background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+      background-color: transparentize(if($variant=='light', $headerbar_color, darken($main_dark_color, 5%)), 0.05);
       color: if($variant=='light', $headerbar_fg_color, $fg_color);
 
       // bigger radius for better antialiasing
@@ -25,7 +27,7 @@ messagedialog { // Message Dialog styling
     }
 
     .dialog-action-area button {
-      padding: 10px 14px; // labels are not vertically centered on message dialog, this is a workaround
+      padding: 7px 11px; // labels are not vertically centered on message dialog, this is a workaround
       border-radius: 0;
       border-left-style: solid;
       border-right-style: none;
@@ -52,6 +54,10 @@ messagedialog { // Message Dialog styling
       }
     }
   }
+}
+
+.messagedialog .message-area {
+  padding: 26px;
 }
 
 filechooser {
