@@ -2666,7 +2666,7 @@ levelbar.vertical trough > block {
   min-width: 5px;
   border-radius: 5px; }
 levelbar.vertical.discrete > trough > block {
-  min-width: -2px;
+  min-width: 2px;
   margin: 1px 0;
   min-height: 32px; }
 levelbar > trough {
@@ -5618,7 +5618,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     .nautilus-window .sidebar .list-row:hover:active {
       background-color: rgba(76, 86, 106, 0.9); }
 .nautilus-window #NautilusPathBar {
-  height: 20px;
   margin-top: 7px;
   margin-bottom: 7px;
   color: #d8dee9;
