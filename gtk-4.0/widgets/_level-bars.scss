@@ -42,7 +42,7 @@ levelbar {
     }
 
     &.discrete > trough > block {
-      min-width: $_levelbar_size - 7px;
+      min-width: $_levelbar_size - 3px;
       margin: 1px 0;
       min-height: 32px;
     }
