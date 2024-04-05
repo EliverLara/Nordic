@@ -17,16 +17,19 @@ stage {
 /* WIDGETS */
 
 /* Buttons */
-.button, %button {
+.button, .icon-button, %button {
   @include button(normal);
-  border-radius: 6px;
-  padding: 4px 32px;
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
   &:active { @include button(active); }
   &:hover {
     @include button(hover);
   }
+}
+
+.button {
+  border-radius: 6px;
+  padding: 4px 32px;
 }
 
 .modal-dialog-linked-button {
@@ -706,6 +709,7 @@ $slider_size: 19px;
   .switcher-list .item-box {
     padding: 8px;
     border-radius: 4px;
+    background-color: transparent;
   }
 
   .switcher-list .item-box:outlined {
@@ -1003,6 +1007,7 @@ $slider_size: 19px;
     }
 
     .calendar-month-label {
+      background-color: transparent;
       color: darken($fg_color,5%);
       font-weight: bold;
       padding: 8px 0;
@@ -1041,6 +1046,7 @@ $slider_size: 19px;
       border-radius: 99px;
       color: $fg_color;
       background-gradient-direction: none;
+      background-color: transparent;
       
       &:hover, &:focus { 
         background-color: lighten($bg_color, 7%);
@@ -1052,11 +1058,12 @@ $slider_size: 19px;
         border-color: transparent; //avoid jumparound due to today
         box-shadow: inset 0 0 0 2px transparentize($selected_bg_color, 0.4) !important;
       }
-      &.calendar-day-heading {  //day of week heading
-        color: $fg_color;
-        margin-top: 1em;
-        font-size: 70%;
-      }
+    }
+    .calendar-day-heading {  //day of week heading
+      background-color: transparent;
+      color: $fg_color;
+      margin-top: 1em;
+      font-size: 70%;
     }
       .calendar-day { //border collapse hack - see calendar.js
         border-width: 0;
@@ -1455,6 +1462,7 @@ $slider_size: 19px;
 //search results
 
 %search-section-content-item {  
+  background-color: transparent;
   &:focus,
   &:hover,
   &:selected {
@@ -1565,8 +1573,10 @@ $slider_size: 19px;
 .app-well-app,
 .app-well-app.app-folder,
 .show-apps,
-.grid-search-result {
-  
+.grid-search-result,
+.overview-tile,
+.dash-item-container .overview-tile {
+  background-color: transparent;
   border: none;
   & .overview-icon {
     @extend %icon_tile;
@@ -1590,7 +1600,7 @@ $slider_size: 19px;
 
 }
 
-.app-well-app-running-dot { //running apps indicator
+.app-well-app-running-dot, .app-grid-running-dot { //running apps indicator
   width: 5px; height: 5px;
   background-color: $blue;
   border-radius: 5px !important;
@@ -1609,8 +1619,8 @@ $slider_size: 19px;
 }
 
 /* App Folders */
-.app-well-app.app-folder {
-  background-color: lighten($bg_color, 7%);
+.app-well-app.app-folder, .app-folder .overview-icon {
+  background-color: lighten($bg_color, 5%);
   border-radius: 18px;
 }
 // expanded folder
@@ -1716,7 +1726,7 @@ $slider_size: 19px;
   }
 
 .page-navigation-arrow {
-
+  background-color: transparent;
   margin: 6px;
   padding: 18px;
   width: 24px;
