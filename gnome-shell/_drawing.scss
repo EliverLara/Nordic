@@ -57,9 +57,8 @@
 
   }
   @if $t==focus { 
-    @include _shadows($depth);
-    // background-color: lighten($main_dark, 2%);
-    border-color: transparentize($selected_bg_color, 0.2); 
+    border-color: $selected_bg_color; 
+    box-shadow: none !important;
   }
   @if $t==hover {  
     @include _shadows($depth);
