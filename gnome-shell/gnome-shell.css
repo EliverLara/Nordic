@@ -1311,6 +1311,9 @@ StScrollBar {
   text-align: center;
   -x-offset: 8px; }
 
+#dash .app-well-app-running-dot, #dash .app-grid-running-dot {
+  margin-bottom: 14px; }
+
 /* App Vault/Grid */
 .icon-grid {
   spacing: 30px;
@@ -1399,6 +1402,7 @@ StScrollBar {
 .grid-search-result .overview-icon,
 .overview-tile .overview-icon,
 .dash-item-container .overview-tile .overview-icon {
+  background-color: transparent;
   color: #d8dee9;
   padding: 7px 6px;
   border: none;
