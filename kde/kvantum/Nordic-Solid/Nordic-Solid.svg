@@ -6,7 +6,7 @@
    viewBox="0 0 380.00266 635.00043"
    id="svg1764"
    sodipodi:docname="Nordic-Solid.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -36,19 +36,21 @@
      guidetolerance="10"
      inkscape:pageopacity="0.98823529"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1019"
+     inkscape:window-width="2560"
+     inkscape:window-height="1378"
      id="namedview1766"
      showgrid="false"
-     inkscape:zoom="0.59664407"
-     inkscape:cx="257.27231"
-     inkscape:cy="421.52434"
+     inkscape:zoom="6.7502571"
+     inkscape:cx="-64.145705"
+     inkscape:cy="302.95143"
      inkscape:window-x="0"
-     inkscape:window-y="36"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g454"
+     inkscape:current-layer="g658"
      inkscape:document-rotation="0"
-     inkscape:pagecheckerboard="0" />
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs116">
     <linearGradient
@@ -639,19 +641,6 @@
        y2="81.251602"
        gradientUnits="userSpaceOnUse"
        xlink:href="#button-toggled-border" />
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
-       id="filter2077"
-       x="-0.095999998"
-       width="1.192"
-       y="-0.095999998"
-       height="1.192">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="1.92"
-         id="feGaussianBlur2079" />
-    </filter>
   </defs>
   <g
      transform="translate(0.00264425,45.000002)"
@@ -2863,51 +2852,51 @@
      id="g658">
     <path
        id="menu-normal-left"
-       d="m 0,275 h 5 v 48 H 0 Z"
-       style="color:#000000;opacity:0.8;fill:#2e3440;fill-opacity:0.941176;fill-rule:evenodd"
+       d="m 2,275 h 5 v 48 H 2 Z"
+       style="color:#000000;opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <path
        id="menu-normal-topleft"
-       d="M 5,270 H 0.0011 l -0.001,5 h 5 z"
-       style="color:#000000;opacity:0.8;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       d="M 7,270 H 2.0011 l -10e-4,5 h 5 z"
+       style="color:#000000;opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <path
        id="menu-normal-top"
-       d="m 53.0003,270 v 5 h -48 v -5 z"
-       style="opacity:0.8;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       d="m 55.0003,270 v 5 h -48 v -5 z"
+       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <path
        id="menu-normal-topright"
-       d="m 58,275 -3e-4,-4.9989 -5,-0.001 v 5 z"
-       style="opacity:0.8;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       d="m 60,275 -3e-4,-4.9989 -5,-0.001 v 5 z"
+       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <path
        id="menu-normal-right"
-       d="m 57.9998,275 h -5 v 48 h 5 z"
-       style="opacity:0.8;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       d="m 59.9998,275 h -5 v 48 h 5 z"
+       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <path
        id="menu-normal-bottomright"
-       d="m 52.9998,328 h 4.9989 l 10e-4,-5 h -5 z"
-       style="opacity:0.8;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       d="m 54.9998,328 h 4.9989 l 10e-4,-5 h -5 z"
+       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <path
        id="menu-normal-bottom"
-       d="m 5.00075,328 3e-4,-5 h 48 l -3e-4,5 z"
-       style="opacity:0.8;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       d="m 7.00075,328 3e-4,-5 h 48 l -3e-4,5 z"
+       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <path
        id="menu-normal-bottomleft"
-       d="m 4e-4,323 3e-4,4.9989 5,0.001 v -5 z"
-       style="opacity:0.8;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
+       d="m 2.0004,323 3e-4,4.9989 5,0.001 v -5 z"
+       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <rect
        id="menu-normal"
-       x="5.0005999"
+       x="7.0005999"
        y="275"
        width="48"
        height="48"
-       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd;filter:url(#filter2077)" />
+       style="opacity:1;fill:#2e3440;fill-opacity:1;fill-rule:evenodd" />
     <path
        id="menu-shadow-left"
        d="m 65.00005,275.0001 v 60 h 5 v -60 z"
