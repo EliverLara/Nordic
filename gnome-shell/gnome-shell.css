@@ -1404,7 +1404,6 @@ StScrollBar {
 .dash-item-container .overview-tile .overview-icon {
   background-color: transparent;
   color: #fefefe;
-  padding: 7px 6px;
   border: none;
   transition-duration: 100ms;
   text-align: center;
