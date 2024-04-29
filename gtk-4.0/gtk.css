@@ -4677,7 +4677,7 @@ windowcontrols button.close, windowcontrols button.maximize, windowcontrols butt
   margin-right: 1px;
   color: #d8dee9;
   border-color: transparent; }
-  windowcontrols button.close, windowcontrols button.close:backdrop, windowcontrols button.close:backdrop:hover, windowcontrols button.maximize, windowcontrols button.maximize:backdrop, windowcontrols button.maximize:backdrop:hover, windowcontrols button.minimize, windowcontrols button.minimize:backdrop, windowcontrols button.minimize:backdrop:hover {
+  windowcontrols button.close, windowcontrols button.close image, windowcontrols button.close:backdrop, windowcontrols button.close:backdrop image, windowcontrols button.close:backdrop:hover, windowcontrols button.close:backdrop:hover image, windowcontrols button.maximize, windowcontrols button.maximize image, windowcontrols button.maximize:backdrop, windowcontrols button.maximize:backdrop image, windowcontrols button.maximize:backdrop:hover, windowcontrols button.maximize:backdrop:hover image, windowcontrols button.minimize, windowcontrols button.minimize image, windowcontrols button.minimize:backdrop, windowcontrols button.minimize:backdrop image, windowcontrols button.minimize:backdrop:hover, windowcontrols button.minimize:backdrop:hover image {
     background: transparent;
     box-shadow: none;
     border-color: transparent; }
