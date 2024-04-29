@@ -1876,15 +1876,15 @@ treeview entry.flat, treeview entry {
 /*************
  * Expanders *
  *************/
-expander arrow {
+expander {
   min-width: 16px;
   min-height: 16px;
   -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
-  expander arrow:dir(rtl) {
+  expander:dir(rtl) {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl"); }
-  expander arrow:hover {
+  expander:hover {
     color: white; }
-  expander arrow:checked {
+  expander:checked {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
 
 /****************
