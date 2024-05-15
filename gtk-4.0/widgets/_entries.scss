@@ -106,19 +106,32 @@ entry {
 
    // linked entries
   .linked:not(.vertical) > & { @extend %linked; }
-  .linked:not(.vertical) > &:focus-within + &,
-  .linked:not(.vertical) > &:focus-within + button,
-  .linked:not(.vertical) > &:focus-within + combobox > box > button.combo { border-left-color: entry_focus_border(); }
-
-  .linked:not(.vertical) > &:focus-within {
-    border-color: entry_focus_border(); 
-    box-shadow: 0px 0px 1px 1px $selected_bg_color inset;
-  }
 
   .linked:not(.vertical) > &:drop(active) + &,
   .linked:not(.vertical) > &:drop(active) + button,
+  .linked:not(.vertical) > &:drop(active) + menubutton > button,
+  .linked:not(.vertical) > &:drop(active) + dropdown > button,
+  .linked:not(.vertical) > &:drop(active) + colorbutton > button,
+  .linked:not(.vertical) > &:drop(active) + fontbutton > button,
+  .linked:not(.vertical) > &:drop(active) + filechooserbutton > button,
+  .linked:not(.vertical) > &:drop(active) + filechooserbutton > combobox > box > button.combo,
+  .linked:not(.vertical) > &:drop(active) + appchooserbutton > combobox > box > button.combo,
   .linked:not(.vertical) > &:drop(active) + combobox > box > button.combo { border-left-color: $drop_target_color; }
 
+  
+  .linked:not(.vertical) > & { 
+    &:focus-within {
+      border-color: entry_focus_border(); 
+      box-shadow: 0px 0px 1px 1px $selected_bg_color inset;
+      border-right-style: solid;
+      + .popup button {
+        border-left-color: $selected_bg_color;
+      }
+    }
+    + .popup button {
+      border-radius: 0px 4px 4px 0px;
+    }
+  }
   // Vertically linked entries
   // FIXME: take care of "colored" entries
   .linked.vertical > & {
