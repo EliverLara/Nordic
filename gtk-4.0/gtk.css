@@ -1566,16 +1566,16 @@ combobox:drop(active) {
 messagedialog, .messagedialog, .dialog {
   background-color: #2a2f3a; }
   messagedialog .titlebar:not(headerbar), .messagedialog .titlebar:not(headerbar), .dialog .titlebar:not(headerbar) {
-    background-color: rgba(59, 66, 82, 0.95); }
+    background-color: #2b313c; }
   messagedialog .titlebar, .messagedialog .titlebar, .dialog .titlebar {
     min-height: 20px;
     background-image: none;
-    background-color: rgba(59, 66, 82, 0.95);
+    background-color: #2b313c;
     border-style: none;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px; }
   messagedialog.csd.background, .messagedialog.csd.background, .dialog.csd.background {
-    background-color: rgba(31, 35, 43, 0.95);
+    background-color: #2b313c;
     color: #d8dee9;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
