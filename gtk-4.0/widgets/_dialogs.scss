@@ -5,12 +5,12 @@ messagedialog, .messagedialog, .dialog { // Message Dialog styling
 
   background-color: $main_dark_color;
   .titlebar:not(headerbar) {
-    background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+    background-color: $headerbar_color;
   }
   .titlebar {
     min-height: 20px;
     background-image: none;
-    background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+    background-color: $headerbar_color;
     border-style: none;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -18,7 +18,7 @@ messagedialog, .messagedialog, .dialog { // Message Dialog styling
 
   &.csd { // rounded bottom border styling for csd version
     &.background {
-      background-color: transparentize(if($variant=='light', $headerbar_color, darken($main_dark_color, 5%)), 0.05);
+      background-color: $headerbar_color;
       color: if($variant=='light', $headerbar_fg_color, $fg_color);
 
       // bigger radius for better antialiasing
