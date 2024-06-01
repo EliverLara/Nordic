@@ -473,51 +473,38 @@
   box-shadow: inset 0 1px $hc; // top highlight
 }
 
-@mixin overshoot($p, $t:normal, $c:lighten($base_color, 7%)) {
-//
-// overshoot
-//
-// $p: position
-// $t: type
-// $c: base color
-//
-// possible $p values:
-// top, bottom, right, left
-//
-// possible $t values:
-// normal, backdrop
-//
+@mixin overshoot($p, $t:normal, $c:$fg_color) {
+  //
+  // overshoot
+  //
+  // $p: position
+  // $t: type
+  // $c: base color
+  //
+  // possible $p values:
+  // top, bottom, right, left
+  //
+  // possible $t values:
+  // normal, backdrop
+  //
+  
+  $_small_gradient_length: 3%;
+  $_big_gradient_length: 50%;
 
-  $_small_gradient_length: 5%;
-  $_big_gradient_length: 100%;
-
-  $_position: center top;
   $_small_gradient_size: 100% $_small_gradient_length;
   $_big_gradient_size: 100% $_big_gradient_length;
 
-  @if $p==bottom {
-    $_position: center bottom;
-    $_linear_gradient_direction: to top;
-  }
-
-  @else if $p==right {
-    $_position: right center;
-    $_small_gradient_size: $_small_gradient_length 100%;
-    $_big_gradient_size: $_big_gradient_length 100%;
-  }
-
-  @else if $p==left {
-    $_position: left center;
+  @if $p==right or $p==left {
     $_small_gradient_size: $_small_gradient_length 100%;
     $_big_gradient_size: $_big_gradient_length 100%;
   }
 
   $_small_gradient_color: $c;
-  $_big_gradient_color: $c;
+  $_big_gradient_color: transparentize($c, 0.93);
 
   @if $c==$fg_color {
-    $_small_gradient_color: darken($borders_color, 10%);
-    $_big_gradient_color: $fg_color;
+    $_small_gradient_color: lighten($borders_color, 10%);
+    $_big_gradient_color: transparentize($fg_color, 0.85);
 
     @if $t==backdrop { $_small_gradient_color: $backdrop_borders_color; }
   }
@@ -526,9 +513,9 @@
                                     $_small_gradient_color 85%,
                                     transparentize($_small_gradient_color, 1));
 
-$_big_gradient: radial-gradient(farthest-side at $p,
-                                $_big_gradient_color,
-                                transparentize($_big_gradient_color, 1));
+  $_big_gradient: radial-gradient(farthest-side at $p,
+                                  $_big_gradient_color,
+                                  transparentize($_big_gradient_color, 1));
 
   @if $t==normal {
     background-image: $_small_gradient, $_big_gradient;
@@ -541,12 +528,13 @@ $_big_gradient: radial-gradient(farthest-side at $p,
   }
 
   background-repeat: no-repeat;
-  background-position: $_position;
+  background-position: $p;
 
   background-color: transparent; // reset some properties to be sure to not inherit them somehow
   border: none;                  //
   box-shadow: none;              //
 }
+
 
 @mixin undershoot($p) {
 //
