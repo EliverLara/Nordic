@@ -984,7 +984,6 @@ StScrollBar {
   background: transparent; }
 
 .message {
-  border: none;
   border-radius: 7px;
   background: #323946;
   box-shadow: none; }
