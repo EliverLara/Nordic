@@ -171,7 +171,7 @@
     opacity: 1;
   }
   .week-view &.timed label, & label, .year-view &:not(.timed) label  {
-    color: $selected_fg_color;
+    color: $nord0;
     opacity: 1;
   }
 }
