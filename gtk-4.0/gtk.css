@@ -5777,7 +5777,10 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 /*******************
  * Calendar events *
 ********************/
-.color-light label, .color-light.timed label {
+.color-light.timed label, .color-light .event-popover label {
+  color: #d8dee9;
+  opacity: 1; }
+.color-light label {
   color: #2e3440;
   opacity: 1; }
 
