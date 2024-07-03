@@ -4184,6 +4184,18 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
     placessidebar.sidebar list:backdrop, .nautilus-window .navigation-sidebar list:backdrop {
       background-color: transparent; }
 
+.bottom-bar {
+  background-color: #2e3440; }
+  .bottom-bar button {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
+    .bottom-bar button .view, .bottom-bar button iconview {
+      background-color: transparent; }
+
 /*****************
  * GtkSpinButton *
  *****************/
