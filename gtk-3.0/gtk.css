@@ -5753,9 +5753,10 @@ radiobutton.color-button:active > radio {
     border: none;
     background-color: #434c5e; }
   .xfce4-panel.panel button:active:not(.open_group), .xfce4-panel.panel button:checked:not(.open_group) {
-    color: #fefefe;
+    color: #d8dee9;
     border: none;
-    background-color: #81a1c1; }
+    background-color: rgba(129, 161, 193, 0.1);
+    box-shadow: 0px -2px #81a1c1 inset; }
     .xfce4-panel.panel button:active:not(.open_group) label, .xfce4-panel.panel button:active:not(.open_group) image, .xfce4-panel.panel button:checked:not(.open_group) label, .xfce4-panel.panel button:checked:not(.open_group) image {
       color: inherit; }
 
