@@ -5732,7 +5732,8 @@ radiobutton.color-button:active > radio {
   .xfce4-panel.panel button:active:not(.open_group), .xfce4-panel.panel button:checked:not(.open_group) {
     color: #d8dee9;
     border: none;
-    background-color: #4c566a; }
+    background-color: rgba(76, 86, 106, 0.5);
+    box-shadow: 0px -2px #6d7a96 inset; }
     .xfce4-panel.panel button:active:not(.open_group) label, .xfce4-panel.panel button:active:not(.open_group) image, .xfce4-panel.panel button:checked:not(.open_group) label, .xfce4-panel.panel button:checked:not(.open_group) image {
       color: inherit; }
 
