@@ -5744,9 +5744,10 @@ radiobutton.color-button:active > radio {
     border: none;
     background-color: #434c5e; }
   .xfce4-panel.panel button:active:not(.open_group), .xfce4-panel.panel button:checked:not(.open_group) {
-    color: #2e3440;
+    color: #d8dee9;
     border: none;
-    background-color: #8fbcbb; }
+    background-color: rgba(143, 188, 187, 0.1);
+    box-shadow: 0px -2px #8fbcbb inset; }
     .xfce4-panel.panel button:active:not(.open_group) label, .xfce4-panel.panel button:active:not(.open_group) image, .xfce4-panel.panel button:checked:not(.open_group) label, .xfce4-panel.panel button:checked:not(.open_group) image {
       color: inherit; }
 
