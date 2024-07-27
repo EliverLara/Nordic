@@ -655,21 +655,17 @@ $slider_size: 19px;
 .osd-window {
   text-align: center;
   font-weight: bold;
-  spacing: 1em;
-  margin: 32px;
-  min-width: 64px;
-  min-height: 64px;
 
   .osd-monitor-label { font-size: 3em; }
   .level {
-    height: 0.4em;
-    border-radius: 0.3em;
+    height: 6px;
+    border-radius: 6px;
     color: $osd_fg_color;
-    border: 1px solid $borders_color;
+    border: 1px solid $gray;
 
-    -barlevel-height: 0.4em;
+    -barlevel-height: 6px;
     -barlevel-background-color: $gray;
-    -barlevel-active-background-color: $selected_bg_color;
+    -barlevel-active-background-color: opacify($selected_bg_color, 1);
     -barlevel-overdrive-color: $red;
     -barlevel-overdrive-separator-width: 0.2em; 
   }
@@ -797,7 +793,7 @@ $slider_size: 19px;
   background-color: $_bubble_bg_color;
   border: 1px solid $borders_color;
   box-shadow: 0px 0px 5px $borders_color;
-  border-radius: 5px;
+  border-radius: 18px;
   padding: 12px;
 }
 
