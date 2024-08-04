@@ -9,7 +9,7 @@ entry {
     padding-left: 8px;
     padding-right: 8px;
     border: 1px solid;
-    border-radius: 3px;
+    border-radius: 6px;
     transition: all 200ms $ease-out-quad;
 
     @include entry(normal);
@@ -129,7 +129,7 @@ entry {
       }
     }
     + .popup button {
-      border-radius: 0px 4px 4px 0px;
+      border-radius: 0px 6px 6px 0px;
     }
   }
   // Vertically linked entries

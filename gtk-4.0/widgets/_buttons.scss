@@ -14,11 +14,11 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 %button,
 button {
   @at-root %button_basic, & {
-    min-height: 20px;
+    min-height: 22px;
     min-width: 16px;
-    padding: 2px 6px;
+    padding: 4px 6px;
     border: 1px solid $borders_color;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: $button_transition;
 
     @include button(normal);
@@ -98,7 +98,7 @@ button {
     &.text-button.image-button {
       padding-left: 8px;
       padding-right: 8px;
-      border-radius: 2px;
+      border-radius: 6px;
       label {
         padding-left: 8px;
         padding-right: 8px;
@@ -134,7 +134,7 @@ button {
     &.image-button { min-width: 32px; }
 
     color: $osd_fg_color;
-    border-radius: 5px;
+    border-radius: 6px;
     outline-color: transparentize($osd_fg_color, 0.7);  //FIXME: define a color var?
 
     @include button(osd);
@@ -327,7 +327,7 @@ button {
 
   //inline-toolbar buttons
   .inline-toolbar &, .inline-toolbar &:backdrop {
-    border-radius: 2px;
+    border-radius: 6px;
     border-width: 1px;
     @extend %linked;
   }
@@ -440,18 +440,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_middle;
 
   &:first-child {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
   }
 
   &:last-child {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
     border-right-style: solid;
   }
 
   &:only-child {
-    border-radius: 3px;
+    border-radius: 6px;
     border-style: solid;
   }
 }
@@ -465,18 +465,18 @@ toolbar.inline-toolbar toolbutton:backdrop {
   @extend %linked_vertical_middle;
 
   &:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
   }
 
   &:last-child {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     border-style: solid;
   }
 
   &:only-child {
-    border-radius: 3px;
+    border-radius: 6px;
     border-style: solid;
   }
 }
@@ -497,7 +497,7 @@ modelbutton.flat,
   min-height: 26px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: 3px;
+  border-radius: 6px;
   outline-offset: -2px;
 
   @extend %undecorated_button;
