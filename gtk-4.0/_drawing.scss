@@ -208,14 +208,14 @@
     box-shadow: none;
   //  border: 1px solid $c;
     color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     background: $suggested_bg_color; }
 
     @if $t==rounded-red {
       box-shadow: none;
     //  border: 1px solid $c;
       color: white;
-      border-radius: 4px;
+      border-radius: 6px;
       background: $destructive_bg_color; 
     }
   
@@ -246,7 +246,7 @@
   // normal button headerbar look
   //
   color: if($tc==$text_color, $headerbar_fg_color, $tc);
-  border-radius: 4px;
+  border-radius: 6px;
   text-shadow: none;
   box-shadow: none;
   border: 1px solid $borders_color;
