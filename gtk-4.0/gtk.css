@@ -627,7 +627,8 @@ button.suggested-action {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: #5e81ac;
-    text-shadow: none; }
+    text-shadow: none;
+    opacity: 0.85; }
   button.suggested-action:active, button.suggested-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -671,7 +672,8 @@ button.suggested-action {
     color: white;
     border-color: rgba(31, 35, 43, 0.3);
     background-color: #5e81ac;
-    text-shadow: none; }
+    text-shadow: none;
+    opacity: 0.75; }
     button.suggested-action:disabled:active, button.suggested-action:disabled:checked {
       color: rgba(216, 222, 233, 0.7);
       outline-color: rgba(255, 255, 255, 0.3);
@@ -734,7 +736,8 @@ button.destructive-action {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
     background-color: #a9444e;
-    text-shadow: none; }
+    text-shadow: none;
+    opacity: 0.85; }
   button.destructive-action:active, button.destructive-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -778,7 +781,8 @@ button.destructive-action {
     color: white;
     border-color: rgba(31, 35, 43, 0.3);
     background-color: #a9444e;
-    text-shadow: none; }
+    text-shadow: none;
+    opacity: 0.75; }
     button.destructive-action:disabled:active, button.destructive-action:disabled:checked {
       color: rgba(216, 222, 233, 0.7);
       outline-color: rgba(255, 255, 255, 0.3);
