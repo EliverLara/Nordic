@@ -54,17 +54,12 @@ switch {
   }
 
   row:selected & {
-    @if $variant == 'light' {
-      box-shadow: none;
-      border-color: $selected_borders_color;
-
-      &:backdrop { border-color: $selected_borders_color; }
-
-      &.slider:dir(rtl) { border-left-color: $borders_color; }
-      &.slider:dir(ltr) { border-right-color: $borders_color; }
-
-      &.slider { &:checked, & { border-color: $selected_borders_color; } }
-    }
+    &:checked {
+      background-image: -gtk-scaled(url("../assets/switch-off.svg"),url("../assets/switch-off.svg"));
+      slider {
+        background-image: -gtk-scaled(url("../assets/switch-slider-on-selected.svg"),url("../assets/switch-slider-on-selected.svg"));
+      }
+    } 
   }
 
   // Trough
