@@ -4208,6 +4208,10 @@ switch {
     background-position: left center;
     background-color: transparent;
     background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"), url("../assets/switch-slider-off.svg")); }
+  row:selected switch:checked {
+    background-image: -gtk-scaled(url("../assets/switch-off.svg"), url("../assets/switch-off.svg")); }
+    row:selected switch:checked slider {
+      background-image: -gtk-scaled(url("../assets/switch-slider-on-selected.svg"), url("../assets/switch-slider-on-selected.svg")); }
   switch trough:active, switch trough:checked {
     background-color: #81a1c1; }
     switch trough:active:backdrop, switch trough:checked:backdrop {
