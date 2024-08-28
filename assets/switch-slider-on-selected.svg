@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   style="isolation:isolate"
+   viewBox="0 0 23 20"
+   width="23"
+   height="20"
+   version="1.1"
+   id="svg1991"
+   sodipodi:docname="switch-slider-on (Copiar).svg"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1995" />
+  <sodipodi:namedview
+     id="namedview1993"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="45.254834"
+     inkscape:cx="0.92807765"
+     inkscape:cy="10.69499"
+     inkscape:window-width="2560"
+     inkscape:window-height="1372"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1991"
+     showguides="true">
+    <sodipodi:guide
+       position="2.5,12.354408"
+       orientation="1,0"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1.5093384,4.107666"
+       orientation="1,0"
+       id="guide2"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <path
+     d="m 1.5093384,10 c 0,-4.4151108 3.5848891,-8 7.9999998,-8 4.4151118,0 7.9999998,3.5848892 7.9999998,8 0,4.415112 -3.584888,8 -7.9999998,8 -4.4151107,0 -7.9999998,-3.584888 -7.9999998,-8 z"
+     fill="#f8f8f2"
+     id="path1989"
+     style="fill:#8fbcbb;fill-opacity:1;stroke-width:0.888888" />
+</svg>
