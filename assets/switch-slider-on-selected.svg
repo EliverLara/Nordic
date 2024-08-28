@@ -8,7 +8,7 @@
    height="20"
    version="1.1"
    id="svg1991"
-   sodipodi:docname="switch-slider-on (Copiar).svg"
+   sodipodi:docname="switch-slider-on-selected.svg"
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -51,5 +51,5 @@
      d="m 1.5093384,10 c 0,-4.4151108 3.5848891,-8 7.9999998,-8 4.4151118,0 7.9999998,3.5848892 7.9999998,8 0,4.415112 -3.584888,8 -7.9999998,8 -4.4151107,0 -7.9999998,-3.584888 -7.9999998,-8 z"
      fill="#f8f8f2"
      id="path1989"
-     style="fill:#8fbcbb;fill-opacity:1;stroke-width:0.888888" />
+     style="fill:#81a1c1;fill-opacity:1;stroke-width:0.888888" />
 </svg>
