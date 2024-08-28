@@ -7,17 +7,17 @@
    width="23"
    height="20"
    version="1.1"
-   id="svg11992"
-   sodipodi:docname="switch-slider-insensitive.svg"
+   id="svg1991"
+   sodipodi:docname="switch-slider-on-insensitive.svg"
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs11996" />
+     id="defs1995" />
   <sodipodi:namedview
-     id="namedview11994"
+     id="namedview1993"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -26,25 +26,30 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="25.475"
-     inkscape:cx="-8.2433759"
-     inkscape:cy="8.0078508"
+     inkscape:zoom="45.254834"
+     inkscape:cx="0.92807765"
+     inkscape:cy="10.69499"
      inkscape:window-width="2560"
      inkscape:window-height="1372"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg11992"
+     inkscape:current-layer="svg1991"
      showguides="true">
     <sodipodi:guide
-       position="1.9984961,21.915225"
+       position="2.5,12.354408"
        orientation="1,0"
-       id="guide36934"
+       id="guide1"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="1.5093384,4.107666"
+       orientation="1,0"
+       id="guide2"
        inkscape:locked="false" />
   </sodipodi:namedview>
   <path
-     d="M 1.9999995,9.9999992 C 1.9999995,5.5848891 5.5848887,2 10.000002,2 14.415112,2 18.000001,5.5848891 18.000001,9.9999992 18,14.415112 14.415112,18 10.000001,18 5.5848887,18 1.9999995,14.415112 1.9999995,9.9999992 Z"
+     d="m 1.5093384,10 c 0,-4.4151108 3.5848891,-8 7.9999998,-8 4.4151118,0 7.9999998,3.5848892 7.9999998,8 0,4.415112 -3.584888,8 -7.9999998,8 -4.4151107,0 -7.9999998,-3.584888 -7.9999998,-8 z"
      fill="#f8f8f2"
-     id="path11990"
-     style="fill:#2e3440;fill-opacity:1;stroke-width:0.888888;opacity:1" />
+     id="path1989"
+     style="fill:#2e3440;fill-opacity:1;stroke-width:0.888888" />
 </svg>
