@@ -170,7 +170,7 @@ magnifier {
      border-radius: 5px;
  
      &:selected {
-       color: $text-color;
+       &, label { color: $text-color; }
        background-color: $popover_hover_color;
      }
      &:selected:active {
