@@ -2363,3 +2363,42 @@ $base_padding: 6px;
 }
 
 .quick-slider .icon-button:hover { @include button(hover); }
+
+
+// Screenshot UI
+
+.screenshot-ui-panel {
+  @extend %osd-panel;
+}
+
+.screenshot-ui-close-button {
+  background-color: $red;
+  &:hover, &:active { background-color: lighten($red, 3%); }
+}
+
+.screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+  @extend %button;
+}
+
+.screenshot-ui-window-selector {
+  background-color: $bg_color;
+}
+
+.screenshot-ui-window-selector-window {
+  &:hover {
+    .screenshot-ui-window-selector-window-border {
+      border-color: darken($selected_bg_color, 15%);
+    }
+  }
+  &:checked {
+    .screenshot-ui-window-selector-window-border {
+      border-color: $selected_bg_color;
+      background-color: transparentize($selected_bg_color, 0.8);
+    }
+
+    .screenshot-ui-window-selector-check {
+      color: $bg_color;
+      background-color: $selected_bg_color;
+    }
+  }
+}
