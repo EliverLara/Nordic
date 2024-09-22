@@ -29,9 +29,9 @@ stage {
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .icon-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active {
-    color: rgba(143, 188, 187, 0.7);
-    background-color: rgba(46, 52, 64, 0.95);
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+    color: #fefefe;
+    background-color: rgba(143, 188, 187, 0.7);
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
@@ -62,8 +62,8 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:active {
-    color: rgba(143, 188, 187, 0.7);
-    background-color: rgba(46, 52, 64, 0.95);
+    color: #fefefe;
+    background-color: rgba(143, 188, 187, 0.7);
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
@@ -1329,8 +1329,8 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
-    color: rgba(143, 188, 187, 0.7);
-    background-color: rgba(46, 52, 64, 0.95);
+    color: #fefefe;
+    background-color: rgba(143, 188, 187, 0.7);
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
@@ -1695,8 +1695,8 @@ StScrollBar {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .keyboard-key:active {
-    color: rgba(143, 188, 187, 0.7);
-    background-color: rgba(46, 52, 64, 0.95);
+    color: #fefefe;
+    background-color: rgba(143, 188, 187, 0.7);
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
@@ -1786,7 +1786,7 @@ StScrollBar {
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
       .login-dialog .modal-dialog-button:default:active {
-        color: rgba(143, 188, 187, 0.7);
+        color: #fefefe;
         background-color: rgba(143, 188, 187, 0.7);
         border: 1px solid #1f232b;
         text-shadow: none;
@@ -2049,13 +2049,13 @@ StScrollBar {
   /* Move padding into the box; this is to allow menu arrows
       to extend to the border */ }
   .quick-toggle:checked {
-    color: rgba(143, 188, 187, 0.7);
+    color: #fefefe;
     background-color: rgba(143, 188, 187, 0.3);
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
     .quick-toggle:checked:hover {
-      color: rgba(143, 188, 187, 0.7);
+      color: #fefefe;
       background-color: rgba(169, 203, 202, 0.3);
       border: 1px solid #1f232b;
       text-shadow: none;
@@ -2098,13 +2098,13 @@ StScrollBar {
   border-width: 0;
   color: #d8dee9; }
   .quick-menu-toggle .quick-toggle-arrow:checked {
-    color: rgba(143, 188, 187, 0.7);
+    color: #fefefe;
     background-color: rgba(143, 188, 187, 0.6);
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
     .quick-menu-toggle .quick-toggle-arrow:checked:hover {
-      color: rgba(143, 188, 187, 0.7);
+      color: #fefefe;
       background-color: rgba(159, 198, 197, 0.6);
       border: 1px solid #1f232b;
       text-shadow: none;
