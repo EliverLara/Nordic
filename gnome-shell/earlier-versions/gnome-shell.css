@@ -33,8 +33,13 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .button:active {
+<<<<<<< HEAD
     color: #5E6A82;
     background-color: rgba(46, 52, 64, 0.95);
+=======
+    color: #fefefe;
+    background-color: rgba(143, 188, 187, 0.7);
+>>>>>>> 5e34f3e (Gnome-shell: Improve screenshot dialog buttons appearance)
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
@@ -61,8 +66,13 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:active {
+<<<<<<< HEAD
     color: #5E6A82;
     background-color: rgba(46, 52, 64, 0.95);
+=======
+    color: #fefefe;
+    background-color: rgba(143, 188, 187, 0.7);
+>>>>>>> 5e34f3e (Gnome-shell: Improve screenshot dialog buttons appearance)
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
@@ -1346,8 +1356,13 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
+<<<<<<< HEAD
     color: #5E6A82;
     background-color: rgba(46, 52, 64, 0.95);
+=======
+    color: #fefefe;
+    background-color: rgba(143, 188, 187, 0.7);
+>>>>>>> 5e34f3e (Gnome-shell: Improve screenshot dialog buttons appearance)
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
@@ -1659,8 +1674,13 @@ StScrollBar {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .keyboard-key:active {
+<<<<<<< HEAD
     color: #5E6A82;
     background-color: rgba(46, 52, 64, 0.95);
+=======
+    color: #fefefe;
+    background-color: rgba(143, 188, 187, 0.7);
+>>>>>>> 5e34f3e (Gnome-shell: Improve screenshot dialog buttons appearance)
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
@@ -1750,8 +1770,13 @@ StScrollBar {
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
       .login-dialog .modal-dialog-button:default:active {
+<<<<<<< HEAD
         color: #5E6A82;
         background-color: #5E6A82;
+=======
+        color: #fefefe;
+        background-color: rgba(143, 188, 187, 0.7);
+>>>>>>> 5e34f3e (Gnome-shell: Improve screenshot dialog buttons appearance)
         border: 1px solid #1f232b;
         text-shadow: none;
         icon-shadow: none; }
