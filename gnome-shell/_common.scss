@@ -158,10 +158,15 @@ $slider_size: 19px;
 .toggle-switch {
   width: 65px;
   height: 22px;
+  background-color: transparent !important;
   background-size: contain;
   //Gnome 3.32//
   background-image: url("assets/toggle-off.svg");
   &:checked { background-image: url("assets/toggle-on.svg"); }
+  .handle {
+    background: none !important;
+    box-shadow: none !important;
+  }
 }
 
   @each $v in us, intl {
