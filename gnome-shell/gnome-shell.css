@@ -219,7 +219,8 @@ StScrollBar {
   border-radius: 10px;
   color: #d8dee9;
   background-color: rgba(35, 40, 49, 0.95);
-  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+  padding: 0 !important; }
   .modal-dialog .modal-dialog-content-box {
     margin: 32px 40px;
     spacing: 32px;
