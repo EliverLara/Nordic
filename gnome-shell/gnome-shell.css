@@ -179,10 +179,14 @@ StScrollBar {
 .toggle-switch {
   width: 65px;
   height: 22px;
+  background-color: transparent !important;
   background-size: contain;
   background-image: url("assets/toggle-off.svg"); }
   .toggle-switch:checked {
     background-image: url("assets/toggle-on.svg"); }
+  .toggle-switch .handle {
+    background: none !important;
+    box-shadow: none !important; }
 
 .toggle-switch-us {
   background-image: url("assets/toggle-off.svg"); }
