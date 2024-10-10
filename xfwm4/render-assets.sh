@@ -6,7 +6,7 @@ OPTIPNG="/usr/bin/optipng"
 for  screen in '' '-hdpi' '-xhdpi'; do
     for i in assets/*; do  
         BASE_FILE_NAME=`basename -s .svg $i`
-        ASSETS_DIR="Nordic${screen}/xfwm4"
+        ASSETS_DIR="Nordic-darker-standard-buttons${screen}/xfwm4"
         case "${screen}" in
         -hdpi)
             DPI='144'
