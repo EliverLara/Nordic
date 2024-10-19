@@ -1324,61 +1324,71 @@ StScrollBar {
 .sound-playback-control {
   padding: 5px 10px 10px 10px; }
 
-.sound-player {
-  padding: 0 4px; }
-  .sound-player > StBoxLayout:first-child {
-    padding: 5px 10px 12px 10px;
-    spacing: 0.5em; }
-    .sound-player > StBoxLayout:first-child StButton:small {
-      width: 16px;
-      height: 8px;
-      padding: 1px; }
-      .sound-player > StBoxLayout:first-child StButton:small StIcon {
-        icon-size: 12px; }
-  .sound-player-generic-coverart {
-    background: rgba(0, 0, 0, 0.2); }
-  .sound-player-overlay {
-    width: 290px;
-    height: 70px;
-    padding: 15px;
-    spacing: 0.5em;
-    background: rgba(31, 35, 43, 0.9);
-    border: 0px solid #14171c;
-    border-bottom: 1px;
-    color: #BAC3CF; }
-    .sound-player-overlay StButton {
-      width: 22px;
-      height: 13px;
-      padding: 5px;
+.sound-player > StBoxLayout:first-child {
+  padding: 5px 10px 12px 10px;
+  spacing: 0.5em; }
+  .sound-player > StBoxLayout:first-child StButton:small {
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent; }
+    .sound-player > StBoxLayout:first-child StButton:small StIcon {
+      icon-size: 12px; }
+    .sound-player > StBoxLayout:first-child StButton:small:hover {
+      text-shadow: 0 1px rgba(46, 52, 64, 0);
+      color: #d8dee9;
+      background-color: #3d4555;
+      border: 1px solid #1f232b;
+      box-shadow: inset 0 2px 4px rgba(61, 69, 85, 0.05); }
+    .sound-player > StBoxLayout:first-child StButton:small:active {
+      text-shadow: 0 1px rgba(46, 52, 64, 0);
+      color: #d8dee9;
+      background-color: #4c566a;
+      border: 1px solid #4c566a;
+      box-shadow: inset 0 2px 4px #4c566a; }
+.sound-player-generic-coverart {
+  background: rgba(0, 0, 0, 0.2); }
+.sound-player-overlay {
+  width: 290px;
+  padding: 15px;
+  spacing: 0.5em;
+  background: rgba(42, 47, 58, 0.9);
+  border-top: 1px solid #1f232b;
+  color: #d8dee9; }
+  .sound-player-overlay StButton {
+    width: 22px;
+    height: 13px;
+    padding: 5px;
+    color: #d8dee9;
+    border-radius: 2px;
+    border: 1px solid transparent; }
+    .sound-player-overlay StButton StIcon {
+      icon-size: 16px; }
+    .sound-player-overlay StButton:hover {
+      text-shadow: 0 1px rgba(46, 52, 64, 0);
       color: #BAC3CF;
-      border-radius: 2px;
-      border: 1px solid rgba(42, 47, 58, 0); }
-      .sound-player-overlay StButton StIcon {
-        icon-size: 16px; }
-      .sound-player-overlay StButton:hover {
-        text-shadow: 0 1px rgba(46, 52, 64, 0);
-        color: #BAC3CF;
-        border: 1px solid rgba(16, 18, 22, 0.4);
-        background-color: rgba(104, 117, 144, 0.5); }
-      .sound-player-overlay StButton:active {
-        text-shadow: 0 1px rgba(46, 52, 64, 0);
-        color: #d8dee9;
-        background-color: #4c566a;
-        border: 1px solid #4c566a;
-        box-shadow: inset 0 2px 4px #4c566a; }
-    .sound-player-overlay StBoxLayout {
-      padding-top: 2px; }
-  .sound-player .slider {
-    height: 0.5em;
-    padding: 0;
-    border: none;
-    -slider-height: 0.5em;
-    -slider-background-color: #303643;
-    -slider-border-color: rgba(0, 0, 0, 0);
-    -slider-active-background-color: #4c566a;
-    -slider-active-border-color: rgba(0, 0, 0, 0);
-    -slider-border-width: 0px;
-    -slider-handle-radius: 0px; }
+      border: 1px solid rgba(16, 18, 22, 0.4);
+      background-color: rgba(104, 117, 144, 0.5); }
+    .sound-player-overlay StButton:active {
+      text-shadow: 0 1px rgba(46, 52, 64, 0);
+      color: #d8dee9;
+      background-color: #4c566a;
+      border: 1px solid #4c566a;
+      box-shadow: inset 0 2px 4px #4c566a; }
+  .sound-player-overlay StBoxLayout {
+    padding-top: 2px; }
+  .sound-player-overlay > StBoxLayout {
+    spacing: 5px; }
+.sound-player .slider {
+  height: 0.5em;
+  padding: 0;
+  border: none;
+  -slider-height: 0.5em;
+  -slider-background-color: #303643;
+  -slider-border-color: rgba(0, 0, 0, 0);
+  -slider-active-background-color: #4c566a;
+  -slider-active-border-color: rgba(0, 0, 0, 0);
+  -slider-border-width: 0px;
+  -slider-handle-radius: 0px; }
 
 #workspaceSwitcher {
   spacing: 0px;
