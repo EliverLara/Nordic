@@ -1726,18 +1726,21 @@ StScrollBar {
 
 // 2.8
 .sound-player {
-  padding: 0 4px;
+  // padding: 0 4px;
 
   > StBoxLayout:first-child {
     padding: 5px 10px 12px 10px;
     spacing: 0.5em;
 
     StButton:small {
-      width: 16px;
-      height: 8px;
-      padding: 1px;
+      width: 20px;
+      height: 20px;
+      border: 1px solid transparent;
 
       StIcon { icon-size: 12px; }
+
+      &:hover { @include button(hover); }
+      &:active { @include button(active); }
     }
   }
 
@@ -1747,21 +1750,22 @@ StScrollBar {
 
   &-overlay {
     width: 290px;
-    height: 70px;
     padding: 15px;
     spacing: 0.5em;
-    background: transparentize(darken($osd_bg_color, 5%), 0.1);
-    border: 0px solid darken($osd_bg_color, 10%);
-    border-bottom: 1px ;
-    color: $osd_fg_color;
+    background: transparentize($osd_bg_color, 0.1);
+    border-top: 1px solid $borders_color;
+    // background: transparentize(darken($osd_bg_color, 5%), 0.1);
+    // border: 0px solid darken($osd_bg_color, 10%);
+    // border-bottom: 1px ;
+    color: $fg_color;
 
     StButton {
       width: 22px;
       height: 13px;
       padding: 5px;
-      color: $osd_fg_color;
+      color: $fg_color;
       border-radius: 2px;
-      border: 1px solid transparentize($osd_bg_color,1);
+      border: 1px solid transparent;
 
       StIcon { icon-size: 16px; }
 
@@ -1771,6 +1775,10 @@ StScrollBar {
 
     StBoxLayout {
       padding-top: 2px;
+    }
+
+    > StBoxLayout {
+      spacing: 5px;
     }
   }
 
