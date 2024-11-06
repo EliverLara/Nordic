@@ -174,6 +174,24 @@ read if you used those and something break with a version upgrade you're on your
   .app-notification.frame border {
     border: none; }
 
+toast {
+  padding: 5px;
+  background-color: #3d4555;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  color: #d8dee9; }
+  toast:backdrop {
+    background-image: none;
+    transition: 200ms ease-out; }
+  toast button {
+    padding: 2px; }
+  toast button.circular.flat.image-button {
+    padding: 2px; }
+    toast button.circular.flat.image-button:hover {
+      color: #d8dee9;
+      outline-color: rgba(216, 222, 233, 0.3);
+      background-color: #bf616a;
+      text-shadow: none; }
+
 /***************
  * Base States *
  ***************/
