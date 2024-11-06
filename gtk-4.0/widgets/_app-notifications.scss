@@ -21,3 +21,24 @@
 
   border { border: none; }
 }
+
+toast {
+ 
+  padding: 5px;
+  background-color: lighten($base_color, 7%);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  color: $fg_color;
+
+  &:backdrop {
+    background-image: none;
+    transition: $backdrop_transition;
+  }
+
+  button { padding: 2px; }
+
+  //close button
+  button.circular.flat.image-button { 
+    padding: 2px;
+    &:hover { @include button(hover, $red, $selected_fg_color); } 
+  }
+}
