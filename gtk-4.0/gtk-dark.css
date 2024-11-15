@@ -4154,57 +4154,58 @@ stacksidebar row {
 /*******************************************************************/
 /*                  PLACESSIDEBAR                                  */
 /*******************************************************************/
-placessidebar.sidebar, .nautilus-window .navigation-sidebar {
+placessidebar {
   background-color: transparent;
   background-image: linear-gradient(to right, #1f232b 40px, #2a2f3a 35px, #2a2f3a 36px, #2a2f3a 36px, #2a2f3a 99%, #2a2f3a 100%); }
-  placessidebar.sidebar row.sidebar-row.sidebar-row, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row {
-    margin: 0;
-    border-radius: 0;
+  placessidebar row {
     padding: 1px 11px; }
-    placessidebar.sidebar row.sidebar-row.sidebar-row label, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row label {
-      padding-left: 8px; }
-    placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row .sidebar-icon {
-      margin-left: -14px;
-      margin-right: 12px;
-      padding-left: 14px;
-      padding-right: 12px;
-      color: #98abb2; }
-  placessidebar.sidebar row.sidebar-row:hover, .nautilus-window .navigation-sidebar row.sidebar-row:hover {
-    background: rgba(0, 0, 0, 0.12);
-    color: inherit; }
-  placessidebar.sidebar row.sidebar-row:selected, .nautilus-window .navigation-sidebar row.sidebar-row:selected {
-    color: #d8dee9;
-    background-color: transparent;
-    background-image: linear-gradient(to right, rgba(76, 86, 106, 0.7) 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
-    placessidebar.sidebar row.sidebar-row:selected label, .nautilus-window .navigation-sidebar row.sidebar-row:selected label {
-      color: #6d7a96; }
-    placessidebar.sidebar row.sidebar-row:selected:hover, .nautilus-window .navigation-sidebar row.sidebar-row:selected:hover {
-      color: #ffffff;
-      background-color: rgba(0, 0, 0, 0.24); }
-      placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row:selected:hover .sidebar-icon {
-        color: #ffffff; }
-    placessidebar.sidebar row.sidebar-row:selected:backdrop, .nautilus-window .navigation-sidebar row.sidebar-row:selected:backdrop {
-      color: rgba(0, 0, 0, 0.54);
-      background-color: transparent;
-      background-image: linear-gradient(to right, #4c566a 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
-      placessidebar.sidebar row.sidebar-row:selected:backdrop .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row:selected:backdrop .sidebar-icon {
-        -gtk-icon-shadow: none; }
-    placessidebar.sidebar row.sidebar-row:selected .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row:selected .sidebar-icon {
-      -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.8);
+    placessidebar row.sidebar-row.sidebar-row {
+      margin: 0;
+      border-radius: 0; }
+      placessidebar row.sidebar-row.sidebar-row label {
+        padding-left: 8px; }
+      placessidebar row.sidebar-row.sidebar-row .sidebar-icon {
+        margin-left: -14px;
+        margin-right: 12px;
+        padding-left: 14px;
+        padding-right: 12px;
+        color: #98abb2; }
+    placessidebar row.sidebar-row:hover {
+      background: rgba(0, 0, 0, 0.12);
       color: inherit; }
-  placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row, placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row label, placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-new-bookmark-row, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-new-bookmark-row label, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon {
-    color: #ebcb8b; }
-  placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled) {
-    box-shadow: inset 0 1px #a3be8c, inset 0 -1px #a3be8c; }
-    placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) image, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled), .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled) label, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled) image {
-      color: #a3be8c; }
-    placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected {
-      background: #a3be8c; }
-      placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected image, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected label, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected image {
-        color: #d8dee9; }
-  placessidebar.sidebar list, .nautilus-window .navigation-sidebar list {
+    placessidebar row.sidebar-row:selected {
+      color: #d8dee9;
+      background-color: transparent;
+      background-image: linear-gradient(to right, rgba(76, 86, 106, 0.7) 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+      placessidebar row.sidebar-row:selected label {
+        color: #6d7a96; }
+      placessidebar row.sidebar-row:selected:hover {
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.24); }
+        placessidebar row.sidebar-row:selected:hover .sidebar-icon {
+          color: #ffffff; }
+      placessidebar row.sidebar-row:selected:backdrop {
+        color: rgba(0, 0, 0, 0.54);
+        background-color: transparent;
+        background-image: linear-gradient(to right, #4c566a 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+        placessidebar row.sidebar-row:selected:backdrop .sidebar-icon {
+          -gtk-icon-shadow: none; }
+      placessidebar row.sidebar-row:selected .sidebar-icon {
+        -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.8);
+        color: inherit; }
+    placessidebar row.sidebar-row.sidebar-new-bookmark-row, placessidebar row.sidebar-row.sidebar-new-bookmark-row label, placessidebar row.sidebar-row.sidebar-new-bookmark-row .sidebar-icon {
+      color: #ebcb8b; }
+    placessidebar row.sidebar-row:drop(active):not(:disabled) {
+      box-shadow: inset 0 1px #a3be8c, inset 0 -1px #a3be8c; }
+      placessidebar row.sidebar-row:drop(active):not(:disabled), placessidebar row.sidebar-row:drop(active):not(:disabled) label, placessidebar row.sidebar-row:drop(active):not(:disabled) image {
+        color: #a3be8c; }
+      placessidebar row.sidebar-row:drop(active):not(:disabled):selected {
+        background: #a3be8c; }
+        placessidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar row.sidebar-row:drop(active):not(:disabled):selected image {
+          color: #d8dee9; }
+  placessidebar list {
     background-color: transparent; }
-    placessidebar.sidebar list:backdrop, .nautilus-window .navigation-sidebar list:backdrop {
+    placessidebar list:backdrop {
       background-color: transparent; }
 
 .bottom-bar {
