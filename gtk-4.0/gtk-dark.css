@@ -3294,6 +3294,78 @@ paned.vertical > separator {
   padding-left: 0;
   padding-right: 0; }
 
+#NautilusPathBar {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  color: #d8dee9;
+  border-radius: 6px;
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid #232831;
+  background-color: #343b48; }
+  #NautilusPathBar .dim-label, #NautilusPathBar label.separator, #NautilusPathBar .titlebar .subtitle, .titlebar #NautilusPathBar .subtitle,
+  #NautilusPathBar headerbar .subtitle,
+  headerbar #NautilusPathBar .subtitle {
+    color: transparent;
+    margin-right: -5px; }
+  #NautilusPathBar button .horizontal > .dim-label, #NautilusPathBar button .horizontal > label.separator, #NautilusPathBar button .titlebar .horizontal > .subtitle, .titlebar #NautilusPathBar button .horizontal > .subtitle,
+  #NautilusPathBar button headerbar .horizontal > .subtitle,
+  headerbar #NautilusPathBar button .horizontal > .subtitle {
+    color: #d8dee9;
+    padding: 3px 12px;
+    margin: 0;
+    border-right: 1px solid #232831; }
+  #NautilusPathBar button:hover .dim-label, #NautilusPathBar button:hover label.separator, #NautilusPathBar button:hover .titlebar .subtitle, .titlebar #NautilusPathBar button:hover .subtitle,
+  #NautilusPathBar button:hover headerbar .subtitle,
+  headerbar #NautilusPathBar button:hover .subtitle, #NautilusPathBar button:focus .dim-label, #NautilusPathBar button:focus label.separator, #NautilusPathBar button:focus .titlebar .subtitle, .titlebar #NautilusPathBar button:focus .subtitle,
+  #NautilusPathBar button:focus headerbar .subtitle,
+  headerbar #NautilusPathBar button:focus .subtitle {
+    color: #fff;
+    text-shadow: none;
+    background-color: rgba(143, 188, 187, 0.7); }
+  #NautilusPathBar button > .horizontal > image.dim-label, #NautilusPathBar .titlebar button > .horizontal > image.subtitle, .titlebar #NautilusPathBar button > .horizontal > image.subtitle,
+  #NautilusPathBar headerbar button > .horizontal > image.subtitle,
+  headerbar #NautilusPathBar button > .horizontal > image.subtitle {
+    padding: 3px 0px 3px 12px;
+    border-right: none;
+    margin-right: -6px; }
+  #NautilusPathBar button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0; }
+  #NautilusPathBar .current-dir label {
+    padding: 1px 12px; }
+  #NautilusPathBar .current-dir label, #NautilusPathBar .current-dir image {
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(143, 188, 187, 0.7);
+    text-shadow: none; }
+  #NautilusPathBar button.current-dir:only-child image {
+    margin-right: -6px;
+    padding: 0px 0px 0px 12px;
+    border-radius: 6px 0px 0px 6px; }
+
+#NautilusQueryEditor {
+  margin-top: 6px;
+  margin-bottom: 6px; }
+  #NautilusQueryEditor #NautilusQueryEditorTag > button {
+    margin: 0; }
+  #NautilusQueryEditor > menubutton > button {
+    border-color: transparent;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    margin-right: -7px;
+    -gtk-icon-size: 12px;
+    padding: 0 4px; }
+    #NautilusQueryEditor > menubutton > button:hover image, #NautilusQueryEditor > menubutton > button:active image, #NautilusQueryEditor > menubutton > button:focus image, #NautilusQueryEditor > menubutton > button:checked image {
+      color: #2e3440; }
+  #NautilusQueryEditor > text, #NautilusQueryEditor > image {
+    margin: 0; }
+
 /***************
  * Popovers   *
  ***************/
@@ -5668,76 +5740,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     background-color: rgba(59, 66, 82, 0.5); }
     .nautilus-window .sidebar .list-row:hover:active {
       background-color: rgba(143, 188, 187, 0.9); }
-.nautilus-window #NautilusPathBar {
-  margin-top: 7px;
-  margin-bottom: 7px;
-  color: #d8dee9;
-  border-radius: 6px;
-  text-shadow: none;
-  box-shadow: none;
-  border: 1px solid #232831;
-  background-color: #343b48; }
-  .nautilus-window #NautilusPathBar .dim-label, .nautilus-window #NautilusPathBar label.separator, .nautilus-window #NautilusPathBar .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar .subtitle,
-  .nautilus-window #NautilusPathBar headerbar .subtitle,
-  headerbar .nautilus-window #NautilusPathBar .subtitle {
-    color: transparent;
-    margin-right: -5px; }
-  .nautilus-window #NautilusPathBar button .horizontal > .dim-label, .nautilus-window #NautilusPathBar button .horizontal > label.separator, .nautilus-window #NautilusPathBar button .titlebar .horizontal > .subtitle, .titlebar .nautilus-window #NautilusPathBar button .horizontal > .subtitle,
-  .nautilus-window #NautilusPathBar button headerbar .horizontal > .subtitle,
-  headerbar .nautilus-window #NautilusPathBar button .horizontal > .subtitle {
-    color: #d8dee9;
-    padding: 3px 12px;
-    margin: 0;
-    border-right: 1px solid #232831; }
-  .nautilus-window #NautilusPathBar button:hover .dim-label, .nautilus-window #NautilusPathBar button:hover label.separator, .nautilus-window #NautilusPathBar button:hover .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar button:hover .subtitle,
-  .nautilus-window #NautilusPathBar button:hover headerbar .subtitle,
-  headerbar .nautilus-window #NautilusPathBar button:hover .subtitle, .nautilus-window #NautilusPathBar button:focus .dim-label, .nautilus-window #NautilusPathBar button:focus label.separator, .nautilus-window #NautilusPathBar button:focus .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar button:focus .subtitle,
-  .nautilus-window #NautilusPathBar button:focus headerbar .subtitle,
-  headerbar .nautilus-window #NautilusPathBar button:focus .subtitle {
-    color: #fff;
-    text-shadow: none;
-    background-color: rgba(143, 188, 187, 0.7); }
-  .nautilus-window #NautilusPathBar button > .horizontal > image.dim-label, .nautilus-window #NautilusPathBar .titlebar button > .horizontal > image.subtitle, .titlebar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle,
-  .nautilus-window #NautilusPathBar headerbar button > .horizontal > image.subtitle,
-  headerbar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle {
-    padding: 3px 0px 3px 12px;
-    border-right: none;
-    margin-right: -6px; }
-  .nautilus-window #NautilusPathBar button {
-    background: transparent;
-    border: none;
-    margin: 0;
-    padding: 0; }
-  .nautilus-window #NautilusPathBar .current-dir label {
-    padding: 1px 12px; }
-  .nautilus-window #NautilusPathBar .current-dir label, .nautilus-window #NautilusPathBar .current-dir image {
-    color: #fff;
-    outline-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(143, 188, 187, 0.7);
-    text-shadow: none; }
-  .nautilus-window #NautilusPathBar button.current-dir:only-child image {
-    margin-right: -6px;
-    padding: 0px 0px 0px 12px;
-    border-radius: 6px 0px 0px 6px; }
-.nautilus-window #NautilusQueryEditor {
-  margin-top: 8px;
-  margin-bottom: 8px; }
-  .nautilus-window #NautilusQueryEditor #NautilusQueryEditorTag > button {
-    margin: 0; }
-  .nautilus-window #NautilusQueryEditor > menubutton > button {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none;
-    margin-right: -7px;
-    -gtk-icon-size: 12px;
-    padding: 0 4px; }
-    .nautilus-window #NautilusQueryEditor > menubutton > button:hover image, .nautilus-window #NautilusQueryEditor > menubutton > button:active image, .nautilus-window #NautilusQueryEditor > menubutton > button:focus image, .nautilus-window #NautilusQueryEditor > menubutton > button:checked image {
-      color: #fff; }
-  .nautilus-window #NautilusQueryEditor > text, .nautilus-window #NautilusQueryEditor > image {
-    margin: 0; }
 .nautilus-window notebook > stack:only-child {
   background-color: #3b4252; }
   .nautilus-window notebook > stack:only-child:backdrop {
