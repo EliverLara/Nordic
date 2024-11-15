@@ -117,7 +117,7 @@ stacksidebar {
 /*                  PLACESSIDEBAR                                  */
 /*******************************************************************/
 
-placessidebar.sidebar, .nautilus-window .navigation-sidebar{
+placessidebar {
 	
 		background-color: transparent;
 		background-image:linear-gradient(to right, darken($main_dark_color, 5%) 40px,
@@ -125,11 +125,11 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar{
 												$_sidebar_color 36px,$_sidebar_color 99%, 
 												$_sidebar_color 100%);
 		row{
+      padding: 1px 11px;
 			&.sidebar-row {
 				&.sidebar-row{
           margin: 0;
           border-radius: 0;
-          padding: 1px 11px;
           label { padding-left: 8px; }
 					.sidebar-icon {
 						margin-left:-14px;
