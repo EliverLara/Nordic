@@ -30,8 +30,6 @@
 
 // nautilus, filechooser(Gnome 47) pathbar
 #NautilusPathBar {
-  margin-top: 6px;
-  margin-bottom: 6px;
   @include button(normal-header);
 
   .dim-label {
@@ -43,7 +41,7 @@
   button {
     .horizontal > .dim-label {
       color: $headerbar_fg_color;
-      padding: 3px 12px;
+      padding: 5.5px 12px;
       margin: 0;
       border-right: 1px solid $borders_color;
     }
@@ -67,9 +65,23 @@
     padding: 0;
   }
 
+  // Current directory options button
+  .flat.popup {
+    margin: 0;
+    button {
+      padding: 4px 6px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      &:hover, &:active, &:checked {
+        @include button(active, transparentize($selected_bg_color, 0.3), #fff);
+      }
+    }
+  }
+
+
   // Selected dir
   .current-dir  {
-    label { padding: 1px 12px; }
+    label { padding: 5.5px 12px; }
 
     label, image { @include button(active, transparentize($selected_bg_color, 0.3), #fff); }
   }
@@ -86,20 +98,11 @@
 // search entry
 #NautilusQueryEditor { 
 
-  margin-top: 6px;
-  margin-bottom: 6px;
-
-  #NautilusQueryEditorTag {
-    > button {
-      margin: 0;
-    }
-  }
-
   > menubutton > button {
-    @include button(undecorated);
     margin-right: -7px;
     -gtk-icon-size: 12px;
-    padding: 0 4px;
+    border: none;
+    background-color: transparent;
     &:hover, &:active, &:focus, &:checked {
       image { color: $selected_fg_color; }
     }
