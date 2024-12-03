@@ -1163,7 +1163,7 @@ $slider_size: 19px;
         .message {
           &:hover,&:focus { 
             background-color: lighten($bg_color, 4%);
-            box-shadow: 3px 0px 0px 0px $selected_bg_color inset;
+            box-shadow: 2px 0px 0px 0px $selected_bg_color inset;
             border-radius: 1px 7px 7px 1px;
            }
         
@@ -1773,13 +1773,13 @@ $slider_size: 19px;
     margin: 5px;
     border-radius: 12px;
     color: $topbar_color;
-    background-color: $bg_color;
+    background-color: darken($bg_color, 2%);
     border: 1px solid $borders_color;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.445);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
     &:hover, &:focus { 
-      background-color: lighten($bg_color, 3%); 
-      box-shadow: none;
+      background-color: $bg_color; 
       border-radius: 12px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
     }
     *{ color: $topbar_color; }
 
@@ -1794,12 +1794,16 @@ $slider_size: 19px;
     }
     .notification-button {
       padding: 7px;
-      background-color: transparentize($bg_color, 0.1);
-      box-shadow: none;
+      @extend %button;
+      border-color: transparent;
       &:first-child { border-radius: 0 0 0 12px; }
       &:last-child { border-radius: 0 0 12px 0; }
-      &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}
+      &:hover, &:focus { border-color: transparent !important;}
     }
+  }
+  
+  .notification-buttons-bin .notification-button {
+    border-radius: 10px !important;
   }
   .summary-source-counter {
     font-size: 10pt;
