@@ -8,34 +8,34 @@ stage {
 
 /* WIDGETS */
 /* Buttons */
-.button, .icon-button, .modal-dialog .modal-dialog-button-box .modal-dialog-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+.button, .icon-button, .modal-dialog .modal-dialog-button-box .modal-dialog-button, .app-folder-dialog .edit-folder-button, .notification-banner .notification-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
   color: #d8dee9;
   background-color: #343b49;
   box-shadow: none;
   border: 1px solid #1f232b;
   text-shadow: 0 1px black;
   icon-shadow: 0 1px black; }
-  .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
+  .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .notification-banner .notification-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
     background-color: #3b4252;
     color: #d8dee9;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: none !important;
     border: 1px solid #1f232b; }
-  .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
+  .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .notification-banner .notification-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
     color: #838995;
     background-color: rgba(64, 70, 82, 0.66);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .modal-dialog .modal-dialog-button-box .modal-dialog-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .modal-dialog .modal-dialog-button-box .modal-dialog-button:active, .app-folder-dialog .edit-folder-button:active, .notification-banner .notification-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked, .app-folder-dialog .edit-folder-button:checked, .notification-banner .notification-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
     color: #d8dee9;
     background-color: #5E6A82;
     border: 1px solid #1f232b;
     text-shadow: none;
     icon-shadow: none; }
-  .button:hover, .icon-button:hover, .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
+  .button:hover, .icon-button:hover, .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover, .app-folder-dialog .edit-folder-button:hover, .notification-banner .notification-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     background-color: #3b4252;
     color: #d8dee9;
     border: 1px solid #1f232b;
@@ -994,7 +994,7 @@ StScrollBar {
   box-shadow: none; }
   .message:hover, .message:focus {
     background-color: #373e4c;
-    box-shadow: 3px 0px 0px 0px #5E6A82 inset;
+    box-shadow: 2px 0px 0px 0px #5E6A82 inset;
     border-radius: 1px 7px 7px 1px; }
 
 .message-secondary-bin > .event-time {
@@ -1535,13 +1535,13 @@ StScrollBar {
   margin: 5px;
   border-radius: 12px;
   color: #d8dee9;
-  background-color: #2e3440;
+  background-color: #2a2f3a;
   border: 1px solid #1f232b;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.445); }
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3); }
   .notification-banner:hover, .notification-banner:focus {
-    background-color: #343b49;
-    box-shadow: none;
-    border-radius: 12px; }
+    background-color: #2e3440;
+    border-radius: 12px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
   .notification-banner * {
     color: #d8dee9; }
   .notification-banner .notification-icon {
@@ -1558,15 +1558,16 @@ StScrollBar {
     border-radius: 0px 0px 12px 12px; }
   .notification-banner .notification-button {
     padding: 7px;
-    background-color: rgba(46, 52, 64, 0.9);
-    box-shadow: none; }
+    border-color: transparent; }
     .notification-banner .notification-button:first-child {
       border-radius: 0 0 0 12px; }
     .notification-banner .notification-button:last-child {
       border-radius: 0 0 12px 0; }
-    .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
-      background-color: #2a2f3a;
-      color: #5E6A82; }
+    .notification-banner .notification-button:hover, .notification-banner .notification-button:focus {
+      border-color: transparent !important; }
+
+.notification-buttons-bin .notification-button {
+  border-radius: 10px !important; }
 
 .summary-source-counter {
   font-size: 10pt;
