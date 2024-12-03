@@ -1315,9 +1315,6 @@ StScrollBar {
   text-align: center;
   -x-offset: 8px; }
 
-#dash .app-well-app-running-dot, #dash .app-grid-running-dot {
-  margin-bottom: 14px; }
-
 /* App Vault/Grid */
 .icon-grid {
   spacing: 30px;
@@ -1397,8 +1394,7 @@ StScrollBar {
   height: 5px;
   background-color: #81a1c1;
   border-radius: 5px !important;
-  box-shadow: 0px 0px 5px 4px rgba(129, 161, 193, 0.8);
-  margin-bottom: 0px !important; }
+  box-shadow: 0px 0px 5px 4px #81a1c1; }
 
 .app-well-app .overview-icon,
 .app-well-app.app-folder .overview-icon,
