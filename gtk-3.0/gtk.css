@@ -6120,39 +6120,12 @@ ConversationListView {
     background-color: #4c566a;
     color: #d8dee9; }
 .nemo-window toolbar.primary-toolbar {
-  margin-bottom: -1px;
   background: #2b313c; }
-  .nemo-window toolbar.primary-toolbar button {
-    color: #d8dee9;
-    border-radius: 4px;
-    text-shadow: none;
-    box-shadow: none;
-    border: 1px solid #1f232b;
-    background-color: #2a2f3a;
-    min-height: 24px;
-    padding: 3px; }
-    .nemo-window toolbar.primary-toolbar button:hover {
-      color: #d8dee9;
-      text-shadow: none;
-      background-color: rgba(76, 86, 106, 0.8); }
-    .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
-      color: #d8dee9;
-      outline-color: rgba(216, 222, 233, 0.3);
-      background-color: #4c566a;
-      text-shadow: none; }
-      .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
-        color: rgba(216, 222, 233, 0.5);
-        background-color: rgba(76, 86, 106, 0.6);
-        border: 1px solid #1f232b;
-        border-radius: 4px; }
-    .nemo-window toolbar.primary-toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:backdrop:disabled {
-      color: rgba(216, 222, 233, 0.2);
-      background-color: #2a2f3a;
-      border: 1px solid #1f232b;
-      border-radius: 4px; }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
 .nemo-window .nemo-inactive-pane iconview {
   background-color: #282d37; }
+.nemo-window grid > paned > separator {
+  background-image: image(#2a2f3a); }
 
 /* thunar */
 .thunar toolbar {
