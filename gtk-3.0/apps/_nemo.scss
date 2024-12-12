@@ -36,36 +36,13 @@
     }
 
     toolbar.primary-toolbar {
-        margin-bottom: -1px;
         background: $headerbar_color;
-        button {
-            @include button(normal-header);
-            min-height: 24px;
-            padding: 3px;
-            &:hover { @include button(hover-header, $selected_bg_color, $selected_fg_color); }
-
-            &:selected,
-            &:active,
-            &:checked { 
-                @include button(active, $selected_bg_color, $selected_fg_color); 
-                &:backdrop {
-                    @include button(backdrop-header, $backdrop_selected_bg_color, $backdrop_selected_fg_color);
-                }
-            }
-
-            &:backdrop,
-            &:disabled,
-            &:backdrop:disabled {
-                @include button(backdrop-header, $main_dark_color, transparentize($headerbar_fg_color, 0.8));
-            }
-
-  
-        }
     }
 
     .nemo-inactive-pane .view,
     .nemo-inactive-pane iconview {
         background-color: darken($base_color, 3%); 
     }
-    
+
+    grid > paned > separator { background-image: image($_sidebar_color); }
 }
