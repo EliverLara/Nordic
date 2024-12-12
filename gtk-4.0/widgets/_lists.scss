@@ -47,6 +47,8 @@ row {
     }
   }
 
+  .view { background-color: transparent; }
+
   &:selected { @extend %selected_items; }
 }
 
