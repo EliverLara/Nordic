@@ -119,4 +119,5 @@ infobar {
 banner revealer widget {
   background: lighten($bg_color, 5%);
   padding: 5px;
+  color: $fg_color;
 }
