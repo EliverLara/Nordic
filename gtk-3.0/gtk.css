@@ -5789,9 +5789,9 @@ radiobutton.color-button:active > radio {
     background-color: #3c4454;
     text-shadow: none; }
     #XfceNotifyWindow button:hover {
-      color: #81a1c1;
+      color: #8fbcbb;
       text-shadow: none;
-      background-color: rgba(129, 161, 193, 0.6); }
+      background-color: rgba(143, 188, 187, 0.5); }
 
 /********
 * Unity *
