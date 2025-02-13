@@ -73,7 +73,7 @@ stage {
     border: 1px solid rgba(16, 18, 22, 0.4);
     background-color: rgba(89, 100, 123, 0.25); }
 
-.menu #notification StEntry, .popup-menu #notification StEntry, #menu-search-entry {
+.menu #notification StEntry, .popup-menu #notification StEntry, #menu-search-entry, .run-dialog-entry, .prompt-dialog-password-entry {
   padding: 7px;
   caret-size: 1px;
   selection-background-color: #4c566a;
@@ -84,19 +84,19 @@ stage {
   background-color: #2e3440;
   border: 1px solid #1f232b;
   box-shadow: inset 0 2px 4px rgba(46, 52, 64, 0.05); }
-  .menu #notification StEntry:focus, .popup-menu #notification StEntry:focus, #menu-search-entry:focus, .menu #notification StEntry:hover, .popup-menu #notification StEntry:hover, #menu-search-entry:hover {
+  .menu #notification StEntry:focus, .popup-menu #notification StEntry:focus, #menu-search-entry:focus, .run-dialog-entry:focus, .prompt-dialog-password-entry:focus, .menu #notification StEntry:hover, .popup-menu #notification StEntry:hover, #menu-search-entry:hover, .run-dialog-entry:hover, .prompt-dialog-password-entry:hover {
     color: #d8dee9;
     background-color: #2e3440;
     border: 1px solid #4c566a;
     box-shadow: inset 0 2px 4px rgba(46, 52, 64, 0.05); }
-  .menu #notification StEntry:insensitive, .popup-menu #notification StEntry:insensitive, #menu-search-entry:insensitive {
+  .menu #notification StEntry:insensitive, .popup-menu #notification StEntry:insensitive, #menu-search-entry:insensitive, .run-dialog-entry:insensitive, .prompt-dialog-password-entry:insensitive {
     color: rgba(216, 222, 233, 0.45);
     background-color: #343a48;
     border-color: 1px solid #2c313d;
     box-shadow: inset 0 2px 4px rgba(52, 58, 72, 0.05); }
-  .menu #notification StEntry StIcon.capslock-warning, .popup-menu #notification StEntry StIcon.capslock-warning, #menu-search-entry StIcon.capslock-warning {
+  .menu #notification StEntry StIcon.capslock-warning, .popup-menu #notification StEntry StIcon.capslock-warning, #menu-search-entry StIcon.capslock-warning, .run-dialog-entry StIcon.capslock-warning, .prompt-dialog-password-entry StIcon.capslock-warning {
     icon-size: 16px;
-    warning-color: #F27835;
+    warning-color: #c3674a;
     padding: 0 4px; }
 
 .notification StEntry {
@@ -344,7 +344,7 @@ StScrollBar {
   color: #d8dee9; }
   #panel:highlight {
     border-image: none;
-    background-color: rgba(252, 65, 56, 0.5); }
+    background-color: rgba(184, 79, 89, 0.5); }
   #panelLeft {
     spacing: 4px; }
     #panelLeft:dnd {
@@ -389,9 +389,9 @@ StScrollBar {
   font-size: 1em;
   padding: 0px; }
 .panel-dummy {
-  background-color: rgba(252, 65, 56, 0.5); }
+  background-color: rgba(184, 79, 89, 0.5); }
   .panel-dummy:entered {
-    background-color: rgba(252, 65, 56, 0.6); }
+    background-color: rgba(184, 79, 89, 0.6); }
 .panel-status-button {
   border-width: 0;
   -natural-hpadding: 3px;
@@ -606,7 +606,7 @@ StScrollBar {
       font-weight: bold; }
     .calendar-event-button .calendar-event-countdown:imminent {
       font-weight: bold;
-      color: #F27835; }
+      color: #c3674a; }
     .calendar-event-button .calendar-event-countdown:current {
       font-weight: bold;
       color: #4c566a; }
@@ -900,7 +900,7 @@ StScrollBar {
     color: #BAC3CF;
     padding-bottom: 0; }
   .run-dialog-error-label {
-    color: #FC4138; }
+    color: #b84f59; }
   .run-dialog-error-box {
     padding-top: 15px;
     spacing: 5px; }
@@ -934,7 +934,7 @@ StScrollBar {
   icon-size: 48px; }
 
 .mount-password-reask {
-  color: #F27835; }
+  color: #c3674a; }
 
 .show-processes-dialog,
 .mount-question-dialog {
@@ -1152,7 +1152,7 @@ StScrollBar {
     padding-top: 10px;
     padding-bottom: 10px; }
   .window-list-box:highlight {
-    background-color: rgba(252, 65, 56, 0.5); }
+    background-color: rgba(184, 79, 89, 0.5); }
 .window-list-item-label {
   font-weight: normal;
   width: 15em;
@@ -1192,8 +1192,8 @@ StScrollBar {
     background-color: rgba(76, 86, 106, 0.8); }
 .window-list-item-demands-attention {
   background-gradient-direction: vertical;
-  background-gradient-start: #F04A50;
-  background-gradient-end: #F04A50; }
+  background-gradient-start: #b84f59;
+  background-gradient-end: #b84f59; }
 .window-list-preview {
   spacing: 6px;
   color: #d8dee9;
@@ -1242,8 +1242,8 @@ StScrollBar {
     background-color: rgba(76, 86, 106, 0.8); }
 .grouped-window-list-item-demands-attention {
   background-gradient-direction: vertical;
-  background-gradient-start: #F04A50;
-  background-gradient-end: #F04A50; }
+  background-gradient-start: #b84f59;
+  background-gradient-end: #b84f59; }
 .grouped-window-list-thumbnail-label {
   padding-left: 4px; }
 .grouped-window-list-number-label {
@@ -1479,7 +1479,7 @@ StScrollBar {
   .applet-box:highlight {
     background-image: none;
     border-image: none;
-    background-color: rgba(252, 65, 56, 0.5); }
+    background-color: rgba(184, 79, 89, 0.5); }
 .applet-label {
   font-weight: bold;
   color: #d8dee9; }
@@ -1509,14 +1509,14 @@ StScrollBar {
 .desklet {
   color: #BAC3CF; }
   .desklet:highlight {
-    background-color: rgba(252, 65, 56, 0.5); }
+    background-color: rgba(184, 79, 89, 0.5); }
   .desklet-with-borders {
     border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
     color: #BAC3CF;
     padding: 12px;
     padding-bottom: 16px; }
     .desklet-with-borders:highlight {
-      background-color: rgba(252, 65, 56, 0.5); }
+      background-color: rgba(184, 79, 89, 0.5); }
   .desklet-with-borders-and-header {
     border-image: url("common-assets/misc/desklet.svg") 9 9 9 9;
     color: #BAC3CF;
@@ -1526,7 +1526,7 @@ StScrollBar {
     padding: 12px;
     padding-bottom: 17px; }
     .desklet-with-borders-and-header:highlight {
-      background-color: rgba(252, 65, 56, 0.5); }
+      background-color: rgba(184, 79, 89, 0.5); }
   .desklet-header {
     border-image: url("common-assets/misc/desklet-header.svg") 9 9 9 9;
     color: #BAC3CF;
@@ -1566,5 +1566,300 @@ StScrollBar {
   border: 0px;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0px; }
+
+.dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description, .message-dialog-content .message-dialog-caption, .run-dialog-description, .prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label {
+  font-weight: 400;
+  font-size: 0.818em; }
+
+.dialog .confirm-dialog-title, .message-dialog-content .message-dialog-title {
+  font-weight: 800;
+  font-size: 1.364em; }
+
+.message-dialog-content .message-dialog-title.lightweight, .media-keys-osd, .workspace-switch-osd {
+  font-weight: 700;
+  font-size: 1.182em; }
+
+.dialog-list .dialog-list-title, .polkit-dialog-user-combo {
+  font-weight: 700;
+  font-size: 1em; }
+
+.polkit-dialog-user-combo, .audio-device-selection-dialog .audio-selection-box .audio-selection-device {
+  border: 1px solid #3b4252;
+  color: #d8dee9;
+  background-color: #3b4252; }
+  .polkit-dialog-user-combo:focus, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:focus {
+    border: 1px solid #3b4252;
+    color: #d8dee9;
+    background-color: #3b4252;
+    border: 1px solid #5b667e; }
+  .polkit-dialog-user-combo:hover, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:hover {
+    border: 1px solid #3b4252;
+    color: #d8dee9;
+    background-color: #505a70; }
+  .polkit-dialog-user-combo:insensitive, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:insensitive {
+    border: 1px solid #3b4252;
+    color: rgba(216, 222, 233, 0.5);
+    background-color: #3b4252; }
+  .polkit-dialog-user-combo:selected, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:selected, .polkit-dialog-user-combo:active, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:active {
+    border: 1px solid #3b4252;
+    color: #d8dee9;
+    background-color: #464e61; }
+  .polkit-dialog-user-combo:checked, .audio-device-selection-dialog .audio-selection-box .audio-selection-device:checked {
+    border: 1px solid #3b4252;
+    color: #d8dee9;
+    background-color: #464e61; }
+
+.dialog .dialog-button:default, .dialog .dialog-button:destructive-action, .dialog .dialog-button {
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #323946;
+  color: #d8dee9;
+  background-color: #323946; }
+  .dialog .dialog-button:focus {
+    border: 1px solid #323946;
+    color: #d8dee9;
+    background-color: #323946;
+    border: 1px solid #525d72; }
+  .dialog .dialog-button:hover {
+    border: 1px solid #323946;
+    color: #d8dee9;
+    background-color: #485164; }
+  .dialog .dialog-button:active {
+    border: 1px solid #323946;
+    color: #d8dee9;
+    background-color: #3d4555; }
+  .dialog .dialog-button:checked {
+    border: 1px solid #323946;
+    color: #d8dee9;
+    background-color: #3d4555; }
+  .dialog .dialog-button:insensitive {
+    border: 1px solid #323946;
+    color: rgba(216, 222, 233, 0.5);
+    background-color: #2c323d; }
+
+.dialog .dialog-button:default {
+  border: 1px solid #4c566a;
+  color: #d8dee9;
+  background-color: #4c566a; }
+  .dialog .dialog-button:focus:default {
+    border: 1px solid #4c566a;
+    color: #d8dee9;
+    background-color: #4c566a;
+    border: 1px solid #6d7a96; }
+  .dialog .dialog-button:hover:default {
+    border: 1px solid #4c566a;
+    color: #d8dee9;
+    background-color: #616e88; }
+  .dialog .dialog-button:active:default {
+    border: 1px solid #4c566a;
+    color: #d8dee9;
+    background-color: #576279; }
+  .dialog .dialog-button:checked:default {
+    border: 1px solid #4c566a;
+    color: #d8dee9;
+    background-color: #576279; }
+  .dialog .dialog-button:insensitive:default {
+    border-color: #1f232b;
+    border: 1px solid #323946;
+    color: rgba(216, 222, 233, 0.5);
+    background-color: #2c323d; }
+
+.dialog .dialog-button:destructive-action {
+  border: 1px solid #b84f59;
+  color: #d8dee9;
+  background-color: #b84f59; }
+  .dialog .dialog-button:focus:destructive-action {
+    border: 1px solid #b84f59;
+    color: #d8dee9;
+    background-color: #b84f59;
+    border: 1px solid #ce858c; }
+  .dialog .dialog-button:hover:destructive-action {
+    border: 1px solid #b84f59;
+    color: #d8dee9;
+    background-color: #c6737b; }
+  .dialog .dialog-button:active:destructive-action {
+    border: 1px solid #b84f59;
+    color: #d8dee9;
+    background-color: #bf616a; }
+  .dialog .dialog-button:checked:destructive-action {
+    border: 1px solid #b84f59;
+    color: #d8dee9;
+    background-color: #bf616a; }
+  .dialog .dialog-button:insensitive:destructive-action {
+    border-color: #1f232b;
+    border: 1px solid #323946;
+    color: rgba(216, 222, 233, 0.5);
+    background-color: #2c323d; }
+
+.dialog {
+  background-color: #2a2f3a;
+  border-radius: 18px;
+  border: 1px solid #1f232b;
+  padding: 18px; }
+  .dialog .dialog-content-box {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    spacing: 32px;
+    max-width: 28em; }
+  .dialog .confirm-dialog-title {
+    text-align: center; }
+
+.dialog-list {
+  spacing: 18px; }
+  .dialog-list .dialog-list-title {
+    text-align: center; }
+  .dialog-list .dialog-list-scrollview {
+    max-height: 200px; }
+  .dialog-list .dialog-list-box {
+    spacing: 1em; }
+    .dialog-list .dialog-list-box .dialog-list-item {
+      spacing: 1em; }
+      .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-title {
+        font-weight: bold; }
+      .dialog-list .dialog-list-box .dialog-list-item .dialog-list-item-description {
+        color: #c8d0e0; }
+
+.end-session-dialog {
+  min-width: 40em; }
+  .end-session-dialog .dialog-content-box {
+    spacing: 0; }
+  .end-session-dialog .dialog-list {
+    spacing: 0; }
+    .end-session-dialog .dialog-list .dialog-list-title {
+      color: #c3674a;
+      background-color: tranparentize(#c3674a, 0.9);
+      padding: 9px;
+      border-radius: 18px;
+      margin: 4px 0; }
+
+.message-dialog-content {
+  spacing: 18px; }
+  .message-dialog-content .message-dialog-title {
+    text-align: center; }
+  .message-dialog-content .message-dialog-description {
+    text-align: center; }
+  .message-dialog-content .message-dialog-caption {
+    text-align: center; }
+
+.run-dialog .dialog-content-box {
+  margin: 4px; }
+.run-dialog-description {
+  text-align: center;
+  color: #97a7c4; }
+  .run-dialog-description.error {
+    color: #b84f59; }
+.run-dialog-completion-box {
+  padding-top: 6px;
+  padding-left: 12px; }
+.run-dialog-entry {
+  width: 20em;
+  height: 1.2em; }
+
+.prompt-dialog {
+  width: 28em; }
+  .prompt-dialog .dialog-content-box {
+    spacing: 16px;
+    margin-bottom: 12px; }
+  .prompt-dialog-password-entry {
+    width: 20em; }
+  .prompt-dialog-password-layout {
+    spacing: 8px; }
+  .prompt-dialog-error-label, .prompt-dialog-info-label, .prompt-dialog-null-label {
+    text-align: center; }
+  .prompt-dialog-error-label {
+    color: #b84f59; }
+
+.polkit-dialog-user-layout {
+  text-align: center;
+  spacing: 2px; }
+.polkit-dialog-user-combo {
+  border-radius: 6px;
+  padding: 6px 36px; }
+  .polkit-dialog-user-combo:insensitive {
+    color: #d8dee9; }
+
+.audio-device-selection-dialog {
+  min-width: 24em; }
+  .audio-device-selection-dialog .audio-selection-box {
+    spacing: 12px; }
+    .audio-device-selection-dialog .audio-selection-box .audio-selection-device {
+      border-radius: 18px; }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device .audio-selection-device-box {
+        padding: 12px;
+        spacing: 12px; }
+      .audio-device-selection-dialog .audio-selection-box .audio-selection-device .audio-selection-device-icon {
+        icon-size: 64px; }
+
+.media-keys-osd, .info-osd, .workspace-switch-osd {
+  background-color: #2a2f3a;
+  border: 1px solid #1f232b;
+  border-radius: 18px;
+  text-align: center;
+  padding: 24px; }
+
+.media-keys-osd {
+  margin-bottom: 1em;
+  border-radius: 18px;
+  font-weight: bold;
+  spacing: 12px;
+  padding: 12px 24px; }
+  .media-keys-osd > * {
+    spacing: 12px; }
+  .media-keys-osd StIcon {
+    icon-size: 32px; }
+  .media-keys-osd StLabel:ltr {
+    margin-right: 6px; }
+  .media-keys-osd StLabel:rtl {
+    margin-left: 6px; }
+  .media-keys-osd .level {
+    min-width: 160px;
+    -barlevel-height: 6px;
+    -barlevel-background-color: #3f4758;
+    -barlevel-active-background-color: #4c566a;
+    -barlevel-amplify-color: #c3674a;
+    -barlevel-amplify-separator-width: 3px; }
+    .media-keys-osd .level:ltr {
+      margin-right: 6px; }
+    .media-keys-osd .level:rtl {
+      margin-left: 6px; }
+  .media-keys-osd .level-bar {
+    border-radius: 18px;
+    background-color: #d8dee9; }
+
+.info-osd {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center; }
+
+.workspace-switch-osd {
+  min-width: 140px;
+  margin-bottom: 1em;
+  border-radius: 18px;
+  font-weight: bold;
+  padding: 12px 36px 0 36px; }
+  .workspace-switch-osd-indicator-box {
+    spacing: 12px; }
+  .workspace-switch-osd-indicator {
+    background-color: rgba(216, 222, 233, 0.5);
+    padding: 3px;
+    margin: 15px;
+    border-radius: 36px; }
+    .workspace-switch-osd-indicator:active {
+      background-color: #4c566a;
+      padding: 6px;
+      margin: 12px; }
+
+.monitor-label {
+  border-radius: 0;
+  color: black;
+  padding: 12px;
+  text-align: center; }
+
+.resize-popup {
+  color: #d8dee9;
+  background-color: #3b4252;
+  border-radius: 6px;
+  padding: 12px; }
 
 /*# sourceMappingURL=cinnamon.css.map */
