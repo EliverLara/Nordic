@@ -1662,7 +1662,7 @@ StScrollBar {
     color: #d8dee9;
     background-color: #9fc6c5; }
   .dialog .dialog-button:insensitive:default {
-    border-color: #1f232b;
+    border-color: #232831;
     border: 1px solid #3f4758;
     color: rgba(216, 222, 233, 0.5);
     background-color: #39404f; }
@@ -1689,7 +1689,7 @@ StScrollBar {
     color: #d8dee9;
     background-color: #bf616a; }
   .dialog .dialog-button:insensitive:destructive-action {
-    border-color: #1f232b;
+    border-color: #232831;
     border: 1px solid #3f4758;
     color: rgba(216, 222, 233, 0.5);
     background-color: #39404f; }
@@ -1697,7 +1697,7 @@ StScrollBar {
 .dialog {
   background-color: #2e3440;
   border-radius: 18px;
-  border: 1px solid #1f232b;
+  border: 1px solid #232831;
   padding: 18px; }
   .dialog .dialog-content-box {
     margin-top: 8px;
@@ -1795,7 +1795,7 @@ StScrollBar {
 
 .media-keys-osd, .info-osd, .workspace-switch-osd {
   background-color: #2e3440;
-  border: 1px solid #1f232b;
+  border: 1px solid #232831;
   border-radius: 18px;
   text-align: center;
   padding: 24px; }
