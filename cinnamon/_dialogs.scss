@@ -1,0 +1,471 @@
+// Modal dialogs
+
+$base_padding: 6px;
+$base_margin: 4px;
+$dialog_radius: 18px;
+$osd_radius: 18px;
+$radius: 6px;
+
+// Mixin to convert provided font size in pt to em units
+@mixin fontsize($size, $base: 16px, $unit: pt) {
+  // if pt, convert into unitless value with the assumption: 1pt = 1.091px
+  $adjusted_size: if($unit == pt, $size * 1.091, $size) * 1000;
+  $rounded_size: round($adjusted_size / $base) / 1000;
+  font-size: $rounded_size * 1em;
+}
+
+// Button drawing function
+@mixin styled_button($type, $tc:$fg_color, $c:$bg_color, $style: null) {
+  //
+  // $type:         button type, possible values:
+  //                  - normal, focus, hover, active, checked, insensitive, default, undecorated
+  // $c:            button bg color, derived from bg_color
+  // $tc:           button text color, derived from fg_color
+  // $style:        button style, possible values: flat, default
+  //
+
+  // mix input colors to get button background color
+  $button_bg_color: $button_bg;
+
+  // background color mix override for flat style; the button bg color is the background color input
+  @if $style == 'flat' { $button_bg_color: $c;}
+  // background color mix override for default button style
+  @if $style == 'default' { $button_bg_color: $c;}
+
+  // button base state background colors
+  $hover_button_bg_color: if($variant =='light', darken($button_bg_color, 10%), lighten($button_bg_color, 10%));
+  $active_button_bg_color: if($variant =='light', lighten($hover_button_bg_color, 5%), darken($hover_button_bg_color, 5%));
+  $checked_button_bg_color: if($variant =='light', lighten($hover_button_bg_color, 5%), darken($hover_button_bg_color, 5%));
+  $insensitive_button_bg_color: if($variant =='light', lighten($button_bg_color,  3%), darken($button_bg_color,  3%));
+  $focus_button_bg_border_color: if($variant =='light', darken($button_bg_color, 30%), lighten($button_bg_color, 15%));
+
+  border: 1px solid $button_bg_color;
+
+  // flat style overrides
+  @if $style == 'flat' {
+    $insensitive_button_bg_color: $button_bg_color;
+  }
+
+  // normal style
+  @if $type == 'normal' {
+    color: $tc;
+    background-color: $button_bg_color;
+  }
+
+  @if $type == 'focus' {
+    color: $tc;
+    background-color: $button_bg_color;
+    border: 1px solid $focus_button_bg_border_color;
+  }
+
+  // hover button
+  @else if $type == 'hover' {
+    color: $tc;
+    background-color: $hover_button_bg_color;
+  }
+
+  // active button
+  @else if $type == 'active' {
+    color: $tc;
+    background-color: $active_button_bg_color;
+  }
+
+  // checked button
+  @else if $type == 'checked' {
+    color: $tc;
+    background-color: $checked_button_bg_color;
+  }
+
+  // insensitive button
+  @else if $type == 'insensitive' {
+    $insensitive_button_fg_color: transparentize($tc, .5);
+    color: $insensitive_button_fg_color;
+    background-color: $insensitive_button_bg_color;
+  }
+
+  // reset (unstyled button)
+  @else if $type == 'undecorated' {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: none;
+
+    &:insensitive {
+      background-color: transparent !important;
+    }
+  }
+}
+
+%caption_heading {
+  font-weight: 700;
+  @include fontsize(9pt);
+}
+
+%caption {
+  font-weight: 400;
+  @include fontsize(9pt);
+}
+
+%title_2 {
+  font-weight: 800;
+  @include fontsize(15pt);
+}
+
+%title_4 {
+  font-weight: 700;
+  @include fontsize(13pt);
+}
+
+%heading {
+  font-weight: 700;
+  @include fontsize(11pt);
+}
+
+%flat_styled_button {
+  @include styled_button(normal, $style: flat);
+  &:focus { @include styled_button(focus, $style: flat); }
+  &:hover { @include styled_button(hover, $style: flat); }
+  &:insensitive { @include styled_button(insensitive, $style: flat); }
+  &:selected,
+  &:active { @include styled_button(active, $style: flat); }
+  &:checked { @include styled_button(checked, $style: flat); }
+}
+
+%dialog_button {
+  font-weight: bold;
+  padding: $base_padding * 2;
+  border-radius: $radius;
+
+  @include styled_button(normal);
+  &:focus { @include styled_button(focus); }
+  &:hover { @include styled_button(hover); }
+  &:active { @include styled_button(active); }
+  &:checked { @include styled_button(checked); }
+  &:insensitive { @include styled_button(insensitive); }
+}
+
+%dialog_button_default {
+  @extend %dialog_button;
+
+  @include styled_button(normal, $c: $selected_bg_color, $style: default);
+  &:focus { @include styled_button(focus, $c: $selected_bg_color, $style: default); }
+  &:hover { @include styled_button(hover, $c: $selected_bg_color, $style: default); }
+  &:active { @include styled_button(active, $c: $selected_bg_color, $style: default); }
+  &:checked { @include styled_button(checked, $c: $selected_bg_color, $style: default); }
+  &:insensitive {
+    border-color: $borders_color;
+
+    @include styled_button(insensitive);
+  }
+}
+
+%dialog_button_destructive {
+  @extend %dialog_button;
+
+  @include styled_button(normal, $c: $destructive_color, $style: default);
+  &:focus { 
+    @include styled_button(focus, $c: $destructive_color, $style: default); 
+    //border-color: darken($destructive_color, 15%);
+  }
+  &:hover { @include styled_button(hover, $c: $destructive_color, $style: default); }
+  &:active { @include styled_button(active, $c: $destructive_color, $style: default); }
+  &:checked { @include styled_button(checked, $c: $destructive_color, $style: default); }
+  &:insensitive {
+    border-color: $borders_color;
+
+    @include styled_button(insensitive);
+  }
+}
+
+.dialog {
+  background-color: $panel_bg;
+  border-radius: $dialog_radius;
+  border: 1px solid $borders_color;
+  padding: $base_padding * 3;
+
+  .dialog-content-box {
+    margin-top: $base_margin * 2;
+    margin-bottom: $base_margin * 4;
+    spacing: $base_margin * 8;
+    max-width: 28em;
+  }
+
+  .dialog-button {
+    @extend %dialog_button;
+
+    &:default { @extend %dialog_button_default; }
+    &:destructive-action { @extend %dialog_button_destructive; }
+  }
+
+  .confirm-dialog-title {
+    @extend %title_2;
+    text-align: center;
+  }
+}
+
+// Lists in dialogs
+
+.dialog-list {
+  spacing: $base_padding * 3;
+
+  .dialog-list-title {
+    @extend %heading;
+    text-align: center;
+  }
+
+  .dialog-list-scrollview { max-height: 200px; }
+  .dialog-list-box {
+    spacing: 1em;
+
+    .dialog-list-item {
+      spacing: 1em;
+
+      .dialog-list-item-title { font-weight: bold; }
+      .dialog-list-item-description {
+        @extend %caption;
+        color: darken($fg_color, 5%);
+      }
+    }
+  }
+}
+
+// End session dialog
+
+.end-session-dialog {
+  min-width: 40em;
+
+  .dialog-content-box { spacing: 0; }
+
+  .dialog-list {
+    spacing: 0;
+
+    .dialog-list-title {
+      color: $warning_color;
+      background-color: tranparentize($warning_color, 0.9);
+      padding: $base_padding * 1.5;
+      border-radius: $osd_radius;
+      margin: $base_margin 0;
+    }
+  }
+}
+
+// message dialog
+
+.message-dialog-content {
+  spacing: $base_padding * 3;
+
+  .message-dialog-title {
+    text-align: center;
+    @extend %title_2;
+
+    &.lightweight { @extend %title_4; }
+  }
+
+  .message-dialog-description { text-align: center; }
+
+  .message-dialog-caption {
+    @extend %caption; 
+    text-align: center;
+  }
+}
+
+// run dialog
+
+.run-dialog {
+
+  .dialog-content-box {
+    margin: $base_margin;
+  }
+
+  &-description {
+    @extend %caption;
+
+    text-align: center;
+    color: darken($fg_color, 20%);
+
+    &.error { color: $error_color; }
+  }
+
+  &-completion-box {
+    padding-top: $base_padding;
+    padding-left: $base_padding * 2;
+  }
+
+  &-entry {
+    @extend %entry;
+
+    width: 20em;
+    height: 1.2em;
+  }
+}
+
+// password or authentication dialog
+
+.prompt-dialog {
+  width: 28em;
+
+  .dialog-content-box {
+    spacing: $base_margin * 4;
+    margin-bottom: $base_margin * 3;
+  }
+
+  &-password-entry {
+    @extend %entry;
+    width: 20em;
+  }
+
+  &-password-layout { spacing: $base_margin * 2;}
+
+  &-error-label,
+  &-info-label,
+  &-null-label {
+    text-align: center;
+    @extend %caption;
+  }
+
+  &-error-label { color: $error_color; }
+}
+
+// polkit dialog
+
+.polkit-dialog {
+
+  &-user-layout {
+    text-align: center;
+    spacing: 2px;
+  }
+
+  &-user-combo {
+    @extend %flat_styled_button;
+    @extend %heading;
+
+    border-radius: $radius;
+    padding: $base_padding $base_padding * 6;
+
+    // special case the :insensitive button sinc we want
+    // the label to be the normal color when there are
+    // not multiple users
+    &:insensitive { color: $fg_color; }
+  }
+}
+
+// Audio selection dialog
+
+.audio-device-selection-dialog {
+  min-width: 24em;
+
+  .audio-selection-box {
+    spacing: $base_padding *2;
+
+    .audio-selection-device {
+      @extend %flat_styled_button;
+      border-radius: $osd_radius;
+
+      .audio-selection-device-box {
+        padding: $base_padding * 2;
+        spacing: $base_padding * 2;
+      }
+
+      .audio-selection-device-icon { icon-size: 64px;}
+    }
+  }
+}
+
+// various on screen popups
+
+%osd_base {
+  background-color: $panel_bg;
+  border: 1px solid $borders_color;
+  border-radius: $osd_radius;
+  text-align: center;
+  padding: $base_padding * 4;
+}
+
+// media keys osd
+
+.media-keys-osd {
+  @extend %osd_base;
+  @extend %title_4;
+
+  margin-bottom: 1em;
+  border-radius: $osd_radius;
+  font-weight: bold;
+  spacing: $base_padding * 2;
+  padding: $base_padding * 2 $base_padding * 4;
+  & > * { spacing: $base_padding * 2; }
+
+  StIcon {
+    icon-size: 32px;
+  }
+
+  StLabel {
+    &:ltr { margin-right: $base_padding; }
+    &:rtl { margin-left: $base_padding; }
+  }
+
+  .level {
+    min-width: 160px;
+    -barlevel-height: 6px;
+    -barlevel-background-color: lighten($base_color, 8%);
+    -barlevel-active-background-color: $selected_bg_color;
+    -barlevel-amplify-color: $warning_color;
+    -barlevel-amplify-separator-width: $base_padding * 0.5;
+
+    &:ltr { margin-right: $base_padding; }
+    &:rtl { margin-left: $base_padding; }
+  }
+
+  .level-bar {
+    border-radius: $osd_radius;
+    background-color: $fg_color;
+  }
+}
+
+.info-osd {
+  @extend %osd_base;
+
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.workspace-switch-osd {
+  @extend %osd_base;
+  @extend %title_4;
+
+  min-width: 140px;
+  margin-bottom: 1em;
+  border-radius: $osd_radius;
+  font-weight: bold;
+  padding: $base_padding * 2 $base_padding * 6 0 $base_padding * 6;
+
+  &-indicator-box { spacing: $base_padding * 2; }
+
+  &-indicator {
+    background-color: transparentize($fg_color, 0.5);
+    padding: 3px;
+    margin: 15px;
+    border-radius: 36px;
+
+    &:active {
+      background-color: $selected_bg_color;
+      padding: 6px;
+      margin: 12px;
+    }
+  }
+}
+
+.monitor-label {
+  border-radius: 0;
+  color: black;
+  padding: $base_padding * 2;
+  text-align: center;
+}
+
+//  resize popup
+
+.resize-popup {
+  color: $fg_color;
+  background-color: $bg_color;
+  border-radius: $radius;
+  padding: $base_padding * 2;
+}
