@@ -28,13 +28,13 @@ $link_visited_color:transparentize($link_color,0.5);
 
 $selection_mode_bg: if($transparency == 'true', transparentize($selected_bg_color, 0.05), $selected_bg_color);
 $selection_mode_fg: $selected_fg_color;
-$warning_color: #F27835;
-$error_color: #FC4138;
+$warning_color: darken($orange, 10%);
+$error_color:  darken($red,5%);
 $warning_fg_color: white;
 $error_fg_color: white;
-$success_color: #73d216;
-$destructive_color: #F04A50;
-$suggested_color: #4DADD4;
+$success_color: darken($cyan,10%);
+$destructive_color: darken($red,5%);
+$suggested_color: darken($cyan,10%);
 $destructive_fg_color: white;
 $suggested_fg_color: white;
 
