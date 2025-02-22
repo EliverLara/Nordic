@@ -272,6 +272,11 @@ flowbox flowboxchild {
   flowbox flowboxchild:selected {
     outline-offset: -2px; }
 
+gridview > child {
+  padding: 7px; }
+  gridview > child box {
+    border-spacing: 5px; }
+
 label {
   caret-color: currentColor; }
   label.separator {

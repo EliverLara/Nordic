@@ -97,6 +97,15 @@ flowbox {
   }
 }
 
+gridview {
+  > child {
+    padding: 7px;
+    box { //cells
+      border-spacing: 5px; //label separation
+    }
+  }
+}
+
 label {
   caret-color: currentColor; // this shouldn't be needed.
 
