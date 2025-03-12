@@ -148,38 +148,29 @@
     color: $fg_color;
     background-color: lighten($base_color, 3%);
     box-shadow: none;
-    border: 1px solid $borders_color;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
+    border: 1px solid lighten($base_color, 3%);
   }
   @if $t==focus {
     //
     // focused button
     //
-      $_bg: if($c!=$osd_bg_color, transparentize($c, 0.5),
-                            $osd_bg_color);
+      $_bg: lighten($base_color, 6%);
   
       background-color: lighten($base_color, 6%);
       color: $selected_fg_color;
-      text-shadow: 0 1px black;
-      icon-shadow: 0 1px black;
       box-shadow: none !important;
-      border: 1px solid $borders_color;
+      border: 1px solid $_bg;
   }
 
   @else if $t==hover {
   //
   // active osd button
   //
-    $_bg: if($c!=$osd_bg_color, transparentize($c, 0.3),
-                            lighten($osd_bg_color,2%));
+    $_bg: lighten($base_color, 6%);
 
-    background-color: lighten($base_color, 6%);
+    background-color: $_bg;
     color: $selected_fg_color;
-    border: 1px solid $borders_color;
-    text-shadow: 0 1px black;
-    icon-shadow: 0 1px black;
-
+    border: 1px solid $_bg;
   }
   @else if $t==active {
   //
