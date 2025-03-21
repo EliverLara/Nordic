@@ -1594,27 +1594,8 @@ messagedialog, .messagedialog, .dialog {
     color: #d8dee9;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
-  messagedialog.csd .dialog-action-area button, .messagedialog.csd .dialog-action-area button, .dialog.csd .dialog-action-area button {
-    padding: 7px 11px;
-    border-radius: 0;
-    border-left-style: solid;
-    border-right-style: none;
-    border-bottom-style: none;
-    background-color: transparent;
-    color: #d8dee9;
-    box-shadow: none; }
-    messagedialog.csd .dialog-action-area button:hover, .messagedialog.csd .dialog-action-area button:hover, .dialog.csd .dialog-action-area button:hover {
-      background-color: rgba(76, 86, 106, 0.9);
-      color: white; }
-    messagedialog.csd .dialog-action-area button:first-child, .messagedialog.csd .dialog-action-area button:first-child, .dialog.csd .dialog-action-area button:first-child {
-      border-left-style: none;
-      border-bottom-left-radius: 4px; }
-    messagedialog.csd .dialog-action-area button:last-child, .messagedialog.csd .dialog-action-area button:last-child, .dialog.csd .dialog-action-area button:last-child {
-      border-bottom-right-radius: 4px; }
-    messagedialog.csd .dialog-action-area button.destructive-action, messagedialog.csd .dialog-action-area button.suggested-action, .messagedialog.csd .dialog-action-area button.destructive-action, .messagedialog.csd .dialog-action-area button.suggested-action, .dialog.csd .dialog-action-area button.destructive-action, .dialog.csd .dialog-action-area button.suggested-action {
-      color: white; }
 
-.messagedialog .message-area {
+.messagedialog .message-area, .messagedialog .response-area, .dialog .dialog-action-area {
   padding: 26px; }
 
 filechooser .dialog-action-box {
