@@ -2313,6 +2313,12 @@ GraniteWidgetsWelcome {
       .titlebar .path-bar-box headerbar button:checked:backdrop label,
       headerbar .path-bar-box button:checked:backdrop label {
         color: rgba(254, 254, 254, 0.5); }
+  .titlebar splitbutton.image-button > button:not(.toggle),
+  headerbar splitbutton.image-button > button:not(.toggle) {
+    border-radius: 6px 0px 0px 6px; }
+  .titlebar splitbutton.image-button menubutton.popup button.toggle,
+  headerbar splitbutton.image-button menubutton.popup button.toggle {
+    border-radius: 0px 6px 6px 0px; }
   .titlebar .path-bar-box .dim-label, .titlebar .path-bar-box label.separator, .titlebar .path-bar-box .subtitle,
   headerbar .path-bar-box .dim-label,
   headerbar .path-bar-box label.separator,
@@ -3157,7 +3163,8 @@ paned.vertical > separator {
   headerbar .pathbar button > .horizontal > image.subtitle {
     padding: 3px 0px 3px 12px;
     border-right: none;
-    margin-right: -6px; }
+    margin-right: -6px;
+    border-radius: 6px 0px 0px 6px; }
   #NautilusPathBar button, .pathbar button {
     background: transparent;
     border: none;
