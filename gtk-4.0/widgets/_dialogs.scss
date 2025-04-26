@@ -28,7 +28,11 @@ messagedialog, .messagedialog, .dialog { // Message Dialog styling
   }
 }
 
-.messagedialog .message-area, .messagedialog .response-area,  .dialog  .dialog-action-area {
+.messagedialog .message-area,
+.messagedialog .response-area,
+.dialog .dialog-action-area,
+.alert.floating .response-area,
+.alert.floating .body-scrolled-window {
   padding: 26px;
 }
 
