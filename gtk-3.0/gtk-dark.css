@@ -2917,7 +2917,7 @@ assistant {
 notebook > header {
   padding: 1px;
   border-color: #232831;
-  border-width: 1px;
+  border-width: 0px;
   background-color: #303643; }
   notebook > header:backdrop {
     border-color: #262c36; }
@@ -2926,7 +2926,7 @@ notebook > header {
   notebook > header.top {
     border-bottom-style: solid; }
     notebook > header.top > tabs {
-      margin-bottom: -2px; }
+      margin-bottom: -3px; }
       notebook > header.top > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.top > tabs > tab:checked {
@@ -2940,8 +2940,7 @@ notebook > header {
       notebook > header.bottom > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.bottom > tabs > tab:checked {
-        background-color: #3b4252;
-        box-shadow: -1px 0 0 #232831, 0px 1px 0 #232831, 1px 0 0 #232831; }
+        background-color: #3b4252; }
   notebook > header.left {
     border-right-style: solid; }
     notebook > header.left > tabs {
@@ -2949,8 +2948,7 @@ notebook > header {
       notebook > header.left > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.left > tabs > tab:checked {
-        background-color: #3b4252;
-        box-shadow: 0px 1px 0 #232831, 0px -1px 0 #232831, 0px 1px 0 #232831; }
+        background-color: #3b4252; }
   notebook > header.right {
     border-left-style: solid; }
     notebook > header.right > tabs {
@@ -2958,8 +2956,7 @@ notebook > header {
       notebook > header.right > tabs > tab:backdrop {
         box-shadow: none; }
       notebook > header.right > tabs > tab:checked {
-        background-color: #3b4252;
-        box-shadow: 0px 1px 0 #232831, 0px -1px 0 #232831, 1px 0 0 #232831; }
+        background-color: #3b4252; }
   notebook > header.top > tabs > arrow {
     border-top-style: none; }
   notebook > header.bottom > tabs > arrow {
@@ -3010,7 +3007,7 @@ notebook > header {
     outline-offset: -5px;
     color: #8e95a4;
     font-weight: normal;
-    border-width: 1px;
+    border-width: 0px;
     border-color: transparent; }
     notebook > header tab:hover {
       color: #b3bac7; }
@@ -3023,8 +3020,7 @@ notebook > header {
         border-color: transparent;
         background-color: transparent; }
     notebook > header tab:checked {
-      color: #d8dee9;
-      box-shadow: -1px 0 0 #232831, 0px -1px 0 #232831, 1px 0 0 #232831; }
+      color: #d8dee9; }
       notebook > header tab:checked.reorderable-page {
         border-color: rgba(35, 40, 49, 0.5);
         background-color: rgba(67, 76, 94, 0.5); }
