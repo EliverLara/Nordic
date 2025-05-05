@@ -5,7 +5,7 @@
   > header {
     padding: 1px;
     border-color: $borders_color;
-    border-width: 1px;
+    border-width: 0px;
     background-color: darken($base_color, 5%);
 
     &:backdrop {
@@ -17,7 +17,7 @@
     &.top {
       border-bottom-style: solid;
       > tabs {
-        margin-bottom: -2px;
+        margin-bottom: -3px;
         > tab {
 
           &:backdrop { box-shadow: none; }
@@ -41,9 +41,6 @@
 
           &:checked { 
             background-color: $base_color; 
-            box-shadow: -1px 0 0 $borders_color,
-            0px 1px 0 $borders_color,
-            1px 0 0 $borders_color;
           }
         }
       }
@@ -60,9 +57,6 @@
 
          &:checked { 
             background-color: $base_color; 
-            box-shadow: 0px 1px 0 $borders_color,
-            0px -1px 0 $borders_color,
-            0px 1px 0 $borders_color;
           }
         }
       }
@@ -79,9 +73,6 @@
 
           &:checked { 
             background-color: $base_color; 
-            box-shadow: 0px 1px 0 $borders_color,
-            0px -1px 0 $borders_color,
-            1px 0 0 $borders_color;
           }
         }
       }
@@ -163,7 +154,7 @@
       color: $insensitive_fg_color;
       font-weight: normal;
 
-      border-width: 1px;         // for reorderable tabs
+      border-width: 0px;         // for reorderable tabs
       border-color: transparent; //
 
       &:hover {
@@ -186,9 +177,6 @@
 
       &:checked {
         color: $fg_color;
-        box-shadow: -1px 0 0 $borders_color,
-        0px -1px 0 $borders_color,
-        1px 0 0 $borders_color;
         &.reorderable-page {
           border-color: transparentize($borders_color, 0.5);
           background-color: transparentize($bg_color, 0.5);
