@@ -13,7 +13,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 
 %button,
 button {
-  @at-root %button_basic, & {
+  @at-root %button_basic, &:not(.accent-button) {
     min-height: 22px;
     min-width: 16px;
     padding: 4px 6px;
