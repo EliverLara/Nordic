@@ -13,7 +13,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 
 %button,
 button {
-  @at-root %button_basic, &:not(.accent-button) {
+  @at-root %button_basic, & {
     min-height: 22px;
     min-width: 16px;
     padding: 4px 6px;
@@ -564,4 +564,23 @@ toggle-group{
     }
     padding: 0 4px;
   }
+}
+
+// Gnome 48 accent color buttons
+button.accent-button {
+  &, &:backdrop {
+    min-height: 24px;
+    min-width: 24px;
+    padding: 5px;
+    border-radius: 100%;
+    background: var(--accent-bg-color);
+    outline: none;
+    background-clip: content-box;
+    box-shadow: none;
+    border: none;
+  }
+  
+  &:hover { box-shadow: 0 0 0 3px lighten($base_color, 7%); }
+
+  &:checked { &, &:backdrop { box-shadow: 0 0 0 3px var(--accent-bg-color); }}
 }

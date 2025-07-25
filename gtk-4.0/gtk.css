@@ -335,7 +335,7 @@ popover.background.magnifier > contents, .osd {
   to {
     background-image: radial-gradient(farthest-side, #6d7a96 95%, rgba(109, 122, 150, 0)); } }
 notebook > header > tabs > arrow,
-button:not(.accent-button) {
+button {
   min-height: 22px;
   min-width: 16px;
   padding: 4px 6px;
@@ -347,7 +347,7 @@ button:not(.accent-button) {
   background-color: #303643;
   text-shadow: none; }
   notebook > header > tabs > arrow,
-  button:not(.accent-button).flat {
+  button.flat {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -356,7 +356,7 @@ button:not(.accent-button) {
     -gtk-icon-shadow: none;
     transition: none; }
     notebook > header > tabs > arrow:hover,
-    button:not(.accent-button).flat:hover {
+    button.flat:hover {
       transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
       transition-duration: 500ms;
       color: #d8dee9;
@@ -364,26 +364,26 @@ button:not(.accent-button) {
       background-color: #4c566a;
       text-shadow: none; }
       notebook > header > tabs > arrow:hover:active,
-      button:not(.accent-button).flat:hover:active {
+      button.flat:hover:active {
         transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   notebook > header > tabs > arrow:hover,
-  button:not(.accent-button):hover {
+  button:hover {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
     background-color: #4c566a;
     text-shadow: none;
     -gtk-icon-filter: brightness(1.2); }
   notebook > header > tabs > arrow:active, notebook > header > tabs > arrow:checked,
-  button:not(.accent-button):active,
-  button:not(.accent-button):checked {
+  button:active,
+  button:checked {
     color: #d8dee9;
     outline-color: rgba(216, 222, 233, 0.3);
     background-color: #414a5b;
     text-shadow: none;
     transition-duration: 50ms; }
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:backdrop,
-  button:not(.accent-button):backdrop.flat,
-  button:not(.accent-button):backdrop {
+  button:backdrop.flat,
+  button:backdrop {
     color: #b6bcc8;
     outline-color: rgba(216, 222, 233, 0.3);
     background-color: #303643;
@@ -391,40 +391,40 @@ button:not(.accent-button) {
     transition: 200ms ease-out;
     -gtk-icon-filter: none; }
     notebook > header > tabs > arrow:backdrop:active, notebook > header > tabs > arrow:backdrop:checked, notebook > header > tabs > arrow:backdrop:active, notebook > header > tabs > arrow:backdrop:checked,
-    button:not(.accent-button):backdrop.flat:active,
-    button:not(.accent-button):backdrop.flat:checked,
-    button:not(.accent-button):backdrop:active,
-    button:not(.accent-button):backdrop:checked {
+    button:backdrop.flat:active,
+    button:backdrop.flat:checked,
+    button:backdrop:active,
+    button:backdrop:checked {
       color: rgba(216, 222, 233, 0.7);
       outline-color: rgba(216, 222, 233, 0.3);
       background-color: #4c566a;
       text-shadow: none; }
       notebook > header > tabs > arrow:backdrop:active label, notebook > header > tabs > arrow:backdrop:checked label, notebook > header > tabs > arrow:backdrop:active label, notebook > header > tabs > arrow:backdrop:checked label,
-      button:not(.accent-button):backdrop.flat:active label,
-      button:not(.accent-button):backdrop.flat:checked label,
-      button:not(.accent-button):backdrop:active label,
-      button:not(.accent-button):backdrop:checked label {
+      button:backdrop.flat:active label,
+      button:backdrop.flat:checked label,
+      button:backdrop:active label,
+      button:backdrop:checked label {
         color: rgba(216, 222, 233, 0.7); }
     notebook > header > tabs > arrow:backdrop:disabled, notebook > header > tabs > arrow:backdrop:disabled,
-    button:not(.accent-button):backdrop.flat:disabled,
-    button:not(.accent-button):backdrop:disabled {
+    button:backdrop.flat:disabled,
+    button:backdrop:disabled {
       color: #b6bcc8;
       border-color: rgba(31, 35, 43, 0.3);
       background-color: #363c4b;
       text-shadow: none; }
       notebook > header > tabs > arrow:backdrop:disabled:active, notebook > header > tabs > arrow:backdrop:disabled:checked, notebook > header > tabs > arrow:backdrop:disabled:active, notebook > header > tabs > arrow:backdrop:disabled:checked,
-      button:not(.accent-button):backdrop.flat:disabled:active,
-      button:not(.accent-button):backdrop.flat:disabled:checked,
-      button:not(.accent-button):backdrop:disabled:active,
-      button:not(.accent-button):backdrop:disabled:checked {
+      button:backdrop.flat:disabled:active,
+      button:backdrop.flat:disabled:checked,
+      button:backdrop:disabled:active,
+      button:backdrop:disabled:checked {
         color: rgba(216, 222, 233, 0.7);
         outline-color: rgba(216, 222, 233, 0.3);
         background-color: #4c566a;
         text-shadow: none; }
   notebook > header > tabs > arrow:backdrop, notebook > header > tabs > arrow:disabled, notebook > header > tabs > arrow:backdrop:disabled,
-  button:not(.accent-button).flat:backdrop,
-  button:not(.accent-button).flat:disabled,
-  button:not(.accent-button).flat:backdrop:disabled {
+  button.flat:backdrop,
+  button.flat:disabled,
+  button.flat:backdrop:disabled {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -432,48 +432,48 @@ button:not(.accent-button) {
     text-shadow: none;
     -gtk-icon-shadow: none; }
   notebook > header > tabs > arrow:disabled,
-  button:not(.accent-button):disabled {
+  button:disabled {
     color: #b6bcc8;
     border-color: rgba(31, 35, 43, 0.3);
     background-color: #363c4b;
     text-shadow: none; }
     notebook > header > tabs > arrow:disabled:active, notebook > header > tabs > arrow:disabled:checked,
-    button:not(.accent-button):disabled:active,
-    button:not(.accent-button):disabled:checked {
+    button:disabled:active,
+    button:disabled:checked {
       color: rgba(216, 222, 233, 0.7);
       outline-color: rgba(216, 222, 233, 0.3);
       background-color: #4c566a;
       text-shadow: none; }
       notebook > header > tabs > arrow:disabled:active label, notebook > header > tabs > arrow:disabled:checked label,
-      button:not(.accent-button):disabled:active label,
-      button:not(.accent-button):disabled:checked label {
+      button:disabled:active label,
+      button:disabled:checked label {
         color: rgba(216, 222, 233, 0.7); }
   notebook > header > tabs > arrow.image-button,
-  button:not(.accent-button).image-button {
+  button.image-button {
     min-width: 24px;
     padding-left: 4px;
     padding-right: 4px; }
   notebook > header > tabs > arrow.image-button.circular, notebook > header > tabs > arrow.image-button.sidebar-button,
-  button:not(.accent-button).image-button.circular,
-  button:not(.accent-button).image-button.sidebar-button {
+  button.image-button.circular,
+  button.image-button.sidebar-button {
     padding: 6px 4px;
     border-radius: 50px;
     box-shadow: none; }
   notebook > header > tabs > arrow.text-button,
-  button:not(.accent-button).text-button {
+  button.text-button {
     padding-left: 16px;
     padding-right: 16px; }
   notebook > header > tabs > arrow.text-button.image-button,
-  button:not(.accent-button).text-button.image-button {
+  button.text-button.image-button {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 6px; }
     notebook > header > tabs > arrow.text-button.image-button label,
-    button:not(.accent-button).text-button.image-button label {
+    button.text-button.image-button label {
       padding-left: 8px;
       padding-right: 8px; }
   combobox:drop(active) button.combo, notebook > header > tabs > arrow:drop(active),
-  button:not(.accent-button):drop(active) {
+  button:drop(active) {
     color: #a3be8c;
     border-color: #a3be8c;
     box-shadow: inset 0 0 0 1px #a3be8c; }
@@ -1056,6 +1056,21 @@ toggle-group {
       background-color: #687591; }
       toggle-group toggle:checked, toggle-group toggle:checked label {
         color: #d8dee9; }
+
+button.accent-button, button.accent-button:backdrop {
+  min-height: 24px;
+  min-width: 24px;
+  padding: 5px;
+  border-radius: 100%;
+  background: var(--accent-bg-color);
+  outline: none;
+  background-clip: content-box;
+  box-shadow: none;
+  border: none; }
+button.accent-button:hover {
+  box-shadow: 0 0 0 3px #3d4555; }
+button.accent-button:checked, button.accent-button:checked:backdrop {
+  box-shadow: 0 0 0 3px var(--accent-bg-color); }
 
 /************
  * Calendar *
