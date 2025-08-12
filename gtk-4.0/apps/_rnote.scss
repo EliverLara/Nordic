@@ -1,0 +1,34 @@
+button.colorpad {
+  &, &:hover, &:active, &:checked { 
+    &, &:backdrop { background-color: #{'@colorpad_color'}; }
+  }
+  color: #{'@colorpad_fg_color'};
+
+  &:hover { filter: brightness(93%); }
+  &:active { filter: brightness(86%); }
+  
+  &:checked {
+      filter: brightness(100%);
+      box-shadow:
+          0px 0px 0px 1.5px $selected_bg_color,
+          inset 0px -3px 0px 0px #{'@colorpad_fg_color'};
+  }
+}
+
+button.colorsetter {
+  &, &:hover, &:active, &:checked { 
+    &, &:backdrop { background-color: #{'@colorsetter_color'}; }
+  }
+  color: #{'@colorsetter_fg_color'};
+
+  &:hover { filter: brightness(93%); }
+  
+  &:active { filter: brightness(86%); }
+  
+  &:checked { filter: brightness(100%); }
+}
+
+.overlay_toolbar, .overlay_toolbar_scrollable {
+  background: lighten($base_color, 5%);;
+  padding: 10px;
+}
