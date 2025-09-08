@@ -1101,11 +1101,11 @@ calendar {
     calendar > header > button:backdrop {
       background: none; }
   calendar > grid > label.today {
-    box-shadow: inset 0px -2px #8fbcbb; }
+    box-shadow: inset 0px -2px #81a1c1; }
     calendar > grid > label.today:selected {
       box-shadow: none; }
   calendar > grid > label:focus {
-    outline-color: #8fbcbb;
+    outline-color: #81a1c1;
     outline-offset: -2px;
     outline-width: 2px;
     outline-style: solid; }
@@ -1114,7 +1114,7 @@ calendar {
     calendar > grid > label.day-number:selected {
       border-radius: 3px; }
     calendar > grid > label.day-number:checked {
-      background-color: alpha(#8fbcbb,0.3); }
+      background-color: alpha(#81a1c1,0.3); }
   calendar > grid > label.day-number.other-month {
     color: alpha(currentColor,0.3); }
 
@@ -5716,11 +5716,11 @@ datechooser .circular.day.text-button {
   datechooser .circular.day.text-button.flat.other-month, datechooser .circular.day.text-button.flat.non-workday {
     color: #8e95a4; }
   datechooser .circular.day.text-button.today {
-    color: #8fbcbb; }
+    color: #81a1c1; }
   datechooser .circular.day.text-button:active, datechooser .circular.day.text-button:selected {
-    color: #2e3440;
-    outline-color: rgba(46, 52, 64, 0.3);
-    background-color: #8fbcbb;
+    color: #fefefe;
+    outline-color: rgba(254, 254, 254, 0.3);
+    background-color: #81a1c1;
     text-shadow: none;
     font-weight: bold; }
 
