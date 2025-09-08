@@ -168,3 +168,33 @@
     opacity: 1;
   }
 }
+
+/*******************
+ * Calendar sidebar *
+********************/
+datechooser {
+  &, &:backdrop { background-color: $headerbar_color }
+  .circular.day.text-button{ 
+    padding: 6px;
+    border-radius: 50%;
+    min-height: 22px;
+    min-width: 22px;
+    border: none;
+    &.flat.other-month, &.flat.non-workday {
+      color: $insensitive_fg_color;
+    }
+    &.today { color: $blue; }
+    &:active, &:selected { 
+      @include button(active, $selected_bg_color, $selected_fg_color);
+      font-weight: bold;
+    }
+  }
+}
+
+agenda-view list.background {
+  &, &:backdrop { background-color: $headerbar_color }
+  padding: 8px;
+  .caption-heading, .dim-label.no-events {
+    color: $headerbar_fg_color;
+  }
+}

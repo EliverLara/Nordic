@@ -4,56 +4,59 @@
 calendar {
   color: $text_color;
   border: 1px solid $borders_color;
+  font-feature-settings: "tnum";
 
-  &:selected {
-    @extend %selected_items;
+  > header {
+    border-bottom: 1px solid $borders_color;
 
-    border-radius: 3px;
-  }
-
-  &.header {
-    border-bottom: 1px solid transparentize(black, 0.9);
-    border-radius: 0;
-
-    &:backdrop { border-color: transparentize(black, 0.9); }
-  }
-
-  &.button {
-    @extend %undecorated_button;
-
-    color: transparentize($fg_color, 0.55);
-
-    &:hover {
-      @extend %undecorated_button;
-
-      color: $fg_color;
+    > button {
+      border: none;
+      box-shadow: none;
+      background: none;
+      border-radius: 0;
     }
-
-    &:backdrop {
-      @extend %undecorated_button;
-
-      color: transparentize($backdrop_fg_color,0.55);
-    }
-
-    &:disabled {
-      @extend %undecorated_button;
-
-      color:  transparentize($insensitive_fg_color,0.55);
+    > button:backdrop {
+      background: none;
     }
   }
 
-  &:indeterminate,
-  &:indeterminate:backdrop { color: gtkalpha(currentColor, 0.55); }
+  > grid {
+    > label.day-name {
+    }
 
-  &.highlight,
-  &.highlight:backdrop {
-    font-size: smaller;
-    color: $fg_color;
-  }
+    > label.week-number {
+    }
 
+    > label.today {
+      box-shadow: inset 0px -2px $selected_bg_color;
 
-  &:backdrop {
-    color: $backdrop_text_color;
-    border-color: $backdrop_borders_color;
+      &:selected {
+        box-shadow: none;
+      }
+    }
+
+    > label:focus {
+      outline-color: $selected_bg_color;
+      outline-offset: -2px;
+      outline-width: 2px;
+      outline-style: solid;
+    }
+
+    > label.day-number {
+      padding: 4px;
+
+      &:selected{
+        @extend %selected_items;
+        border-radius: 3px;
+      }
+
+      &:checked {
+        background-color: gtkalpha($selected_bg_color, 0.3);
+      }
+    }
+
+    > label.day-number.other-month {
+      color: gtkalpha(currentColor, 0.3);
+    }
   }
 }
