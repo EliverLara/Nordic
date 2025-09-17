@@ -98,7 +98,9 @@ flowbox {
   }
 }
 
+// Nautilus grid view
 gridview {
+  padding: 10px;
   > child {
     padding: 7px;
     box { //cells
