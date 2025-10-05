@@ -198,3 +198,12 @@ agenda-view list.background {
     color: $headerbar_fg_color;
   }
 }
+
+/******************************
+ * Gnome system monitor graph *
+******************************/
+
+#gnome-system-monitor .loadgraph  {
+  background: $bg_color;
+  color: $text_color;
+}
