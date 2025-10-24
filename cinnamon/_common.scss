@@ -1869,7 +1869,7 @@ StScrollBar {
 
   &:outlined, &:outlined:hover {
     background-color: $button_bg; 
-    color: $selected_fg_color;
+    color: $fg_color;
   }
   &:hover { color: $blue; }
 }

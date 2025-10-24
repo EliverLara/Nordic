@@ -1446,7 +1446,7 @@ StScrollBar {
   transition-duration: 300; }
   .workspace-button:outlined, .workspace-button:outlined:hover {
     background-color: #3f4758;
-    color: #2e3440; }
+    color: #d8dee9; }
   .workspace-button:hover {
     color: #5e81ac; }
 
