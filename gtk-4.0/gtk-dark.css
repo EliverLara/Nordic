@@ -4152,17 +4152,17 @@ placessidebar {
     placessidebar list:backdrop {
       background-color: transparent; }
 
-.sidebar-pane .bottom-bar {
+.sidebar-pane, .sidebar-pane .bottom-bar {
   background-color: #2e3440; }
-  .sidebar-pane .bottom-bar button {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none; }
-    .sidebar-pane .bottom-bar button .view, .sidebar-pane .bottom-bar button iconview {
-      background-color: transparent; }
+.sidebar-pane .bottom-bar button {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none; }
+  .sidebar-pane .bottom-bar button .view, .sidebar-pane .bottom-bar button iconview {
+    background-color: transparent; }
 
 /*****************
  * GtkSpinButton *
@@ -5700,15 +5700,10 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .color-light.timed label, .color-light .event-popover label {
   color: #d8dee9;
   opacity: 1; }
-.color-light label {
-  color: #2e3440;
-  opacity: 1; }
 
 /*******************
  * Calendar sidebar *
 ********************/
-datechooser, datechooser:backdrop {
-  background-color: #2b313c; }
 datechooser .circular.day.text-button {
   padding: 6px;
   border-radius: 50%;
@@ -5725,15 +5720,26 @@ datechooser .circular.day.text-button {
     background-color: #81a1c1;
     text-shadow: none;
     font-weight: bold; }
+datechooser .weekday, datechooser .weeknum {
+  color: #8e95a4; }
+datechooser .weeknum {
+  background-color: rgba(59, 66, 82, 0.8); }
+datechooser .current-week {
+  background-color: rgba(142, 149, 164, 0.1); }
 
 agenda-view list.background {
   padding: 8px; }
-  agenda-view list.background, agenda-view list.background:backdrop {
-    background-color: #2b313c; }
   agenda-view list.background .caption-heading, agenda-view list.background .dim-label.no-events, agenda-view list.background label.no-events.separator, agenda-view list.background .titlebar .no-events.subtitle, .titlebar agenda-view list.background .no-events.subtitle,
   agenda-view list.background headerbar .no-events.subtitle,
   headerbar agenda-view list.background .no-events.subtitle {
     color: #d8dee9; }
+
+datechooser, datechooser:backdrop,
+agenda-view list.background,
+agenda-view list.background:backdrop,
+.calendar-list,
+.calendar-list:backdrop {
+  background-color: #2e3440; }
 
 /******************************
  * Gnome system monitor graph *
