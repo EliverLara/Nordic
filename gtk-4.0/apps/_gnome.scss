@@ -163,17 +163,16 @@
     color: $fg_color;
     opacity: 1;
   }
-  & label {
-    color: $nord0;
-    opacity: 1;
-  }
+  // & label {
+  //   color: $nord0;
+  //   opacity: 1;
+  // }
 }
 
 /*******************
  * Calendar sidebar *
 ********************/
 datechooser {
-  &, &:backdrop { background-color: $headerbar_color }
   .circular.day.text-button{ 
     padding: 6px;
     border-radius: 50%;
@@ -189,15 +188,24 @@ datechooser {
       font-weight: bold;
     }
   }
+  .weekday, .weeknum { color: $insensitive_fg_color;}
+  .weeknum { background-color: lighten($base_color, 4%);}
+  .current-week { background-color: transparentize($insensitive_fg_color, 0.9);}
 }
 
 agenda-view list.background {
-  &, &:backdrop { background-color: $headerbar_color }
   padding: 8px;
   .caption-heading, .dim-label.no-events {
     color: $headerbar_fg_color;
   }
 }
+
+datechooser,
+agenda-view list.background,
+.calendar-list {
+  &, &:backdrop { background-color: $_sidebar_color; }
+}
+
 
 /******************************
  * Gnome system monitor graph *
