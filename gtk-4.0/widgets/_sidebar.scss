@@ -205,10 +205,12 @@ placessidebar {
 }
 
 // Gnome 46: File operations status bar at the bottom of sidebar
-.sidebar-pane .bottom-bar  {
-  background-color: $_sidebar_color;
-  button {
-    @include button(undecorated);
-    .view { background-color: transparent; }
+.sidebar-pane {
+  &, .bottom-bar { background-color: $_sidebar_color; }
+  .bottom-bar {
+    button {
+      @include button(undecorated);
+      .view { background-color: transparent; }
+    }
   }
 }
