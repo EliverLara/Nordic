@@ -644,14 +644,18 @@ button.osd {
 button.suggested-action {
   border: none;
   box-shadow: none;
-  color: white;
+  color: #fff;
   border-radius: 6px;
   background: linear-gradient(to right, #5e81ac 0%, #5e81ac 100%); }
+  button.suggested-action label {
+    color: #fff; }
   button.suggested-action.flat {
     box-shadow: none;
-    color: white;
+    color: #fff;
     border-radius: 6px;
     background: linear-gradient(to right, #5e81ac 0%, #5e81ac 100%); }
+    button.suggested-action.flat label {
+      color: #fff; }
   button.suggested-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
@@ -753,14 +757,18 @@ button.suggested-action {
 button.destructive-action {
   border: none;
   box-shadow: none;
-  color: white;
+  color: #fff;
   border-radius: 6px;
   background: linear-gradient(to right, #bf616a, #bf616a); }
+  button.destructive-action label {
+    color: #fff; }
   button.destructive-action.flat {
     box-shadow: none;
-    color: white;
+    color: #fff;
     border-radius: 6px;
     background: linear-gradient(to right, #5e81ac 0%, #5e81ac 100%); }
+    button.destructive-action.flat label {
+      color: #fff; }
   button.destructive-action:hover {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);

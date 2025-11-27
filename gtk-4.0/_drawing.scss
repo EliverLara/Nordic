@@ -207,14 +207,16 @@
   @if $t==rounded {
     box-shadow: none;
   //  border: 1px solid $c;
-    color: white;
+    color: #fff;
+    label { color: #fff; }
     border-radius: 6px;
     background: $suggested_bg_color; }
 
     @if $t==rounded-red {
       box-shadow: none;
     //  border: 1px solid $c;
-      color: white;
+      color: #fff;
+      label { color: #fff; }
       border-radius: 6px;
       background: $destructive_bg_color; 
     }
