@@ -925,45 +925,62 @@ button.destructive-action {
   .stack-switcher > button.needs-attention > image:dir(rtl), stacksidebar row.needs-attention > label:dir(rtl) {
     background-position: left 3px, left 2px; }
 
-toolbar button:hover {
-  font-weight: normal;
-  color: #d8dee9;
-  background-color: #3c4454;
-  text-shadow: none; }
-toolbar button:active {
-  font-weight: normal;
-  color: #d8dee9;
-  background-color: #3c4454;
-  text-shadow: none; }
-
-.inline-toolbar toolbutton > button {
+/* oldstyle toolbar buttons */
+.toolbar > button,
+.toolbar > :not(.linked) > button,
+.toolbar :not(.linked) > menubutton > button,
+.toolbar :not(.linked) > scalebutton > button,
+.toolbar :not(.linked) > dropdown > button,
+.toolbar :not(.linked) > colorbutton > button,
+.toolbar :not(.linked) > fontbutton > button,
+.toolbar :not(.linked) > appchooserbutton > button,
+.toolbar :not(.linked) > combobox > box > button {
+  margin: 1px;
   border-color: transparent;
   background-color: transparent;
   background-image: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none; }
-  .inline-toolbar toolbutton > button:hover {
-    color: #2e3440; }
-  .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
-    color: #232831; }
-  .inline-toolbar toolbutton > button:disabled {
-    color: #b9bfcb; }
-    .inline-toolbar toolbutton > button:disabled:active, .inline-toolbar toolbutton > button:disabled:checked {
-      color: rgba(35, 40, 49, 0.3); }
-  .inline-toolbar toolbutton > button:backdrop {
-    color: #b9bfcb; }
-    .inline-toolbar toolbutton > button:backdrop:active, .inline-toolbar toolbutton > button:backdrop:checked {
-      color: #232831; }
-    .inline-toolbar toolbutton > button:backdrop:disabled {
-      color: #b9bfcb; }
-      .inline-toolbar toolbutton > button:backdrop:disabled:active, .inline-toolbar toolbutton > button:backdrop:disabled:checked {
-        color: rgba(35, 40, 49, 0.3); }
-
-toolbar.inline-toolbar toolbutton > button.flat:backdrop,
-toolbar.inline-toolbar toolbutton:backdrop > button.flat:backdrop {
-  border-color: transparent;
-  box-shadow: none; }
+  .toolbar > button:hover, .toolbar > button:active, .toolbar > button:checked,
+  .toolbar > :not(.linked) > button:hover,
+  .toolbar > :not(.linked) > button:active,
+  .toolbar > :not(.linked) > button:checked,
+  .toolbar :not(.linked) > menubutton > button:hover,
+  .toolbar :not(.linked) > menubutton > button:active,
+  .toolbar :not(.linked) > menubutton > button:checked,
+  .toolbar :not(.linked) > scalebutton > button:hover,
+  .toolbar :not(.linked) > scalebutton > button:active,
+  .toolbar :not(.linked) > scalebutton > button:checked,
+  .toolbar :not(.linked) > dropdown > button:hover,
+  .toolbar :not(.linked) > dropdown > button:active,
+  .toolbar :not(.linked) > dropdown > button:checked,
+  .toolbar :not(.linked) > colorbutton > button:hover,
+  .toolbar :not(.linked) > colorbutton > button:active,
+  .toolbar :not(.linked) > colorbutton > button:checked,
+  .toolbar :not(.linked) > fontbutton > button:hover,
+  .toolbar :not(.linked) > fontbutton > button:active,
+  .toolbar :not(.linked) > fontbutton > button:checked,
+  .toolbar :not(.linked) > appchooserbutton > button:hover,
+  .toolbar :not(.linked) > appchooserbutton > button:active,
+  .toolbar :not(.linked) > appchooserbutton > button:checked,
+  .toolbar :not(.linked) > combobox > box > button:hover,
+  .toolbar :not(.linked) > combobox > box > button:active,
+  .toolbar :not(.linked) > combobox > box > button:checked {
+    color: #d8dee9;
+    outline-color: rgba(216, 222, 233, 0.3);
+    background-color: #58647c;
+    text-shadow: none; }
+  .toolbar > button:disabled,
+  .toolbar > :not(.linked) > button:disabled,
+  .toolbar :not(.linked) > menubutton > button:disabled,
+  .toolbar :not(.linked) > scalebutton > button:disabled,
+  .toolbar :not(.linked) > dropdown > button:disabled,
+  .toolbar :not(.linked) > colorbutton > button:disabled,
+  .toolbar :not(.linked) > fontbutton > button:disabled,
+  .toolbar :not(.linked) > appchooserbutton > button:disabled,
+  .toolbar :not(.linked) > combobox > box > button:disabled {
+    opacity: 0.5; }
 
 .inline-toolbar button, .inline-toolbar button:backdrop, .linked > button, .linked > button:hover, .linked > button:active, .linked > button:checked, .linked > button:backdrop, .linked:not(.vertical) > spinbutton:not(.vertical), spinbutton.vertical.linked:not(.vertical) > text, .linked:not(.vertical) >
 entry, .linked > combobox > box > button.combo:dir(ltr), .linked > combobox > box > button.combo:dir(rtl) {
