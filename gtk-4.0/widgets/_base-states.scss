@@ -166,6 +166,10 @@ window.assistant {
   .sidebar label.highlight { background-color: mix($bg_color, $fg_color, 80%); }
 }
 
+window.aboutdialog image.large-icons {
+  -gtk-icon-size: 128px;
+}
+
 %osd, .osd {
   color: $osd_fg_color;
   border: none;
