@@ -184,8 +184,3 @@ window.aboutdialog image.large-icons {
     -gtk-icon-shadow: none;
   }
 }
-
-*:selected {
-  background: $selected_bg_color;
-  color: $selected_fg_color;
-}
