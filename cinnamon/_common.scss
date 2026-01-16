@@ -69,7 +69,7 @@ stage {
   selection-background-color: $selected_bg_color;
   selected-color: $selected_fg_color;
   transition-duration: 300ms;
-  border-radius: 3px;
+  border-radius: 6px;
 
   @include entry(normal);
 
@@ -1441,6 +1441,164 @@ StScrollBar {
 
 /* Context menu (at the moment only for favorites) */
 .menu-context-menu {
+}
+
+// New menu (since Cinnamon 6.6)
+
+$appmenu_small_padding: 5px;
+$appmenu_padding: 10px;
+$appmenu_large_padding: 15px;
+$base_padding: 7px;
+$radius: 6px;
+
+%appmenu_button {
+  padding: $base_padding;
+  spacing: 5px;
+  border-radius: $radius;
+}
+.appmenu {
+
+  // this can be used to color the entire menu background but we aren't using it here
+  &-background {
+    // using this to override the default padding on menus so widgets can span edge
+    // to edge. The side effect is that some of our internal container widgets
+    // will need to have a border-radius added to them or the corners will poke out
+    // the edges of the menu.
+    .popup-menu-content { padding: 0; }
+  }
+
+  &-main-box {
+    spacing: $appmenu_padding;
+  }
+
+  &-right-box {
+    spacing: $appmenu_small_padding;
+    padding: $appmenu_padding $appmenu_padding;
+  }
+
+  &-categories-applications-box {
+    spacing: $appmenu_large_padding;
+
+    &:top {
+      // Extra padding at the top of the categories/apps
+      // when the search box is at the bottom
+      padding-top: $appmenu_small_padding;
+    }
+  }
+
+  &-applications-box {
+    // Extra gap between the highlighted app and the scroll handle
+    padding-right: $appmenu_small_padding;
+  }
+
+  &-search-box {
+    spacing: $appmenu_padding;
+  }
+
+  &-sidebar {
+    padding: $appmenu_large_padding 0px;
+    background-color: darken($base_color, 3%);
+    border-radius: $radius 0 0 0;
+    @at-root .menu-top #{&}    { border-radius: 0 0 0 $radius; }
+    @at-root .menu-bottom #{&} { border-radius: $radius 0 0 0; }
+    @at-root .menu-left #{&}   { border-radius: 0; }
+    @at-root .menu-right #{&}  { border-radius: 0; }
+    border-right-width: 1px;
+    border-color: $borders_color;
+
+    &-user-box {
+      .user-widget-label {
+        @extend %title_4;
+        color: $fg_color;
+        text-align: center;
+      }
+    }
+
+    .appmenu-system-button {
+      background-color: lighten($button_bg, 5%);
+      border: none;
+      &-lock:hover { background-color: lighten($button_bg, 15%); }
+      &-logout:hover { background-color: lighten($button_bg, 15%); }
+      &-shutdown { color: white; background-color: $destructive_color; }
+      &-shutdown:hover { color: white; background-color: lighten($destructive_color, 5%); }
+    }
+  }
+
+  &-system-box {
+    spacing: $appmenu_padding;
+  }
+
+  &-sidebar-button {
+    @extend %appmenu_button;
+
+    padding: 4px $base_padding;
+    margin: 0 $appmenu_padding;
+
+    &:hover {
+      background-color: lighten($button_bg, 5%);
+      border-color: $borders_color;
+    }
+  }
+
+  &-system-button {
+    padding: $base_padding * 1.2;
+    border: 1px solid $borders_color;
+    border-radius: 9999px;
+    background-color: lighten($button_bg, 5%);
+    // &-shutdown { color: white; background-color: $osd_destructive_color; }
+    // &-lock:hover { background-color: lighten($bg_color2, 10%); }
+    // &-logout:hover { background-color: lighten($bg_color2, 10%); }
+    // &-shutdown:hover { color: white; background-color: lighten($osd_destructive_color, 5%); }
+  }
+
+  &-application-button {
+    @extend %appmenu_button;
+
+    &-label { padding: 0; }
+    &-description {
+      @extend %caption;
+      color: $insensitive_fg_color;
+    }
+
+    &:highlighted { font-weight: bold; }
+
+    &-selected {
+      @extend %appmenu_button;
+      background-color: lighten($button_bg, 5%);
+
+      &:highlighted { font-weight: bold; }
+    }
+  }
+
+  &-category-button {
+    @extend %appmenu_button;
+
+    &-label { padding: 0; }
+
+    &:hover { background-color: lighten($button_bg, 5%); }
+
+    &-selected {
+      @extend %appmenu_button;
+
+      background-color: lighten($button_bg, 5%);
+    }
+
+    &-greyed {
+      @extend %appmenu_button;
+      color: $insensitive_fg_color;
+      font-style: italic;
+
+      StIcon { opacity: 0.5; }
+    }
+  }
+
+  &-search-entry-icon {
+    icon-size: 1em;
+  }
+}
+
+#appmenu-search-entry {
+  @extend %entry;
 }
 
 //
