@@ -1168,7 +1168,7 @@ StScrollBar {
   background-color: #353b49;
   border-radius: 6px 0 0 0;
   border-right-width: 1px;
-  border-color: #1f232b; }
+  border-color: #232831; }
   .menu-top .appmenu-sidebar {
     border-radius: 0 0 0 6px; }
   .menu-bottom .appmenu-sidebar {
@@ -1200,10 +1200,10 @@ StScrollBar {
   margin: 0 10px; }
   .appmenu-sidebar-button:hover {
     background-color: #4a5367;
-    border-color: #1f232b; }
+    border-color: #232831; }
 .appmenu-system-button {
   padding: 8.4px;
-  border: 1px solid #1f232b;
+  border: 1px solid #232831;
   border-radius: 9999px;
   background-color: #4a5367; }
 .appmenu-application-button-label {
