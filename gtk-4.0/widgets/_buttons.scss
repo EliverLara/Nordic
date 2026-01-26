@@ -540,12 +540,16 @@ toggle-group{
   }
 }
 
-// Gnome 48 accent color buttons
-button.accent-button {
+/*
+  * Gnome 48 accent color buttons
+  * Gnome papers - buttons in context menu
+*/
+
+button.accent-button, button.color-button {
   &, &:backdrop {
     min-height: 24px;
     min-width: 24px;
-    padding: 5px;
+    padding: 3px;
     border-radius: 100%;
     background: var(--accent-bg-color);
     outline: none;
@@ -554,7 +558,15 @@ button.accent-button {
     border: none;
   }
   
-  &:hover { box-shadow: 0 0 0 3px lighten($base_color, 7%); }
+  &:hover { 
+    box-shadow: 0 0 0 3px darken($base_color, 5%);
+    background-color: var(--accent-bg-color);
+  }
 
-  &:checked { &, &:backdrop { box-shadow: 0 0 0 3px var(--accent-bg-color); }}
+  &:checked { 
+    &, &:backdrop { 
+      box-shadow: 0 0 0 3px var(--accent-bg-color); 
+      background-color: var(--accent-bg-color);
+    }
+  }
 }

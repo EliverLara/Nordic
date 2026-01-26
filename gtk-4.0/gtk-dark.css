@@ -1095,20 +1095,26 @@ toggle-group {
       toggle-group toggle:checked, toggle-group toggle:checked label {
         color: #fefefe; }
 
-button.accent-button, button.accent-button:backdrop {
+/*
+  * Gnome 48 accent color buttons
+  * Gnome papers - buttons in context menu
+*/
+button.accent-button, button.accent-button:backdrop, button.color-button, button.color-button:backdrop {
   min-height: 24px;
   min-width: 24px;
-  padding: 5px;
+  padding: 3px;
   border-radius: 100%;
   background: var(--accent-bg-color);
   outline: none;
   background-clip: content-box;
   box-shadow: none;
   border: none; }
-button.accent-button:hover {
-  box-shadow: 0 0 0 3px #4a5367; }
-button.accent-button:checked, button.accent-button:checked:backdrop {
-  box-shadow: 0 0 0 3px var(--accent-bg-color); }
+button.accent-button:hover, button.color-button:hover {
+  box-shadow: 0 0 0 3px #303643;
+  background-color: var(--accent-bg-color); }
+button.accent-button:checked, button.accent-button:checked:backdrop, button.color-button:checked, button.color-button:checked:backdrop {
+  box-shadow: 0 0 0 3px var(--accent-bg-color);
+  background-color: var(--accent-bg-color); }
 
 /************
  * Calendar *
