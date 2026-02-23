@@ -1396,7 +1396,8 @@ StScrollBar {
   transition-duration: 100ms;
   text-align: center;
   box-shadow: none;
-  border-radius: 18px; }
+  border-radius: 18px;
+  padding: 8px; }
 
 /* App Folders */
 .app-well-app.app-folder, .app-folder .overview-icon {
