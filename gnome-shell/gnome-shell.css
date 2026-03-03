@@ -1338,44 +1338,46 @@ StScrollBar {
 .app-well-app.app-folder,
 .show-apps,
 .grid-search-result,
-.overview-tile,
-.dash-item-container .overview-tile {
+.overview-tile {
   background-color: transparent;
   border: none; }
-  .app-well-app:hover .overview-icon, .app-well-app:focus .overview-icon, .app-well-app:selected .overview-icon,
-  .app-well-app.app-folder:hover .overview-icon,
-  .app-well-app.app-folder:focus .overview-icon,
-  .app-well-app.app-folder:selected .overview-icon,
-  .show-apps:hover .overview-icon,
-  .show-apps:focus .overview-icon,
-  .show-apps:selected .overview-icon,
-  .grid-search-result:hover .overview-icon,
-  .grid-search-result:focus .overview-icon,
-  .grid-search-result:selected .overview-icon,
-  .overview-tile:hover .overview-icon,
-  .overview-tile:focus .overview-icon,
-  .overview-tile:selected .overview-icon,
-  .dash-item-container .overview-tile:hover .overview-icon,
-  .dash-item-container .overview-tile:focus .overview-icon,
-  .dash-item-container .overview-tile:selected .overview-icon {
+  .app-well-app:hover, .app-well-app:focus, .app-well-app:selected,
+  .app-well-app.app-folder:hover,
+  .app-well-app.app-folder:focus,
+  .app-well-app.app-folder:selected,
+  .show-apps:hover,
+  .show-apps:focus,
+  .show-apps:selected,
+  .grid-search-result:hover,
+  .grid-search-result:focus,
+  .grid-search-result:selected,
+  .overview-tile:hover,
+  .overview-tile:focus,
+  .overview-tile:selected {
     background-color: #3d4555;
     transition-duration: 0ms;
     border-image: none;
     background-image: none; }
-  .app-well-app:active .overview-icon, .app-well-app:checked .overview-icon,
-  .app-well-app.app-folder:active .overview-icon,
-  .app-well-app.app-folder:checked .overview-icon,
-  .show-apps:active .overview-icon,
-  .show-apps:checked .overview-icon,
-  .grid-search-result:active .overview-icon,
-  .grid-search-result:checked .overview-icon,
-  .overview-tile:active .overview-icon,
-  .overview-tile:checked .overview-icon,
-  .dash-item-container .overview-tile:active .overview-icon,
-  .dash-item-container .overview-tile:checked .overview-icon {
+  .app-well-app:active, .app-well-app:checked,
+  .app-well-app.app-folder:active,
+  .app-well-app.app-folder:checked,
+  .show-apps:active,
+  .show-apps:checked,
+  .grid-search-result:active,
+  .grid-search-result:checked,
+  .overview-tile:active,
+  .overview-tile:checked {
     background-color: #3d4555;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
     color: #d8dee9; }
+
+.dash-item-container .show-apps:hover .overview-icon, .dash-item-container .show-apps:focus .overview-icon, .dash-item-container .show-apps:selected .overview-icon, .dash-item-container .show-apps:active .overview-icon, .dash-item-container .show-apps:checked .overview-icon,
+.dash-item-container .overview-tile:hover .overview-icon,
+.dash-item-container .overview-tile:focus .overview-icon,
+.dash-item-container .overview-tile:selected .overview-icon,
+.dash-item-container .overview-tile:active .overview-icon,
+.dash-item-container .overview-tile:checked .overview-icon {
+  background-color: #3d4555; }
 
 .app-well-app-running-dot, .app-grid-running-dot {
   width: 5px;
@@ -1384,11 +1386,12 @@ StScrollBar {
   border-radius: 5px !important;
   box-shadow: 0px 0px 5px 4px #5E6A82; }
 
-.app-well-app .overview-icon,
-.app-well-app.app-folder .overview-icon,
-.show-apps .overview-icon,
-.grid-search-result .overview-icon,
-.overview-tile .overview-icon,
+.app-well-app,
+.app-well-app.app-folder,
+.show-apps,
+.grid-search-result,
+.overview-tile, .dash-item-container .show-apps, .dash-item-container .show-apps .overview-icon,
+.dash-item-container .overview-tile,
 .dash-item-container .overview-tile .overview-icon {
   background-color: transparent;
   color: #d8dee9;
@@ -1396,11 +1399,10 @@ StScrollBar {
   transition-duration: 100ms;
   text-align: center;
   box-shadow: none;
-  border-radius: 18px;
-  padding: 8px; }
+  border-radius: 18px; }
 
 /* App Folders */
-.app-well-app.app-folder, .app-folder .overview-icon {
+.app-well-app.app-folder, .app-folder {
   background-color: #39404f;
   border-radius: 18px; }
 
