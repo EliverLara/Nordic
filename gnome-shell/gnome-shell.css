@@ -1236,6 +1236,9 @@ StScrollBar {
   .list-search-result:selected {
     background-color: rgba(216, 222, 233, 0.1);
     transition-duration: 200ms; }
+  .search-provider-icon:focus,
+  .list-search-result:focus {
+    box-shadow: 0px 0px 2px 2px rgba(143, 188, 187, 0.7) inset !important; }
   .search-provider-icon:active,
   .list-search-result:active, .search-provider-icon:checked,
   .list-search-result:checked {
@@ -1358,6 +1361,12 @@ StScrollBar {
     transition-duration: 0ms;
     border-image: none;
     background-image: none; }
+  .app-well-app:focus,
+  .app-well-app.app-folder:focus,
+  .show-apps:focus,
+  .grid-search-result:focus,
+  .overview-tile:focus {
+    box-shadow: 0px 0px 2px 2px rgba(143, 188, 187, 0.7) inset !important; }
   .app-well-app:active, .app-well-app:checked,
   .app-well-app.app-folder:active,
   .app-well-app.app-folder:checked,
