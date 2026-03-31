@@ -130,14 +130,7 @@ placessidebar {
 				&.sidebar-row{
           margin: 0;
           border-radius: 0;
-          label { padding-left: 8px; }
-					.sidebar-icon {
-						margin-left:-14px;
-						margin-right: 12px;
-						padding-left: 14px;
-						padding-right: 12px;
-						color: #98abb2;
-					}
+          label { padding-left: 30px; }
 				}
 				&:hover{
           background: rgba(0,0,0,0.12);
