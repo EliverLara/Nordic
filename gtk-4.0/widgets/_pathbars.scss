@@ -29,7 +29,7 @@
 }
 
 // nautilus, filechooser(Gnome 47) pathbar
-#NautilusPathBar, .pathbar {
+#NautilusPathBar, .pathbar, .nautilus-pathbar {
   @include button(normal-header);
 
   .dim-label {
