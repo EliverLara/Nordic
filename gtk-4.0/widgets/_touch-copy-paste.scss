@@ -13,22 +13,19 @@ cursor-handle {
                   (':active','-active') { //no need for insensitive and backdrop
     &.top#{$s}:dir(ltr), &.bottom#{$s}:dir(rtl) {
       $_url: 'assets/text-select-start#{$as}#{$asset_suffix}';
-      -gtk-icon-source: -gtk-scaled(url('#{$_url}.png'),
-                                    url('#{$_url}@2.png'));
+      -gtk-icon-source: url('#{$_url}.png');
       padding-left: 10px;
     }
 
     &.bottom#{$s}:dir(ltr), &.top#{$s}:dir(rtl) {
       $_url: 'assets/text-select-end#{$as}#{$asset_suffix}';
-      -gtk-icon-source: -gtk-scaled(url('#{$_url}.png'),
-                                    url('#{$_url}@2.png'));
+      -gtk-icon-source: url('#{$_url}.png');
       padding-right: 10px;
     }
 
     &.insertion-cursor#{$s}:dir(ltr), &.insertion-cursor#{$s}:dir(rtl) {
       $_url: 'assets/slider-horz-scale-has-marks-above#{$as}#{$asset_suffix}';
-      -gtk-icon-source: -gtk-scaled(url('#{$_url}.png'),
-                                    url('#{$_url}@2.png'));
+      -gtk-icon-source: url('#{$_url}.png');
     }
   }
 }
