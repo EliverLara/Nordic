@@ -156,9 +156,13 @@ StScrollBar {
   width: 24px;
   height: 22px;
   background-image: url("assets/checkbox-off.svg"); }
-.check-box:focus, .check-box:hover StBin {
-  background-image: url("assets/checkbox-off-focused.svg"); }
-.check-box:checked StBin {
+.check-box StIcon {
+  color: transparent;
+  border-color: transparent; }
+.check-box:focus StBin, .check-box:focus StIcon, .check-box:hover StBin, .check-box:hover StIcon {
+  background-image: url("assets/checkbox-off-focused.svg");
+  box-shadow: none; }
+.check-box:checked StBin, .check-box:checked StIcon {
   background-image: url("assets/checkbox.svg"); }
 .check-box:focus:checked StBin {
   background-image: url("assets/checkbox-focused.svg"); }
