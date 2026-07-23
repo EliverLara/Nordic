@@ -147,10 +147,21 @@ $slider_size: 19px;
     height: 22px;
     background-image: url("assets/checkbox-off.svg");
   }
-  &:focus, &:hover StBin { 
-    background-image: url("assets/checkbox-off-focused.svg"); 
+
+  StIcon {
+    color: transparent;
+    border-color: transparent;
   }
-  &:checked StBin { background-image: url("assets/checkbox.svg"); }
+  
+  &:focus, &:hover  { 
+    StBin, StIcon { 
+      background-image: url("assets/checkbox-off-focused.svg"); 
+      box-shadow: none; 
+    }
+  }
+  &:checked { 
+    StBin, StIcon { background-image: url("assets/checkbox.svg"); }
+  }
   &:focus:checked StBin { background-image: url("assets/checkbox-focused.svg"); }
 }
 
